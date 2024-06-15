@@ -1,0 +1,2416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary title="Irregular Verbs" author="Anton I. Chumakov" version="0.51" date="09.06.2024">
+  <word id="abide">
+    <form1 id="abide" sound="abide.wav">ə'baɪd</form1>
+    <form2 id="abode" sound="abide_2.wav">ə'bəud</form2>
+    <form3 id="abode" sound="abide_3.wav">ə'bəud</form3>
+    <translation>вынести, пережить</translation>
+    <translation>вытерпеть</translation>
+    <translation>выносить, терпеть<i>(обычно в отрицательных и вопросительных предложениях)</i></translation>
+    <example>
+      <text>to abide terrors which other people shrank from encountering</text>
+      <translation>пережить ужасы, перед которыми другие дрогнули бы</translation>
+    </example>
+    <example>
+      <text>to abide great heat</text>
+      <translation>выдерживать высокую температуру</translation>
+    </example>
+  </word>
+  <word id="arise">
+    <form1 id="arise" sound="arise.wav">ə'raɪz</form1>
+    <form2 id="arose" sound="arise_2.wav">ə'rəuz</form2>
+    <form3 id="arisen" sound="arise_3.wav">ə'rɪz(ə)n</form3>
+    <translation>возникать, появляться</translation>
+    <translation>происходить, проистекать, являться результатом</translation>
+    <translation>раздаваться, подниматься <i>(о криках, шуме)</i></translation>
+    <example>
+      <text>A new difficulty has arisen.</text>
+      <translation>Возникло новое затруднение.</translation>
+    </example>
+    <example>
+      <text>A quarrel arose.</text>
+      <translation>Вспыхнула ссора.</translation>
+    </example>
+    <example>
+      <text>to arise out of the situation</text>
+      <translation>вытекать из этой ситуации</translation>
+    </example>
+  </word>
+  <word id="awake">
+    <form1 id="awake" sound="awake.wav">ə'weɪk</form1>
+    <form2 id="awoke" sound="awake_2.wav">ə'wəuk</form2>
+    <form3 id="awoken" sound="awake_3.wav">ə'wəukən</form3>
+    <translation>будить</translation>
+    <translation>пробуждать <i>(эмоции)</i>, вызывать <i>(состояние)</i></translation>
+    <example>
+      <text>to awake smb.</text>
+      <translation>будить кого-л.</translation>
+    </example>
+    <example>
+      <text>to awake fear</text>
+      <translation>вызывать страх</translation>
+    </example>
+  </word>
+  <word id="be">
+    <form1 id="be" sound="be.wav">biː</form1>
+    <form2 id="was/were" sound="be_2.wav">wɔz/wɜː</form2>
+    <form3 id="been" sound="be_3.wav">biːn</form3>
+    <translation>быть, существовать</translation>
+    <translation>быть живым, жить</translation>
+    <translation>происходить, случаться, иметь место</translation>
+    <example>
+      <text>I think, therefore I am.</text>
+      <translation>Я мыслю, следовательно, существую.</translation>
+    </example>
+    <example>
+      <text>Be it as it may.</text>
+      <translation>Будь как будет.</translation>
+    </example>
+  </word>
+  <word id="bear">
+    <form1 id="bear" sound="bear.wav">bɛə</form1>
+    <form2 id="bore" sound="bear_2.wav">bɔː</form2>
+    <form3 id="born" sound="bear_3.wav">bɔːn</form3>
+    <translation>носить, нести</translation>
+    <translation>переносить</translation>
+    <example>
+      <text>three kings bearing gifts</text>
+      <translation>три царя, несущих дары</translation>
+    </example>
+    <example>
+      <text>The spores are borne on the wind.</text>
+      <translation>Эти споры разносятся ветром.</translation>
+    </example>
+  </word>
+  <word id="beat">
+    <form1 id="beat" sound="beat.wav">biːt</form1>
+    <form2 id="beat" sound="beat.wav">biːt</form2>
+    <form3 id="beaten" sound="beat_3.wav">'biːtn</form3>
+    <translation>бить, колотить</translation>
+    <example>
+      <text>to beat unmercifully</text>
+      <translation>нещадно избивать</translation>
+    </example>
+  </word>
+  <word id="become">
+    <form1 id="become" sound="become.wav">bɪ'kʌm</form1>
+    <form2 id="became" sound="become_2.wav">bɪ'keɪm</form2>
+    <form3 id="become" sound="become.wav">bɪ'kʌm</form3>
+    <translation>становиться, делаться</translation>
+    <translation>
+      <i>(become of)</i> случаться, происходить <i>(чаще о плохом событии)</i></translation>
+    <translation>годиться, подходить</translation>
+    <translation>приличествовать, соответствовать</translation>
+    <example>
+      <text>to become depressed</text>
+      <translation>становиться унылым</translation>
+    </example>
+    <example>
+      <text>become brown</text>
+      <translation>чернеть; загорать</translation>
+    </example>
+    <example>
+      <text>What will become of our freedom?</text>
+      <translation>Что станет с нашей свободой?</translation>
+    </example>
+  </word>
+  <word id="begin">
+    <form1 id="begin" sound="begin.wav">bɪ'gɪn</form1>
+    <form2 id="began" sound="begin_2.wav">bɪ'gæn</form2>
+    <form3 id="begun" sound="begin_3.wav">bɪ'gʌn</form3>
+    <translation>начинать, начинаться</translation>
+    <example>
+      <text>to begin with smth.</text>
+      <translation>начинать с <i>(чего-л.)</i></translation>
+    </example>
+    <example>
+      <text>To begin with, I did not see him.</text>
+      <translation>Во-первых, я его не видел.</translation>
+    </example>
+    <example>
+      <text>The day began with bad news, and looks like getting worse.</text>
+      <translation>День начался с плохих новостей, и, кажется, этим дело не кончится.</translation>
+    </example>
+  </word>
+  <word id="behold">
+    <form1 id="behold" sound="behold.wav">bɪ'həuld</form1>
+    <form2 id="beheld" sound="behold_2.wav">bɪ'held</form2>
+    <form3 id="beheld" sound="behold_2.wav">bɪ'held</form3>
+    <translation>увидеть, заметить, узреть</translation>
+    <translation>созерцать, рассматривать, наблюдать</translation>
+  </word>
+  <word id="bend">
+    <form1 id="bend" sound="bend.wav">bend</form1>
+    <form2 id="bent" sound="bend_2.wav">bent</form2>
+    <form3 id="bent" sound="bend_2.wav">bent</form3>
+    <translation>сгибать(ся)</translation>
+    <translation>гнуть(ся), изгибать(ся)</translation>
+    <example>
+      <text>to bend one's neck</text>
+      <translation>сгибать шею; покоряться</translation>
+    </example>
+    <example>
+      <text>As Jim bent over to pick up the pen, he felt a sharp pain in his back.</text>
+      <translation>Когда Джим наклонился, чтобы поднять ручку, он почувствовал резкую боль в спине.</translation>
+    </example>
+  </word>
+  <word id="bet">
+    <form1 id="bet" sound="bet.wav">bet</form1>
+    <form2 id="bet" sound="bet.wav">bet</form2>
+    <form3 id="bet" sound="bet.wav">bet</form3>
+    <translation>держать пари, биться об заклад <g>= bet against</g></translation>
+    <example>
+      <text>to accept / take a bet</text>
+      <translation>принять пари, согласиться на пари</translation>
+    </example>
+    <example>
+      <text>We bet him ten pounds that it would rain.</text>
+      <translation>Мы поспорили с ним на десять фунтов, что будет дождь.</translation>
+    </example>
+  </word>
+  <word id="bid">
+    <form1 id="bid" sound="bid.wav">bɪd</form1>
+    <form2 id="bade" sound="bid_2.wav">beɪd</form2>
+    <form3 id="bidden" sound="bid_3.wav">'bɪdn</form3>
+    <!--translation><i>(bid for)</i> предлагать цену за <i>(что-л.; обычно на аукционе)</i></translation-->
+    <translation>предлагать цену за <i>(что-л.; обычно на аукционе)</i></translation>
+    <translation>принимать участие в торгах</translation>
+    <example>
+      <text>The dealers were bidding high prices for the valuable paintings.</text>
+      <translation>Агенты предлагали за эти ценные полотна крупные суммы.</translation>
+    </example>
+  </word>
+  <word id="bind">
+    <form1 id="bind" sound="bind.wav">baɪnd</form1>
+    <form2 id="bound" sound="bind_2.wav">baund</form2>
+    <form3 id="bound" sound="bind_2.wav">baund</form3>
+    <translation>вязать</translation>
+    <translation>связывать</translation>
+    <translation>завязывать</translation>
+    <example>
+      <text>They bound his legs tight.</text>
+      <translation>Они крепко связали его ноги.</translation>
+    </example>
+  </word>
+  <word id="bite">
+    <form1 id="bite" sound="bite.wav">baɪt</form1>
+    <form2 id="bit" sound="bite_2.wav">bɪt</form2>
+    <form3 id="bitten" sound="bite_3.wav">'bɪtn</form3>
+    <translation>жалить <i>(о змеях, насекомых)</i></translation>
+    <translation>кусать</translation>
+    <translation>клевать <i>(о рыбе)</i></translation>
+    <example>
+      <text>to bite into an apple</text>
+      <translation>откусить от яблока</translation>
+    </example>
+    <example>
+      <text>Does your dog bite?</text>
+      <translation>Твоя собака кусается?</translation>
+    </example>
+    <example>
+      <text>He was bitten by a snake.</text>
+      <translation>Его укусила змея.</translation>
+    </example>
+  </word>
+  <word id="bleed">
+    <form1 id="bleed" sound="bleed.wav">bliːd</form1>
+    <form2 id="bled" sound="bleed_2.wav">bled</form2>
+    <form3 id="bled" sound="bleed_2.wav">bled</form3>
+    <translation>кровоточить</translation>
+    <translation>истекать кровью</translation>
+    <example>
+      <text>to bleed from the nose</text>
+      <translation>идти из носа <i>(о крови)</i></translation>
+    </example>
+  </word>
+  <word id="bless">
+    <form1 id="bless" sound="bless.wav">bles</form1>
+    <form2 id="blest" sound="bless_2.wav">blest</form2>
+    <form3 id="blest" sound="bless_2.wav">blest</form3>
+    <translation>благословлять</translation>
+    <translation>давать благословение</translation>
+    <example>
+      <text>The priest blessed the marriage.</text>
+      <translation>Священник благословил этот брачный союз.</translation>
+    </example>
+  </word>
+  <word id="blow">
+    <form1 id="blow" sound="blow.wav">bləu</form1>
+    <form2 id="blew" sound="blow_2.wav">bluː</form2>
+    <form3 id="blown" sound="blow_3.wav">bləun</form3>
+    <translation>веять, дуть <i>(о ветре)</i></translation>
+    <translation>гнать <i>(ветром)</i></translation>
+    <translation>уносить <i>(о ветре)</i></translation>
+    <example>
+      <text>A cold breeze was blowing hard.</text>
+      <translation>Дул сильный, холодный ветер.</translation>
+    </example>
+    <example>
+      <text>The violent wind was blowing broken glass about in the city streets.</text>
+      <translation>Ураган разносил по городу осколки битого стекла.</translation>
+    </example>
+  </word>
+  <word id="break">
+    <form1 id="break" sound="break.wav">breɪk</form1>
+    <form2 id="broke" sound="break_2.wav">brəuk</form2>
+    <form3 id="broken" sound="break_3.wav">'brəuk(ə)n</form3>
+    <translation>ломать, разбивать <i>(на части)</i></translation>
+    <translation>разрушать(ся)</translation>
+    <translation>разламываться; разбиваться</translation>
+    <example>
+      <text>He fell through the window, breaking the glass.</text>
+      <translation>Он выпал из окна, разбив стекло.</translation>
+    </example>
+    <example>
+      <text>The police broke the door down.</text>
+      <translation>Полицейские вышибли дверь.</translation>
+    </example>
+  </word>
+  <word id="breed">
+    <form1 id="breed" sound="breed.wav">briːd</form1>
+    <form2 id="bred" sound="breed_2.wav">bred</form2>
+    <form3 id="bred" sound="breed_2.wav">bred</form3>
+    <translation>размножать(ся)</translation>
+    <translation>порождать, вызывать</translation>
+    <translation>размножаться, плодиться <gi>прям. и перен.</gi></translation>
+    <example>
+      <text>Kindnesses breed on themselves.</text>
+      <translation>Добрые дела плодятся сами по себе.</translation>
+    </example>
+    <example>
+      <text>An iniquitous government breeds despair in men's souls.</text>
+      <translation>Несправедливое правительство вызывает отчаяние в душах людей.</translation>
+    </example>
+  </word>
+  <word id="bring">
+    <form1 id="bring" sound="bring.wav">brɪŋ</form1>
+    <form2 id="brought" sound="bring_2.wav">brɔːt</form2>
+    <form3 id="brought" sound="bring_2.wav">brɔːt</form3>
+    <translation>приносить, привозить</translation>
+    <translation>приводить</translation>
+    <translation>доставлять</translation>
+    <example>
+      <text>They are going to bring one of their friends with them.</text>
+      <translation>Они собираются привести с собой одного из своих друзей.</translation>
+    </example>
+    <example>
+      <text>Why don't you bring your brother along?</text>
+      <translation>А что ты не приводишь своего брата?</translation>
+    </example>
+  </word>
+  <word id="broadcast">
+    <form1 id="broadcast" sound="broadcast.wav">'brɔːdkɑːst</form1>
+    <form2 id="broadcast" sound="broadcast.wav">'brɔːdkɑːst</form2>
+    <form3 id="broadcast" sound="broadcast.wav">'brɔːdkɑːst</form3>
+    <translation>передавать по радио, передавать по ТВ</translation>
+    <translation>вещать, транслировать</translation>
+    <example>
+      <text>The President's speech will be broadcast on all channels.</text>
+      <translation>Речь Президента будет передаваться по всем каналам.</translation>
+    </example>
+    <example>
+      <text>They broadcast the news to the local population every day.</text>
+      <translation>Они каждый день передают программы новостей для местного населения.</translation>
+    </example>
+  </word>
+  <word id="build">
+    <form1 id="build" sound="build.wav">bɪld</form1>
+    <form2 id="built" sound="build_2.wav">bɪlt</form2>
+    <form3 id="built" sound="build_2.wav">bɪlt</form3>
+    <translation>сооружать, строить</translation>
+    <translation>возводить</translation>
+    <example>
+      <text>The house was built in the early 19th century.</text>
+      <translation>Дом был построен в начале 19 века.</translation>
+    </example>
+    <example>
+      <text>Use more bricks to build the wall up.</text>
+      <translation>Используй больше кирпичей чтобы надстроить эту стену.</translation>
+    </example>
+  </word>
+  <word id="burn">
+    <form1 id="burn" sound="burn.wav">bɜːn</form1>
+    <form2 id="burnt" sound="burn_2.wav">bɜːnt</form2>
+    <form3 id="burnt" sound="burn_2.wav">bɜːnt</form3>
+    <translation>гореть, пылать</translation>
+    <example>
+      <text>There was a fire burning in the large fireplace.</text>
+      <translation>В большом камине горел огонь.</translation>
+    </example>
+    <example>
+      <text>The fire burned away for five days.</text>
+      <translation>Пожар полыхал пять дней.</translation>
+    </example>
+  </word>
+  <word id="burst">
+    <form1 id="burst" sound="burst.wav">bɜːst</form1>
+    <form2 id="burst" sound="burst.wav">bɜːst</form2>
+    <form3 id="burst" sound="burst.wav">bɜːst</form3>
+    <translation>лопаться, разрываться</translation>
+    <translation>взрываться <i>(о снаряде)</i></translation>
+    <translation>прорываться <i>(о плотине, нарыве)</i></translation>
+    <example>
+      <text>The driver lost control when a tyre burst.</text>
+      <translation>Шофёр потерял управление, когда лопнула шина.</translation>
+    </example>
+    <example>
+      <text>Shells were bursting all around us.</text>
+      <translation>Вокруг нас рвались снаряды.</translation>
+    </example>
+  </word>
+  <word id="buy">
+    <form1 id="buy" sound="buy.wav">baɪ</form1>
+    <form2 id="bought" sound="buy_2.wav">bɔːt</form2>
+    <form3 id="bought" sound="buy_2.wav">bɔːt</form3>
+    <translation>покупать</translation>
+    <translation>приобретать</translation>
+    <example>
+      <text>He changed his mind about moving, but was unable to buy the house back.</text>
+      <translation>Он передумал переезжать, но выкупить свой старый дом не смог.</translation>
+    </example>
+  </word>
+  <word id="cast">
+    <form1 id="cast" sound="cast.wav">kɑːst</form1>
+    <form2 id="cast" sound="cast.wav">kɑːst</form2>
+    <form3 id="cast" sound="cast.wav">kɑːst</form3>
+    <translation>бросать, кидать, швырять</translation>
+    <translation>выбрасывать <i>(о море, волнах)</i></translation>
+    <example>
+      <text>to cast a stone</text>
+      <translation>бросить камень</translation>
+    </example>
+    <example>
+      <text>to cast an eye / a glance / a look</text>
+      <translation>бросить взгляд</translation>
+    </example>
+  </word>
+  <word id="catch">
+    <form1 id="catch" sound="catch.wav">kæʧ</form1>
+    <form2 id="caught" sound="catch_2.wav">kɔːt</form2>
+    <form3 id="caught" sound="catch_2.wav">kɔːt</form3>
+    <translation>ловить</translation>
+    <translation>поймать</translation>
+    <translation>схватить</translation>
+    <example>
+      <text>to catch a thief</text>
+      <translation>поймать вора</translation>
+    </example>
+    <example>
+      <text>to catch at smth.</text>
+      <translation>застать за чем-л.</translation>
+    </example>
+  </word>
+  <word id="choose">
+    <form1 id="choose" sound="choose.wav">ʧuːz</form1>
+    <form2 id="chose" sound="choose_2.wav">ʧəuz</form2>
+    <form3 id="chosen" sound="choose_3.wav">'ʧəuz(ə)n</form3>
+    <translation>выбирать</translation>
+    <translation>избирать</translation>
+    <example>
+      <text>to choose a career</text>
+      <translation>выбрать себе карьеру</translation>
+    </example>
+    <example>
+      <text>Jim chose Mary as his wife.</text>
+      <translation>Джим выбрал себе в жёны Мэри.</translation>
+    </example>
+  </word>
+  <word id="cleave">
+    <form1 id="cleave" sound="cleave.wav">kliːv</form1>
+    <form2 id="cleft" sound="cleave_2.wav">kleft</form2>
+    <form3 id="cleft" sound="cleave_2.wav">kleft</form3>
+    <translation>раскалывать, разъединять</translation>
+    <translation>хранить верность</translation>
+    <example>
+      <text>the sections into which our society is cleft</text>
+      <translation>группы, на которые расколото наше общество</translation>
+    </example>
+  </word>
+  <word id="cling">
+    <form1 id="cling" sound="cling.wav">klɪŋ</form1>
+    <form2 id="clung" sound="cling_2.wav">klʌŋ</form2>
+    <form3 id="clung" sound="cling_2.wav">klʌŋ</form3>
+    <translation>цепляться, прилипать</translation>
+    <translation>крепко держаться</translation>
+    <translation>облегать <i>(о ткани, одежде)</i></translation>
+    <example>
+      <text>The climber had to cling onto the cliff.</text>
+      <translation>Скалолазу пришлось изо всех сил вцепиться в скалу.</translation>
+    </example>
+  </word>
+  <word id="come">
+    <form1 id="come" sound="come.wav">kʌm</form1>
+    <form2 id="came" sound="come_2.wav">keɪm</form2>
+    <form3 id="come" sound="come.wav">kʌm</form3>
+    <translation>приходить, подходить</translation>
+    <translation>идти</translation>
+    <translation>
+      <g>= come in / through</g> прибывать <i>(о поезде, пароходе)</i></translation>
+    <example>
+      <text>to come back</text>
+      <translation>вернуться, возвратиться</translation>
+    </example>
+  </word>
+  <word id="cost">
+    <form1 id="cost" sound="cost.wav">kɔst</form1>
+    <form2 id="cost" sound="cost.wav">kɔst</form2>
+    <form3 id="cost" sound="cost.wav">kɔst</form3>
+    <translation>стоить, обходиться <i>(в какую-л. сумму)</i></translation>
+    <translation>стоить <i>(усилий, затрат)</i></translation>
+    <example>
+      <text>Financial worries cost her many sleepless nights.</text>
+      <translation>Финансовые проблемы стоили ей множества бессонных ночей.</translation>
+    </example>
+  </word>
+  <word id="creep">
+    <form1 id="creep" sound="creep.wav">kriːp</form1>
+    <form2 id="crept" sound="creep_2.wav">krept</form2>
+    <form3 id="crept" sound="creep_2.wav">krept</form3>
+    <translation>ползать</translation>
+    <translation>пресмыкаться</translation>
+    <translation>
+      <g>= creep up</g> красться, подкрадываться</translation>
+    <example>
+      <text>Before children learn to walk they creep on all fours.</text>
+      <translation>До того как научиться ходить, дети ползают на четвереньках.</translation>
+    </example>
+  </word>
+  <word id="cut">
+    <form1 id="cut" sound="cut.wav">kʌt</form1>
+    <form2 id="cut" sound="cut.wav">kʌt</form2>
+    <form3 id="cut" sound="cut.wav">kʌt</form3>
+    <translation>резать, разрезать</translation>
+    <example>
+      <text>to cut meat</text>
+      <translation>резать мясо</translation>
+    </example>
+    <example>
+      <text>The knife does not cut.</text>
+      <translation>Нож не режет.</translation>
+    </example>
+  </word>
+  <word id="dare">
+    <form1 id="dare" sound="dare.wav">deə(r)</form1>
+    <form2 id="durst" sound="dare_2.wav">dɜːst</form2>
+    <form3 id="dared" sound="dare_3.wav">deəd</form3>
+    <translation>отваживаться, осмеливаться, сметь</translation>
+    <translation>иметь наглость <i>(как модальный глагол, обычно в вопросительных и отрицательных предложениях)</i></translation>
+    <translation>рисковать, пренебрегать опасностью</translation>
+    <example>
+      <text>I dare not protest.</text>
+      <translation>Не смею возражать.</translation>
+    </example>
+    <example>
+      <text>How dare you listen to a private conversation?</text>
+      <translation>Как вы смеете подслушивать чужой разговор!</translation>
+    </example>
+  </word>
+  <word id="deal">
+    <form1 id="deal" sound="deal.wav">diːl</form1>
+    <form2 id="dealt" sound="deal_2.wav">delt</form2>
+    <form3 id="dealt" sound="deal_2.wav">delt</form3>
+    <translation>распределять <g>= deal out</g></translation>
+    <translation>раздавать, выдавать</translation>
+    <example>
+      <text>to deal out alms to the poor</text>
+      <translation>раздавать милостыню бедным</translation>
+    </example>
+    <example>
+      <text>He dealt her out a pittance of an allowance.</text>
+      <translation>Он выплачивал ей жалкое денежное пособие.</translation>
+    </example>
+  </word>
+  <word id="dig">
+    <form1 id="dig" sound="dig.wav">dɪg</form1>
+    <form2 id="dug" sound="dig_2.wav">dʌg</form2>
+    <form3 id="dug" sound="dig_2.wav">dʌg</form3>
+    <translation>копать, рыть</translation>
+    <example>
+      <text>to dig a hole / a grave / a trench</text>
+      <translation>копать яму / могилу / траншею</translation>
+    </example>
+  </word>
+  <word id="dive">
+    <form1 id="dive" sound="dive.wav">daɪv</form1>
+    <form2 id="dove" sound="dive_2.wav">dəuv</form2>
+    <form3 id="dove" sound="dive_2.wav">dəuv</form3>
+    <translation>нырять, бросаться в воду <g>=dive in</g></translation>
+    <example>
+      <text>to dive into a river</text>
+      <translation>нырнуть в реку</translation>
+    </example>
+    <example>
+      <text>He dove in and saved her life.</text>
+      <translation>Он бросился в воду и спас ей жизнь.</translation>
+    </example>
+  </word>
+  <word id="do">
+    <form1 id="do" sound="do.wav">duː</form1>
+    <form2 id="did" sound="do_2.wav">dɪd</form2>
+    <form3 id="done" sound="do_2.wav">dʌn</form3>
+    <translation>делать, выполнять</translation>
+    <translation>осуществлять, исполнять</translation>
+    <example>
+      <text>to do one's lessons</text>
+      <translation>готовить уроки</translation>
+    </example>
+    <example>
+      <text>Have you done what I told you?</text>
+      <translation>Ты сделал то, что я тебе сказал?</translation>
+    </example>
+  </word>
+  <word id="draw">
+    <form1 id="draw" sound="draw.wav">drɔː</form1>
+    <form2 id="drew" sound="draw_2.wav">druː</form2>
+    <form3 id="drawn" sound="draw_3.wav">drɔːn</form3>
+    <translation>рисовать</translation>
+    <translation>чертить</translation>
+    <example>
+      <text>to draw a horse</text>
+      <translation>рисовать лошадь</translation>
+    </example>
+  </word>
+  <word id="dream">
+    <form1 id="dream" sound="dream.wav">driːm</form1>
+    <form2 id="dreamt" sound="dream_2.wav">dremt</form2>
+    <form3 id="dreamt" sound="dream_3.wav">dremt</form3>
+    <translation>видеть сон о <i>(чём-л.)</i></translation>
+    <translation>мечтать, грезить о</translation>
+    <example>
+      <text>I dreamed about / of my old home last night.</text>
+      <translation>Вчера мне снился мой старый дом.</translation>
+    </example>
+    <example>
+      <text>to dream of a world at peace</text>
+      <translation>мечтать о том, чтобы на земле воцарился мир</translation>
+    </example>
+  </word>
+  <word id="drink">
+    <form1 id="drink" sound="drink.wav">drɪŋk</form1>
+    <form2 id="drank" sound="drink_2.wav">dræŋk</form2>
+    <form3 id="drunk" sound="drink_3.wav">drʌŋk</form3>
+    <translation>пить</translation>
+    <example>
+      <text>I always drink tea from a glass.</text>
+      <translation>Я всегда пью чай из стакана.</translation>
+    </example>
+  </word>
+  <word id="drive">
+    <form1 id="drive" sound="drive.wav">draɪv</form1>
+    <form2 id="drove" sound="drive_2.wav">drəuv</form2>
+    <form3 id="driven" sound="drive_3.wav">'drɪv(ə)n</form3>
+    <translation>водить, везти, управлять <i>(автомобилем, поездом и т. п.)</i></translation>
+    <translation>ездить</translation>
+    <translation>ехать <i>(на автомобиле)</i></translation>
+    <example>
+      <text>Shall we drive or go by train?</text>
+      <translation>Мы поедем на машине или на поезде?</translation>
+    </example>
+    <example>
+      <text>She drove me to the station.</text>
+      <translation>Она подвезла меня до станции.</translation>
+    </example>
+  </word>
+  <word id="dwell">
+    <form1 id="dwell" sound="dwell.wav">dwel</form1>
+    <form2 id="dwelt" sound="dwell_2.wav">dwelt</form2>
+    <form3 id="dwelt" sound="dwell_2.wav">dwelt</form3>
+    <translation>жить, обитать</translation>
+    <translation>находиться, пребывать</translation>
+  </word>
+  <word id="eat">
+    <form1 id="eat" sound="eat.wav">iːt</form1>
+    <form2 id="ate" sound="eat_2.wav">eɪt</form2>
+    <form3 id="eaten" sound="eat_3.wav">'iːt(ə)n</form3>
+    <translation>есть</translation>
+    <translation>поглощать, поедать</translation>
+    <example>
+      <text>to eat crisp</text>
+      <translation>хрустеть, есть с хрустом</translation>
+    </example>
+  </word>
+  <word id="fall">
+    <form1 id="fall" sound="fall.wav">fɔːl</form1>
+    <form2 id="fell" sound="fall_2.wav">fel</form2>
+    <form3 id="fallen" sound="fall_3.wav">'fɔːlən</form3>
+    <translation>падать <i>(с высоты)</i></translation>
+    <example>
+      <text>to fall off a table</text>
+      <translation>упасть со стола</translation>
+    </example>
+  </word>
+  <word id="feed">
+    <form1 id="feed" sound="feed.wav">fiːd</form1>
+    <form2 id="fed" sound="feed_2.wav">fed</form2>
+    <form3 id="fed" sound="feed_2.wav">fed</form3>
+    <translation>кормить</translation>
+    <example>
+      <text>We brought along pieces of old bread and fed the birds.</text>
+      <translation>Мы принесли засохший хлеб и покормили птиц.</translation>
+    </example>
+  </word>
+  <word id="feel">
+    <form1 id="feel" sound="feel.wav">fiːl</form1>
+    <form2 id="felt" sound="feel_2.wav">felt</form2>
+    <form3 id="felt" sound="feel_2.wav">felt</form3>
+    <translation>чувствовать, ощущать</translation>
+    <translation>ощупывать, осязать, трогать, прикасаться</translation>
+    <example>
+      <text>feel the pulse of smb.</text>
+      <translation>щупать чей-л. пульс</translation>
+    </example>
+  </word>
+  <word id="fight">
+    <form1 id="fight" sound="fight.wav">faɪt</form1>
+    <form2 id="fought" sound="fight_2.wav">fɔːt</form2>
+    <form3 id="fought" sound="fight_2.wav">fɔːt</form3>
+    <translation>драться</translation>
+    <translation>сражаться</translation>
+    <translation>воевать</translation>
+    <example>
+      <text>to fight clean</text>
+      <translation>честно сражаться</translation>
+    </example>
+  </word>
+  <word id="find">
+    <form1 id="find" sound="find.wav">faɪnd</form1>
+    <form2 id="found" sound="find_2.wav">faund</form2>
+    <form3 id="found" sound="find_2.wav">faund</form3>
+    <translation>находить, встречать, обнаруживать</translation>
+    <translation>заставать</translation>
+    <example>
+      <text>They might find traces of European sojourn on the island.</text>
+      <translation>На острове можно найти следы присутствия европейцев.</translation>
+    </example>
+  </word>
+  <word id="flee">
+    <form1 id="flee" sound="flee.wav">fliː</form1>
+    <form2 id="fled" sound="flee_2.wav">fled</form2>
+    <form3 id="fled" sound="flee_2.wav">fled</form3>
+    <translation>убегать, спасаться бегством</translation>
+    <example>
+      <text>All the animals fled from the fire.</text>
+      <translation>Все животные спасались бегством от огня.</translation>
+    </example>
+  </word>
+  <word id="fling">
+    <form1 id="fling" sound="fling.wav">flɪŋ</form1>
+    <form2 id="flung" sound="fling_2.wav">flʌŋ</form2>
+    <form3 id="flung" sound="fling_2.wav">flʌŋ</form3>
+    <translation>бросать, кидать</translation>
+    <translation>бросаться, кидаться, ринуться</translation>
+    <example>
+      <text>to fling out of the room</text>
+      <translation>выскочить из комнаты</translation>
+    </example>
+  </word>
+  <word id="fly">
+    <form1 id="fly" sound="fly.wav">flaɪ</form1>
+    <form2 id="flew" sound="fly_2.wav">fluː</form2>
+    <form3 id="flown" sound="fly_3.wav">fləun</form3>
+    <translation>летать</translation>
+    <example>
+      <text>to fly into / out of Chicago</text>
+      <translation>прилетать в / вылететь из Чикаго</translation>
+    </example>
+  </word>
+  <word id="forbid">
+    <form1 id="forbid" sound="forbid.wav">fə'bɪd</form1>
+    <form2 id="forbade" sound="forbid_2.wav">fə'beɪd</form2>
+    <form3 id="forbidden" sound="forbid_3.wav">fə'bɪd(ə)n</form3>
+    <translation>запрещать, не позволять</translation>
+    <translation>препятствовать</translation>
+    <example>
+      <text>to forbid smb. the country</text>
+      <translation>запретить кому-л. въезд в страну</translation>
+    </example>
+  </word>
+  <word id="forecast">
+    <form1 id="forecast" sound="forecast.wav">'fɔːkɑːst</form1>
+    <form2 id="forecast" sound="forecast.wav">'fɔːkɑːst</form2>
+    <form3 id="forecast" sound="forecast.wav">'fɔːkɑːst</form3>
+    <translation>предвидеть, предвосхищать, предсказывать</translation>
+    <example>
+      <text>She forecast that an earthquake would occur.</text>
+      <translation>Она предсказала, что произойдёт землетрясение.</translation>
+    </example>
+  </word>
+  <word id="foresee">
+    <form1 id="foresee" sound="foresee.wav">fɔː'siː</form1>
+    <form2 id="foresaw" sound="foresee_2.wav">fɔː'sɔː</form2>
+    <form3 id="foreseen" sound="foresee_3.wav">fɔː'siːn</form3>
+    <translation>предвидеть, предвосхищать, предсказывать</translation>
+    <example>
+      <text>Nobody could foresee his running away.</text>
+      <translation>Никто не мог предположить, что он убежит.</translation>
+    </example>
+  </word>
+  <word id="forget">
+    <form1 id="forget" sound="forget.wav">fə'get</form1>
+    <form2 id="forgot" sound="forget_2.wav">fə'gɔt</form2>
+    <form3 id="forgotten" sound="forget_3.wav">fə'gɔt(ə)n</form3>
+    <!--translation>(forget about) забывать о (ком-л., чём-л.)</translation-->
+    <translation>забывать о <i>(ком-л., чём-л.)</i></translation>
+    <example>
+      <text>to forget completely / utterly</text>
+      <translation>совсем забыть</translation>
+    </example>
+    <example>
+      <text>She forgot about the concert.</text>
+      <translation>Она забыла о концерте.</translation>
+    </example>
+  </word>
+  <word id="forgive">
+    <form1 id="forgive" sound="forgive.wav">fə'gɪv</form1>
+    <form2 id="forgave" sound="forgive_2.wav">fə'geɪv</form2>
+    <form3 id="forgiven" sound="forgive_3.wav">fə'gɪv(ə)n</form3>
+    <translation>прощать</translation>
+    <example>
+      <text>It is difficult to forgive anyone for cruelty.</text>
+      <translation>Трудно простить жестокость.</translation>
+    </example>
+  </word>
+  <word id="freeze">
+    <form1 id="freeze" sound="freeze.wav">friːz</form1>
+    <form2 id="froze" sound="freeze_2.wav">frəuz</form2>
+    <form3 id="frozen" sound="freeze_3.wav">'frəuz(ə)n</form3>
+    <translation>замерзать, обледеневать, покрываться льдом <g>= freeze up</g></translation>
+    <example>
+      <text>to freeze to death</text>
+      <translation>замёрзнуть до смерти</translation>
+    </example>
+  </word>
+  <word id="get">
+    <form1 id="get" sound="get.wav">get</form1>
+    <form2 id="got" sound="get_2.wav">gɔt</form2>
+    <form3 id="gotten" sound="get_3.wav">'gɔtn</form3>
+    <translation>получить (в собственность), стать обладателем</translation>
+    <example>
+      <text>He got a bicycle for his birthday.</text>
+      <translation>На день рождения ему подарили велосипед.</translation>
+    </example>
+  </word>
+  <word id="give">
+    <form1 id="give" sound="give.wav">gɪv</form1>
+    <form2 id="gave" sound="give_2.wav">geɪv</form2>
+    <form3 id="given" sound="give_3.wav">gɪv(ə)n</form3>
+    <translation>дать, подать, передать</translation>
+    <example>
+      <text>Would you give me that magazine on the table?</text>
+      <translation>Передайте мне, пожалуйста, тот журнал на столе.</translation>
+    </example>
+  </word>
+  <word id="go">
+    <form1 id="go" sound="go.wav">gəu</form1>
+    <form2 id="went" sound="go_2.wav">went</form2>
+    <form3 id="gone" sound="go_3.wav">gɔn</form3>
+    <translation>идти, ехать, двигаться</translation>
+    <example>
+      <text>to go home</text>
+      <translation>идти домой</translation>
+    </example>
+  </word>
+  <word id="grind">
+    <form1 id="grind" sound="grind.wav">graɪnd</form1>
+    <form2 id="ground" sound="grind_2.wav">graund</form2>
+    <form3 id="ground" sound="grind_2.wav">graund</form3>
+    <translation>молоть, перемалывать</translation>
+    <translation>растирать <i>(в порошок)</i></translation>
+    <translation>толочь</translation>
+    <translation>размельчать</translation>
+    <example>
+      <text>Grind a pound of coffee for me.</text>
+      <translation>Намели мне фунт кофе.</translation>
+    </example>
+  </word>
+  <word id="grow">
+    <form1 id="grow" sound="grow.wav">grəu</form1>
+    <form2 id="grew" sound="grow_2.wav">gruː</form2>
+    <form3 id="grown" sound="grow_3.wav">grəun</form3>
+    <translation>произрастать, расти</translation>
+    <example>
+      <text>Rice grows in water.</text>
+      <translation>Рис растёт в воде.</translation>
+    </example>
+  </word>
+  <word id="hang">
+    <form1 id="hang" sound="hang.wav">hæŋ</form1>
+    <form2 id="hung" sound="hang_2.wav">hʌŋ</form2>
+    <form3 id="hung" sound="hang_2.wav">hʌŋ</form3>
+    <translation>вешать, подвешивать</translation>
+    <translation>вешать, развешивать, подвешивать</translation>
+    <example>
+      <text>She was hanging wet clothes outside.</text>
+      <translation>Она развешивала мокрое бельё на улице.</translation>
+    </example>
+  </word>
+  <word id="have">
+    <form1 id="have" sound="have.wav">hæv</form1>
+    <form2 id="had" sound="have_2.wav">hæd</form2>
+    <form3 id="had" sound="have_2.wav">hæd</form3>
+    <translation>иметь, обладать</translation>
+    <translation>включать, содержать</translation>
+    <example>
+      <text>I have everything I want.</text>
+      <translation>У меня есть всё, что я хочу.</translation>
+    </example>
+  </word>
+  <word id="hear">
+    <form1 id="hear" sound="hear.wav">hɪə</form1>
+    <form2 id="heard" sound="hear_2.wav">hɜːd</form2>
+    <form3 id="heard" sound="hear_2.wav">hɜːd</form3>
+    <translation>слышать</translation>
+    <example>
+      <text>He is dull of hearing.</text>
+      <translation>Он плохо слышит.</translation>
+    </example>
+  </word>
+  <word id="heave">
+    <form1 id="heave" sound="heave.wav">hiːv</form1>
+    <form2 id="hove" sound="heave_2.wav">həuv</form2>
+    <form3 id="hove" sound="heave_2.wav">həuv</form3>
+    <translation>поднимать</translation>
+    <translation>перемещать, снимать <gi>прям. и перен.</gi></translation>
+    <example>
+      <text>Her trembling hand she heaves to rend her hair.</text>
+      <translation>Она поднимает дрожащую руку и рвёт на себе волосы.</translation>
+    </example>
+    <example>
+      <text>The resolution heaved a load from off my heart.</text>
+      <translation>Я узнал об этом решении, и у меня словно гора с плеч свалилась.</translation>
+    </example>
+  </word>
+  <word id="hew">
+    <form1 id="hew" sound="hew.wav">hjuː</form1>
+    <form2 id="hewed" sound="hew_2.wav">hjuːd</form2>
+    <form3 id="hewn" sound="hew_3.wav">hjuːn</form3>
+    <translation>разрубать, рассекать, рубить</translation>
+    <translation>
+      <g>= hew down, = hew off</g> срубать</translation>
+    <example>
+      <text>The villagers are trying to prevent the ancient tree in the marketplace from being hewn down for safety reasons.</text>
+      <translation>Жители деревни пытаются не допустить, чтобы из соображений безопасности срубили старое дерево, растущее в центре рынка.</translation>
+    </example>
+  </word>
+  <word id="hide">
+    <form1 id="hide" sound="hide.wav">haɪd</form1>
+    <form2 id="hid" sound="hide_2.wav">hɪd</form2>
+    <form3 id="hidden" sound="hide_3.wav">'hɪd(ə)n</form3>
+    <translation>прятать, скрывать</translation>
+    <translation>
+      <g>= hide out</g> прятаться, скрываться</translation>
+    <example>
+      <text>to hide behind a legal technicality</text>
+      <translation>скрываться за юридическими тонкостями; манипулировать юридическими тонкостями</translation>
+    </example>
+  </word>
+  <word id="hit">
+    <form1 id="hit" sound="hit.wav">hɪt</form1>
+    <form2 id="hit" sound="hit.wav">hɪt</form2>
+    <form3 id="hit" sound="hit.wav">hɪt</form3>
+    <translation>ударять <i>(по чему-л.)</i></translation>
+    <translation>поражать</translation>
+    <example>
+      <text>to hit hard</text>
+      <translation>сильно ударять</translation>
+    </example>
+  </word>
+  <word id="hold">
+    <form1 id="hold" sound="hold.wav">həuld</form1>
+    <form2 id="held" sound="hold_2.wav">held</form2>
+    <form3 id="held" sound="hold_2.wav">held</form3>
+    <translation>держать</translation>
+    <translation>обнимать</translation>
+    <example>
+      <text>to hold a spoon / knife</text>
+      <translation>держать ложку, нож</translation>
+    </example>
+  </word>
+  <word id="hurt">
+    <form1 id="hurt" sound="hurt.wav">hɜːt</form1>
+    <form2 id="hurt" sound="hurt.wav">hɜːt</form2>
+    <form3 id="hurt" sound="hurt.wav">hɜːt</form3>
+    <translation>ранить, травмировать</translation>
+    <example>
+      <text>to hurt badly / seriously</text>
+      <translation>сильно ушибить</translation>
+    </example>
+  </word>
+  <word id="keep">
+    <form1 id="keep" sound="keep.wav">kiːp</form1>
+    <form2 id="kept" sound="keep_2.wav">kept</form2>
+    <form3 id="kept" sound="keep_2.wav">kept</form3>
+    <translation>хранить</translation>
+    <translation>держать, не отдавать</translation>
+    <example>
+      <text>You may keep the book for a month.</text>
+      <translation>Можете держать эту книгу месяц.</translation>
+    </example>
+  </word>
+  <word id="kneel">
+    <form1 id="kneel" sound="kneel.wav">niːl</form1>
+    <form2 id="knelt" sound="kneel_2.wav">nelt</form2>
+    <form3 id="knelt" sound="kneel_2.wav">nelt</form3>
+    <translation>преклонять колени, становиться на колени <g>= kneel down</g></translation>
+    <example>
+      <text>Christians often kneel down to say their prayers.</text>
+      <translation>Христиане часто становятся на колени, когда молятся.</translation>
+    </example>
+  </word>
+  <word id="knit">
+    <form1 id="knit" sound="knit.wav">nɪt</form1>
+    <form2 id="knit" sound="knit.wav">nɪt</form2>
+    <form3 id="knit" sound="knit.wav">nɪt</form3>
+    <translation>вязать</translation>
+    <example>
+      <text>a number of women, busily knitting</text>
+      <translation>несколько женщин, занятых вязанием</translation>
+    </example>
+  </word>
+  <word id="know">
+    <form1 id="know" sound="know.wav">nəu</form1>
+    <form2 id="knew" sound="know_2.wav">njuː</form2>
+    <form3 id="known" sound="know_3.wav">nəun</form3>
+    <translation>знать, иметь представление <i>(о чём-л.)</i></translation>
+    <translation>знать, разбираться <i>(в чём-л.)</i></translation>
+    <example>
+      <text>to know four languages</text>
+      <translation>знать четыре языка</translation>
+    </example>
+  </word>
+  <word id="lay">
+    <form1 id="lay" sound="lay.wav">leɪ</form1>
+    <form2 id="laid" sound="lay_2.wav">leɪd</form2>
+    <form3 id="laid" sound="lay_2.wav">leɪd</form3>
+    <translation>класть, положить</translation>
+    <example>
+      <text>to lay up for repairs</text>
+      <translation>поставить на ремонт</translation>
+    </example>
+    <example>
+      <text>They laid the boards flat.</text>
+      <translation>Они положили доски на пол.</translation>
+    </example>
+  </word>
+  <word id="lead">
+    <form1 id="lead" sound="lead.wav">liːd</form1>
+    <form2 id="led" sound="lead_2.wav">led</form2>
+    <form3 id="led" sound="lead_2.wav">led</form3>
+    <translation>вести, сопровождать</translation>
+    <translation>вести <i>(за руку, на поводке)</i></translation>
+    <example>
+      <text>to lead a child by the hand</text>
+      <translation>вести ребёнка за руку</translation>
+    </example>
+    <example>
+      <text>They led us down to the river.</text>
+      <translation>Они вывели нас к реке.</translation>
+    </example>
+  </word>
+  <word id="lean">
+    <form1 id="lean" sound="lean.wav">liːn</form1>
+    <form2 id="leant" sound="lean_2.wav">lent</form2>
+    <form3 id="leant" sound="lean_2.wav">lent</form3>
+    <translation>наклонять, нагибать</translation>
+    <translation>наклоняться, склоняться <gi>прям. и перен.</gi></translation>
+    <translation>прислонять(ся), опирать(ся)</translation>
+    <example>
+      <text>She leant the bush against the wall.</text>
+      <translation>Она пригнула куст к стене.</translation>
+    </example>
+    <example>
+      <text>The fence is leaning to the right.</text>
+      <translation>Забор наклонился в правую сторону.</translation>
+    </example>
+    <example>
+      <text>I rather lean to your opinion.</text>
+      <translation>Я склоняюсь к вашему мнению.</translation>
+    </example>
+  </word>
+  <word id="leap">
+    <form1 id="leap" sound="leap.wav">liːp</form1>
+    <form2 id="leapt" sound="leap_2.wav">lept</form2>
+    <form3 id="leapt" sound="leap_2.wav">lept</form3>
+    <translation>прыгать, скакать</translation>
+    <translation>перепрыгивать, перескакивать</translation>
+    <example>
+      <text>to leap over a fence</text>
+      <translation>прыгать через забор</translation>
+    </example>
+  </word>
+  <word id="learn">
+    <form1 id="learn" sound="learn.wav">lɜːn</form1>
+    <form2 id="learnt" sound="learn_2.wav">lɜːnt</form2>
+    <form3 id="learnt" sound="learn_2.wav">lɜːnt</form3>
+    <translation>учиться; учить <i>(что-л.)</i></translation>
+    <translation>научиться <i>(чему-л.)</i></translation>
+    <translation>узнавать</translation>
+    <example>
+      <text>to learn French</text>
+      <translation>учить французский язык</translation>
+    </example>
+    <example>
+      <text>She learned everything from me.</text>
+      <translation>Она всему училась у меня.</translation>
+    </example>
+    <example>
+      <text>We have learned that she has found a job.</text>
+      <translation>Мы узнали, что она нашла работу.</translation>
+    </example>
+  </word>
+  <word id="leave">
+    <form1 id="leave" sound="leave.wav">liːv</form1>
+    <form2 id="left" sound="leave_2.wav">left</form2>
+    <form3 id="left" sound="leave_2.wav">left</form3>
+    <translation>покидать</translation>
+    <example>
+      <text>She left the room without explanation.</text>
+      <translation>Она покинула комнату без объяснений.</translation>
+    </example>
+  </word>
+  <word id="lend">
+    <form1 id="lend" sound="lend.wav">lend</form1>
+    <form2 id="lent" sound="lend_2.wav">lent</form2>
+    <form3 id="lent" sound="lend_2.wav">lent</form3>
+    <translation>одалживать, давать взаймы</translation>
+    <example>
+      <text>She lent the money to him.</text>
+      <translation>Она дала ему денег взаймы.</translation>
+    </example>
+  </word>
+  <word id="let">
+    <form1 id="let" sound="let.wav">let</form1>
+    <form2 id="let" sound="let.wav">let</form2>
+    <form3 id="let" sound="let.wav">let</form3>
+    <translation>выпускать</translation>
+    <translation>проливать <i>(слёзы, кровь)</i></translation>
+    <example>
+      <text>to let the water from the great pond</text>
+      <translation>спустить воду из большого пруда</translation>
+    </example>
+  </word>
+  <word id="lie">
+    <form1 id="lie" sound="lie.wav">laɪ</form1>
+    <form2 id="lay" sound="lie_2.wav">leɪ</form2>
+    <form3 id="lain" sound="lie_3.wav">leɪn</form3>
+    <translation>лежать</translation>
+    <example>
+      <text>The injured man was lying motionless on his back.</text>
+      <translation>Раненый лежал на спине без движения.</translation>
+    </example>
+  </word>
+  <word id="light">
+    <form1 id="light" sound="light.wav">laɪt</form1>
+    <form2 id="lit" sound="light_2.wav">lɪt</form2>
+    <form3 id="lit" sound="light_2.wav">lɪt</form3>
+    <translation>освещать <i>(помещение)</i></translation>
+    <translation>светить <i>(кому-л.)</i></translation>
+    <translation>светиться, оживляться, озаряться<g>= light up</g></translation>
+    <example>
+      <text>Her face lit.</text>
+      <translation>Её лицо светилось (от радости).</translation>
+    </example>
+  </word>
+  <word id="lose">
+    <form1 id="lose" sound="lose.wav">luːz</form1>
+    <form2 id="lost" sound="lose_2.wav">lɔst</form2>
+    <form3 id="lost" sound="lose_2.wav">lɔst</form3>
+    <translation>не сохранять, терять <i>(что-л.)</i></translation>
+    <translation>утрачивать, лишаться <i>(чего-л. / кого-л.)</i></translation>
+    <example>
+      <text>I lost my driving licence.</text>
+      <translation>Я потерял свои водительские права.</translation>
+    </example>
+  </word>
+  <word id="make">
+    <form1 id="make" sound="make.wav">meɪk</form1>
+    <form2 id="made" sound="make_2.wav">meɪd</form2>
+    <form3 id="made" sound="make_2.wav">meɪd</form3>
+    <translation>делать, конструировать</translation>
+    <translation>создавать, изготавливать</translation>
+    <example>
+      <text>houses made of stone</text>
+      <translation>дома из камня</translation>
+    </example>
+    <example>
+      <text>The beaver makes its hole, the bee makes its cell.</text>
+      <translation>Бобёр строит себе нору, пчела - соты.</translation>
+    </example>
+  </word>
+  <word id="mean">
+    <form1 id="mean" sound="mean.wav">miːn</form1>
+    <form2 id="meant" sound="mean_2.wav">ment</form2>
+    <form3 id="meant" sound="mean_2.wav">ment</form3>
+    <translation>намереваться, иметь в виду</translation>
+    <translation>значить, означать</translation>
+    <example>
+      <text>to mean well</text>
+      <translation>иметь добрые намерения</translation>
+    </example>
+  </word>
+  <word id="meet">
+    <form1 id="meet" sound="meet.wav">miːt</form1>
+    <form2 id="met" sound="meet_2.wav">met</form2>
+    <form3 id="met" sound="meet_2.wav">met</form3>
+    <translation>встречаться, видеться</translation>
+    <translation>
+      <g>= meet up</g> встречать</translation>
+    <example>
+      <text>I met with an old friend in the town today.</text>
+      <translation>Я сегодня в городе встретил старого друга.</translation>
+    </example>
+  </word>
+  <word id="mislead">
+    <form1 id="mislead" sound="mislead.wav">mɪs'liːd</form1>
+    <form2 id="misled" sound="mislead_2.wav">mɪs'led</form2>
+    <form3 id="misled" sound="mislead_2.wav">mɪs'led</form3>
+    <translation>вводить в заблуждение</translation>
+    <translation>сбивать с пути</translation>
+    <example>
+      <text>The lights have rather misled me.</text>
+      <translation>Огни только сбили меня.</translation>
+    </example>
+  </word>
+  <word id="mistake">
+    <form1 id="mistake" sound="mistake.wav">mɪ'steɪk</form1>
+    <form2 id="mistook" sound="mistake_2.wav">mɪ'stuk</form2>
+    <form3 id="mistaken" sound="mistake_3.wav">mɪ'steɪk(ə)n</form3>
+    <translation>ошибаться</translation>
+    <translation>неправильно понимать</translation>
+    <translation>заблуждаться</translation>
+    <example>
+      <text>You are mistaken.</text>
+      <translation>Вы ошибаетесь.</translation>
+    </example>
+  </word>
+  <word id="misunderstand">
+    <form1 id="misunderstand" sound="misunderstand.wav">ˌmɪsʌndə'stænd</form1>
+    <form2 id="misunderstood" sound="misunderstand_2.wav">ˌmɪsʌndə'stud</form2>
+    <form3 id="misunderstood" sound="misunderstand_2.wav">ˌmɪsʌndə'stud</form3>
+    <translation>неправильно понять</translation>
+  </word>
+  <word id="mow">
+    <form1 id="mow" sound="mow.wav">məu</form1>
+    <form2 id="mowed" sound="mow_2.wav">məʊd</form2>
+    <form3 id="mown" sound="mow_3.wav">məun</form3>
+    <translation>косить</translation>
+    <translation>жать</translation>
+    <example>
+      <text>We shall have to mow down the long grass in the big field.</text>
+      <translation>Нам придётся скосить высокую траву на большом поле.</translation>
+    </example>
+  </word>
+  <word id="outbid">
+    <form1 id="outbid" sound="outbid.wav">ˌaut'bɪd</form1>
+    <form2 id="outbid" sound="outbid.wav">ˌaut'bɪd</form2>
+    <form3 id="outbid" sound="outbid.wav">ˌaut'bɪd</form3>
+    <translation>превзойти, затмить</translation>
+    <translation>перебивать цену, предлагать более высокую цену</translation>
+    <example>
+      <text>You have been outbid when another bidder places a bid higher than your maximum bid.</text>
+      <translation>Ваша цена была перебита, когда другой участник торгов предложил цену, большую, чем ваша максимальная цена.</translation>
+    </example>
+  </word>
+  <word id="outdo">
+    <form1 id="outdo" sound="outdo.wav">ˌaut'duː</form1>
+    <form2 id="outdid" sound="outdo_2.wav">ˌaut'dɪd</form2>
+    <form3 id="outdone" sound="outdo_3.wav">ˌaut'dʌn</form3>
+    <translation>превзойти</translation>
+    <translation>поражать, разбивать, побороть, побеждать</translation>
+  </word>
+  <word id="overcome">
+    <form1 id="overcome" sound="overcome.wav">ˌəuvə'kʌm</form1>
+    <form2 id="overcame" sound="overcome_2.wav">ˌəuvə'keɪm</form2>
+    <form3 id="overcome" sound="overcome.wav">ˌəuvə'kʌm</form3>
+    <translation>побороть, победить</translation>
+    <translation>превозмочь; преодолеть; подавить <i>(какое-л. чувство)</i></translation>
+    <example>
+      <text>We shall overcome.</text>
+      <translation>Мы победим.</translation>
+    </example>
+    <example>
+      <text>She managed to overcome her shyness.</text>
+      <translation>Ей удалось преодолеть свою застенчивость.</translation>
+    </example>
+  </word>
+  <word id="overdo">
+    <form1 id="overdo" sound="overdo.wav">ˌəuvə'duː</form1>
+    <form2 id="overdid" sound="overdo_2.wav">ˌəuvə'dɪd</form2>
+    <form3 id="overdone" sound="overdo_3.wav">ˌəuvə'dʌn</form3>
+    <translation>перестараться, переусердствовать</translation>
+    <translation>переборщить</translation>
+    <translation>преувеличивать, утрировать</translation>
+    <example>
+      <text>Don't overdo the salt in the food.</text>
+      <translation>Не пересоли еду.</translation>
+    </example>
+    <example>
+      <text>Rumours have been overdone.</text>
+      <translation>Слухи были преувеличены.</translation>
+    </example>
+  </word>
+  <word id="overhang">
+    <form1 id="overhang" sound="overhang.wav">ˌəuvə'hæŋ</form1>
+    <form2 id="overhung" sound="overhang_2.wav">ˌəuvə'hʌŋ</form2>
+    <form3 id="overhung" sound="overhang_2.wav">ˌəuvə'hʌŋ</form3>
+    <translation>выступать <i>(над чем-л.)</i>, нависать</translation>
+    <translation>выдаваться, свешиваться</translation>
+    <translation>нависать, угрожать, грозить <i>(чему-л. / кому-л.)</i></translation>
+  </word>
+  <word id="overhear">
+    <form1 id="overhear" sound="overhear.wav">ˌəuvə'hɪə</form1>
+    <form2 id="overheard" sound="overhear_2.wav">ˌəuvə'hɜːd</form2>
+    <form3 id="overheard" sound="overhear_3.wav">ˌəuvə'hɜːd</form3>
+    <translation>подслушивать</translation>
+    <translation>нечаянно услышать</translation>
+  </word>
+  <word id="override">
+    <form1 id="override" sound="override.wav">ˌəuvə'raɪd</form1>
+    <form2 id="overrode" sound="override_2.wav">ˌəuvə'rəud</form2>
+    <form3 id="overridden" sound="override_3.wav">ˌəuvə'rɪd(ə)n</form3>
+    <translation>отменять, аннулировать <i>(решение, постановление)</i></translation>
+    <example>
+      <text>to override a veto</text>
+      <translation>отменять вето</translation>
+    </example>
+  </word>
+  <word id="overrun">
+    <form1 id="overrun" sound="overrun.wav">ˌəuvə'rʌn</form1>
+    <form2 id="overran" sound="overrun_2.wav">ˌəuvə'ræn</form2>
+    <form3 id="overrun" sound="overrun.wav">ˌəuvə'rʌn</form3>
+    <translation>переходить пределы, границы <i>(чего-л.)</i></translation>
+    <example>
+      <text>to overrun a schedule</text>
+      <translation>выбиться из графика</translation>
+    </example>
+    <example>
+      <text>The talks overran their allotted time.</text>
+      <translation>Переговоры продлились дольше, чем это было предусмотрено регламентом.</translation>
+    </example>
+  </word>
+  <word id="oversee">
+    <form1 id="oversee" sound="oversee.wav">ˌəuvə'siː</form1>
+    <form2 id="oversaw" sound="oversee_2.wav">ˌəuvə'sɔː</form2>
+    <form3 id="overseen" sound="oversee_3.wav">ˌəuvə'siːn</form3>
+    <translation>наблюдать, надзирать</translation>
+    <translation>следить, смотреть <i>(за чем-л.)</i></translation>
+    <translation>увидеть случайно, подсмотреть</translation>
+    <example>
+      <text>to oversee all the company's advertising</text>
+      <translation>следить за всей рекламой компании</translation>
+    </example>
+  </word>
+  <word id="overtake">
+    <form1 id="overtake" sound="overtake.wav">ˌəuvə'teɪk</form1>
+    <form2 id="overtook" sound="overtake_2.wav">ˌəuvə'tuk</form2>
+    <form3 id="overtaken" sound="overtake_3.wav">ˌəuvə'teɪk(ə)n</form3>
+    <translation>догнать, наверстать</translation>
+    <translation>обогнать</translation>
+    <example>
+      <text>Demand may overtake the supply.</text>
+      <translation>Спрос может обогнать предложение.</translation>
+    </example>
+  </word>
+  <word id="overthrow">
+    <form1 id="overthrow" sound="overthrow.wav">ˌəuvə'θrəu</form1>
+    <form2 id="overthrew" sound="overthrow_2.wav">ˌəuvə'θruː</form2>
+    <form3 id="overthrown" sound="overthrow_3.wav">ˌəuvə'θrəun</form3>
+    <translation>свергать, ниспровергать</translation>
+    <translation>бросать слишком далеко, перебрасывать</translation>
+    <example>
+      <text>Standards of behaviour are overthrown.</text>
+      <translation>Стандарты поведения низвергнуты.</translation>
+    </example>
+  </word>
+  <word id="pay">
+    <form1 id="pay" sound="pay.wav">peɪ</form1>
+    <form2 id="paid" sound="pay_2.wav">peɪd</form2>
+    <form3 id="paid" sound="pay_2.wav">peɪd</form3>
+    <translation>платить</translation>
+    <example>
+      <text>to pay smb. for smth.</text>
+      <translation>платить кому-л. за что-л.</translation>
+    </example>
+  </word>
+  <word id="prove">
+    <form1 id="prove" sound="prove.wav">pruːv</form1>
+    <form2 id="proved" sound="prove_2.wav">pruːvd</form2>
+    <form3 id="proven" sound="prove_3.wav">'pruːv(ə)n</form3>
+    <translation>доказывать</translation>
+    <example>
+      <text>You will have to prove to the police that you were at home that night.</text>
+      <translation>Тебе придётся доказать полиции, что той ночью ты был дома.</translation>
+    </example>
+  </word>
+  <word id="put">
+    <form1 id="put" sound="put.wav">put</form1>
+    <form2 id="put" sound="put.wav">put</form2>
+    <form3 id="put" sound="put.wav">put</form3>
+    <translation>класть, ставить</translation>
+    <example>
+      <text>Put the book on the table!</text>
+      <translation>Положите книгу на стол.</translation>
+    </example>
+  </word>
+  <word id="read">
+    <form1 id="read" sound="read.wav">riːd</form1>
+    <form2 id="read" sound="read_2.wav">red</form2>
+    <form3 id="read" sound="read_2.wav">red</form3>
+    <translation>читать, прочитать</translation>
+    <example>
+      <text>Can you read French?</text>
+      <translation>Ты умеешь читать по-французски?</translation>
+    </example>
+  </word>
+  <word id="rebuild">
+    <form1 id="rebuild" sound="rebuild.wav">ˌriː'bɪld</form1>
+    <form2 id="rebuilt" sound="rebuild_2.wav">ˌriː'bɪlt</form2>
+    <form3 id="rebuilt" sound="rebuild_2.wav">ˌriː'bɪlt</form3>
+    <translation>отстроить заново, восстановить, реконструировать</translation>
+    <translation>модифицировать</translation>
+    <example>
+      <text>The first and foremost task of the government will be to restore the economy and rebuild the financial and other institutions destroyed by nine years of autocratic regime.</text>
+      <translation>Первой и самой насущной задачей правительства будет восстановление экономики и перестройка финансовых и других институтов, уничтоженных за девять лет автократического правления.</translation>
+    </example>
+  </word>
+  <word id="redo">
+    <form1 id="redo" sound="redo.wav">ˌriː'duː</form1>
+    <form2 id="redid" sound="redo_2.wav">ˌriː'dɪd</form2>
+    <form3 id="redone" sound="redo_3.wav">ˌriː'dʌn</form3>
+    <translation>выполнять повторно</translation>
+    <translation>делать вновь, переделывать</translation>
+    <example>
+      <text>We've had the kitchen redone.</text>
+      <translation>На кухне мы сделали ремонт.</translation>
+    </example>
+  </word>
+  <word id="relay">
+    <form1 id="relay" sound="relay.wav">ˌriː'leɪ</form1>
+    <form2 id="relaid" sound="relay_2.wav">ˌriː'leɪd</form2>
+    <form3 id="relaid" sound="relay_2.wav">ˌriː'leɪd</form3>
+    <translation>перекладывать</translation>
+    <example>
+      <text>to relay track</text>
+      <translation>перекладывать железнодорожный путь</translation>
+    </example>
+  </word>
+  <word id="rend">
+    <form1 id="rend" sound="rend.wav">rend</form1>
+    <form2 id="rent" sound="rend_2.wav">rent</form2>
+    <form3 id="rent" sound="rend_2.wav">rent</form3>
+    <translation>отрывать</translation>
+    <translation>насильно разлучать</translation>
+    <translation>раздирать, разрывать, рвать <i>(на куски)</i></translation>
+    <example>
+      <text>The soldiers had orders to rend the children from their mothers' arms by force.</text>
+      <translation>Солдаты получили приказ отбирать детей у матерей силой.</translation>
+    </example>
+    <example>
+      <text>The sudden high wind rent the sail to pieces.</text>
+      <translation>Внезапный порыв ветра порвал парус в клочья.</translation>
+    </example>
+  </word>
+  <word id="repay">
+    <form1 id="repay" sound="repay.wav">rɪ'peɪ</form1>
+    <form2 id="repaid" sound="repay_2.wav">rɪ'peɪd</form2>
+    <form3 id="repaid" sound="repay_2.wav">rɪ'peɪd</form3>
+    <translation>отдавать, возвращать <i>(долг и т. п.)</i></translation>
+    <translation>погашать <i>(заём и т. п.)</i></translation>
+    <example>
+      <text>to repay a visit</text>
+      <translation>наносить ответный визит, отдавать визит</translation>
+    </example>
+    <example>
+      <text>She repaid me the money. / She repaid the money to me.</text>
+      <translation>Она вернула мне деньги.</translation>
+    </example>
+  </word>
+  <word id="rewrite">
+    <form1 id="rewrite" sound="rewrite.wav">ˌriː'raɪt</form1>
+    <form2 id="rewrote" sound="rewrite_2.wav">ˌriː'rəut</form2>
+    <form3 id="rewritten" sound="rewrite_3.wav">ˌriː'rɪt(ə)n</form3>
+    <translation>переписывать <i>(особенно в другой форме или в улучшенном варианте)</i></translation>
+  </word>
+  <word id="rid">
+    <form1 id="rid" sound="rid.wav">rɪd</form1>
+    <form2 id="rid" sound="rid.wav">rɪd</form2>
+    <form3 id="rid" sound="rid.wav">rɪd</form3>
+    <translation>(rid of) освобождать, избавлять <i>(от чего-л. / кого-л.)</i></translation>
+    <example>
+      <text>I doubt if London will ever be rid of its terrible housing shortage.</text>
+      <translation>Я сомневаюсь, что в Лондоне когда-нибудь решат проблему нехватки жилья.</translation>
+    </example>
+  </word>
+  <word id="ride">
+    <form1 id="ride" sound="ride.wav">raɪd</form1>
+    <form2 id="rode" sound="ride_2.wav">rəud</form2>
+    <form3 id="ridden" sound="ride_3.wav">'rɪd(ə)n</form3>
+    <translation>ехать <i>(в автобусе, в трамвае, на велосипеде, в поезде)</i></translation>
+    <translation>ездить верхом</translation>
+    <translation>кататься</translation>
+    <example>
+      <text>to ride a race</text>
+      <translation>участвовать в скачках</translation>
+    </example>
+    <example>
+      <text>The children loved to ride on Father's back.</text>
+      <translation>Дети обожали кататься на папе верхом.</translation>
+    </example>
+  </word>
+  <word id="ring">
+    <form1 id="ring" sound="ring.wav">rɪŋ</form1>
+    <form2 id="rang" sound="ring_2.wav">ræŋ</form2>
+    <form3 id="rung" sound="ring_3.wav">rʌŋ</form3>
+    <translation>звенеть, звучать</translation>
+    <translation>звонить <i>(в колокола)</i></translation>
+    <example>
+      <text>to ring true</text>
+      <translation>звучать искренне</translation>
+    </example>
+  </word>
+  <word id="rise">
+    <form1 id="rise" sound="rise.wav">raɪz</form1>
+    <form2 id="rose" sound="rise_2.wav">rəuz</form2>
+    <form3 id="risen" sound="rise_3.wav">'rɪz(ə)n</form3>
+    <translation>всходить, восходить, вставать</translation>
+    <translation>подниматься, взбираться</translation>
+    <example>
+      <text>Smoke could be seen rising from the chimney.</text>
+      <translation>Было видно, как из камина поднимается дым.</translation>
+    </example>
+  </word>
+  <word id="run">
+    <form1 id="run" sound="run.wav">rʌn</form1>
+    <form2 id="ran" sound="run_2.wav">ræn</form2>
+    <form3 id="run" sound="run.wav">rʌn</form3>
+    <translation>бежать, бегать</translation>
+    <example>
+      <text>to run home</text>
+      <translation>бежать домой</translation>
+    </example>
+  </word>
+  <word id="saw">
+    <form1 id="saw" sound="saw.wav">sɔː</form1>
+    <form2 id="sawed" sound="saw_2.wav">sɔːd</form2>
+    <form3 id="sawn" sound="saw_3.wav">sɔːn</form3>
+    <translation>пилить, распиливать</translation>
+    <example>
+      <text>We shall have to saw the old tree down.</text>
+      <translation>Нам придётся спилить старое дерево.</translation>
+    </example>
+  </word>
+  <word id="say">
+    <form1 id="say" sound="say.wav">seɪ</form1>
+    <form2 id="said" sound="say_2.wav">sed</form2>
+    <form3 id="said" sound="say_2.wav">sed</form3>
+    <translation>говорить</translation>
+    <translation>сказать, произносить</translation>
+    <translation>выражать словами</translation>
+    <example>
+      <text>they say</text>
+      <translation>говорят (что...)</translation>
+    </example>
+  </word>
+  <word id="see">
+    <form1 id="see" sound="see.wav">siː</form1>
+    <form2 id="saw" sound="see_2.wav">sɔː</form2>
+    <form3 id="seen" sound="see_3.wav">siːn</form3>
+    <translation>видеть</translation>
+    <translation>смотреть, осматривать</translation>
+    <example>
+      <text>to see nothing</text>
+      <translation>ничего не видеть</translation>
+    </example>
+  </word>
+  <word id="seek">
+    <form1 id="seek" sound="seek.wav">siːk</form1>
+    <form2 id="sought" sound="seek_2.wav">sɔːt</form2>
+    <form3 id="sought" sound="seek_2.wav">sɔːt</form3>
+    <translation>искать, разыскивать <i>(seek for / after)</i></translation>
+    <translation>пытаться найти</translation>
+    <example>
+      <text>For over 100 years, men have sought for gold in these hills.</text>
+      <translation>В течение ста лет люди искали золото в этих горах.</translation>
+    </example>
+  </word>
+  <word id="sell">
+    <form1 id="sell" sound="sell.wav">sel</form1>
+    <form2 id="sold" sound="sell_2.wav">səuld</form2>
+    <form3 id="sold" sound="sell_2.wav">səuld</form3>
+    <translation>продавать</translation>
+    <example>
+      <text>I don't want to sell the house at a loss.</text>
+      <translation>Я не хочу продавать дом с убытком.</translation>
+    </example>
+  </word>
+  <word id="send">
+    <form1 id="send" sound="send.wav">send</form1>
+    <form2 id="sent" sound="send_2.wav">sent</form2>
+    <form3 id="sent" sound="send_2.wav">sent</form3>
+    <translation>посылать, отправлять</translation>
+    <translation>отсылать, направлять</translation>
+    <example>
+      <text>to send smb. away for smth.</text>
+      <translation>посылать кого-л. за чем-л.</translation>
+    </example>
+    <example>
+      <text>I sent her a letter (via E-mail).</text>
+      <translation>Я послала ей (по электронной почте) письмо.</translation>
+    </example>
+  </word>
+  <word id="set">
+    <form1 id="set" sound="set.wav">set</form1>
+    <form2 id="set" sound="set.wav">set</form2>
+    <form3 id="set" sound="set.wav">set</form3>
+    <translation>ставить, класть</translation>
+    <example>
+      <text>to set the ladder against the wall</text>
+      <translation>приставить лестницу к стене</translation>
+    </example>
+  </word>
+  <word id="sew">
+    <form1 id="sew" sound="sew.wav">səu</form1>
+    <form2 id="sewed" sound="sew_2.wav">səʊd</form2>
+    <form3 id="sewn" sound="sew_3.wav">səun</form3>
+    <translation>шить, пришивать</translation>
+    <example>
+      <text>to sew in a patch</text>
+      <translation>наложить заплат(к)у</translation>
+    </example>
+  </word>
+  <word id="shake">
+    <form1 id="shake" sound="shake.wav">ʃeɪk</form1>
+    <form2 id="shook" sound="shake_2.wav">ʃuk</form2>
+    <form3 id="shaken" sound="shake_3.wav">'ʃeɪk(ə)n</form3>
+    <translation>трясти</translation>
+    <translation>встряхивать</translation>
+    <translation>сотрясать</translation>
+    <example>
+      <text>to shake off the dust from one's feet</text>
+      <translation>отряхнуть прах со своих ног</translation>
+    </example>
+  </word>
+  <word id="shed">
+    <form1 id="shed" sound="shed.wav">ʃed</form1>
+    <form2 id="shed" sound="shed.wav">ʃed</form2>
+    <form3 id="shed" sound="shed.wav">ʃed</form3>
+    <translation>проливать, лить <i>(слёзы, кровь)</i></translation>
+    <example>
+      <text>So much blood has been shed in this war.</text>
+      <translation>В этой войне было пролито столько крови.</translation>
+    </example>
+  </word>
+  <word id="shine">
+    <form1 id="shine" sound="shine.wav">ʃaɪn</form1>
+    <form2 id="shone" sound="shine_2.wav">ʃɔn</form2>
+    <form3 id="shone" sound="shine_2.wav">ʃɔn</form3>
+    <translation>светить, сиять, озарять</translation>
+    <translation>светить, освещать <i>(чем-л.)</i></translation>
+    <example>
+      <text>The curtains are so thin that the light shines through.</text>
+      <translation>Занавески настолько тонки, что сквозь них проходит свет.</translation>
+    </example>
+  </word>
+  <word id="shoot">
+    <form1 id="shoot" sound="shoot.wav">ʃuːt</form1>
+    <form2 id="shot" sound="shoot_2.wav">ʃɔt</form2>
+    <form3 id="shot" sound="shoot_2.wav">ʃɔt</form3>
+    <translation>стрелять</translation>
+    <translation>= shoot away / down попасть, поразить <i>(из огнестрельного оружия)</i></translation>
+    <example>
+      <text>Пожалуйста, не стреляйте в меня!</text>
+      <translation>Don't shoot at me please!</translation>
+    </example>
+    <example>
+      <text>He was shot in the chest.</text>
+      <translation>Его уложили выстрелом в грудь.</translation>
+    </example>
+  </word>
+  <word id="show">
+    <form1 id="show" sound="show.wav">ʃəu</form1>
+    <form2 id="showed" sound="show_2.wav">ʃəʊd</form2>
+    <form3 id="shown" sound="show_3.wav">ʃəun</form3>
+    <translation>показывать</translation>
+    <translation>выявлять, устанавливать</translation>
+    <example>
+      <text>He showed me the pictures of his family.</text>
+      <translation>Он показал мне фотографии своей семьи.</translation>
+    </example>
+    <example>
+      <text>The survey showed that up to 90% of big UK employers use part-time and temporary workers.</text>
+      <translation>Опрос показал, что до 90% крупных работодателей в Соединённом Королевстве используют совместителей и временных работников.</translation>
+    </example>
+  </word>
+  <word id="shrink">
+    <form1 id="shrink" sound="shrink.wav">ʃrɪŋk</form1>
+    <form2 id="shrank" sound="shrink_2.wav">ʃræŋk</form2>
+    <form3 id="shrunk" sound="shrink_3.wav">ʃrʌŋk</form3>
+    <translation>уменьшать(ся), сокращать(ся)</translation>
+    <translation>сморщиваться</translation>
+    <translation>садиться <i>(о материи)</i>, давать усадку</translation>
+  </word>
+  <word id="shut">
+    <form1 id="shut" sound="shut.wav">ʃʌt</form1>
+    <form2 id="shut" sound="shut.wav">ʃʌt</form2>
+    <form3 id="shut" sound="shut.wav">ʃʌt</form3>
+    <translation>закрывать, запирать, затворять</translation>
+    <example>
+      <text>Shut the box to.</text>
+      <translation>Закройте ящик.</translation>
+    </example>
+  </word>
+  <word id="sing">
+    <form1 id="sing" sound="sing.wav">sɪŋ</form1>
+    <form2 id="sang" sound="sing_2.wav">sæŋ</form2>
+    <form3 id="sung" sound="sing_3.wav">sʌŋ</form3>
+    <translation>петь, напевать</translation>
+    <example>
+      <text>to sing a song</text>
+      <translation>петь песню</translation>
+    </example>
+  </word>
+  <word id="sink">
+    <form1 id="sink" sound="sink.wav">sɪŋk</form1>
+    <form2 id="sank" sound="sink_2.wav">sæŋk</form2>
+    <form3 id="sunk" sound="sink_3.wav">sʌŋk</form3>
+    <translation>тонуть <i>(о корабле, морском судне)</i></translation>
+    <translation>погружаться <i>(под воду)</i></translation>
+    <translation>топить <i>(судно)</i></translation>
+    <example>
+      <text>to sink a ship</text>
+      <translation>потопить корабль</translation>
+    </example>
+    <example>
+      <text>a Spanish galleon that sank off the coast of Florida in 1622</text>
+      <translation>испанский галеон, затонувший у побережья Флориды в 1622 г.</translation>
+    </example>
+  </word>
+  <word id="sit">
+    <form1 id="sit" sound="sit.wav">sɪt</form1>
+    <form2 id="sat" sound="sit_2.wav">sæt</form2>
+    <form3 id="sat" sound="sit_2.wav">sæt</form3>
+    <translation>сидеть</translation>
+    <translation>садиться</translation>
+    <example>
+      <text>Are the children sitting at the dinner table yet?</text>
+      <translation>Разве дети уже сидят за обеденным столом?</translation>
+    </example>
+  </word>
+  <word id="slay">
+    <form1 id="slay" sound="slay.wav">sleɪ</form1>
+    <form2 id="slew" sound="slay_2.wav">sluː</form2>
+    <form3 id="slain" sound="slay_3.wav">sleɪn</form3>
+    <translation>убивать, уничтожать, лишать жизни</translation>
+    <example>
+      <text>to slay by a sword</text>
+      <translation>сразить мечом</translation>
+    </example>
+  </word>
+  <word id="sleep">
+    <form1 id="sleep" sound="sleep.wav">sliːp</form1>
+    <form2 id="slept" sound="sleep_2.wav">slept</form2>
+    <form3 id="slept" sound="sleep_2.wav">slept</form3>
+    <translation>спать</translation>
+    <example>
+      <text>to get / have a good night's sleep</text>
+      <translation>хорошо спать ночью</translation>
+    </example>
+  </word>
+  <word id="slide">
+    <form1 id="slide" sound="slide.wav">slaɪd</form1>
+    <form2 id="slid" sound="slide_2.wav">slɪd</form2>
+    <form3 id="slid" sound="slide_2.wav">slɪd</form3>
+    <translation>скользить</translation>
+    <translation>двигаться плавно, без резких скачков</translation>
+    <example>
+      <text>He lay on the sleeping-porch and watched the winter sun slide along the taut curtains, turning their ruddy khaki to pale blood red.</text>
+      <translation>Он лежал на веранде и наблюдал, как зимнее солнце скользит по натянутым занавескам, превращая их цвет из красноватого оттенка хаки в тусклый кроваво-красный.</translation>
+    </example>
+  </word>
+  <word id="sling">
+    <form1 id="sling" sound="sling.wav">slɪŋ</form1>
+    <form2 id="slung" sound="sling_2.wav">slʌŋ</form2>
+    <form3 id="slung" sound="sling_2.wav">slʌŋ</form3>
+    <translation>бросать, швырять</translation>
+    <example>
+      <text>to sling smb. out of the room</text>
+      <translation>вышвырнуть кого-л. из комнаты</translation>
+    </example>
+  </word>
+  <word id="slit">
+    <form1 id="slit" sound="slit.wav">slɪt</form1>
+    <form2 id="slit" sound="slit.wav">slɪt</form2>
+    <form3 id="slit" sound="slit.wav">slɪt</form3>
+    <translation>разрезать</translation>
+    <translation>делать длинный узкий разрез <i>(в чём-л. / на чём-л.)</i></translation>
+    <translation>рвать в длину</translation>
+  </word>
+  <word id="smell">
+    <form1 id="smell" sound="smell.wav">smel</form1>
+    <form2 id="smelt" sound="smell_2.wav">smelt</form2>
+    <form3 id="smelt" sound="smell_2.wav">smelt</form3>
+    <translation>чувствовать запах, чуять</translation>
+    <translation>обонять</translation>
+    <translation>нюхать</translation>
+    <example>
+      <text>The sharks will smell blood.</text>
+      <translation>Акулы учуют запах крови.</translation>
+    </example>
+    <example>
+      <text>I could smell alcohol on his breath.</text>
+      <translation>От него пахло вином.</translation>
+    </example>
+  </word>
+  <word id="smite">
+    <form1 id="smite" sound="smite.wav">smaɪt</form1>
+    <form2 id="smote" sound="smite_2.wav">sməut</form2>
+    <form3 id="smitten" sound="smite_3.wav">'smɪt(ə)n</form3>
+    <translation>ударять, бить</translation>
+    <translation>
+      <i>(smite on)</i> обрушиваться на <i>(что-л.)</i></translation>
+    <example>
+      <text>The noise of the guns smote on our ears with unbearable force.</text>
+      <translation>Шум орудий сильно ударил нам по ушам.</translation>
+    </example>
+    <example>
+      <text>I smote on the door more loudly to see if anyone was there.</text>
+      <translation>Я сильнее постучал в дверь, чтобы узнать, есть ли кто-нибудь дома.</translation>
+    </example>
+  </word>
+  <word id="sow">
+    <form1 id="sow" sound="sow.wav">səu</form1>
+    <form2 id="sowed" sound="sow_2.wav">səʊd</form2>
+    <form3 id="sown" sound="sow_3.wav">səun</form3>
+    <translation>сеять, высевать <g>= sow out</g></translation>
+    <example>
+      <text>to sow the grain in drills</text>
+      <translation>высевать рядами</translation>
+    </example>
+  </word>
+  <word id="speak">
+    <form1 id="speak" sound="speak.wav">spiːk</form1>
+    <form2 id="spoke" sound="speak_2.wav">spəuk</form2>
+    <form3 id="spoken" sound="speak_3.wav">'spəuk(ə)n</form3>
+    <translation>говорить</translation>
+    <translation>сказать</translation>
+    <translation>произнести</translation>
+    <example>
+      <text>She spoke her mind.</text>
+      <translation>Она высказала своё мнение.</translation>
+    </example>
+  </word>
+  <word id="speed">
+    <form1 id="speed" sound="speed.wav">spiːd</form1>
+    <form2 id="sped" sound="speed_2.wav">sped</form2>
+    <form3 id="sped" sound="speed_2.wav">sped</form3>
+    <translation>быстро двигаться</translation>
+    <translation>мчаться</translation>
+    <example>
+      <text>He jumped into his car and sped off.</text>
+      <translation>Он прыгнул в машину и умчался.</translation>
+    </example>
+  </word>
+  <word id="spell">
+    <form1 id="spell" sound="spell.wav">spel</form1>
+    <form2 id="spelt" sound="spell_2.wav">spelt</form2>
+    <form3 id="spelt" sound="spell_2.wav">spelt</form3>
+    <translation>писать или произносить <i>(слово)</i> по буквам</translation>
+    <translation>образовывать, составлять <i>(слово по буквам)</i></translation>
+    <example>
+      <text>He gave his name and then spelt it.</text>
+      <translation>Он назвал своё имя и продиктовал его по буквам.</translation>
+    </example>
+    <example>
+      <text>Sorry, I spelled it wrong.</text>
+      <translation>Простите, я неверно написал.</translation>
+    </example>
+    <example>
+      <text>What word do these letters spell?</text>
+      <translation>Какое слово образуют эти буквы?</translation>
+    </example>
+  </word>
+  <word id="spend">
+    <form1 id="spend" sound="spend.wav">spend</form1>
+    <form2 id="spent" sound="spend_2.wav">spent</form2>
+    <form3 id="spent" sound="spend_2.wav">spent</form3>
+    <translation>тратить, расходовать <i>(на что-л.)</i></translation>
+    <translation>проводить <i>(время)</i></translation>
+    <example>
+      <text>to spend money on smth.</text>
+      <translation>тратить деньги на что-л.</translation>
+    </example>
+    <example>
+      <text>How do you spend your leisure?</text>
+      <translation>Как вы проводите свой досуг?</translation>
+    </example>
+  </word>
+  <word id="spill">
+    <form1 id="spill" sound="spill.wav">spɪl</form1>
+    <form2 id="spilt" sound="spill_2.wav">spɪlt</form2>
+    <form3 id="spilt" sound="spill_2.wav">spɪlt</form3>
+    <translation>проливать(ся), разливать(ся), расплёскивать(ся)</translation>
+    <example>
+      <text>Who has spilt the milk on(to) the table?</text>
+      <translation>Кто пролил молоко на стол?</translation>
+    </example>
+  </word>
+  <word id="spin">
+    <form1 id="spin" sound="spin.wav">spɪn</form1>
+    <form2 id="spun" sound="spin_2.wav">spʌn</form2>
+    <form3 id="spun" sound="spin_2.wav">spʌn</form3>
+    <translation>крутить(ся), вертеть(ся)</translation>
+    <translation>прясть, сучить <i>(шерсть)</i></translation>
+    <example>
+      <text>to spin a top</text>
+      <translation>пускать волчок</translation>
+    </example>
+  </word>
+  <word id="spit">
+    <form1 id="spit" sound="spit.wav">spɪt</form1>
+    <form2 id="spat" sound="spit_2.wav">spæt</form2>
+    <form3 id="spat" sound="spit_2.wav">spæt</form3>
+    <translation>плевать</translation>
+    <translation>плеваться</translation>
+    <translation>брызгать слюной</translation>
+    <example>
+      <text>The printer came to life and spat out a sheet of paper.</text>
+      <translation>Принтер ожил и выплюнул лист бумаги.</translation>
+    </example>
+  </word>
+  <word id="split">
+    <form1 id="split" sound="split.wav">splɪt</form1>
+    <form2 id="split" sound="split.wav">splɪt</form2>
+    <form3 id="split" sound="split.wav">splɪt</form3>
+    <translation>раскалывать(ся); расщеплять(ся) <g>= split up / asunder</g></translation>
+    <translation>разбивать(ся) на части</translation>
+    <example>
+      <text>Can you split up this piece of wood?</text>
+      <translation>Ты можешь расколоть эту деревяшку?</translation>
+    </example>
+    <example>
+      <text>My head is splitting.</text>
+      <translation>У меня голова раскалывается (от боли).</translation>
+    </example>
+  </word>
+  <word id="spoil">
+    <form1 id="spoil" sound="spoil.wav">spɔɪl</form1>
+    <form2 id="spoilt" sound="spoil_2.wav">spɔɪlt</form2>
+    <form3 id="spoilt" sound="spoil_2.wav">spɔɪlt</form3>
+    <translation>портить(ся)</translation>
+    <translation>наносить ущерб, наносить урон</translation>
+    <translation>баловать</translation>
+    <translation>потакать, потворствовать</translation>
+    <example>
+      <text>to spoil one's appetite</text>
+      <translation>портить себе аппетит</translation>
+    </example>
+    <example>
+      <text>Sparing the rod spoils the child.</text>
+      <translation>Пожалеешь розгу, избалуешь ребёнка.</translation>
+    </example>
+  </word>
+  <word id="spread">
+    <form1 id="spread" sound="spread.wav">spred</form1>
+    <form2 id="spread" sound="spread.wav">spred</form2>
+    <form3 id="spread" sound="spread.wav">spred</form3>
+    <translation>расстилать(ся)</translation>
+    <translation>развертывать</translation>
+    <translation>раскрывать</translation>
+    <translation>протягивать</translation>
+    <example>
+      <text>to spread out a map</text>
+      <translation>развернуть карту</translation>
+    </example>
+    <example>
+      <text>the spread of nuclear weapons</text>
+      <translation>распространение ядерных вооружений</translation>
+    </example>
+  </word>
+  <word id="spring">
+    <form1 id="spring" sound="spring.wav">sprɪŋ</form1>
+    <form2 id="sprang" sound="spring_2.wav">spræŋ</form2>
+    <form3 id="sprung" sound="spring_3.wav">sprʌŋ</form3>
+    <translation>снабжать пружиной</translation>
+    <translation>заводить пружину <i>(какого-л. устройства)</i></translation>
+    <translation>включать, приводить в рабочее состояние</translation>
+    <example>
+      <text>to spring a trap</text>
+      <translation>поставить капкан</translation>
+    </example>
+  </word>
+  <word id="stand">
+    <form1 id="stand" sound="stand.wav">stænd</form1>
+    <form2 id="stood" sound="stand_2.wav">stuːd</form2>
+    <form3 id="stood" sound="stand_2.wav">stuːd</form3>
+    <translation>стоять</translation>
+    <example>
+      <text>He is too weak to stand.</text>
+      <translation>Он еле держится на ногах от слабости.</translation>
+    </example>
+  </word>
+  <word id="steal">
+    <form1 id="steal" sound="steal.wav">stiːl</form1>
+    <form2 id="stole" sound="steal_2.wav">stəul</form2>
+    <form3 id="stolen" sound="steal_3.wav">'stəulən</form3>
+    <translation>воровать, красть</translation>
+    <example>
+      <text>to steal smth. from smb.</text>
+      <translation>украсть что-л. у кого-л.</translation>
+    </example>
+  </word>
+  <word id="stick">
+    <form1 id="stick" sound="stick.wav">stɪk</form1>
+    <form2 id="stuck" sound="stick_2.wav">stʌk</form2>
+    <form3 id="stuck" sound="stick_2.wav">stʌk</form3>
+    <translation>втыкать, вонзать</translation>
+    <translation>натыкать, насаживать <i>(на остриё)</i></translation>
+    <example>
+      <text>I can't remove this photograph, it's been stuck down.</text>
+      <translation>Я не могу убрать эту фотографию, её приклеили.</translation>
+    </example>
+  </word>
+  <word id="sting">
+    <form1 id="sting" sound="sting.wav">stɪŋ</form1>
+    <form2 id="stung" sound="sting_2.wav">stʌŋ</form2>
+    <form3 id="stung" sound="sting_2.wav">stʌŋ</form3>
+    <translation>жалить</translation>
+    <translation>жечь</translation>
+    <translation>кусаться</translation>
+    <example>
+      <text>The hail stung their faces.</text>
+      <translation>Град больно бил их по лицу.</translation>
+    </example>
+  </word>
+  <word id="stink">
+    <form1 id="stink" sound="stink.wav">stɪŋk</form1>
+    <form2 id="stank" sound="stink_2.wav">stæŋk</form2>
+    <form3 id="stunk" sound="stink_3.wav">stʌŋk</form3>
+    <translation>смердеть, вонять</translation>
+    <example>
+      <text>It stinks in here.</text>
+      <translation>Здесь воняет.</translation>
+    </example>
+  </word>
+  <word id="strew">
+    <form1 id="strew" sound="strew.wav">struː</form1>
+    <form2 id="strewed" sound="strew_2.wav">struːd</form2>
+    <form3 id="strewn" sound="strew_3.wav">struːn</form3>
+    <translation>разбрасывать, разбрызгивать</translation>
+    <translation>посыпать, усыпать <i>(песком, цветами)</i></translation>
+    <example>
+      <text>There were papers strewn all over the floor.</text>
+      <translation>По всему полу были разбросаны бумаги.</translation>
+    </example>
+  </word>
+  <word id="stride">
+    <form1 id="stride" sound="stride.wav">straɪd</form1>
+    <form2 id="strode" sound="stride_2.wav">strəud</form2>
+    <form3 id="stridden" sound="stride_3.wav">'strɪd(ə)n</form3>
+    <translation>шагать <i>(большими шагами)</i></translation>
+    <example>
+      <text>to stride confidently</text>
+      <translation>уверенно шагать</translation>
+    </example>
+  </word>
+  <word id="strike">
+    <form1 id="strike" sound="strike.wav">straɪk</form1>
+    <form2 id="struck" sound="strike_2.wav">strʌk</form2>
+    <form3 id="stricken" sound="strike_3.wav">'strɪk(ə)n</form3>
+    <translation>ударять, наносить удар, бить</translation>
+    <example>
+      <text>to strike him a blow</text>
+      <translation>нанести ему удар</translation>
+    </example>
+  </word>
+  <word id="string">
+    <form1 id="string" sound="string.wav">strɪŋ</form1>
+    <form2 id="strung" sound="string_2.wav">strʌŋ</form2>
+    <form3 id="strung" sound="string_2.wav">strʌŋ</form3>
+    <translation>завязывать, связывать</translation>
+    <translation>шнуровать</translation>
+    <translation>натягивать <i>(струну, тетиву)</i></translation>
+    <translation>нанизывать <i>(жемчуг, бусы)</i></translation>
+    <example>
+      <text>The jewels are strung together on a fine silver chain.</text>
+      <translation>Драгоценные камни нанизаны на красивую серебряную цепочку.</translation>
+    </example>
+  </word>
+  <word id="strive">
+    <form1 id="strive" sound="strive.wav">straɪv</form1>
+    <form2 id="strove" sound="strive_2.wav">strəuv</form2>
+    <form3 id="striven" sound="strive_3.wav">'strɪv(ə)n</form3>
+    <translation>стараться, пытаться</translation>
+    <translation>стремиться, прилагать усилия</translation>
+    <example>
+      <text>to strive for victory</text>
+      <translation>стремиться к победе</translation>
+    </example>
+  </word>
+  <word id="swear">
+    <form1 id="swear" sound="swear.wav">swɛə</form1>
+    <form2 id="swore" sound="swear_2.wav">swɔː</form2>
+    <form3 id="sworn" sound="swear_3.wav">swɔːn</form3>
+    <translation>клясться</translation>
+    <translation>присягать</translation>
+    <example>
+      <text>to swear revenge on smb.</text>
+      <translation>поклясться отомстить кому-л.</translation>
+    </example>
+  </word>
+  <word id="sweep">
+    <form1 id="sweep" sound="sweep.wav">swiːp</form1>
+    <form2 id="swept" sound="sweep_2.wav">swept</form2>
+    <form3 id="swept" sound="sweep_2.wav">swept</form3>
+    <translation>мести, подметать</translation>
+    <example>
+      <text>to sweep the floor</text>
+      <translation>подметать пол</translation>
+    </example>
+  </word>
+  <word id="swell">
+    <form1 id="swell" sound="swell.wav">swel</form1>
+    <form2 id="swelled" sound="swell_2.wav">sweld</form2>
+    <form3 id="swollen" sound="swell_3.wav">'swəulən</form3>
+    <translation>разбухать, опухать</translation>
+    <translation>
+      <g>= swell up / out</g> надуваться, раздуваться, набухать</translation>
+    <example>
+      <text>This disease of childhood makes the cheeks swell out.</text>
+      <translation>При этой детской болезни опухают щеки.</translation>
+    </example>
+  </word>
+  <word id="swim">
+    <form1 id="swim" sound="swim.wav">swɪm</form1>
+    <form2 id="swam" sound="swim_2.wav">swæm</form2>
+    <form3 id="swum" sound="swim_3.wav">swʌm</form3>
+    <translation>купаться</translation>
+    <translation>плавать, плыть</translation>
+    <translation>переплывать</translation>
+    <example>
+      <text>to swim with / down the tide / stream</text>
+      <translation>плыть по течению</translation>
+    </example>
+  </word>
+  <word id="swing">
+    <form1 id="swing" sound="swing.wav">swɪŋ</form1>
+    <form2 id="swung" sound="swing_2.wav">swʌŋ</form2>
+    <form3 id="swung" sound="swing_2.wav">swʌŋ</form3>
+    <translation>качать(ся)</translation>
+    <translation>раскачивать(ся)</translation>
+    <translation>размахивать</translation>
+    <example>
+      <text>to swing from right to left</text>
+      <translation>раскачиваться из стороны в сторону</translation>
+    </example>
+  </word>
+  <word id="take">
+    <form1 id="take" sound="take.wav">teɪk</form1>
+    <form2 id="took" sound="take_2.wav">tuk</form2>
+    <form3 id="taken" sound="take_3.wav">'teɪk(ə)n</form3>
+    <translation>брать</translation>
+    <translation>хватать</translation>
+    <example>
+      <text>take the ax by the handle</text>
+      <translation>взяться за ручку топора</translation>
+    </example>
+  </word>
+  <word id="teach">
+    <form1 id="teach" sound="teach.wav">tiːʧ</form1>
+    <form2 id="taught" sound="teach_2.wav">tɔːt</form2>
+    <form3 id="taught" sound="teach_2.wav">tɔːt</form3>
+    <translation>учить, обучать</translation>
+    <example>
+      <text>to teach smb. to read</text>
+      <translation>учить кого-л. читать</translation>
+    </example>
+  </word>
+  <word id="tear">
+    <form1 id="tear" sound="tear.wav">tɛə</form1>
+    <form2 id="tore" sound="tear_2.wav">tɔː</form2>
+    <form3 id="torn" sound="tear_3.wav">tɔːn</form3>
+    <translation>рвать, разрывать, срывать, отрывать <g>= tear off</g></translation>
+    <example>
+      <text>to tear a cover off a box</text>
+      <translation>оторвать крышку от коробки</translation>
+    </example>
+  </word>
+  <word id="tell">
+    <form1 id="tell" sound="tell.wav">tel</form1>
+    <form2 id="told" sound="tell_2.wav">təuld</form2>
+    <form3 id="told" sound="tell_2.wav">təuld</form3>
+    <translation>говорить</translation>
+    <translation>рассказывать</translation>
+    <example>
+      <text>to tell goodbye</text>
+      <translation>прощаться</translation>
+    </example>
+  </word>
+  <word id="think">
+    <form1 id="think" sound="think.wav">θɪŋk</form1>
+    <form2 id="thought" sound="think_2.wav">θɔːt</form2>
+    <form3 id="thought" sound="think_2.wav">θɔːt</form3>
+    <translation>думать, мыслить</translation>
+    <translation>размышлять, взвешивать, обдумывать</translation>
+    <example>
+      <text>to think the matter over</text>
+      <translation>обдумать вопрос, обдумать проблему</translation>
+    </example>
+  </word>
+  <word id="thrive">
+    <form1 id="thrive" sound="thrive.wav">θraɪv</form1>
+    <form2 id="throve" sound="thrive_2.wav">θrəuv</form2>
+    <form3 id="thriven" sound="thrive_3.wav">'θrɪv(ə)n</form3>
+    <translation>благоденствовать, преуспевать, процветать</translation>
+    <translation>буйно, пышно расти, разрастаться</translation>
+    <example>
+      <text>He throve on trade.</text>
+      <translation>Он разбогател на торговле.</translation>
+    </example>
+    <example>
+      <text>My children thrived on this product.</text>
+      <translation>Мои дети стали крепче от этого продукта.</translation>
+    </example>
+  </word>
+  <word id="throw">
+    <form1 id="throw" sound="throw.wav">θrəu</form1>
+    <form2 id="threw" sound="throw_2.wav">θruː</form2>
+    <form3 id="thrown" sound="throw_3.wav">θrəun</form3>
+    <translation>бросать, кидать, метать</translation>
+    <example>
+      <text>to throw a baseball</text>
+      <translation>бросать бейсбольный мяч</translation>
+    </example>
+  </word>
+  <word id="thrust">
+    <form1 id="thrust" sound="thrust.wav">θrʌst</form1>
+    <form2 id="thrust" sound="thrust.wav">θrʌst</form2>
+    <form3 id="thrust" sound="thrust.wav">θrʌst</form3>
+    <translation>колоть, протыкать</translation>
+    <example>
+      <text>to thrust a dagger into one's heart</text>
+      <translation>вонзить кинжал кому-л. в сердце</translation>
+    </example>
+  </word>
+  <word id="tread">
+    <form1 id="tread" sound="tread.wav">tred</form1>
+    <form2 id="trod" sound="tread_2.wav">trɔd</form2>
+    <form3 id="trodden" sound="tread_3.wav">'trɔd(ə)n</form3>
+    <translation>идти, ступать, шагать</translation>
+    <example>
+      <text>I never forget a path I have once trodden.</text>
+      <translation>Я никогда не забуду путь, по которому однажды прошёл.</translation>
+    </example>
+  </word>
+  <word id="undergo">
+    <form1 id="undergo" sound="undergo.wav">ˌʌndə'gəu</form1>
+    <form2 id="underwent" sound="undergo_2.wav">ˌʌndə'went</form2>
+    <form3 id="undergone" sound="undergo_3.wav">ˌʌndə'gɔn</form3>
+    <translation>испытывать, переносить</translation>
+    <translation>подвергаться <i>(чему-л.)</i></translation>
+    <example>
+      <text>to undergo the punishment</text>
+      <translation>подвергнуться наказанию</translation>
+    </example>
+    <example>
+      <text>His views underwent a very thorough change in course of time.</text>
+      <translation>Его взгляды сильно изменились с течением времени.</translation>
+    </example>
+  </word>
+  <word id="understand">
+    <form1 id="understand" sound="understand.wav">ˌʌndə'stænd</form1>
+    <form2 id="undestood" sound="understand_2.wav">ˌʌndə'stud</form2>
+    <form3 id="undestood" sound="understand_2.wav">ˌʌndə'stud</form3>
+    <translation>понимать, постигать, осмысливать</translation>
+    <example>
+      <text>to make oneself understood</text>
+      <translation>уметь объясниться</translation>
+    </example>
+  </word>
+  <word id="undertake">
+    <form1 id="undertake" sound="undertake.wav">ˌʌndə'teɪk</form1>
+    <form2 id="undertook" sound="undertake_2.wav">ˌʌndə'tuk</form2>
+    <form3 id="undertaken" sound="undertake_3.wav">ˌʌndə'teɪk(ə)n</form3>
+    <translation>предпринимать, совершать</translation>
+    <translation>
+      <i>(undertake for)</i> брать на себя ответственность за <i>(что-л.)</i></translation>
+    <example>
+      <text>to undertook for smb.'s security</text>
+      <translation>отвечать за чью-л. безопасность</translation>
+    </example>
+  </word>
+  <word id="undo">
+    <form1 id="undo" sound="undo.wav">ʌn'duː</form1>
+    <form2 id="undid" sound="undo_2.wav">ʌn'dɪd</form2>
+    <form3 id="undone" sound="undo_3.wav">ʌn'dʌn</form3>
+    <translation>открывать</translation>
+    <translation>развязывать</translation>
+    <translation>возвращать <i>(в прежнее положение)</i></translation>
+    <example>
+      <text>to come undone</text>
+      <translation>расстегнуться; развязаться</translation>
+    </example>
+  </word>
+  <word id="unwind">
+    <form1 id="unwind" sound="unwind.wav">ʌn'waɪnd</form1>
+    <form2 id="unwound" sound="unwind_2.wav">ʌn'waund</form2>
+    <form3 id="unwound" sound="unwind_2.wav">ʌn'waund</form3>
+    <translation>разматывать</translation>
+    <translation>раскручивать</translation>
+    <example>
+      <text>to unwind the bandage</text>
+      <translation>размотать повязку</translation>
+    </example>
+  </word>
+  <word id="uphold">
+    <form1 id="uphold" sound="uphold.wav">ʌp'həuld</form1>
+    <form2 id="upheld" sound="uphold_2.wav">ʌp'held</form2>
+    <form3 id="upheld" sound="uphold_2.wav">ʌp'held</form3>
+    <translation>поддерживать, помогать</translation>
+    <example>
+      <text>to uphold smb.'s spirit</text>
+      <translation>поддерживать чьи-л. моральные силы</translation>
+    </example>
+  </word>
+  <word id="upset">
+    <form1 id="upset" sound="upset.wav">ʌp'set</form1>
+    <form2 id="upset" sound="upset.wav">ʌp'set</form2>
+    <form3 id="upset" sound="upset.wav">ʌp'set</form3>
+    <translation>опрокидывать, переворачивать <i>(лодку, автомобиль и т. п.)</i></translation>
+  </word>
+  <word id="wake">
+    <form1 id="wake" sound="wake.wav">weɪk</form1>
+    <form2 id="woke" sound="wake_2.wav">wəuk</form2>
+    <form3 id="woken" sound="wake_3.wav">'wəuk(ə)n</form3>
+    <translation>просыпаться, будить, бодрствовать, не спать <g>(= wake up)</g></translation>
+    <example>
+      <text>What time did you wake up this morning?</text>
+      <translation>В котором часу ты встал сегодня утром?</translation>
+    </example>
+  </word>
+  <word id="wear">
+    <form1 id="wear" sound="wear.wav">wɛə</form1>
+    <form2 id="wore" sound="wear_2.wav">wɔː</form2>
+    <form3 id="worn" sound="wear_3.wav">wɔːn</form3>
+    <translation>носить</translation>
+    <example>
+      <text>to wear a wig</text>
+      <translation>носить парик</translation>
+    </example>
+    <example>
+      <text>Are you going to wear jeans or a dress?</text>
+      <translation>Ты собираешься надеть джинсы или платье?</translation>
+    </example>
+  </word>
+  <word id="weave">
+    <form1 id="weave" sound="weave.wav">wiːv</form1>
+    <form2 id="wove" sound="weave_2.wav">wəuv</form2>
+    <form3 id="woven" sound="weave_3.wav">'wəuv(ə)n</form3>
+    <translation>ткать</translation>
+    <translation>плести <gi>прям. и перен.</gi></translation>
+    <example>
+      <text>to weave some humor into a plot</text>
+      <translation>добавить в сюжет немного юмора</translation>
+    </example>
+  </word>
+  <word id="wed">
+    <form1 id="wed" sound="wed.wav">wed</form1>
+    <form2 id="wed" sound="wed_2.wav">wed</form2>
+    <form3 id="wed" sound="wed_3.wav">wed</form3>
+    <translation>жениться</translation>
+    <translation>выходить замуж</translation>
+    <translation>вступать в брак</translation>
+  </word>
+  <word id="weep">
+    <form1 id="weep" sound="weep.wav">wiːp</form1>
+    <form2 id="wept" sound="weep_2.wav">wept</form2>
+    <form3 id="wept" sound="weep_2.wav">wept</form3>
+    <translation>плакать, рыдать</translation>
+    <example>
+      <text>An angel watching an urn wept over her, carved in stone.</text>
+      <translation>Ангел, высеченный из камня, рыдал над урной, глядя на неё.</translation>
+    </example>
+  </word>
+  <word id="wet">
+    <form1 id="wet" sound="wet.wav">wet</form1>
+    <form2 id="wet" sound="wet.wav">wet</form2>
+    <form3 id="wet" sound="wet.wav">wet</form3>
+    <translation>мочить, смачивать, увлажнять</translation>
+    <example>
+      <text>wet with dew</text>
+      <translation>мокрый от росы</translation>
+    </example>
+  </word>
+  <word id="win">
+    <form1 id="win" sound="win.wav">wɪn</form1>
+    <form2 id="won" sound="win_2.wav">wʌn</form2>
+    <form3 id="won" sound="win_2.wav">wʌn</form3>
+    <translation>победить, выиграть</translation>
+    <example>
+      <text>to win a prize</text>
+      <translation>выиграть приз</translation>
+    </example>
+  </word>
+  <word id="wind">
+    <form1 id="wind" sound="wind.wav">waɪnd</form1>
+    <form2 id="wound" sound="wind_2.wav">waund</form2>
+    <form3 id="wound" sound="wind_2.wav">waund</form3>
+    <translation>виться, извиваться, изгибаться</translation>
+    <example>
+      <text>I had a terrible night, I did turn and wind so.</text>
+      <translation>Я ужасно спал этой ночью - крутился и вертелся в постели.</translation>
+    </example>
+  </word>
+  <word id="withdraw">
+    <form1 id="withdraw" sound="withdraw.wav">wɪð'drɔː</form1>
+    <form2 id="withdrew" sound="withdraw_2.wav">wɪð'druː</form2>
+    <form3 id="withdrawn" sound="withdraw_3.wav">wɪð'drɔːn</form3>
+    <translation>отодвигать, отдёргивать</translation>
+    <translation>отнимать</translation>
+    <example>
+      <text>She withdrew her eyes.</text>
+      <translation>Она отвела глаза.</translation>
+    </example>
+  </word>
+  <word id="withhold">
+    <form1 id="withhold" sound="withhold.wav">wɪθ'həuld</form1>
+    <form2 id="withheld" sound="withhold_2.wav">wɪθ'held</form2>
+    <form3 id="withheld" sound="withhold_2.wav">wɪθ'held</form3>
+    <translation>воздерживаться <i>(от чего-л.)</i></translation>
+    <translation>отказывать <i>(в чём-л.)</i></translation>
+    <example>
+      <text>to withhold one's consent</text>
+      <translation>не давать согласия</translation>
+    </example>
+  </word>
+  <word id="withstand">
+    <form1 id="withstand" sound="withstand.wav">wɪð'stænd</form1>
+    <form2 id="withstood" sound="withstand_2.wav">wɪð'stud</form2>
+    <form3 id="withstood" sound="withstand_2.wav">wɪð'stud</form3>
+    <translation>устоять <i>(перед чем-л.)</i>, выдержать <i>(что-л.)</i></translation>
+    <translation>противостоять, не поддаваться <i>(чему-л.)</i></translation>
+    <example>
+      <text>to withstand competition</text>
+      <translation>выдержать конкуренцию</translation>
+    </example>
+  </word>
+  <word id="wring">
+    <form1 id="wring" sound="wring.wav">rɪŋ</form1>
+    <form2 id="wrung" sound="wring_2.wav">rʌŋ</form2>
+    <form3 id="wrung" sound="wring_2.wav">rʌŋ</form3>
+    <translation>крутить, скручивать, выламывать</translation>
+    <example>
+      <text>to wring one's hands</text>
+      <translation>заламывать руки</translation>
+    </example>
+  </word>
+  <word id="write">
+    <form1 id="write" sound="write.wav">raɪt</form1>
+    <form2 id="wrote" sound="write_2.wav">rəut</form2>
+    <form3 id="written" sound="write_3.wav">'rɪt(ə)n</form3>
+    <translation>писать, выписывать, записывать</translation>
+    <example>
+      <text>to write a legible hand</text>
+      <translation>иметь чёткий почерк</translation>
+    </example>
+  </word>
+</dictionary>

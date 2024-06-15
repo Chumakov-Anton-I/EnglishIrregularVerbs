@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="ico_checkc">../images/check_circle_icon.png</file>
+        <file alias="ico_rchevron">../images/chevron_right_arrow_icon.png</file>
+        <file alias="ico_folder">../images/folder_documents_icon.png</file>
+        <file alias="ico_run">../images/play_icon.png</file>
+        <file alias="ico_tool">../images/tool_tools_icon.png</file>
+        <file alias="ico_sound">../images/volume_2_icon.png</file>
+        <file alias="ico_obook">../images/book_open_icon.png</file>
+        <file alias="ico_xoctagon">../images/x_octagon_delete_icon.png</file>
+    </qresource>
+</RCC>
