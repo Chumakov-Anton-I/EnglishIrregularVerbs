@@ -1,6 +1,10 @@
 #ifndef LEARNWINDOW_H
 #define LEARNWINDOW_H
 
+/* ****************************************************************************
+ * learnwindow.h
+ * ****************************************************************************/
+
 #include <QtWidgets>
 #include <QtXml>
 #include "word.h"

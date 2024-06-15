@@ -1,6 +1,10 @@
 #ifndef STARTWND_H
 #define STARTWND_H
 
+/* ****************************************************************************
+ * startwnd.h
+ * ****************************************************************************/
+
 #include <QtWidgets>
 #include <QSettings>
 #include <QtXml>

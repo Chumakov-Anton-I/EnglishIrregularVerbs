@@ -1,7 +1,8 @@
-/*************************************************************************
-******* A simple program to learning of English irregular verbs **********
-**************************************************************************
+/* ******************************************************************** **
+** ** A simple application to learning of English irregular verbs ***** **
+** ******************************************************************** **
 
+** ******************************************************************** **
   Copyright (c) 2024 Chumakov Anton I.
 
  Permission is hereby granted, free of charge, to any person obtaining
@@ -22,7 +23,7 @@
  CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*************************************************************************/
+** ******************************************************************** */
 
 //#include <QtXml>
 #include "startwnd.h"

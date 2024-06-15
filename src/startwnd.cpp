@@ -1,4 +1,6 @@
-// startwnd.cpp
+/* ****************************************************************************
+ * startwnd.cpp
+ * ****************************************************************************/
 
 #include <QCoreApplication>
 #include "window.h"
@@ -111,7 +113,7 @@ void CStartWindow :: readSettings()
     current_dictionary = QDir(dirpath);
 }
 
-/* // TODO: пока не используется
+/* // TODO: doesn't use
 void CStartWindow :: readStatistics()
 {
     QString fname = "statistics.ini";
@@ -144,10 +146,10 @@ bool CStartWindow :: chooseDictionary()
     return false;
 }
 
-/* Загрузка словаря */
+/* Loading a sictionary */
 bool CStartWindow :: loadDictionary(const QString &fpath)
 {
-    /* Открыть файл */
+    /* Open a file */
     QFile dictfile(fpath);
     if (!dictfile.open(QIODevice :: ReadOnly)) {
         QString msg = QString("Can not open file [%1]!").arg(fpath); // TODO: message
@@ -164,7 +166,7 @@ bool CStartWindow :: loadDictionary(const QString &fpath)
         else
             return false;
     }
-    /* Прочитать файл */
+    /* Read the file of a dictionary */
     QDomDocument dictDoc;
     auto res = dictDoc.setContent(&dictfile);
     if (!res) { // TODO
@@ -185,7 +187,7 @@ bool CStartWindow :: loadDictionary(const QString &fpath)
             return false;
     }
     dictfile.close();
-    /* Читать словарь */
+    /* Read a dictionary */
     if (!readDictionary(dictDoc)) {
         QString msg = QString("The dictionary [%1] has a wrong structure.").arg(fpath);
         QMessageBox dlg = QMessageBox(QMessageBox :: Icon :: Critical,
@@ -202,10 +204,10 @@ bool CStartWindow :: loadDictionary(const QString &fpath)
     return true;
 }
 
-/* Чтение словаря */
+/* Reading a dictionary */
 bool CStartWindow :: readDictionary(const QDomDocument& doc)
 {
-    //if (!checkDict()) return false;   // TODO: добавить проверку структуры словаря
+    //if (!checkDict()) return false;   // TODO: add checking the structure of a dictionary
     QDomElement root = doc.documentElement();
     dictionary = root.childNodes();
     count = dictionary.length();
@@ -234,7 +236,7 @@ void CStartWindow :: startLearning()
     delete learn;
 }
 
-/* Запуск теста */
+/* Start a test */
 void CStartWindow :: startTest()
 {
     CWidget *test = new CWidget(dictionary);
@@ -247,7 +249,7 @@ void CStartWindow :: startTest()
 
 void CStartWindow :: about()
 {
-    QString msg = QString("A simply program for a learning English irregular verbs.")
+    QString msg = QString("A simply program for learning English irregular verbs.")
                   + "<br><br>(C) Chumakov Anton I. for LBI School, 2024";
     QMessageBox::about(this, "About program", msg);
 }

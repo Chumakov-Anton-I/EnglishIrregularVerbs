@@ -14,7 +14,7 @@ SOURCES += \
     window.cpp \
     word.cpp
 
-TARGET = ../IregularVerbs
+TARGET = ../IrregularVerbs
 
 HEADERS += \
     StatText.h \

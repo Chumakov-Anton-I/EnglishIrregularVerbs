@@ -1,3 +1,7 @@
+/* ****************************************************************************
+ * word.cpp
+ * ****************************************************************************/
+
 #include "word.h"
 
 CWord :: CWord(const QDomElement& src)
@@ -10,7 +14,7 @@ CWord :: CWord(const QDomElement& src)
             continue;
         QDomElement item = itemNode.toElement();
         QString tag_name = item.tagName();
-        // Разобрать структуру блока слова
+        // analyse the structure of 'word'
         if (tag_name == XML_FORM1) {  // get form1
             form1 = item.attribute(XML_ID);
             form1_sound = item.attribute(XML_SOUND);
@@ -46,7 +50,7 @@ CWord :: CWord(const QDomElement& src)
 
 CWord :: ~CWord() {}
 
-/* Проверить слово */
+/* Check the word */
 Result CWord :: check(const QString inp2, const QString inp3, const QString inpTrns)
 {
     Result result;

@@ -1,13 +1,17 @@
 #ifndef TEXTEDIT_H
 #define TEXTEDIT_H
 
+/* ****************************************************************************
+ * TextEdit.h
+ * ****************************************************************************/
+
 #include <QtWidgets>
 #if defined(Q_OS_WIN)
     #include <WinUser.h>
 #elif defined(Q_OS_UNIX)
-//
+// TODO
 #elif defined(Q_OS_OSX)
-//
+// TODO
 #endif
 
 #define LANG_LAYOUT_RUS L"00000419"

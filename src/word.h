@@ -1,7 +1,10 @@
 #ifndef WORD_H
 #define WORD_H
 
-/* Класс-контейнер, содержащий информацию о слове */
+/* ****************************************************************************
+ * word.h
+ * It is a container, which contains the information about a word
+ * ****************************************************************************/
 
 #include <QtXml>
 #include <QString>

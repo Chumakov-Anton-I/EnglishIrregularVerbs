@@ -1,6 +1,10 @@
 #ifndef STATTEXT_H
 #define STATTEXT_H
 
+/* ****************************************************************************
+ * StatText.h
+ * ****************************************************************************/
+
 #include <QtWidgets>
 
 class CStatText : public QWidget
