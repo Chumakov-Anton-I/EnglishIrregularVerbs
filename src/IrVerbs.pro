@@ -2,7 +2,7 @@ TEMPLATE = app
 
 QT  += core widgets xml
 
-CONFIG += c++14
+CONFIG += windows c++14
 
 SOURCES += \
     StatText.cpp \
@@ -14,7 +14,7 @@ SOURCES += \
     window.cpp \
     word.cpp
 
-TARGET = ../IrregularVerbs
+TARGET = ../../build/IrregularVerbs
 
 HEADERS += \
     StatText.h \
@@ -25,7 +25,7 @@ HEADERS += \
     window.h \
     word.h
 
-LIBS += -lUser32
+win32:LIBS += -lUser32
 
 RESOURCES += \
     images.qrc
@@ -36,10 +36,9 @@ win32:{
     QMAKE_TARGET_PRODUCT = Irregular Verbs Tester
     QMAKE_TARGET_DESCRIPTION = Learn and check English irregular verbs
     QMAKE_TARGET_COPYRIGHT = Chumakov Anton I.
-    QMAKE_TARGET_ORIGINAL_FILENAME = IrVerbs.exe
+    QMAKE_TARGET_ORIGINAL_FILENAME = IrregularVerbs.exe
     QMAKE_TARGET_INTERNALNAME = IrregularVerbs
-    QMAKE_TARGET_COMMENTS = Learn and memorize English irregular verbs
+    QMAKE_TARGET_COMMENTS = Learn English irregular verbs and test yourself!
     QMAKE_TARGET_TRADEMARKS = Chumakov Software Inc.
+    RC_ICONS = app.ico
 }
-
-RC_ICONS = app.ico
