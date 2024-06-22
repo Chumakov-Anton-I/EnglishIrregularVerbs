@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dictionary title="Irregular Verbs" author="Anton I. Chumakov" version="0.51" date="09.06.2024">
+<dictionary title="Irregular Verbs" author="Anton I. Chumakov" version="0.52" date="22.06.2024">
   <word id="abide">
-    <form1 id="abide" sound="abide.wav">ə'baɪd</form1>
-    <form2 id="abode" sound="abide_2.wav">ə'bəud</form2>
-    <form3 id="abode" sound="abide_3.wav">ə'bəud</form3>
+    <form1 id="abide" sound="abide.mp3">ə'baɪd</form1>
+    <form2 id="abode" sound="abode.mp3">ə'bəud</form2>
+    <form3 id="abode" sound="abode.mp3">ə'bəud</form3>
     <translation>вынести, пережить</translation>
     <translation>вытерпеть</translation>
     <translation>выносить, терпеть<i>(обычно в отрицательных и вопросительных предложениях)</i></translation>
@@ -17,9 +17,9 @@
     </example>
   </word>
   <word id="arise">
-    <form1 id="arise" sound="arise.wav">ə'raɪz</form1>
-    <form2 id="arose" sound="arise_2.wav">ə'rəuz</form2>
-    <form3 id="arisen" sound="arise_3.wav">ə'rɪz(ə)n</form3>
+    <form1 id="arise" sound="arise.mp3">ə'raɪz</form1>
+    <form2 id="arose" sound="arose.mp3">ə'rəuz</form2>
+    <form3 id="arisen" sound="arisen.mp3">ə'rɪz(ə)n</form3>
     <translation>возникать, появляться</translation>
     <translation>происходить, проистекать, являться результатом</translation>
     <translation>раздаваться, подниматься <i>(о криках, шуме)</i></translation>
@@ -37,9 +37,9 @@
     </example>
   </word>
   <word id="awake">
-    <form1 id="awake" sound="awake.wav">ə'weɪk</form1>
-    <form2 id="awoke" sound="awake_2.wav">ə'wəuk</form2>
-    <form3 id="awoken" sound="awake_3.wav">ə'wəukən</form3>
+    <form1 id="awake" sound="awake.mp3">ə'weɪk</form1>
+    <form2 id="awoke" sound="awoke.mp3">ə'wəuk</form2>
+    <form3 id="awoken" sound="awoken.mp3">ə'wəukən</form3>
     <translation>будить</translation>
     <translation>пробуждать <i>(эмоции)</i>, вызывать <i>(состояние)</i></translation>
     <example>
@@ -52,9 +52,9 @@
     </example>
   </word>
   <word id="be">
-    <form1 id="be" sound="be.wav">biː</form1>
-    <form2 id="was/were" sound="be_2.wav">wɔz/wɜː</form2>
-    <form3 id="been" sound="be_3.wav">biːn</form3>
+    <form1 id="be" sound="be.mp3">biː</form1>
+    <form2 id="was/were" sound="was.mp3">wɔz/wɜː</form2>
+    <form3 id="been" sound="been.mp3">biːn</form3>
     <translation>быть, существовать</translation>
     <translation>быть живым, жить</translation>
     <translation>происходить, случаться, иметь место</translation>
@@ -68,9 +68,9 @@
     </example>
   </word>
   <word id="bear">
-    <form1 id="bear" sound="bear.wav">bɛə</form1>
-    <form2 id="bore" sound="bear_2.wav">bɔː</form2>
-    <form3 id="born" sound="bear_3.wav">bɔːn</form3>
+    <form1 id="bear" sound="bear.mp3">bɛə</form1>
+    <form2 id="bore" sound="bore.mp3">bɔː</form2>
+    <form3 id="born" sound="born.mp3">bɔːn</form3>
     <translation>носить, нести</translation>
     <translation>переносить</translation>
     <example>
@@ -83,9 +83,9 @@
     </example>
   </word>
   <word id="beat">
-    <form1 id="beat" sound="beat.wav">biːt</form1>
-    <form2 id="beat" sound="beat.wav">biːt</form2>
-    <form3 id="beaten" sound="beat_3.wav">'biːtn</form3>
+    <form1 id="beat" sound="beat.mp3">biːt</form1>
+    <form2 id="beat" sound="beat.mp3">biːt</form2>
+    <form3 id="beaten" sound="beaten.mp3">'biːtn</form3>
     <translation>бить, колотить</translation>
     <example>
       <text>to beat unmercifully</text>
@@ -93,9 +93,9 @@
     </example>
   </word>
   <word id="become">
-    <form1 id="become" sound="become.wav">bɪ'kʌm</form1>
-    <form2 id="became" sound="become_2.wav">bɪ'keɪm</form2>
-    <form3 id="become" sound="become.wav">bɪ'kʌm</form3>
+    <form1 id="become" sound="become.mp3">bɪ'kʌm</form1>
+    <form2 id="became" sound="became.mp3">bɪ'keɪm</form2>
+    <form3 id="become" sound="become.mp3">bɪ'kʌm</form3>
     <translation>становиться, делаться</translation>
     <translation>
       <i>(become of)</i> случаться, происходить <i>(чаще о плохом событии)</i></translation>
@@ -115,9 +115,9 @@
     </example>
   </word>
   <word id="begin">
-    <form1 id="begin" sound="begin.wav">bɪ'gɪn</form1>
-    <form2 id="began" sound="begin_2.wav">bɪ'gæn</form2>
-    <form3 id="begun" sound="begin_3.wav">bɪ'gʌn</form3>
+    <form1 id="begin" sound="begin.mp3">bɪ'gɪn</form1>
+    <form2 id="began" sound="began.mp3">bɪ'gæn</form2>
+    <form3 id="begun" sound="begun.mp3">bɪ'gʌn</form3>
     <translation>начинать, начинаться</translation>
     <example>
       <text>to begin with smth.</text>
@@ -133,16 +133,16 @@
     </example>
   </word>
   <word id="behold">
-    <form1 id="behold" sound="behold.wav">bɪ'həuld</form1>
-    <form2 id="beheld" sound="behold_2.wav">bɪ'held</form2>
-    <form3 id="beheld" sound="behold_2.wav">bɪ'held</form3>
+    <form1 id="behold" sound="behold.mp3">bɪ'həuld</form1>
+    <form2 id="beheld" sound="beheld.mp3">bɪ'held</form2>
+    <form3 id="beheld" sound="beheld.mp3">bɪ'held</form3>
     <translation>увидеть, заметить, узреть</translation>
     <translation>созерцать, рассматривать, наблюдать</translation>
   </word>
   <word id="bend">
-    <form1 id="bend" sound="bend.wav">bend</form1>
-    <form2 id="bent" sound="bend_2.wav">bent</form2>
-    <form3 id="bent" sound="bend_2.wav">bent</form3>
+    <form1 id="bend" sound="bend.mp3">bend</form1>
+    <form2 id="bent" sound="bent.mp3">bent</form2>
+    <form3 id="bent" sound="bent.mp3">bent</form3>
     <translation>сгибать(ся)</translation>
     <translation>гнуть(ся), изгибать(ся)</translation>
     <example>
@@ -155,9 +155,9 @@
     </example>
   </word>
   <word id="bet">
-    <form1 id="bet" sound="bet.wav">bet</form1>
-    <form2 id="bet" sound="bet.wav">bet</form2>
-    <form3 id="bet" sound="bet.wav">bet</form3>
+    <form1 id="bet" sound="bet.mp3">bet</form1>
+    <form2 id="bet" sound="bet.mp3">bet</form2>
+    <form3 id="bet" sound="bet.mp3">bet</form3>
     <translation>держать пари, биться об заклад <g>= bet against</g></translation>
     <example>
       <text>to accept / take a bet</text>
@@ -169,9 +169,9 @@
     </example>
   </word>
   <word id="bid">
-    <form1 id="bid" sound="bid.wav">bɪd</form1>
-    <form2 id="bade" sound="bid_2.wav">beɪd</form2>
-    <form3 id="bidden" sound="bid_3.wav">'bɪdn</form3>
+    <form1 id="bid" sound="bid.mp3">bɪd</form1>
+    <form2 id="bade" sound="bade.mp3">beɪd</form2>
+    <form3 id="bidden" sound="bidden.mp3">'bɪdn</form3>
     <!--translation><i>(bid for)</i> предлагать цену за <i>(что-л.; обычно на аукционе)</i></translation-->
     <translation>предлагать цену за <i>(что-л.; обычно на аукционе)</i></translation>
     <translation>принимать участие в торгах</translation>
@@ -181,9 +181,9 @@
     </example>
   </word>
   <word id="bind">
-    <form1 id="bind" sound="bind.wav">baɪnd</form1>
-    <form2 id="bound" sound="bind_2.wav">baund</form2>
-    <form3 id="bound" sound="bind_2.wav">baund</form3>
+    <form1 id="bind" sound="bind.mp3">baɪnd</form1>
+    <form2 id="bound" sound="bound.mp3">baund</form2>
+    <form3 id="bound" sound="bound.mp3">baund</form3>
     <translation>вязать</translation>
     <translation>связывать</translation>
     <translation>завязывать</translation>
@@ -193,9 +193,9 @@
     </example>
   </word>
   <word id="bite">
-    <form1 id="bite" sound="bite.wav">baɪt</form1>
-    <form2 id="bit" sound="bite_2.wav">bɪt</form2>
-    <form3 id="bitten" sound="bite_3.wav">'bɪtn</form3>
+    <form1 id="bite" sound="bite.mp3">baɪt</form1>
+    <form2 id="bit" sound="bit.mp3">bɪt</form2>
+    <form3 id="bitten" sound="bitten.mp3">'bɪtn</form3>
     <translation>жалить <i>(о змеях, насекомых)</i></translation>
     <translation>кусать</translation>
     <translation>клевать <i>(о рыбе)</i></translation>
@@ -213,9 +213,9 @@
     </example>
   </word>
   <word id="bleed">
-    <form1 id="bleed" sound="bleed.wav">bliːd</form1>
-    <form2 id="bled" sound="bleed_2.wav">bled</form2>
-    <form3 id="bled" sound="bleed_2.wav">bled</form3>
+    <form1 id="bleed" sound="bleed.mp3">bliːd</form1>
+    <form2 id="bled" sound="bled.mp3">bled</form2>
+    <form3 id="bled" sound="bled.mp3">bled</form3>
     <translation>кровоточить</translation>
     <translation>истекать кровью</translation>
     <example>
@@ -224,9 +224,9 @@
     </example>
   </word>
   <word id="bless">
-    <form1 id="bless" sound="bless.wav">bles</form1>
-    <form2 id="blest" sound="bless_2.wav">blest</form2>
-    <form3 id="blest" sound="bless_2.wav">blest</form3>
+    <form1 id="bless" sound="bless.mp3">bles</form1>
+    <form2 id="blest" sound="blest.mp3">blest</form2>
+    <form3 id="blest" sound="blest.mp3">blest</form3>
     <translation>благословлять</translation>
     <translation>давать благословение</translation>
     <example>
@@ -235,9 +235,9 @@
     </example>
   </word>
   <word id="blow">
-    <form1 id="blow" sound="blow.wav">bləu</form1>
-    <form2 id="blew" sound="blow_2.wav">bluː</form2>
-    <form3 id="blown" sound="blow_3.wav">bləun</form3>
+    <form1 id="blow" sound="blow.mp3">bləu</form1>
+    <form2 id="blew" sound="blew.mp3">bluː</form2>
+    <form3 id="blown" sound="blown.mp3">bləun</form3>
     <translation>веять, дуть <i>(о ветре)</i></translation>
     <translation>гнать <i>(ветром)</i></translation>
     <translation>уносить <i>(о ветре)</i></translation>
@@ -251,9 +251,9 @@
     </example>
   </word>
   <word id="break">
-    <form1 id="break" sound="break.wav">breɪk</form1>
-    <form2 id="broke" sound="break_2.wav">brəuk</form2>
-    <form3 id="broken" sound="break_3.wav">'brəuk(ə)n</form3>
+    <form1 id="break" sound="break.mp3">breɪk</form1>
+    <form2 id="broke" sound="broke.mp3">brəuk</form2>
+    <form3 id="broken" sound="broken.mp3">'brəuk(ə)n</form3>
     <translation>ломать, разбивать <i>(на части)</i></translation>
     <translation>разрушать(ся)</translation>
     <translation>разламываться; разбиваться</translation>
@@ -267,9 +267,9 @@
     </example>
   </word>
   <word id="breed">
-    <form1 id="breed" sound="breed.wav">briːd</form1>
-    <form2 id="bred" sound="breed_2.wav">bred</form2>
-    <form3 id="bred" sound="breed_2.wav">bred</form3>
+    <form1 id="breed" sound="breed.mp3">briːd</form1>
+    <form2 id="bred" sound="bred.mp3">bred</form2>
+    <form3 id="bred" sound="bred.mp3">bred</form3>
     <translation>размножать(ся)</translation>
     <translation>порождать, вызывать</translation>
     <translation>размножаться, плодиться <gi>прям. и перен.</gi></translation>
@@ -283,9 +283,9 @@
     </example>
   </word>
   <word id="bring">
-    <form1 id="bring" sound="bring.wav">brɪŋ</form1>
-    <form2 id="brought" sound="bring_2.wav">brɔːt</form2>
-    <form3 id="brought" sound="bring_2.wav">brɔːt</form3>
+    <form1 id="bring" sound="bring.mp3">brɪŋ</form1>
+    <form2 id="brought" sound="brought.mp3">brɔːt</form2>
+    <form3 id="brought" sound="brought.mp3">brɔːt</form3>
     <translation>приносить, привозить</translation>
     <translation>приводить</translation>
     <translation>доставлять</translation>
@@ -299,9 +299,9 @@
     </example>
   </word>
   <word id="broadcast">
-    <form1 id="broadcast" sound="broadcast.wav">'brɔːdkɑːst</form1>
-    <form2 id="broadcast" sound="broadcast.wav">'brɔːdkɑːst</form2>
-    <form3 id="broadcast" sound="broadcast.wav">'brɔːdkɑːst</form3>
+    <form1 id="broadcast" sound="broadcast.mp3">'brɔːdkɑːst</form1>
+    <form2 id="broadcast" sound="broadcast.mp3">'brɔːdkɑːst</form2>
+    <form3 id="broadcast" sound="broadcast.mp3">'brɔːdkɑːst</form3>
     <translation>передавать по радио, передавать по ТВ</translation>
     <translation>вещать, транслировать</translation>
     <example>
@@ -314,9 +314,9 @@
     </example>
   </word>
   <word id="build">
-    <form1 id="build" sound="build.wav">bɪld</form1>
-    <form2 id="built" sound="build_2.wav">bɪlt</form2>
-    <form3 id="built" sound="build_2.wav">bɪlt</form3>
+    <form1 id="build" sound="build.mp3">bɪld</form1>
+    <form2 id="built" sound="built.mp3">bɪlt</form2>
+    <form3 id="built" sound="built.mp3">bɪlt</form3>
     <translation>сооружать, строить</translation>
     <translation>возводить</translation>
     <example>
@@ -329,9 +329,9 @@
     </example>
   </word>
   <word id="burn">
-    <form1 id="burn" sound="burn.wav">bɜːn</form1>
-    <form2 id="burnt" sound="burn_2.wav">bɜːnt</form2>
-    <form3 id="burnt" sound="burn_2.wav">bɜːnt</form3>
+    <form1 id="burn" sound="burn.mp3">bɜːn</form1>
+    <form2 id="burnt" sound="burnt.mp3">bɜːnt</form2>
+    <form3 id="burnt" sound="burnt.mp3">bɜːnt</form3>
     <translation>гореть, пылать</translation>
     <example>
       <text>There was a fire burning in the large fireplace.</text>
@@ -343,9 +343,9 @@
     </example>
   </word>
   <word id="burst">
-    <form1 id="burst" sound="burst.wav">bɜːst</form1>
-    <form2 id="burst" sound="burst.wav">bɜːst</form2>
-    <form3 id="burst" sound="burst.wav">bɜːst</form3>
+    <form1 id="burst" sound="burst.mp3">bɜːst</form1>
+    <form2 id="burst" sound="burst.mp3">bɜːst</form2>
+    <form3 id="burst" sound="burst.mp3">bɜːst</form3>
     <translation>лопаться, разрываться</translation>
     <translation>взрываться <i>(о снаряде)</i></translation>
     <translation>прорываться <i>(о плотине, нарыве)</i></translation>
@@ -359,9 +359,9 @@
     </example>
   </word>
   <word id="buy">
-    <form1 id="buy" sound="buy.wav">baɪ</form1>
-    <form2 id="bought" sound="buy_2.wav">bɔːt</form2>
-    <form3 id="bought" sound="buy_2.wav">bɔːt</form3>
+    <form1 id="buy" sound="buy.mp3">baɪ</form1>
+    <form2 id="bought" sound="bought.mp3">bɔːt</form2>
+    <form3 id="bought" sound="bought.mp3">bɔːt</form3>
     <translation>покупать</translation>
     <translation>приобретать</translation>
     <example>
@@ -370,9 +370,9 @@
     </example>
   </word>
   <word id="cast">
-    <form1 id="cast" sound="cast.wav">kɑːst</form1>
-    <form2 id="cast" sound="cast.wav">kɑːst</form2>
-    <form3 id="cast" sound="cast.wav">kɑːst</form3>
+    <form1 id="cast" sound="cast.mp3">kɑːst</form1>
+    <form2 id="cast" sound="cast.mp3">kɑːst</form2>
+    <form3 id="cast" sound="cast.mp3">kɑːst</form3>
     <translation>бросать, кидать, швырять</translation>
     <translation>выбрасывать <i>(о море, волнах)</i></translation>
     <example>
@@ -385,9 +385,9 @@
     </example>
   </word>
   <word id="catch">
-    <form1 id="catch" sound="catch.wav">kæʧ</form1>
-    <form2 id="caught" sound="catch_2.wav">kɔːt</form2>
-    <form3 id="caught" sound="catch_2.wav">kɔːt</form3>
+    <form1 id="catch" sound="catch.mp3">kæʧ</form1>
+    <form2 id="caught" sound="caught.mp3">kɔːt</form2>
+    <form3 id="caught" sound="caught.mp3">kɔːt</form3>
     <translation>ловить</translation>
     <translation>поймать</translation>
     <translation>схватить</translation>
@@ -401,9 +401,9 @@
     </example>
   </word>
   <word id="choose">
-    <form1 id="choose" sound="choose.wav">ʧuːz</form1>
-    <form2 id="chose" sound="choose_2.wav">ʧəuz</form2>
-    <form3 id="chosen" sound="choose_3.wav">'ʧəuz(ə)n</form3>
+    <form1 id="choose" sound="choose.mp3">ʧuːz</form1>
+    <form2 id="chose" sound="chose.mp3">ʧəuz</form2>
+    <form3 id="chosen" sound="chosen.mp3">'ʧəuz(ə)n</form3>
     <translation>выбирать</translation>
     <translation>избирать</translation>
     <example>
@@ -416,9 +416,9 @@
     </example>
   </word>
   <word id="cleave">
-    <form1 id="cleave" sound="cleave.wav">kliːv</form1>
-    <form2 id="cleft" sound="cleave_2.wav">kleft</form2>
-    <form3 id="cleft" sound="cleave_2.wav">kleft</form3>
+    <form1 id="cleave" sound="cleave.mp3">kliːv</form1>
+    <form2 id="cleft" sound="cleft.mp3">kleft</form2>
+    <form3 id="cleft" sound="cleft.mp3">kleft</form3>
     <translation>раскалывать, разъединять</translation>
     <translation>хранить верность</translation>
     <example>
@@ -427,9 +427,9 @@
     </example>
   </word>
   <word id="cling">
-    <form1 id="cling" sound="cling.wav">klɪŋ</form1>
-    <form2 id="clung" sound="cling_2.wav">klʌŋ</form2>
-    <form3 id="clung" sound="cling_2.wav">klʌŋ</form3>
+    <form1 id="cling" sound="cling.mp3">klɪŋ</form1>
+    <form2 id="clung" sound="clung.mp3">klʌŋ</form2>
+    <form3 id="clung" sound="clung.mp3">klʌŋ</form3>
     <translation>цепляться, прилипать</translation>
     <translation>крепко держаться</translation>
     <translation>облегать <i>(о ткани, одежде)</i></translation>
@@ -439,9 +439,9 @@
     </example>
   </word>
   <word id="come">
-    <form1 id="come" sound="come.wav">kʌm</form1>
-    <form2 id="came" sound="come_2.wav">keɪm</form2>
-    <form3 id="come" sound="come.wav">kʌm</form3>
+    <form1 id="come" sound="come.mp3">kʌm</form1>
+    <form2 id="came" sound="came.mp3">keɪm</form2>
+    <form3 id="come" sound="come.mp3">kʌm</form3>
     <translation>приходить, подходить</translation>
     <translation>идти</translation>
     <translation>
@@ -452,9 +452,9 @@
     </example>
   </word>
   <word id="cost">
-    <form1 id="cost" sound="cost.wav">kɔst</form1>
-    <form2 id="cost" sound="cost.wav">kɔst</form2>
-    <form3 id="cost" sound="cost.wav">kɔst</form3>
+    <form1 id="cost" sound="cost.mp3">kɔst</form1>
+    <form2 id="cost" sound="cost.mp3">kɔst</form2>
+    <form3 id="cost" sound="cost.mp3">kɔst</form3>
     <translation>стоить, обходиться <i>(в какую-л. сумму)</i></translation>
     <translation>стоить <i>(усилий, затрат)</i></translation>
     <example>
@@ -463,9 +463,9 @@
     </example>
   </word>
   <word id="creep">
-    <form1 id="creep" sound="creep.wav">kriːp</form1>
-    <form2 id="crept" sound="creep_2.wav">krept</form2>
-    <form3 id="crept" sound="creep_2.wav">krept</form3>
+    <form1 id="creep" sound="creep.mp3">kriːp</form1>
+    <form2 id="crept" sound="crept.mp3">krept</form2>
+    <form3 id="crept" sound="crept.mp3">krept</form3>
     <translation>ползать</translation>
     <translation>пресмыкаться</translation>
     <translation>
@@ -476,9 +476,9 @@
     </example>
   </word>
   <word id="cut">
-    <form1 id="cut" sound="cut.wav">kʌt</form1>
-    <form2 id="cut" sound="cut.wav">kʌt</form2>
-    <form3 id="cut" sound="cut.wav">kʌt</form3>
+    <form1 id="cut" sound="cut.mp3">kʌt</form1>
+    <form2 id="cut" sound="cut.mp3">kʌt</form2>
+    <form3 id="cut" sound="cut.mp3">kʌt</form3>
     <translation>резать, разрезать</translation>
     <example>
       <text>to cut meat</text>
@@ -490,9 +490,9 @@
     </example>
   </word>
   <word id="dare">
-    <form1 id="dare" sound="dare.wav">deə(r)</form1>
-    <form2 id="durst" sound="dare_2.wav">dɜːst</form2>
-    <form3 id="dared" sound="dare_3.wav">deəd</form3>
+    <form1 id="dare" sound="dare.mp3">deə(r)</form1>
+    <form2 id="durst" sound="durst.mp3">dɜːst</form2>
+    <form3 id="dared" sound="dared.mp3">deəd</form3>
     <translation>отваживаться, осмеливаться, сметь</translation>
     <translation>иметь наглость <i>(как модальный глагол, обычно в вопросительных и отрицательных предложениях)</i></translation>
     <translation>рисковать, пренебрегать опасностью</translation>
@@ -506,9 +506,9 @@
     </example>
   </word>
   <word id="deal">
-    <form1 id="deal" sound="deal.wav">diːl</form1>
-    <form2 id="dealt" sound="deal_2.wav">delt</form2>
-    <form3 id="dealt" sound="deal_2.wav">delt</form3>
+    <form1 id="deal" sound="deal.mp3">diːl</form1>
+    <form2 id="dealt" sound="dealt.mp3">delt</form2>
+    <form3 id="dealt" sound="dealt.mp3">delt</form3>
     <translation>распределять <g>= deal out</g></translation>
     <translation>раздавать, выдавать</translation>
     <example>
@@ -521,9 +521,9 @@
     </example>
   </word>
   <word id="dig">
-    <form1 id="dig" sound="dig.wav">dɪg</form1>
-    <form2 id="dug" sound="dig_2.wav">dʌg</form2>
-    <form3 id="dug" sound="dig_2.wav">dʌg</form3>
+    <form1 id="dig" sound="dig.mp3">dɪg</form1>
+    <form2 id="dug" sound="dug.mp3">dʌg</form2>
+    <form3 id="dug" sound="dug.mp3">dʌg</form3>
     <translation>копать, рыть</translation>
     <example>
       <text>to dig a hole / a grave / a trench</text>
@@ -531,9 +531,9 @@
     </example>
   </word>
   <word id="dive">
-    <form1 id="dive" sound="dive.wav">daɪv</form1>
-    <form2 id="dove" sound="dive_2.wav">dəuv</form2>
-    <form3 id="dove" sound="dive_2.wav">dəuv</form3>
+    <form1 id="dive" sound="dive.mp3">daɪv</form1>
+    <form2 id="dove" sound="dove.mp3">dəuv</form2>
+    <form3 id="dove" sound="dove.mp3">dəuv</form3>
     <translation>нырять, бросаться в воду <g>=dive in</g></translation>
     <example>
       <text>to dive into a river</text>
@@ -545,9 +545,9 @@
     </example>
   </word>
   <word id="do">
-    <form1 id="do" sound="do.wav">duː</form1>
-    <form2 id="did" sound="do_2.wav">dɪd</form2>
-    <form3 id="done" sound="do_2.wav">dʌn</form3>
+    <form1 id="do" sound="do.mp3">duː</form1>
+    <form2 id="did" sound="did.mp3">dɪd</form2>
+    <form3 id="done" sound="done.mp3">dʌn</form3>
     <translation>делать, выполнять</translation>
     <translation>осуществлять, исполнять</translation>
     <example>
@@ -560,9 +560,9 @@
     </example>
   </word>
   <word id="draw">
-    <form1 id="draw" sound="draw.wav">drɔː</form1>
-    <form2 id="drew" sound="draw_2.wav">druː</form2>
-    <form3 id="drawn" sound="draw_3.wav">drɔːn</form3>
+    <form1 id="draw" sound="draw.mp3">drɔː</form1>
+    <form2 id="drew" sound="drew.mp3">druː</form2>
+    <form3 id="drawn" sound="drawn.mp3">drɔːn</form3>
     <translation>рисовать</translation>
     <translation>чертить</translation>
     <example>
@@ -571,9 +571,9 @@
     </example>
   </word>
   <word id="dream">
-    <form1 id="dream" sound="dream.wav">driːm</form1>
-    <form2 id="dreamt" sound="dream_2.wav">dremt</form2>
-    <form3 id="dreamt" sound="dream_3.wav">dremt</form3>
+    <form1 id="dream" sound="dream.mp3">driːm</form1>
+    <form2 id="dreamt" sound="dreamt.mp3">dremt</form2>
+    <form3 id="dreamt" sound="dreamt.mp3">dremt</form3>
     <translation>видеть сон о <i>(чём-л.)</i></translation>
     <translation>мечтать, грезить о</translation>
     <example>
@@ -586,9 +586,9 @@
     </example>
   </word>
   <word id="drink">
-    <form1 id="drink" sound="drink.wav">drɪŋk</form1>
-    <form2 id="drank" sound="drink_2.wav">dræŋk</form2>
-    <form3 id="drunk" sound="drink_3.wav">drʌŋk</form3>
+    <form1 id="drink" sound="drink.mp3">drɪŋk</form1>
+    <form2 id="drank" sound="drank.mp3">dræŋk</form2>
+    <form3 id="drunk" sound="drunk.mp3">drʌŋk</form3>
     <translation>пить</translation>
     <example>
       <text>I always drink tea from a glass.</text>
@@ -596,9 +596,9 @@
     </example>
   </word>
   <word id="drive">
-    <form1 id="drive" sound="drive.wav">draɪv</form1>
-    <form2 id="drove" sound="drive_2.wav">drəuv</form2>
-    <form3 id="driven" sound="drive_3.wav">'drɪv(ə)n</form3>
+    <form1 id="drive" sound="drive.mp3">draɪv</form1>
+    <form2 id="drove" sound="drove.mp3">drəuv</form2>
+    <form3 id="driven" sound="driven.mp3">'drɪv(ə)n</form3>
     <translation>водить, везти, управлять <i>(автомобилем, поездом и т. п.)</i></translation>
     <translation>ездить</translation>
     <translation>ехать <i>(на автомобиле)</i></translation>
@@ -612,16 +612,16 @@
     </example>
   </word>
   <word id="dwell">
-    <form1 id="dwell" sound="dwell.wav">dwel</form1>
-    <form2 id="dwelt" sound="dwell_2.wav">dwelt</form2>
-    <form3 id="dwelt" sound="dwell_2.wav">dwelt</form3>
+    <form1 id="dwell" sound="dwell.mp3">dwel</form1>
+    <form2 id="dwelt" sound="dwelt.mp3">dwelt</form2>
+    <form3 id="dwelt" sound="dwelt.mp3">dwelt</form3>
     <translation>жить, обитать</translation>
     <translation>находиться, пребывать</translation>
   </word>
   <word id="eat">
-    <form1 id="eat" sound="eat.wav">iːt</form1>
-    <form2 id="ate" sound="eat_2.wav">eɪt</form2>
-    <form3 id="eaten" sound="eat_3.wav">'iːt(ə)n</form3>
+    <form1 id="eat" sound="eat.mp3">iːt</form1>
+    <form2 id="ate" sound="ate.mp3">eɪt</form2>
+    <form3 id="eaten" sound="eaten.mp3">'iːt(ə)n</form3>
     <translation>есть</translation>
     <translation>поглощать, поедать</translation>
     <example>
@@ -630,9 +630,9 @@
     </example>
   </word>
   <word id="fall">
-    <form1 id="fall" sound="fall.wav">fɔːl</form1>
-    <form2 id="fell" sound="fall_2.wav">fel</form2>
-    <form3 id="fallen" sound="fall_3.wav">'fɔːlən</form3>
+    <form1 id="fall" sound="fall.mp3">fɔːl</form1>
+    <form2 id="fell" sound="fell.mp3">fel</form2>
+    <form3 id="fallen" sound="fallen.mp3">'fɔːlən</form3>
     <translation>падать <i>(с высоты)</i></translation>
     <example>
       <text>to fall off a table</text>
@@ -640,9 +640,9 @@
     </example>
   </word>
   <word id="feed">
-    <form1 id="feed" sound="feed.wav">fiːd</form1>
-    <form2 id="fed" sound="feed_2.wav">fed</form2>
-    <form3 id="fed" sound="feed_2.wav">fed</form3>
+    <form1 id="feed" sound="feed.mp3">fiːd</form1>
+    <form2 id="fed" sound="fed.mp3">fed</form2>
+    <form3 id="fed" sound="fed.mp3">fed</form3>
     <translation>кормить</translation>
     <example>
       <text>We brought along pieces of old bread and fed the birds.</text>
@@ -650,9 +650,9 @@
     </example>
   </word>
   <word id="feel">
-    <form1 id="feel" sound="feel.wav">fiːl</form1>
-    <form2 id="felt" sound="feel_2.wav">felt</form2>
-    <form3 id="felt" sound="feel_2.wav">felt</form3>
+    <form1 id="feel" sound="feel.mp3">fiːl</form1>
+    <form2 id="felt" sound="felt.mp3">felt</form2>
+    <form3 id="felt" sound="felt.mp3">felt</form3>
     <translation>чувствовать, ощущать</translation>
     <translation>ощупывать, осязать, трогать, прикасаться</translation>
     <example>
@@ -661,9 +661,9 @@
     </example>
   </word>
   <word id="fight">
-    <form1 id="fight" sound="fight.wav">faɪt</form1>
-    <form2 id="fought" sound="fight_2.wav">fɔːt</form2>
-    <form3 id="fought" sound="fight_2.wav">fɔːt</form3>
+    <form1 id="fight" sound="fight.mp3">faɪt</form1>
+    <form2 id="fought" sound="fought.mp3">fɔːt</form2>
+    <form3 id="fought" sound="fought.mp3">fɔːt</form3>
     <translation>драться</translation>
     <translation>сражаться</translation>
     <translation>воевать</translation>
@@ -673,9 +673,9 @@
     </example>
   </word>
   <word id="find">
-    <form1 id="find" sound="find.wav">faɪnd</form1>
-    <form2 id="found" sound="find_2.wav">faund</form2>
-    <form3 id="found" sound="find_2.wav">faund</form3>
+    <form1 id="find" sound="find.mp3">faɪnd</form1>
+    <form2 id="found" sound="found.mp3">faund</form2>
+    <form3 id="found" sound="found.mp3">faund</form3>
     <translation>находить, встречать, обнаруживать</translation>
     <translation>заставать</translation>
     <example>
@@ -684,9 +684,9 @@
     </example>
   </word>
   <word id="flee">
-    <form1 id="flee" sound="flee.wav">fliː</form1>
-    <form2 id="fled" sound="flee_2.wav">fled</form2>
-    <form3 id="fled" sound="flee_2.wav">fled</form3>
+    <form1 id="flee" sound="flee.mp3">fliː</form1>
+    <form2 id="fled" sound="fled.mp3">fled</form2>
+    <form3 id="fled" sound="fled.mp3">fled</form3>
     <translation>убегать, спасаться бегством</translation>
     <example>
       <text>All the animals fled from the fire.</text>
@@ -694,9 +694,9 @@
     </example>
   </word>
   <word id="fling">
-    <form1 id="fling" sound="fling.wav">flɪŋ</form1>
-    <form2 id="flung" sound="fling_2.wav">flʌŋ</form2>
-    <form3 id="flung" sound="fling_2.wav">flʌŋ</form3>
+    <form1 id="fling" sound="fling.mp3">flɪŋ</form1>
+    <form2 id="flung" sound="flung.mp3">flʌŋ</form2>
+    <form3 id="flung" sound="flung.mp3">flʌŋ</form3>
     <translation>бросать, кидать</translation>
     <translation>бросаться, кидаться, ринуться</translation>
     <example>
@@ -705,9 +705,9 @@
     </example>
   </word>
   <word id="fly">
-    <form1 id="fly" sound="fly.wav">flaɪ</form1>
-    <form2 id="flew" sound="fly_2.wav">fluː</form2>
-    <form3 id="flown" sound="fly_3.wav">fləun</form3>
+    <form1 id="fly" sound="fly.mp3">flaɪ</form1>
+    <form2 id="flew" sound="flew.mp3">fluː</form2>
+    <form3 id="flown" sound="flown.mp3">fləun</form3>
     <translation>летать</translation>
     <example>
       <text>to fly into / out of Chicago</text>
@@ -715,9 +715,9 @@
     </example>
   </word>
   <word id="forbid">
-    <form1 id="forbid" sound="forbid.wav">fə'bɪd</form1>
-    <form2 id="forbade" sound="forbid_2.wav">fə'beɪd</form2>
-    <form3 id="forbidden" sound="forbid_3.wav">fə'bɪd(ə)n</form3>
+    <form1 id="forbid" sound="forbid.mp3">fə'bɪd</form1>
+    <form2 id="forbade" sound="forbade.mp3">fə'beɪd</form2>
+    <form3 id="forbidden" sound="forbidden.mp3">fə'bɪd(ə)n</form3>
     <translation>запрещать, не позволять</translation>
     <translation>препятствовать</translation>
     <example>
@@ -726,9 +726,9 @@
     </example>
   </word>
   <word id="forecast">
-    <form1 id="forecast" sound="forecast.wav">'fɔːkɑːst</form1>
-    <form2 id="forecast" sound="forecast.wav">'fɔːkɑːst</form2>
-    <form3 id="forecast" sound="forecast.wav">'fɔːkɑːst</form3>
+    <form1 id="forecast" sound="forecast.mp3">'fɔːkɑːst</form1>
+    <form2 id="forecast" sound="forecast.mp3">'fɔːkɑːst</form2>
+    <form3 id="forecast" sound="forecast.mp3">'fɔːkɑːst</form3>
     <translation>предвидеть, предвосхищать, предсказывать</translation>
     <example>
       <text>She forecast that an earthquake would occur.</text>
@@ -736,9 +736,9 @@
     </example>
   </word>
   <word id="foresee">
-    <form1 id="foresee" sound="foresee.wav">fɔː'siː</form1>
-    <form2 id="foresaw" sound="foresee_2.wav">fɔː'sɔː</form2>
-    <form3 id="foreseen" sound="foresee_3.wav">fɔː'siːn</form3>
+    <form1 id="foresee" sound="foresee.mp3">fɔː'siː</form1>
+    <form2 id="foresaw" sound="foresaw.mp3">fɔː'sɔː</form2>
+    <form3 id="foreseen" sound="foreseen.mp3">fɔː'siːn</form3>
     <translation>предвидеть, предвосхищать, предсказывать</translation>
     <example>
       <text>Nobody could foresee his running away.</text>
@@ -746,9 +746,9 @@
     </example>
   </word>
   <word id="forget">
-    <form1 id="forget" sound="forget.wav">fə'get</form1>
-    <form2 id="forgot" sound="forget_2.wav">fə'gɔt</form2>
-    <form3 id="forgotten" sound="forget_3.wav">fə'gɔt(ə)n</form3>
+    <form1 id="forget" sound="forget.mp3">fə'get</form1>
+    <form2 id="forgot" sound="forgot.mp3">fə'gɔt</form2>
+    <form3 id="forgotten" sound="forgotten.mp3">fə'gɔt(ə)n</form3>
     <!--translation>(forget about) забывать о (ком-л., чём-л.)</translation-->
     <translation>забывать о <i>(ком-л., чём-л.)</i></translation>
     <example>
@@ -761,9 +761,9 @@
     </example>
   </word>
   <word id="forgive">
-    <form1 id="forgive" sound="forgive.wav">fə'gɪv</form1>
-    <form2 id="forgave" sound="forgive_2.wav">fə'geɪv</form2>
-    <form3 id="forgiven" sound="forgive_3.wav">fə'gɪv(ə)n</form3>
+    <form1 id="forgive" sound="forgive.mp3">fə'gɪv</form1>
+    <form2 id="forgave" sound="forgave.mp3">fə'geɪv</form2>
+    <form3 id="forgiven" sound="forgiven.mp3">fə'gɪv(ə)n</form3>
     <translation>прощать</translation>
     <example>
       <text>It is difficult to forgive anyone for cruelty.</text>
@@ -771,9 +771,9 @@
     </example>
   </word>
   <word id="freeze">
-    <form1 id="freeze" sound="freeze.wav">friːz</form1>
-    <form2 id="froze" sound="freeze_2.wav">frəuz</form2>
-    <form3 id="frozen" sound="freeze_3.wav">'frəuz(ə)n</form3>
+    <form1 id="freeze" sound="freeze.mp3">friːz</form1>
+    <form2 id="froze" sound="froze.mp3">frəuz</form2>
+    <form3 id="frozen" sound="frozen.mp3">'frəuz(ə)n</form3>
     <translation>замерзать, обледеневать, покрываться льдом <g>= freeze up</g></translation>
     <example>
       <text>to freeze to death</text>
@@ -781,9 +781,9 @@
     </example>
   </word>
   <word id="get">
-    <form1 id="get" sound="get.wav">get</form1>
-    <form2 id="got" sound="get_2.wav">gɔt</form2>
-    <form3 id="gotten" sound="get_3.wav">'gɔtn</form3>
+    <form1 id="get" sound="get.mp3">get</form1>
+    <form2 id="got" sound="got.mp3">gɔt</form2>
+    <form3 id="gotten" sound="gotten.mp3">'gɔtn</form3>
     <translation>получить (в собственность), стать обладателем</translation>
     <example>
       <text>He got a bicycle for his birthday.</text>
@@ -791,9 +791,9 @@
     </example>
   </word>
   <word id="give">
-    <form1 id="give" sound="give.wav">gɪv</form1>
-    <form2 id="gave" sound="give_2.wav">geɪv</form2>
-    <form3 id="given" sound="give_3.wav">gɪv(ə)n</form3>
+    <form1 id="give" sound="give.mp3">gɪv</form1>
+    <form2 id="gave" sound="gave.mp3">geɪv</form2>
+    <form3 id="given" sound="given.mp3">gɪv(ə)n</form3>
     <translation>дать, подать, передать</translation>
     <example>
       <text>Would you give me that magazine on the table?</text>
@@ -801,9 +801,9 @@
     </example>
   </word>
   <word id="go">
-    <form1 id="go" sound="go.wav">gəu</form1>
-    <form2 id="went" sound="go_2.wav">went</form2>
-    <form3 id="gone" sound="go_3.wav">gɔn</form3>
+    <form1 id="go" sound="go.mp3">gəu</form1>
+    <form2 id="went" sound="went.mp3">went</form2>
+    <form3 id="gone" sound="gone.mp3">gɔn</form3>
     <translation>идти, ехать, двигаться</translation>
     <example>
       <text>to go home</text>
@@ -811,9 +811,9 @@
     </example>
   </word>
   <word id="grind">
-    <form1 id="grind" sound="grind.wav">graɪnd</form1>
-    <form2 id="ground" sound="grind_2.wav">graund</form2>
-    <form3 id="ground" sound="grind_2.wav">graund</form3>
+    <form1 id="grind" sound="grind.mp3">graɪnd</form1>
+    <form2 id="ground" sound="ground.mp3">graund</form2>
+    <form3 id="ground" sound="ground.mp3">graund</form3>
     <translation>молоть, перемалывать</translation>
     <translation>растирать <i>(в порошок)</i></translation>
     <translation>толочь</translation>
@@ -824,9 +824,9 @@
     </example>
   </word>
   <word id="grow">
-    <form1 id="grow" sound="grow.wav">grəu</form1>
-    <form2 id="grew" sound="grow_2.wav">gruː</form2>
-    <form3 id="grown" sound="grow_3.wav">grəun</form3>
+    <form1 id="grow" sound="grow.mp3">grəu</form1>
+    <form2 id="grew" sound="grew.mp3">gruː</form2>
+    <form3 id="grown" sound="grown.mp3">grəun</form3>
     <translation>произрастать, расти</translation>
     <example>
       <text>Rice grows in water.</text>
@@ -834,9 +834,9 @@
     </example>
   </word>
   <word id="hang">
-    <form1 id="hang" sound="hang.wav">hæŋ</form1>
-    <form2 id="hung" sound="hang_2.wav">hʌŋ</form2>
-    <form3 id="hung" sound="hang_2.wav">hʌŋ</form3>
+    <form1 id="hang" sound="hang.mp3">hæŋ</form1>
+    <form2 id="hung" sound="hung.mp3">hʌŋ</form2>
+    <form3 id="hung" sound="hung.mp3">hʌŋ</form3>
     <translation>вешать, подвешивать</translation>
     <translation>вешать, развешивать, подвешивать</translation>
     <example>
@@ -845,9 +845,9 @@
     </example>
   </word>
   <word id="have">
-    <form1 id="have" sound="have.wav">hæv</form1>
-    <form2 id="had" sound="have_2.wav">hæd</form2>
-    <form3 id="had" sound="have_2.wav">hæd</form3>
+    <form1 id="have" sound="have.mp3">hæv</form1>
+    <form2 id="had" sound="had.mp3">hæd</form2>
+    <form3 id="had" sound="had.mp3">hæd</form3>
     <translation>иметь, обладать</translation>
     <translation>включать, содержать</translation>
     <example>
@@ -856,9 +856,9 @@
     </example>
   </word>
   <word id="hear">
-    <form1 id="hear" sound="hear.wav">hɪə</form1>
-    <form2 id="heard" sound="hear_2.wav">hɜːd</form2>
-    <form3 id="heard" sound="hear_2.wav">hɜːd</form3>
+    <form1 id="hear" sound="hear.mp3">hɪə</form1>
+    <form2 id="heard" sound="heard.mp3">hɜːd</form2>
+    <form3 id="heard" sound="heard.mp3">hɜːd</form3>
     <translation>слышать</translation>
     <example>
       <text>He is dull of hearing.</text>
@@ -866,9 +866,9 @@
     </example>
   </word>
   <word id="heave">
-    <form1 id="heave" sound="heave.wav">hiːv</form1>
-    <form2 id="hove" sound="heave_2.wav">həuv</form2>
-    <form3 id="hove" sound="heave_2.wav">həuv</form3>
+    <form1 id="heave" sound="heave.mp3">hiːv</form1>
+    <form2 id="hove" sound="hove.mp3">həuv</form2>
+    <form3 id="hove" sound="hove.mp3">həuv</form3>
     <translation>поднимать</translation>
     <translation>перемещать, снимать <gi>прям. и перен.</gi></translation>
     <example>
@@ -881,9 +881,9 @@
     </example>
   </word>
   <word id="hew">
-    <form1 id="hew" sound="hew.wav">hjuː</form1>
-    <form2 id="hewed" sound="hew_2.wav">hjuːd</form2>
-    <form3 id="hewn" sound="hew_3.wav">hjuːn</form3>
+    <form1 id="hew" sound="hew.mp3">hjuː</form1>
+    <form2 id="hewed" sound="hewed.mp3">hjuːd</form2>
+    <form3 id="hewn" sound="hewn.mp3">hjuːn</form3>
     <translation>разрубать, рассекать, рубить</translation>
     <translation>
       <g>= hew down, = hew off</g> срубать</translation>
@@ -893,9 +893,9 @@
     </example>
   </word>
   <word id="hide">
-    <form1 id="hide" sound="hide.wav">haɪd</form1>
-    <form2 id="hid" sound="hide_2.wav">hɪd</form2>
-    <form3 id="hidden" sound="hide_3.wav">'hɪd(ə)n</form3>
+    <form1 id="hide" sound="hide.mp3">haɪd</form1>
+    <form2 id="hid" sound="hid.mp3">hɪd</form2>
+    <form3 id="hidden" sound="hidden.mp3">'hɪd(ə)n</form3>
     <translation>прятать, скрывать</translation>
     <translation>
       <g>= hide out</g> прятаться, скрываться</translation>
@@ -905,9 +905,9 @@
     </example>
   </word>
   <word id="hit">
-    <form1 id="hit" sound="hit.wav">hɪt</form1>
-    <form2 id="hit" sound="hit.wav">hɪt</form2>
-    <form3 id="hit" sound="hit.wav">hɪt</form3>
+    <form1 id="hit" sound="hit.mp3">hɪt</form1>
+    <form2 id="hit" sound="hit.mp3">hɪt</form2>
+    <form3 id="hit" sound="hit.mp3">hɪt</form3>
     <translation>ударять <i>(по чему-л.)</i></translation>
     <translation>поражать</translation>
     <example>
@@ -916,9 +916,9 @@
     </example>
   </word>
   <word id="hold">
-    <form1 id="hold" sound="hold.wav">həuld</form1>
-    <form2 id="held" sound="hold_2.wav">held</form2>
-    <form3 id="held" sound="hold_2.wav">held</form3>
+    <form1 id="hold" sound="hold.mp3">həuld</form1>
+    <form2 id="held" sound="held.mp3">held</form2>
+    <form3 id="held" sound="held.mp3">held</form3>
     <translation>держать</translation>
     <translation>обнимать</translation>
     <example>
@@ -927,9 +927,9 @@
     </example>
   </word>
   <word id="hurt">
-    <form1 id="hurt" sound="hurt.wav">hɜːt</form1>
-    <form2 id="hurt" sound="hurt.wav">hɜːt</form2>
-    <form3 id="hurt" sound="hurt.wav">hɜːt</form3>
+    <form1 id="hurt" sound="hurt.mp3">hɜːt</form1>
+    <form2 id="hurt" sound="hurt.mp3">hɜːt</form2>
+    <form3 id="hurt" sound="hurt.mp3">hɜːt</form3>
     <translation>ранить, травмировать</translation>
     <example>
       <text>to hurt badly / seriously</text>
@@ -937,9 +937,9 @@
     </example>
   </word>
   <word id="keep">
-    <form1 id="keep" sound="keep.wav">kiːp</form1>
-    <form2 id="kept" sound="keep_2.wav">kept</form2>
-    <form3 id="kept" sound="keep_2.wav">kept</form3>
+    <form1 id="keep" sound="keep.mp3">kiːp</form1>
+    <form2 id="kept" sound="kept.mp3">kept</form2>
+    <form3 id="kept" sound="kept.mp3">kept</form3>
     <translation>хранить</translation>
     <translation>держать, не отдавать</translation>
     <example>
@@ -948,9 +948,9 @@
     </example>
   </word>
   <word id="kneel">
-    <form1 id="kneel" sound="kneel.wav">niːl</form1>
-    <form2 id="knelt" sound="kneel_2.wav">nelt</form2>
-    <form3 id="knelt" sound="kneel_2.wav">nelt</form3>
+    <form1 id="kneel" sound="kneel.mp3">niːl</form1>
+    <form2 id="knelt" sound="knelt.mp3">nelt</form2>
+    <form3 id="knelt" sound="knelt.mp3">nelt</form3>
     <translation>преклонять колени, становиться на колени <g>= kneel down</g></translation>
     <example>
       <text>Christians often kneel down to say their prayers.</text>
@@ -958,9 +958,9 @@
     </example>
   </word>
   <word id="knit">
-    <form1 id="knit" sound="knit.wav">nɪt</form1>
-    <form2 id="knit" sound="knit.wav">nɪt</form2>
-    <form3 id="knit" sound="knit.wav">nɪt</form3>
+    <form1 id="knit" sound="knit.mp3">nɪt</form1>
+    <form2 id="knit" sound="knit.mp3">nɪt</form2>
+    <form3 id="knit" sound="knit.mp3">nɪt</form3>
     <translation>вязать</translation>
     <example>
       <text>a number of women, busily knitting</text>
@@ -968,9 +968,9 @@
     </example>
   </word>
   <word id="know">
-    <form1 id="know" sound="know.wav">nəu</form1>
-    <form2 id="knew" sound="know_2.wav">njuː</form2>
-    <form3 id="known" sound="know_3.wav">nəun</form3>
+    <form1 id="know" sound="know.mp3">nəu</form1>
+    <form2 id="knew" sound="knew.mp3">njuː</form2>
+    <form3 id="known" sound="known.mp3">nəun</form3>
     <translation>знать, иметь представление <i>(о чём-л.)</i></translation>
     <translation>знать, разбираться <i>(в чём-л.)</i></translation>
     <example>
@@ -979,9 +979,9 @@
     </example>
   </word>
   <word id="lay">
-    <form1 id="lay" sound="lay.wav">leɪ</form1>
-    <form2 id="laid" sound="lay_2.wav">leɪd</form2>
-    <form3 id="laid" sound="lay_2.wav">leɪd</form3>
+    <form1 id="lay" sound="lay.mp3">leɪ</form1>
+    <form2 id="laid" sound="laid.mp3">leɪd</form2>
+    <form3 id="laid" sound="laid.mp3">leɪd</form3>
     <translation>класть, положить</translation>
     <example>
       <text>to lay up for repairs</text>
@@ -993,9 +993,9 @@
     </example>
   </word>
   <word id="lead">
-    <form1 id="lead" sound="lead.wav">liːd</form1>
-    <form2 id="led" sound="lead_2.wav">led</form2>
-    <form3 id="led" sound="lead_2.wav">led</form3>
+    <form1 id="lead" sound="lead.mp3">liːd</form1>
+    <form2 id="led" sound="led.mp3">led</form2>
+    <form3 id="led" sound="led.mp3">led</form3>
     <translation>вести, сопровождать</translation>
     <translation>вести <i>(за руку, на поводке)</i></translation>
     <example>
@@ -1008,9 +1008,9 @@
     </example>
   </word>
   <word id="lean">
-    <form1 id="lean" sound="lean.wav">liːn</form1>
-    <form2 id="leant" sound="lean_2.wav">lent</form2>
-    <form3 id="leant" sound="lean_2.wav">lent</form3>
+    <form1 id="lean" sound="lean.mp3">liːn</form1>
+    <form2 id="leant" sound="leant.mp3">lent</form2>
+    <form3 id="leant" sound="leant.mp3">lent</form3>
     <translation>наклонять, нагибать</translation>
     <translation>наклоняться, склоняться <gi>прям. и перен.</gi></translation>
     <translation>прислонять(ся), опирать(ся)</translation>
@@ -1028,9 +1028,9 @@
     </example>
   </word>
   <word id="leap">
-    <form1 id="leap" sound="leap.wav">liːp</form1>
-    <form2 id="leapt" sound="leap_2.wav">lept</form2>
-    <form3 id="leapt" sound="leap_2.wav">lept</form3>
+    <form1 id="leap" sound="leap.mp3">liːp</form1>
+    <form2 id="leapt" sound="leapt.mp3">lept</form2>
+    <form3 id="leapt" sound="leapt.mp3">lept</form3>
     <translation>прыгать, скакать</translation>
     <translation>перепрыгивать, перескакивать</translation>
     <example>
@@ -1039,9 +1039,9 @@
     </example>
   </word>
   <word id="learn">
-    <form1 id="learn" sound="learn.wav">lɜːn</form1>
-    <form2 id="learnt" sound="learn_2.wav">lɜːnt</form2>
-    <form3 id="learnt" sound="learn_2.wav">lɜːnt</form3>
+    <form1 id="learn" sound="learn.mp3">lɜːn</form1>
+    <form2 id="learnt" sound="learnt.mp3">lɜːnt</form2>
+    <form3 id="learnt" sound="learnt.mp3">lɜːnt</form3>
     <translation>учиться; учить <i>(что-л.)</i></translation>
     <translation>научиться <i>(чему-л.)</i></translation>
     <translation>узнавать</translation>
@@ -1059,9 +1059,9 @@
     </example>
   </word>
   <word id="leave">
-    <form1 id="leave" sound="leave.wav">liːv</form1>
-    <form2 id="left" sound="leave_2.wav">left</form2>
-    <form3 id="left" sound="leave_2.wav">left</form3>
+    <form1 id="leave" sound="leave.mp3">liːv</form1>
+    <form2 id="left" sound="left.mp3">left</form2>
+    <form3 id="left" sound="left.mp3">left</form3>
     <translation>покидать</translation>
     <example>
       <text>She left the room without explanation.</text>
@@ -1069,9 +1069,9 @@
     </example>
   </word>
   <word id="lend">
-    <form1 id="lend" sound="lend.wav">lend</form1>
-    <form2 id="lent" sound="lend_2.wav">lent</form2>
-    <form3 id="lent" sound="lend_2.wav">lent</form3>
+    <form1 id="lend" sound="lend.mp3">lend</form1>
+    <form2 id="lent" sound="lent.mp3">lent</form2>
+    <form3 id="lent" sound="lent.mp3">lent</form3>
     <translation>одалживать, давать взаймы</translation>
     <example>
       <text>She lent the money to him.</text>
@@ -1079,9 +1079,9 @@
     </example>
   </word>
   <word id="let">
-    <form1 id="let" sound="let.wav">let</form1>
-    <form2 id="let" sound="let.wav">let</form2>
-    <form3 id="let" sound="let.wav">let</form3>
+    <form1 id="let" sound="let.mp3">let</form1>
+    <form2 id="let" sound="let.mp3">let</form2>
+    <form3 id="let" sound="let.mp3">let</form3>
     <translation>выпускать</translation>
     <translation>проливать <i>(слёзы, кровь)</i></translation>
     <example>
@@ -1090,9 +1090,9 @@
     </example>
   </word>
   <word id="lie">
-    <form1 id="lie" sound="lie.wav">laɪ</form1>
-    <form2 id="lay" sound="lie_2.wav">leɪ</form2>
-    <form3 id="lain" sound="lie_3.wav">leɪn</form3>
+    <form1 id="lie" sound="lie.mp3">laɪ</form1>
+    <form2 id="lay" sound="lay.mp3">leɪ</form2>
+    <form3 id="lain" sound="lain.mp3">leɪn</form3>
     <translation>лежать</translation>
     <example>
       <text>The injured man was lying motionless on his back.</text>
@@ -1100,9 +1100,9 @@
     </example>
   </word>
   <word id="light">
-    <form1 id="light" sound="light.wav">laɪt</form1>
-    <form2 id="lit" sound="light_2.wav">lɪt</form2>
-    <form3 id="lit" sound="light_2.wav">lɪt</form3>
+    <form1 id="light" sound="light.mp3">laɪt</form1>
+    <form2 id="lit" sound="lit.mp3">lɪt</form2>
+    <form3 id="lit" sound="lit.mp3">lɪt</form3>
     <translation>освещать <i>(помещение)</i></translation>
     <translation>светить <i>(кому-л.)</i></translation>
     <translation>светиться, оживляться, озаряться<g>= light up</g></translation>
@@ -1112,9 +1112,9 @@
     </example>
   </word>
   <word id="lose">
-    <form1 id="lose" sound="lose.wav">luːz</form1>
-    <form2 id="lost" sound="lose_2.wav">lɔst</form2>
-    <form3 id="lost" sound="lose_2.wav">lɔst</form3>
+    <form1 id="lose" sound="lose.mp3">luːz</form1>
+    <form2 id="lost" sound="lost.mp3">lɔst</form2>
+    <form3 id="lost" sound="lost.mp3">lɔst</form3>
     <translation>не сохранять, терять <i>(что-л.)</i></translation>
     <translation>утрачивать, лишаться <i>(чего-л. / кого-л.)</i></translation>
     <example>
@@ -1123,9 +1123,9 @@
     </example>
   </word>
   <word id="make">
-    <form1 id="make" sound="make.wav">meɪk</form1>
-    <form2 id="made" sound="make_2.wav">meɪd</form2>
-    <form3 id="made" sound="make_2.wav">meɪd</form3>
+    <form1 id="make" sound="make.mp3">meɪk</form1>
+    <form2 id="made" sound="made.mp3">meɪd</form2>
+    <form3 id="made" sound="made.mp3">meɪd</form3>
     <translation>делать, конструировать</translation>
     <translation>создавать, изготавливать</translation>
     <example>
@@ -1138,9 +1138,9 @@
     </example>
   </word>
   <word id="mean">
-    <form1 id="mean" sound="mean.wav">miːn</form1>
-    <form2 id="meant" sound="mean_2.wav">ment</form2>
-    <form3 id="meant" sound="mean_2.wav">ment</form3>
+    <form1 id="mean" sound="mean.mp3">miːn</form1>
+    <form2 id="meant" sound="meant.mp3">ment</form2>
+    <form3 id="meant" sound="meant.mp3">ment</form3>
     <translation>намереваться, иметь в виду</translation>
     <translation>значить, означать</translation>
     <example>
@@ -1149,9 +1149,9 @@
     </example>
   </word>
   <word id="meet">
-    <form1 id="meet" sound="meet.wav">miːt</form1>
-    <form2 id="met" sound="meet_2.wav">met</form2>
-    <form3 id="met" sound="meet_2.wav">met</form3>
+    <form1 id="meet" sound="meet.mp3">miːt</form1>
+    <form2 id="met" sound="met.mp3">met</form2>
+    <form3 id="met" sound="met.mp3">met</form3>
     <translation>встречаться, видеться</translation>
     <translation>
       <g>= meet up</g> встречать</translation>
@@ -1161,9 +1161,9 @@
     </example>
   </word>
   <word id="mislead">
-    <form1 id="mislead" sound="mislead.wav">mɪs'liːd</form1>
-    <form2 id="misled" sound="mislead_2.wav">mɪs'led</form2>
-    <form3 id="misled" sound="mislead_2.wav">mɪs'led</form3>
+    <form1 id="mislead" sound="mislead.mp3">mɪs'liːd</form1>
+    <form2 id="misled" sound="misled.mp3">mɪs'led</form2>
+    <form3 id="misled" sound="misled.mp3">mɪs'led</form3>
     <translation>вводить в заблуждение</translation>
     <translation>сбивать с пути</translation>
     <example>
@@ -1172,9 +1172,9 @@
     </example>
   </word>
   <word id="mistake">
-    <form1 id="mistake" sound="mistake.wav">mɪ'steɪk</form1>
-    <form2 id="mistook" sound="mistake_2.wav">mɪ'stuk</form2>
-    <form3 id="mistaken" sound="mistake_3.wav">mɪ'steɪk(ə)n</form3>
+    <form1 id="mistake" sound="mistake.mp3">mɪ'steɪk</form1>
+    <form2 id="mistook" sound="mistook.mp3">mɪ'stuk</form2>
+    <form3 id="mistaken" sound="mistaken.mp3">mɪ'steɪk(ə)n</form3>
     <translation>ошибаться</translation>
     <translation>неправильно понимать</translation>
     <translation>заблуждаться</translation>
@@ -1184,15 +1184,15 @@
     </example>
   </word>
   <word id="misunderstand">
-    <form1 id="misunderstand" sound="misunderstand.wav">ˌmɪsʌndə'stænd</form1>
-    <form2 id="misunderstood" sound="misunderstand_2.wav">ˌmɪsʌndə'stud</form2>
-    <form3 id="misunderstood" sound="misunderstand_2.wav">ˌmɪsʌndə'stud</form3>
+    <form1 id="misunderstand" sound="misunderstand.mp3">ˌmɪsʌndə'stænd</form1>
+    <form2 id="misunderstood" sound="misunderstood.mp3">ˌmɪsʌndə'stud</form2>
+    <form3 id="misunderstood" sound="misunderstood.mp3">ˌmɪsʌndə'stud</form3>
     <translation>неправильно понять</translation>
   </word>
   <word id="mow">
-    <form1 id="mow" sound="mow.wav">məu</form1>
-    <form2 id="mowed" sound="mow_2.wav">məʊd</form2>
-    <form3 id="mown" sound="mow_3.wav">məun</form3>
+    <form1 id="mow" sound="mow.mp3">məu</form1>
+    <form2 id="mowed" sound="mowed.mp3">məʊd</form2>
+    <form3 id="mown" sound="mown.mp3">məun</form3>
     <translation>косить</translation>
     <translation>жать</translation>
     <example>
@@ -1201,9 +1201,9 @@
     </example>
   </word>
   <word id="outbid">
-    <form1 id="outbid" sound="outbid.wav">ˌaut'bɪd</form1>
-    <form2 id="outbid" sound="outbid.wav">ˌaut'bɪd</form2>
-    <form3 id="outbid" sound="outbid.wav">ˌaut'bɪd</form3>
+    <form1 id="outbid" sound="outbid.mp3">ˌaut'bɪd</form1>
+    <form2 id="outbid" sound="outbid.mp3">ˌaut'bɪd</form2>
+    <form3 id="outbid" sound="outbid.mp3">ˌaut'bɪd</form3>
     <translation>превзойти, затмить</translation>
     <translation>перебивать цену, предлагать более высокую цену</translation>
     <example>
@@ -1212,16 +1212,16 @@
     </example>
   </word>
   <word id="outdo">
-    <form1 id="outdo" sound="outdo.wav">ˌaut'duː</form1>
-    <form2 id="outdid" sound="outdo_2.wav">ˌaut'dɪd</form2>
-    <form3 id="outdone" sound="outdo_3.wav">ˌaut'dʌn</form3>
+    <form1 id="outdo" sound="outdo.mp3">ˌaut'duː</form1>
+    <form2 id="outdid" sound="outdid.mp3">ˌaut'dɪd</form2>
+    <form3 id="outdone" sound="outdone.mp3">ˌaut'dʌn</form3>
     <translation>превзойти</translation>
     <translation>поражать, разбивать, побороть, побеждать</translation>
   </word>
   <word id="overcome">
-    <form1 id="overcome" sound="overcome.wav">ˌəuvə'kʌm</form1>
-    <form2 id="overcame" sound="overcome_2.wav">ˌəuvə'keɪm</form2>
-    <form3 id="overcome" sound="overcome.wav">ˌəuvə'kʌm</form3>
+    <form1 id="overcome" sound="overcome.mp3">ˌəuvə'kʌm</form1>
+    <form2 id="overcame" sound="overcame.mp3">ˌəuvə'keɪm</form2>
+    <form3 id="overcome" sound="overcome.mp3">ˌəuvə'kʌm</form3>
     <translation>побороть, победить</translation>
     <translation>превозмочь; преодолеть; подавить <i>(какое-л. чувство)</i></translation>
     <example>
@@ -1234,9 +1234,9 @@
     </example>
   </word>
   <word id="overdo">
-    <form1 id="overdo" sound="overdo.wav">ˌəuvə'duː</form1>
-    <form2 id="overdid" sound="overdo_2.wav">ˌəuvə'dɪd</form2>
-    <form3 id="overdone" sound="overdo_3.wav">ˌəuvə'dʌn</form3>
+    <form1 id="overdo" sound="overdo.mp3">ˌəuvə'duː</form1>
+    <form2 id="overdid" sound="overdid.mp3">ˌəuvə'dɪd</form2>
+    <form3 id="overdone" sound="overdone.mp3">ˌəuvə'dʌn</form3>
     <translation>перестараться, переусердствовать</translation>
     <translation>переборщить</translation>
     <translation>преувеличивать, утрировать</translation>
@@ -1250,24 +1250,24 @@
     </example>
   </word>
   <word id="overhang">
-    <form1 id="overhang" sound="overhang.wav">ˌəuvə'hæŋ</form1>
-    <form2 id="overhung" sound="overhang_2.wav">ˌəuvə'hʌŋ</form2>
-    <form3 id="overhung" sound="overhang_2.wav">ˌəuvə'hʌŋ</form3>
+    <form1 id="overhang" sound="overhang.mp3">ˌəuvə'hæŋ</form1>
+    <form2 id="overhung" sound="overhung.mp3">ˌəuvə'hʌŋ</form2>
+    <form3 id="overhung" sound="overhung.mp3">ˌəuvə'hʌŋ</form3>
     <translation>выступать <i>(над чем-л.)</i>, нависать</translation>
     <translation>выдаваться, свешиваться</translation>
     <translation>нависать, угрожать, грозить <i>(чему-л. / кому-л.)</i></translation>
   </word>
   <word id="overhear">
-    <form1 id="overhear" sound="overhear.wav">ˌəuvə'hɪə</form1>
-    <form2 id="overheard" sound="overhear_2.wav">ˌəuvə'hɜːd</form2>
-    <form3 id="overheard" sound="overhear_3.wav">ˌəuvə'hɜːd</form3>
+    <form1 id="overhear" sound="overhear.mp3">ˌəuvə'hɪə</form1>
+    <form2 id="overheard" sound="overheard.mp3">ˌəuvə'hɜːd</form2>
+    <form3 id="overheard" sound="overheard.mp3">ˌəuvə'hɜːd</form3>
     <translation>подслушивать</translation>
     <translation>нечаянно услышать</translation>
   </word>
   <word id="override">
-    <form1 id="override" sound="override.wav">ˌəuvə'raɪd</form1>
-    <form2 id="overrode" sound="override_2.wav">ˌəuvə'rəud</form2>
-    <form3 id="overridden" sound="override_3.wav">ˌəuvə'rɪd(ə)n</form3>
+    <form1 id="override" sound="override.mp3">ˌəuvə'raɪd</form1>
+    <form2 id="overrode" sound="overrode.mp3">ˌəuvə'rəud</form2>
+    <form3 id="overridden" sound="overridden.mp3">ˌəuvə'rɪd(ə)n</form3>
     <translation>отменять, аннулировать <i>(решение, постановление)</i></translation>
     <example>
       <text>to override a veto</text>
@@ -1275,9 +1275,9 @@
     </example>
   </word>
   <word id="overrun">
-    <form1 id="overrun" sound="overrun.wav">ˌəuvə'rʌn</form1>
-    <form2 id="overran" sound="overrun_2.wav">ˌəuvə'ræn</form2>
-    <form3 id="overrun" sound="overrun.wav">ˌəuvə'rʌn</form3>
+    <form1 id="overrun" sound="overrun.mp3">ˌəuvə'rʌn</form1>
+    <form2 id="overran" sound="overran.mp3">ˌəuvə'ræn</form2>
+    <form3 id="overrun" sound="overrun.mp3">ˌəuvə'rʌn</form3>
     <translation>переходить пределы, границы <i>(чего-л.)</i></translation>
     <example>
       <text>to overrun a schedule</text>
@@ -1289,9 +1289,9 @@
     </example>
   </word>
   <word id="oversee">
-    <form1 id="oversee" sound="oversee.wav">ˌəuvə'siː</form1>
-    <form2 id="oversaw" sound="oversee_2.wav">ˌəuvə'sɔː</form2>
-    <form3 id="overseen" sound="oversee_3.wav">ˌəuvə'siːn</form3>
+    <form1 id="oversee" sound="oversee.mp3">ˌəuvə'siː</form1>
+    <form2 id="oversaw" sound="oversaw.mp3">ˌəuvə'sɔː</form2>
+    <form3 id="overseen" sound="overseen.mp3">ˌəuvə'siːn</form3>
     <translation>наблюдать, надзирать</translation>
     <translation>следить, смотреть <i>(за чем-л.)</i></translation>
     <translation>увидеть случайно, подсмотреть</translation>
@@ -1301,9 +1301,9 @@
     </example>
   </word>
   <word id="overtake">
-    <form1 id="overtake" sound="overtake.wav">ˌəuvə'teɪk</form1>
-    <form2 id="overtook" sound="overtake_2.wav">ˌəuvə'tuk</form2>
-    <form3 id="overtaken" sound="overtake_3.wav">ˌəuvə'teɪk(ə)n</form3>
+    <form1 id="overtake" sound="overtake.mp3">ˌəuvə'teɪk</form1>
+    <form2 id="overtook" sound="overtook.mp3">ˌəuvə'tuk</form2>
+    <form3 id="overtaken" sound="overtaken.mp3">ˌəuvə'teɪk(ə)n</form3>
     <translation>догнать, наверстать</translation>
     <translation>обогнать</translation>
     <example>
@@ -1312,9 +1312,9 @@
     </example>
   </word>
   <word id="overthrow">
-    <form1 id="overthrow" sound="overthrow.wav">ˌəuvə'θrəu</form1>
-    <form2 id="overthrew" sound="overthrow_2.wav">ˌəuvə'θruː</form2>
-    <form3 id="overthrown" sound="overthrow_3.wav">ˌəuvə'θrəun</form3>
+    <form1 id="overthrow" sound="overthrow.mp3">ˌəuvə'θrəu</form1>
+    <form2 id="overthrew" sound="overthrew.mp3">ˌəuvə'θruː</form2>
+    <form3 id="overthrown" sound="overthrown.mp3">ˌəuvə'θrəun</form3>
     <translation>свергать, ниспровергать</translation>
     <translation>бросать слишком далеко, перебрасывать</translation>
     <example>
@@ -1323,9 +1323,9 @@
     </example>
   </word>
   <word id="pay">
-    <form1 id="pay" sound="pay.wav">peɪ</form1>
-    <form2 id="paid" sound="pay_2.wav">peɪd</form2>
-    <form3 id="paid" sound="pay_2.wav">peɪd</form3>
+    <form1 id="pay" sound="pay.mp3">peɪ</form1>
+    <form2 id="paid" sound="paid.mp3">peɪd</form2>
+    <form3 id="paid" sound="paid.mp3">peɪd</form3>
     <translation>платить</translation>
     <example>
       <text>to pay smb. for smth.</text>
@@ -1333,9 +1333,9 @@
     </example>
   </word>
   <word id="prove">
-    <form1 id="prove" sound="prove.wav">pruːv</form1>
-    <form2 id="proved" sound="prove_2.wav">pruːvd</form2>
-    <form3 id="proven" sound="prove_3.wav">'pruːv(ə)n</form3>
+    <form1 id="prove" sound="prove.mp3">pruːv</form1>
+    <form2 id="proved" sound="proved.mp3">pruːvd</form2>
+    <form3 id="proven" sound="proven.mp3">'pruːv(ə)n</form3>
     <translation>доказывать</translation>
     <example>
       <text>You will have to prove to the police that you were at home that night.</text>
@@ -1343,9 +1343,9 @@
     </example>
   </word>
   <word id="put">
-    <form1 id="put" sound="put.wav">put</form1>
-    <form2 id="put" sound="put.wav">put</form2>
-    <form3 id="put" sound="put.wav">put</form3>
+    <form1 id="put" sound="put.mp3">put</form1>
+    <form2 id="put" sound="put.mp3">put</form2>
+    <form3 id="put" sound="put.mp3">put</form3>
     <translation>класть, ставить</translation>
     <example>
       <text>Put the book on the table!</text>
@@ -1353,9 +1353,9 @@
     </example>
   </word>
   <word id="read">
-    <form1 id="read" sound="read.wav">riːd</form1>
-    <form2 id="read" sound="read_2.wav">red</form2>
-    <form3 id="read" sound="read_2.wav">red</form3>
+    <form1 id="read" sound="read.mp3">riːd</form1>
+    <form2 id="read" sound="read_2.mp3">red</form2>
+    <form3 id="read" sound="read_2.mp3">red</form3>
     <translation>читать, прочитать</translation>
     <example>
       <text>Can you read French?</text>
@@ -1363,9 +1363,9 @@
     </example>
   </word>
   <word id="rebuild">
-    <form1 id="rebuild" sound="rebuild.wav">ˌriː'bɪld</form1>
-    <form2 id="rebuilt" sound="rebuild_2.wav">ˌriː'bɪlt</form2>
-    <form3 id="rebuilt" sound="rebuild_2.wav">ˌriː'bɪlt</form3>
+    <form1 id="rebuild" sound="rebuild.mp3">ˌriː'bɪld</form1>
+    <form2 id="rebuilt" sound="rebuilt.mp3">ˌriː'bɪlt</form2>
+    <form3 id="rebuilt" sound="rebuilt.mp3">ˌriː'bɪlt</form3>
     <translation>отстроить заново, восстановить, реконструировать</translation>
     <translation>модифицировать</translation>
     <example>
@@ -1374,9 +1374,9 @@
     </example>
   </word>
   <word id="redo">
-    <form1 id="redo" sound="redo.wav">ˌriː'duː</form1>
-    <form2 id="redid" sound="redo_2.wav">ˌriː'dɪd</form2>
-    <form3 id="redone" sound="redo_3.wav">ˌriː'dʌn</form3>
+    <form1 id="redo" sound="redo.mp3">ˌriː'duː</form1>
+    <form2 id="redid" sound="redid.mp3">ˌriː'dɪd</form2>
+    <form3 id="redone" sound="redone.mp3">ˌriː'dʌn</form3>
     <translation>выполнять повторно</translation>
     <translation>делать вновь, переделывать</translation>
     <example>
@@ -1385,9 +1385,9 @@
     </example>
   </word>
   <word id="relay">
-    <form1 id="relay" sound="relay.wav">ˌriː'leɪ</form1>
-    <form2 id="relaid" sound="relay_2.wav">ˌriː'leɪd</form2>
-    <form3 id="relaid" sound="relay_2.wav">ˌriː'leɪd</form3>
+    <form1 id="relay" sound="relay.mp3">ˌriː'leɪ</form1>
+    <form2 id="relaid" sound="relaid.mp3">ˌriː'leɪd</form2>
+    <form3 id="relaid" sound="relaid.mp3">ˌriː'leɪd</form3>
     <translation>перекладывать</translation>
     <example>
       <text>to relay track</text>
@@ -1395,9 +1395,9 @@
     </example>
   </word>
   <word id="rend">
-    <form1 id="rend" sound="rend.wav">rend</form1>
-    <form2 id="rent" sound="rend_2.wav">rent</form2>
-    <form3 id="rent" sound="rend_2.wav">rent</form3>
+    <form1 id="rend" sound="rend.mp3">rend</form1>
+    <form2 id="rent" sound="rent.mp3">rent</form2>
+    <form3 id="rent" sound="rent.mp3">rent</form3>
     <translation>отрывать</translation>
     <translation>насильно разлучать</translation>
     <translation>раздирать, разрывать, рвать <i>(на куски)</i></translation>
@@ -1411,9 +1411,9 @@
     </example>
   </word>
   <word id="repay">
-    <form1 id="repay" sound="repay.wav">rɪ'peɪ</form1>
-    <form2 id="repaid" sound="repay_2.wav">rɪ'peɪd</form2>
-    <form3 id="repaid" sound="repay_2.wav">rɪ'peɪd</form3>
+    <form1 id="repay" sound="repay.mp3">rɪ'peɪ</form1>
+    <form2 id="repaid" sound="repaid.mp3">rɪ'peɪd</form2>
+    <form3 id="repaid" sound="repaid.mp3">rɪ'peɪd</form3>
     <translation>отдавать, возвращать <i>(долг и т. п.)</i></translation>
     <translation>погашать <i>(заём и т. п.)</i></translation>
     <example>
@@ -1426,15 +1426,15 @@
     </example>
   </word>
   <word id="rewrite">
-    <form1 id="rewrite" sound="rewrite.wav">ˌriː'raɪt</form1>
-    <form2 id="rewrote" sound="rewrite_2.wav">ˌriː'rəut</form2>
-    <form3 id="rewritten" sound="rewrite_3.wav">ˌriː'rɪt(ə)n</form3>
+    <form1 id="rewrite" sound="rewrite.mp3">ˌriː'raɪt</form1>
+    <form2 id="rewrote" sound="rewrote.mp3">ˌriː'rəut</form2>
+    <form3 id="rewritten" sound="rewritten.mp3">ˌriː'rɪt(ə)n</form3>
     <translation>переписывать <i>(особенно в другой форме или в улучшенном варианте)</i></translation>
   </word>
   <word id="rid">
-    <form1 id="rid" sound="rid.wav">rɪd</form1>
-    <form2 id="rid" sound="rid.wav">rɪd</form2>
-    <form3 id="rid" sound="rid.wav">rɪd</form3>
+    <form1 id="rid" sound="rid.mp3">rɪd</form1>
+    <form2 id="rid" sound="rid.mp3">rɪd</form2>
+    <form3 id="rid" sound="rid.mp3">rɪd</form3>
     <translation>(rid of) освобождать, избавлять <i>(от чего-л. / кого-л.)</i></translation>
     <example>
       <text>I doubt if London will ever be rid of its terrible housing shortage.</text>
@@ -1442,9 +1442,9 @@
     </example>
   </word>
   <word id="ride">
-    <form1 id="ride" sound="ride.wav">raɪd</form1>
-    <form2 id="rode" sound="ride_2.wav">rəud</form2>
-    <form3 id="ridden" sound="ride_3.wav">'rɪd(ə)n</form3>
+    <form1 id="ride" sound="ride.mp3">raɪd</form1>
+    <form2 id="rode" sound="rode.mp3">rəud</form2>
+    <form3 id="ridden" sound="ridden.mp3">'rɪd(ə)n</form3>
     <translation>ехать <i>(в автобусе, в трамвае, на велосипеде, в поезде)</i></translation>
     <translation>ездить верхом</translation>
     <translation>кататься</translation>
@@ -1458,9 +1458,9 @@
     </example>
   </word>
   <word id="ring">
-    <form1 id="ring" sound="ring.wav">rɪŋ</form1>
-    <form2 id="rang" sound="ring_2.wav">ræŋ</form2>
-    <form3 id="rung" sound="ring_3.wav">rʌŋ</form3>
+    <form1 id="ring" sound="ring.mp3">rɪŋ</form1>
+    <form2 id="rang" sound="rang.mp3">ræŋ</form2>
+    <form3 id="rung" sound="rung.mp3">rʌŋ</form3>
     <translation>звенеть, звучать</translation>
     <translation>звонить <i>(в колокола)</i></translation>
     <example>
@@ -1469,9 +1469,9 @@
     </example>
   </word>
   <word id="rise">
-    <form1 id="rise" sound="rise.wav">raɪz</form1>
-    <form2 id="rose" sound="rise_2.wav">rəuz</form2>
-    <form3 id="risen" sound="rise_3.wav">'rɪz(ə)n</form3>
+    <form1 id="rise" sound="rise.mp3">raɪz</form1>
+    <form2 id="rose" sound="rose.mp3">rəuz</form2>
+    <form3 id="risen" sound="risen.mp3">'rɪz(ə)n</form3>
     <translation>всходить, восходить, вставать</translation>
     <translation>подниматься, взбираться</translation>
     <example>
@@ -1480,9 +1480,9 @@
     </example>
   </word>
   <word id="run">
-    <form1 id="run" sound="run.wav">rʌn</form1>
-    <form2 id="ran" sound="run_2.wav">ræn</form2>
-    <form3 id="run" sound="run.wav">rʌn</form3>
+    <form1 id="run" sound="run.mp3">rʌn</form1>
+    <form2 id="ran" sound="ran.mp3">ræn</form2>
+    <form3 id="run" sound="run.mp3">rʌn</form3>
     <translation>бежать, бегать</translation>
     <example>
       <text>to run home</text>
@@ -1490,9 +1490,9 @@
     </example>
   </word>
   <word id="saw">
-    <form1 id="saw" sound="saw.wav">sɔː</form1>
-    <form2 id="sawed" sound="saw_2.wav">sɔːd</form2>
-    <form3 id="sawn" sound="saw_3.wav">sɔːn</form3>
+    <form1 id="saw" sound="saw.mp3">sɔː</form1>
+    <form2 id="sawed" sound="sawed.mp3">sɔːd</form2>
+    <form3 id="sawn" sound="sawn.mp3">sɔːn</form3>
     <translation>пилить, распиливать</translation>
     <example>
       <text>We shall have to saw the old tree down.</text>
@@ -1500,9 +1500,9 @@
     </example>
   </word>
   <word id="say">
-    <form1 id="say" sound="say.wav">seɪ</form1>
-    <form2 id="said" sound="say_2.wav">sed</form2>
-    <form3 id="said" sound="say_2.wav">sed</form3>
+    <form1 id="say" sound="say.mp3">seɪ</form1>
+    <form2 id="said" sound="said.mp3">sed</form2>
+    <form3 id="said" sound="said.mp3">sed</form3>
     <translation>говорить</translation>
     <translation>сказать, произносить</translation>
     <translation>выражать словами</translation>
@@ -1512,9 +1512,9 @@
     </example>
   </word>
   <word id="see">
-    <form1 id="see" sound="see.wav">siː</form1>
-    <form2 id="saw" sound="see_2.wav">sɔː</form2>
-    <form3 id="seen" sound="see_3.wav">siːn</form3>
+    <form1 id="see" sound="see.mp3">siː</form1>
+    <form2 id="saw" sound="saw.mp3">sɔː</form2>
+    <form3 id="seen" sound="seen.mp3">siːn</form3>
     <translation>видеть</translation>
     <translation>смотреть, осматривать</translation>
     <example>
@@ -1523,9 +1523,9 @@
     </example>
   </word>
   <word id="seek">
-    <form1 id="seek" sound="seek.wav">siːk</form1>
-    <form2 id="sought" sound="seek_2.wav">sɔːt</form2>
-    <form3 id="sought" sound="seek_2.wav">sɔːt</form3>
+    <form1 id="seek" sound="seek.mp3">siːk</form1>
+    <form2 id="sought" sound="sought.mp3">sɔːt</form2>
+    <form3 id="sought" sound="sought.mp3">sɔːt</form3>
     <translation>искать, разыскивать <i>(seek for / after)</i></translation>
     <translation>пытаться найти</translation>
     <example>
@@ -1534,9 +1534,9 @@
     </example>
   </word>
   <word id="sell">
-    <form1 id="sell" sound="sell.wav">sel</form1>
-    <form2 id="sold" sound="sell_2.wav">səuld</form2>
-    <form3 id="sold" sound="sell_2.wav">səuld</form3>
+    <form1 id="sell" sound="sell.mp3">sel</form1>
+    <form2 id="sold" sound="sold.mp3">səuld</form2>
+    <form3 id="sold" sound="sold.mp3">səuld</form3>
     <translation>продавать</translation>
     <example>
       <text>I don't want to sell the house at a loss.</text>
@@ -1544,9 +1544,9 @@
     </example>
   </word>
   <word id="send">
-    <form1 id="send" sound="send.wav">send</form1>
-    <form2 id="sent" sound="send_2.wav">sent</form2>
-    <form3 id="sent" sound="send_2.wav">sent</form3>
+    <form1 id="send" sound="send.mp3">send</form1>
+    <form2 id="sent" sound="sent.mp3">sent</form2>
+    <form3 id="sent" sound="sent.mp3">sent</form3>
     <translation>посылать, отправлять</translation>
     <translation>отсылать, направлять</translation>
     <example>
@@ -1559,9 +1559,9 @@
     </example>
   </word>
   <word id="set">
-    <form1 id="set" sound="set.wav">set</form1>
-    <form2 id="set" sound="set.wav">set</form2>
-    <form3 id="set" sound="set.wav">set</form3>
+    <form1 id="set" sound="set.mp3">set</form1>
+    <form2 id="set" sound="set.mp3">set</form2>
+    <form3 id="set" sound="set.mp3">set</form3>
     <translation>ставить, класть</translation>
     <example>
       <text>to set the ladder against the wall</text>
@@ -1569,9 +1569,9 @@
     </example>
   </word>
   <word id="sew">
-    <form1 id="sew" sound="sew.wav">səu</form1>
-    <form2 id="sewed" sound="sew_2.wav">səʊd</form2>
-    <form3 id="sewn" sound="sew_3.wav">səun</form3>
+    <form1 id="sew" sound="sew.mp3">səu</form1>
+    <form2 id="sewed" sound="sewed.mp3">səʊd</form2>
+    <form3 id="sewn" sound="sewn.mp3">səun</form3>
     <translation>шить, пришивать</translation>
     <example>
       <text>to sew in a patch</text>
@@ -1579,9 +1579,9 @@
     </example>
   </word>
   <word id="shake">
-    <form1 id="shake" sound="shake.wav">ʃeɪk</form1>
-    <form2 id="shook" sound="shake_2.wav">ʃuk</form2>
-    <form3 id="shaken" sound="shake_3.wav">'ʃeɪk(ə)n</form3>
+    <form1 id="shake" sound="shake.mp3">ʃeɪk</form1>
+    <form2 id="shook" sound="shook.mp3">ʃuk</form2>
+    <form3 id="shaken" sound="shaken.mp3">'ʃeɪk(ə)n</form3>
     <translation>трясти</translation>
     <translation>встряхивать</translation>
     <translation>сотрясать</translation>
@@ -1591,9 +1591,9 @@
     </example>
   </word>
   <word id="shed">
-    <form1 id="shed" sound="shed.wav">ʃed</form1>
-    <form2 id="shed" sound="shed.wav">ʃed</form2>
-    <form3 id="shed" sound="shed.wav">ʃed</form3>
+    <form1 id="shed" sound="shed.mp3">ʃed</form1>
+    <form2 id="shed" sound="shed.mp3">ʃed</form2>
+    <form3 id="shed" sound="shed.mp3">ʃed</form3>
     <translation>проливать, лить <i>(слёзы, кровь)</i></translation>
     <example>
       <text>So much blood has been shed in this war.</text>
@@ -1601,9 +1601,9 @@
     </example>
   </word>
   <word id="shine">
-    <form1 id="shine" sound="shine.wav">ʃaɪn</form1>
-    <form2 id="shone" sound="shine_2.wav">ʃɔn</form2>
-    <form3 id="shone" sound="shine_2.wav">ʃɔn</form3>
+    <form1 id="shine" sound="shine.mp3">ʃaɪn</form1>
+    <form2 id="shone" sound="shone.mp3">ʃɔn</form2>
+    <form3 id="shone" sound="shone.mp3">ʃɔn</form3>
     <translation>светить, сиять, озарять</translation>
     <translation>светить, освещать <i>(чем-л.)</i></translation>
     <example>
@@ -1612,9 +1612,9 @@
     </example>
   </word>
   <word id="shoot">
-    <form1 id="shoot" sound="shoot.wav">ʃuːt</form1>
-    <form2 id="shot" sound="shoot_2.wav">ʃɔt</form2>
-    <form3 id="shot" sound="shoot_2.wav">ʃɔt</form3>
+    <form1 id="shoot" sound="shoot.mp3">ʃuːt</form1>
+    <form2 id="shot" sound="shot.mp3">ʃɔt</form2>
+    <form3 id="shot" sound="shot.mp3">ʃɔt</form3>
     <translation>стрелять</translation>
     <translation>= shoot away / down попасть, поразить <i>(из огнестрельного оружия)</i></translation>
     <example>
@@ -1627,9 +1627,9 @@
     </example>
   </word>
   <word id="show">
-    <form1 id="show" sound="show.wav">ʃəu</form1>
-    <form2 id="showed" sound="show_2.wav">ʃəʊd</form2>
-    <form3 id="shown" sound="show_3.wav">ʃəun</form3>
+    <form1 id="show" sound="show.mp3">ʃəu</form1>
+    <form2 id="showed" sound="showed.mp3">ʃəʊd</form2>
+    <form3 id="shown" sound="shown.mp3">ʃəun</form3>
     <translation>показывать</translation>
     <translation>выявлять, устанавливать</translation>
     <example>
@@ -1642,17 +1642,17 @@
     </example>
   </word>
   <word id="shrink">
-    <form1 id="shrink" sound="shrink.wav">ʃrɪŋk</form1>
-    <form2 id="shrank" sound="shrink_2.wav">ʃræŋk</form2>
-    <form3 id="shrunk" sound="shrink_3.wav">ʃrʌŋk</form3>
+    <form1 id="shrink" sound="shrink.mp3">ʃrɪŋk</form1>
+    <form2 id="shrank" sound="shrank.mp3">ʃræŋk</form2>
+    <form3 id="shrunk" sound="shrunk.mp3">ʃrʌŋk</form3>
     <translation>уменьшать(ся), сокращать(ся)</translation>
     <translation>сморщиваться</translation>
     <translation>садиться <i>(о материи)</i>, давать усадку</translation>
   </word>
   <word id="shut">
-    <form1 id="shut" sound="shut.wav">ʃʌt</form1>
-    <form2 id="shut" sound="shut.wav">ʃʌt</form2>
-    <form3 id="shut" sound="shut.wav">ʃʌt</form3>
+    <form1 id="shut" sound="shut.mp3">ʃʌt</form1>
+    <form2 id="shut" sound="shut.mp3">ʃʌt</form2>
+    <form3 id="shut" sound="shut.mp3">ʃʌt</form3>
     <translation>закрывать, запирать, затворять</translation>
     <example>
       <text>Shut the box to.</text>
@@ -1660,9 +1660,9 @@
     </example>
   </word>
   <word id="sing">
-    <form1 id="sing" sound="sing.wav">sɪŋ</form1>
-    <form2 id="sang" sound="sing_2.wav">sæŋ</form2>
-    <form3 id="sung" sound="sing_3.wav">sʌŋ</form3>
+    <form1 id="sing" sound="sing.mp3">sɪŋ</form1>
+    <form2 id="sang" sound="sang.mp3">sæŋ</form2>
+    <form3 id="sung" sound="sung.mp3">sʌŋ</form3>
     <translation>петь, напевать</translation>
     <example>
       <text>to sing a song</text>
@@ -1670,9 +1670,9 @@
     </example>
   </word>
   <word id="sink">
-    <form1 id="sink" sound="sink.wav">sɪŋk</form1>
-    <form2 id="sank" sound="sink_2.wav">sæŋk</form2>
-    <form3 id="sunk" sound="sink_3.wav">sʌŋk</form3>
+    <form1 id="sink" sound="sink.mp3">sɪŋk</form1>
+    <form2 id="sank" sound="sank.mp3">sæŋk</form2>
+    <form3 id="sunk" sound="sunk.mp3">sʌŋk</form3>
     <translation>тонуть <i>(о корабле, морском судне)</i></translation>
     <translation>погружаться <i>(под воду)</i></translation>
     <translation>топить <i>(судно)</i></translation>
@@ -1686,9 +1686,9 @@
     </example>
   </word>
   <word id="sit">
-    <form1 id="sit" sound="sit.wav">sɪt</form1>
-    <form2 id="sat" sound="sit_2.wav">sæt</form2>
-    <form3 id="sat" sound="sit_2.wav">sæt</form3>
+    <form1 id="sit" sound="sit.mp3">sɪt</form1>
+    <form2 id="sat" sound="sat.mp3">sæt</form2>
+    <form3 id="sat" sound="sat.mp3">sæt</form3>
     <translation>сидеть</translation>
     <translation>садиться</translation>
     <example>
@@ -1697,9 +1697,9 @@
     </example>
   </word>
   <word id="slay">
-    <form1 id="slay" sound="slay.wav">sleɪ</form1>
-    <form2 id="slew" sound="slay_2.wav">sluː</form2>
-    <form3 id="slain" sound="slay_3.wav">sleɪn</form3>
+    <form1 id="slay" sound="slay.mp3">sleɪ</form1>
+    <form2 id="slew" sound="slew.mp3">sluː</form2>
+    <form3 id="slain" sound="slain.mp3">sleɪn</form3>
     <translation>убивать, уничтожать, лишать жизни</translation>
     <example>
       <text>to slay by a sword</text>
@@ -1707,9 +1707,9 @@
     </example>
   </word>
   <word id="sleep">
-    <form1 id="sleep" sound="sleep.wav">sliːp</form1>
-    <form2 id="slept" sound="sleep_2.wav">slept</form2>
-    <form3 id="slept" sound="sleep_2.wav">slept</form3>
+    <form1 id="sleep" sound="sleep.mp3">sliːp</form1>
+    <form2 id="slept" sound="slept.mp3">slept</form2>
+    <form3 id="slept" sound="slept.mp3">slept</form3>
     <translation>спать</translation>
     <example>
       <text>to get / have a good night's sleep</text>
@@ -1717,9 +1717,9 @@
     </example>
   </word>
   <word id="slide">
-    <form1 id="slide" sound="slide.wav">slaɪd</form1>
-    <form2 id="slid" sound="slide_2.wav">slɪd</form2>
-    <form3 id="slid" sound="slide_2.wav">slɪd</form3>
+    <form1 id="slide" sound="slide.mp3">slaɪd</form1>
+    <form2 id="slid" sound="slid.mp3">slɪd</form2>
+    <form3 id="slid" sound="slid.mp3">slɪd</form3>
     <translation>скользить</translation>
     <translation>двигаться плавно, без резких скачков</translation>
     <example>
@@ -1728,9 +1728,9 @@
     </example>
   </word>
   <word id="sling">
-    <form1 id="sling" sound="sling.wav">slɪŋ</form1>
-    <form2 id="slung" sound="sling_2.wav">slʌŋ</form2>
-    <form3 id="slung" sound="sling_2.wav">slʌŋ</form3>
+    <form1 id="sling" sound="sling.mp3">slɪŋ</form1>
+    <form2 id="slung" sound="slung.mp3">slʌŋ</form2>
+    <form3 id="slung" sound="slung.mp3">slʌŋ</form3>
     <translation>бросать, швырять</translation>
     <example>
       <text>to sling smb. out of the room</text>
@@ -1738,17 +1738,17 @@
     </example>
   </word>
   <word id="slit">
-    <form1 id="slit" sound="slit.wav">slɪt</form1>
-    <form2 id="slit" sound="slit.wav">slɪt</form2>
-    <form3 id="slit" sound="slit.wav">slɪt</form3>
+    <form1 id="slit" sound="slit.mp3">slɪt</form1>
+    <form2 id="slit" sound="slit.mp3">slɪt</form2>
+    <form3 id="slit" sound="slit.mp3">slɪt</form3>
     <translation>разрезать</translation>
     <translation>делать длинный узкий разрез <i>(в чём-л. / на чём-л.)</i></translation>
     <translation>рвать в длину</translation>
   </word>
   <word id="smell">
-    <form1 id="smell" sound="smell.wav">smel</form1>
-    <form2 id="smelt" sound="smell_2.wav">smelt</form2>
-    <form3 id="smelt" sound="smell_2.wav">smelt</form3>
+    <form1 id="smell" sound="smell.mp3">smel</form1>
+    <form2 id="smelt" sound="smelt.mp3">smelt</form2>
+    <form3 id="smelt" sound="smelt.mp3">smelt</form3>
     <translation>чувствовать запах, чуять</translation>
     <translation>обонять</translation>
     <translation>нюхать</translation>
@@ -1762,9 +1762,9 @@
     </example>
   </word>
   <word id="smite">
-    <form1 id="smite" sound="smite.wav">smaɪt</form1>
-    <form2 id="smote" sound="smite_2.wav">sməut</form2>
-    <form3 id="smitten" sound="smite_3.wav">'smɪt(ə)n</form3>
+    <form1 id="smite" sound="smite.mp3">smaɪt</form1>
+    <form2 id="smote" sound="smote.mp3">sməut</form2>
+    <form3 id="smitten" sound="smitten.mp3">'smɪt(ə)n</form3>
     <translation>ударять, бить</translation>
     <translation>
       <i>(smite on)</i> обрушиваться на <i>(что-л.)</i></translation>
@@ -1778,9 +1778,9 @@
     </example>
   </word>
   <word id="sow">
-    <form1 id="sow" sound="sow.wav">səu</form1>
-    <form2 id="sowed" sound="sow_2.wav">səʊd</form2>
-    <form3 id="sown" sound="sow_3.wav">səun</form3>
+    <form1 id="sow" sound="sow.mp3">səu</form1>
+    <form2 id="sowed" sound="sowed.mp3">səʊd</form2>
+    <form3 id="sown" sound="sown.mp3">səun</form3>
     <translation>сеять, высевать <g>= sow out</g></translation>
     <example>
       <text>to sow the grain in drills</text>
@@ -1788,9 +1788,9 @@
     </example>
   </word>
   <word id="speak">
-    <form1 id="speak" sound="speak.wav">spiːk</form1>
-    <form2 id="spoke" sound="speak_2.wav">spəuk</form2>
-    <form3 id="spoken" sound="speak_3.wav">'spəuk(ə)n</form3>
+    <form1 id="speak" sound="speak.mp3">spiːk</form1>
+    <form2 id="spoke" sound="spoke.mp3">spəuk</form2>
+    <form3 id="spoken" sound="spoken.mp3">'spəuk(ə)n</form3>
     <translation>говорить</translation>
     <translation>сказать</translation>
     <translation>произнести</translation>
@@ -1800,9 +1800,9 @@
     </example>
   </word>
   <word id="speed">
-    <form1 id="speed" sound="speed.wav">spiːd</form1>
-    <form2 id="sped" sound="speed_2.wav">sped</form2>
-    <form3 id="sped" sound="speed_2.wav">sped</form3>
+    <form1 id="speed" sound="speed.mp3">spiːd</form1>
+    <form2 id="sped" sound="sped.mp3">sped</form2>
+    <form3 id="sped" sound="sped.mp3">sped</form3>
     <translation>быстро двигаться</translation>
     <translation>мчаться</translation>
     <example>
@@ -1811,9 +1811,9 @@
     </example>
   </word>
   <word id="spell">
-    <form1 id="spell" sound="spell.wav">spel</form1>
-    <form2 id="spelt" sound="spell_2.wav">spelt</form2>
-    <form3 id="spelt" sound="spell_2.wav">spelt</form3>
+    <form1 id="spell" sound="spell.mp3">spel</form1>
+    <form2 id="spelt" sound="spelt.mp3">spelt</form2>
+    <form3 id="spelt" sound="spelt.mp3">spelt</form3>
     <translation>писать или произносить <i>(слово)</i> по буквам</translation>
     <translation>образовывать, составлять <i>(слово по буквам)</i></translation>
     <example>
@@ -1830,9 +1830,9 @@
     </example>
   </word>
   <word id="spend">
-    <form1 id="spend" sound="spend.wav">spend</form1>
-    <form2 id="spent" sound="spend_2.wav">spent</form2>
-    <form3 id="spent" sound="spend_2.wav">spent</form3>
+    <form1 id="spend" sound="spend.mp3">spend</form1>
+    <form2 id="spent" sound="spent.mp3">spent</form2>
+    <form3 id="spent" sound="spent.mp3">spent</form3>
     <translation>тратить, расходовать <i>(на что-л.)</i></translation>
     <translation>проводить <i>(время)</i></translation>
     <example>
@@ -1845,9 +1845,9 @@
     </example>
   </word>
   <word id="spill">
-    <form1 id="spill" sound="spill.wav">spɪl</form1>
-    <form2 id="spilt" sound="spill_2.wav">spɪlt</form2>
-    <form3 id="spilt" sound="spill_2.wav">spɪlt</form3>
+    <form1 id="spill" sound="spill.mp3">spɪl</form1>
+    <form2 id="spilt" sound="spilt.mp3">spɪlt</form2>
+    <form3 id="spilt" sound="spilt.mp3">spɪlt</form3>
     <translation>проливать(ся), разливать(ся), расплёскивать(ся)</translation>
     <example>
       <text>Who has spilt the milk on(to) the table?</text>
@@ -1855,9 +1855,9 @@
     </example>
   </word>
   <word id="spin">
-    <form1 id="spin" sound="spin.wav">spɪn</form1>
-    <form2 id="spun" sound="spin_2.wav">spʌn</form2>
-    <form3 id="spun" sound="spin_2.wav">spʌn</form3>
+    <form1 id="spin" sound="spin.mp3">spɪn</form1>
+    <form2 id="spun" sound="spun.mp3">spʌn</form2>
+    <form3 id="spun" sound="spun.mp3">spʌn</form3>
     <translation>крутить(ся), вертеть(ся)</translation>
     <translation>прясть, сучить <i>(шерсть)</i></translation>
     <example>
@@ -1866,9 +1866,9 @@
     </example>
   </word>
   <word id="spit">
-    <form1 id="spit" sound="spit.wav">spɪt</form1>
-    <form2 id="spat" sound="spit_2.wav">spæt</form2>
-    <form3 id="spat" sound="spit_2.wav">spæt</form3>
+    <form1 id="spit" sound="spit.mp3">spɪt</form1>
+    <form2 id="spat" sound="spat.mp3">spæt</form2>
+    <form3 id="spat" sound="spat.mp3">spæt</form3>
     <translation>плевать</translation>
     <translation>плеваться</translation>
     <translation>брызгать слюной</translation>
@@ -1878,9 +1878,9 @@
     </example>
   </word>
   <word id="split">
-    <form1 id="split" sound="split.wav">splɪt</form1>
-    <form2 id="split" sound="split.wav">splɪt</form2>
-    <form3 id="split" sound="split.wav">splɪt</form3>
+    <form1 id="split" sound="split.mp3">splɪt</form1>
+    <form2 id="split" sound="split.mp3">splɪt</form2>
+    <form3 id="split" sound="split.mp3">splɪt</form3>
     <translation>раскалывать(ся); расщеплять(ся) <g>= split up / asunder</g></translation>
     <translation>разбивать(ся) на части</translation>
     <example>
@@ -1893,9 +1893,9 @@
     </example>
   </word>
   <word id="spoil">
-    <form1 id="spoil" sound="spoil.wav">spɔɪl</form1>
-    <form2 id="spoilt" sound="spoil_2.wav">spɔɪlt</form2>
-    <form3 id="spoilt" sound="spoil_2.wav">spɔɪlt</form3>
+    <form1 id="spoil" sound="spoil.mp3">spɔɪl</form1>
+    <form2 id="spoilt" sound="spoilt.mp3">spɔɪlt</form2>
+    <form3 id="spoilt" sound="spoilt.mp3">spɔɪlt</form3>
     <translation>портить(ся)</translation>
     <translation>наносить ущерб, наносить урон</translation>
     <translation>баловать</translation>
@@ -1910,9 +1910,9 @@
     </example>
   </word>
   <word id="spread">
-    <form1 id="spread" sound="spread.wav">spred</form1>
-    <form2 id="spread" sound="spread.wav">spred</form2>
-    <form3 id="spread" sound="spread.wav">spred</form3>
+    <form1 id="spread" sound="spread.mp3">spred</form1>
+    <form2 id="spread" sound="spread.mp3">spred</form2>
+    <form3 id="spread" sound="spread.mp3">spred</form3>
     <translation>расстилать(ся)</translation>
     <translation>развертывать</translation>
     <translation>раскрывать</translation>
@@ -1927,9 +1927,9 @@
     </example>
   </word>
   <word id="spring">
-    <form1 id="spring" sound="spring.wav">sprɪŋ</form1>
-    <form2 id="sprang" sound="spring_2.wav">spræŋ</form2>
-    <form3 id="sprung" sound="spring_3.wav">sprʌŋ</form3>
+    <form1 id="spring" sound="spring.mp3">sprɪŋ</form1>
+    <form2 id="sprang" sound="sprang.mp3">spræŋ</form2>
+    <form3 id="sprung" sound="sprung.mp3">sprʌŋ</form3>
     <translation>снабжать пружиной</translation>
     <translation>заводить пружину <i>(какого-л. устройства)</i></translation>
     <translation>включать, приводить в рабочее состояние</translation>
@@ -1939,9 +1939,9 @@
     </example>
   </word>
   <word id="stand">
-    <form1 id="stand" sound="stand.wav">stænd</form1>
-    <form2 id="stood" sound="stand_2.wav">stuːd</form2>
-    <form3 id="stood" sound="stand_2.wav">stuːd</form3>
+    <form1 id="stand" sound="stand.mp3">stænd</form1>
+    <form2 id="stood" sound="stood.mp3">stuːd</form2>
+    <form3 id="stood" sound="stood.mp3">stuːd</form3>
     <translation>стоять</translation>
     <example>
       <text>He is too weak to stand.</text>
@@ -1949,9 +1949,9 @@
     </example>
   </word>
   <word id="steal">
-    <form1 id="steal" sound="steal.wav">stiːl</form1>
-    <form2 id="stole" sound="steal_2.wav">stəul</form2>
-    <form3 id="stolen" sound="steal_3.wav">'stəulən</form3>
+    <form1 id="steal" sound="steal.mp3">stiːl</form1>
+    <form2 id="stole" sound="stole.mp3">stəul</form2>
+    <form3 id="stolen" sound="stolen.mp3">'stəulən</form3>
     <translation>воровать, красть</translation>
     <example>
       <text>to steal smth. from smb.</text>
@@ -1959,9 +1959,9 @@
     </example>
   </word>
   <word id="stick">
-    <form1 id="stick" sound="stick.wav">stɪk</form1>
-    <form2 id="stuck" sound="stick_2.wav">stʌk</form2>
-    <form3 id="stuck" sound="stick_2.wav">stʌk</form3>
+    <form1 id="stick" sound="stick.mp3">stɪk</form1>
+    <form2 id="stuck" sound="stuck.mp3">stʌk</form2>
+    <form3 id="stuck" sound="stuck.mp3">stʌk</form3>
     <translation>втыкать, вонзать</translation>
     <translation>натыкать, насаживать <i>(на остриё)</i></translation>
     <example>
@@ -1970,9 +1970,9 @@
     </example>
   </word>
   <word id="sting">
-    <form1 id="sting" sound="sting.wav">stɪŋ</form1>
-    <form2 id="stung" sound="sting_2.wav">stʌŋ</form2>
-    <form3 id="stung" sound="sting_2.wav">stʌŋ</form3>
+    <form1 id="sting" sound="sting.mp3">stɪŋ</form1>
+    <form2 id="stung" sound="stung.mp3">stʌŋ</form2>
+    <form3 id="stung" sound="stung.mp3">stʌŋ</form3>
     <translation>жалить</translation>
     <translation>жечь</translation>
     <translation>кусаться</translation>
@@ -1982,9 +1982,9 @@
     </example>
   </word>
   <word id="stink">
-    <form1 id="stink" sound="stink.wav">stɪŋk</form1>
-    <form2 id="stank" sound="stink_2.wav">stæŋk</form2>
-    <form3 id="stunk" sound="stink_3.wav">stʌŋk</form3>
+    <form1 id="stink" sound="stink.mp3">stɪŋk</form1>
+    <form2 id="stank" sound="stank.mp3">stæŋk</form2>
+    <form3 id="stunk" sound="stunk.mp3">stʌŋk</form3>
     <translation>смердеть, вонять</translation>
     <example>
       <text>It stinks in here.</text>
@@ -1992,9 +1992,9 @@
     </example>
   </word>
   <word id="strew">
-    <form1 id="strew" sound="strew.wav">struː</form1>
-    <form2 id="strewed" sound="strew_2.wav">struːd</form2>
-    <form3 id="strewn" sound="strew_3.wav">struːn</form3>
+    <form1 id="strew" sound="strew.mp3">struː</form1>
+    <form2 id="strewed" sound="strewed.mp3">struːd</form2>
+    <form3 id="strewn" sound="strewn.mp3">struːn</form3>
     <translation>разбрасывать, разбрызгивать</translation>
     <translation>посыпать, усыпать <i>(песком, цветами)</i></translation>
     <example>
@@ -2003,9 +2003,9 @@
     </example>
   </word>
   <word id="stride">
-    <form1 id="stride" sound="stride.wav">straɪd</form1>
-    <form2 id="strode" sound="stride_2.wav">strəud</form2>
-    <form3 id="stridden" sound="stride_3.wav">'strɪd(ə)n</form3>
+    <form1 id="stride" sound="stride.mp3">straɪd</form1>
+    <form2 id="strode" sound="strode.mp3">strəud</form2>
+    <form3 id="stridden" sound="stridden.mp3">'strɪd(ə)n</form3>
     <translation>шагать <i>(большими шагами)</i></translation>
     <example>
       <text>to stride confidently</text>
@@ -2013,9 +2013,9 @@
     </example>
   </word>
   <word id="strike">
-    <form1 id="strike" sound="strike.wav">straɪk</form1>
-    <form2 id="struck" sound="strike_2.wav">strʌk</form2>
-    <form3 id="stricken" sound="strike_3.wav">'strɪk(ə)n</form3>
+    <form1 id="strike" sound="strike.mp3">straɪk</form1>
+    <form2 id="struck" sound="struck.mp3">strʌk</form2>
+    <form3 id="stricken" sound="stricken.mp3">'strɪk(ə)n</form3>
     <translation>ударять, наносить удар, бить</translation>
     <example>
       <text>to strike him a blow</text>
@@ -2023,9 +2023,9 @@
     </example>
   </word>
   <word id="string">
-    <form1 id="string" sound="string.wav">strɪŋ</form1>
-    <form2 id="strung" sound="string_2.wav">strʌŋ</form2>
-    <form3 id="strung" sound="string_2.wav">strʌŋ</form3>
+    <form1 id="string" sound="string.mp3">strɪŋ</form1>
+    <form2 id="strung" sound="strung.mp3">strʌŋ</form2>
+    <form3 id="strung" sound="strung.mp3">strʌŋ</form3>
     <translation>завязывать, связывать</translation>
     <translation>шнуровать</translation>
     <translation>натягивать <i>(струну, тетиву)</i></translation>
@@ -2036,9 +2036,9 @@
     </example>
   </word>
   <word id="strive">
-    <form1 id="strive" sound="strive.wav">straɪv</form1>
-    <form2 id="strove" sound="strive_2.wav">strəuv</form2>
-    <form3 id="striven" sound="strive_3.wav">'strɪv(ə)n</form3>
+    <form1 id="strive" sound="strive.mp3">straɪv</form1>
+    <form2 id="strove" sound="strove.mp3">strəuv</form2>
+    <form3 id="striven" sound="striven.mp3">'strɪv(ə)n</form3>
     <translation>стараться, пытаться</translation>
     <translation>стремиться, прилагать усилия</translation>
     <example>
@@ -2047,9 +2047,9 @@
     </example>
   </word>
   <word id="swear">
-    <form1 id="swear" sound="swear.wav">swɛə</form1>
-    <form2 id="swore" sound="swear_2.wav">swɔː</form2>
-    <form3 id="sworn" sound="swear_3.wav">swɔːn</form3>
+    <form1 id="swear" sound="swear.mp3">swɛə</form1>
+    <form2 id="swore" sound="swore.mp3">swɔː</form2>
+    <form3 id="sworn" sound="sworn.mp3">swɔːn</form3>
     <translation>клясться</translation>
     <translation>присягать</translation>
     <example>
@@ -2058,9 +2058,9 @@
     </example>
   </word>
   <word id="sweep">
-    <form1 id="sweep" sound="sweep.wav">swiːp</form1>
-    <form2 id="swept" sound="sweep_2.wav">swept</form2>
-    <form3 id="swept" sound="sweep_2.wav">swept</form3>
+    <form1 id="sweep" sound="sweep.mp3">swiːp</form1>
+    <form2 id="swept" sound="swept.mp3">swept</form2>
+    <form3 id="swept" sound="swept.mp3">swept</form3>
     <translation>мести, подметать</translation>
     <example>
       <text>to sweep the floor</text>
@@ -2068,9 +2068,9 @@
     </example>
   </word>
   <word id="swell">
-    <form1 id="swell" sound="swell.wav">swel</form1>
-    <form2 id="swelled" sound="swell_2.wav">sweld</form2>
-    <form3 id="swollen" sound="swell_3.wav">'swəulən</form3>
+    <form1 id="swell" sound="swell.mp3">swel</form1>
+    <form2 id="swelled" sound="swelled.mp3">sweld</form2>
+    <form3 id="swollen" sound="swollen.mp3">'swəulən</form3>
     <translation>разбухать, опухать</translation>
     <translation>
       <g>= swell up / out</g> надуваться, раздуваться, набухать</translation>
@@ -2080,9 +2080,9 @@
     </example>
   </word>
   <word id="swim">
-    <form1 id="swim" sound="swim.wav">swɪm</form1>
-    <form2 id="swam" sound="swim_2.wav">swæm</form2>
-    <form3 id="swum" sound="swim_3.wav">swʌm</form3>
+    <form1 id="swim" sound="swim.mp3">swɪm</form1>
+    <form2 id="swam" sound="swam.mp3">swæm</form2>
+    <form3 id="swum" sound="swum.mp3">swʌm</form3>
     <translation>купаться</translation>
     <translation>плавать, плыть</translation>
     <translation>переплывать</translation>
@@ -2092,9 +2092,9 @@
     </example>
   </word>
   <word id="swing">
-    <form1 id="swing" sound="swing.wav">swɪŋ</form1>
-    <form2 id="swung" sound="swing_2.wav">swʌŋ</form2>
-    <form3 id="swung" sound="swing_2.wav">swʌŋ</form3>
+    <form1 id="swing" sound="swing.mp3">swɪŋ</form1>
+    <form2 id="swung" sound="swung.mp3">swʌŋ</form2>
+    <form3 id="swung" sound="swung.mp3">swʌŋ</form3>
     <translation>качать(ся)</translation>
     <translation>раскачивать(ся)</translation>
     <translation>размахивать</translation>
@@ -2104,9 +2104,9 @@
     </example>
   </word>
   <word id="take">
-    <form1 id="take" sound="take.wav">teɪk</form1>
-    <form2 id="took" sound="take_2.wav">tuk</form2>
-    <form3 id="taken" sound="take_3.wav">'teɪk(ə)n</form3>
+    <form1 id="take" sound="take.mp3">teɪk</form1>
+    <form2 id="took" sound="took.mp3">tuk</form2>
+    <form3 id="taken" sound="taken.mp3">'teɪk(ə)n</form3>
     <translation>брать</translation>
     <translation>хватать</translation>
     <example>
@@ -2115,9 +2115,9 @@
     </example>
   </word>
   <word id="teach">
-    <form1 id="teach" sound="teach.wav">tiːʧ</form1>
-    <form2 id="taught" sound="teach_2.wav">tɔːt</form2>
-    <form3 id="taught" sound="teach_2.wav">tɔːt</form3>
+    <form1 id="teach" sound="teach.mp3">tiːʧ</form1>
+    <form2 id="taught" sound="taught.mp3">tɔːt</form2>
+    <form3 id="taught" sound="taught.mp3">tɔːt</form3>
     <translation>учить, обучать</translation>
     <example>
       <text>to teach smb. to read</text>
@@ -2125,9 +2125,9 @@
     </example>
   </word>
   <word id="tear">
-    <form1 id="tear" sound="tear.wav">tɛə</form1>
-    <form2 id="tore" sound="tear_2.wav">tɔː</form2>
-    <form3 id="torn" sound="tear_3.wav">tɔːn</form3>
+    <form1 id="tear" sound="tear.mp3">tɛə</form1>
+    <form2 id="tore" sound="tore.mp3">tɔː</form2>
+    <form3 id="torn" sound="torn.mp3">tɔːn</form3>
     <translation>рвать, разрывать, срывать, отрывать <g>= tear off</g></translation>
     <example>
       <text>to tear a cover off a box</text>
@@ -2135,9 +2135,9 @@
     </example>
   </word>
   <word id="tell">
-    <form1 id="tell" sound="tell.wav">tel</form1>
-    <form2 id="told" sound="tell_2.wav">təuld</form2>
-    <form3 id="told" sound="tell_2.wav">təuld</form3>
+    <form1 id="tell" sound="tell.mp3">tel</form1>
+    <form2 id="told" sound="told.mp3">təuld</form2>
+    <form3 id="told" sound="told.mp3">təuld</form3>
     <translation>говорить</translation>
     <translation>рассказывать</translation>
     <example>
@@ -2146,9 +2146,9 @@
     </example>
   </word>
   <word id="think">
-    <form1 id="think" sound="think.wav">θɪŋk</form1>
-    <form2 id="thought" sound="think_2.wav">θɔːt</form2>
-    <form3 id="thought" sound="think_2.wav">θɔːt</form3>
+    <form1 id="think" sound="think.mp3">θɪŋk</form1>
+    <form2 id="thought" sound="thought.mp3">θɔːt</form2>
+    <form3 id="thought" sound="thought.mp3">θɔːt</form3>
     <translation>думать, мыслить</translation>
     <translation>размышлять, взвешивать, обдумывать</translation>
     <example>
@@ -2157,9 +2157,9 @@
     </example>
   </word>
   <word id="thrive">
-    <form1 id="thrive" sound="thrive.wav">θraɪv</form1>
-    <form2 id="throve" sound="thrive_2.wav">θrəuv</form2>
-    <form3 id="thriven" sound="thrive_3.wav">'θrɪv(ə)n</form3>
+    <form1 id="thrive" sound="thrive.mp3">θraɪv</form1>
+    <form2 id="throve" sound="throve.mp3">θrəuv</form2>
+    <form3 id="thriven" sound="thriven.mp3">'θrɪv(ə)n</form3>
     <translation>благоденствовать, преуспевать, процветать</translation>
     <translation>буйно, пышно расти, разрастаться</translation>
     <example>
@@ -2172,9 +2172,9 @@
     </example>
   </word>
   <word id="throw">
-    <form1 id="throw" sound="throw.wav">θrəu</form1>
-    <form2 id="threw" sound="throw_2.wav">θruː</form2>
-    <form3 id="thrown" sound="throw_3.wav">θrəun</form3>
+    <form1 id="throw" sound="throw.mp3">θrəu</form1>
+    <form2 id="threw" sound="threw.mp3">θruː</form2>
+    <form3 id="thrown" sound="thrown.mp3">θrəun</form3>
     <translation>бросать, кидать, метать</translation>
     <example>
       <text>to throw a baseball</text>
@@ -2182,9 +2182,9 @@
     </example>
   </word>
   <word id="thrust">
-    <form1 id="thrust" sound="thrust.wav">θrʌst</form1>
-    <form2 id="thrust" sound="thrust.wav">θrʌst</form2>
-    <form3 id="thrust" sound="thrust.wav">θrʌst</form3>
+    <form1 id="thrust" sound="thrust.mp3">θrʌst</form1>
+    <form2 id="thrust" sound="thrust.mp3">θrʌst</form2>
+    <form3 id="thrust" sound="thrust.mp3">θrʌst</form3>
     <translation>колоть, протыкать</translation>
     <example>
       <text>to thrust a dagger into one's heart</text>
@@ -2192,9 +2192,9 @@
     </example>
   </word>
   <word id="tread">
-    <form1 id="tread" sound="tread.wav">tred</form1>
-    <form2 id="trod" sound="tread_2.wav">trɔd</form2>
-    <form3 id="trodden" sound="tread_3.wav">'trɔd(ə)n</form3>
+    <form1 id="tread" sound="tread.mp3">tred</form1>
+    <form2 id="trod" sound="trod.mp3">trɔd</form2>
+    <form3 id="trodden" sound="trodden.mp3">'trɔd(ə)n</form3>
     <translation>идти, ступать, шагать</translation>
     <example>
       <text>I never forget a path I have once trodden.</text>
@@ -2202,9 +2202,9 @@
     </example>
   </word>
   <word id="undergo">
-    <form1 id="undergo" sound="undergo.wav">ˌʌndə'gəu</form1>
-    <form2 id="underwent" sound="undergo_2.wav">ˌʌndə'went</form2>
-    <form3 id="undergone" sound="undergo_3.wav">ˌʌndə'gɔn</form3>
+    <form1 id="undergo" sound="undergo.mp3">ˌʌndə'gəu</form1>
+    <form2 id="underwent" sound="underwent.mp3">ˌʌndə'went</form2>
+    <form3 id="undergone" sound="undergone.mp3">ˌʌndə'gɔn</form3>
     <translation>испытывать, переносить</translation>
     <translation>подвергаться <i>(чему-л.)</i></translation>
     <example>
@@ -2217,9 +2217,9 @@
     </example>
   </word>
   <word id="understand">
-    <form1 id="understand" sound="understand.wav">ˌʌndə'stænd</form1>
-    <form2 id="undestood" sound="understand_2.wav">ˌʌndə'stud</form2>
-    <form3 id="undestood" sound="understand_2.wav">ˌʌndə'stud</form3>
+    <form1 id="understand" sound="understand.mp3">ˌʌndə'stænd</form1>
+    <form2 id="undestood" sound="undestood.mp3">ˌʌndə'stud</form2>
+    <form3 id="undestood" sound="undestood.mp3">ˌʌndə'stud</form3>
     <translation>понимать, постигать, осмысливать</translation>
     <example>
       <text>to make oneself understood</text>
@@ -2227,9 +2227,9 @@
     </example>
   </word>
   <word id="undertake">
-    <form1 id="undertake" sound="undertake.wav">ˌʌndə'teɪk</form1>
-    <form2 id="undertook" sound="undertake_2.wav">ˌʌndə'tuk</form2>
-    <form3 id="undertaken" sound="undertake_3.wav">ˌʌndə'teɪk(ə)n</form3>
+    <form1 id="undertake" sound="undertake.mp3">ˌʌndə'teɪk</form1>
+    <form2 id="undertook" sound="undertook.mp3">ˌʌndə'tuk</form2>
+    <form3 id="undertaken" sound="undertaken.mp3">ˌʌndə'teɪk(ə)n</form3>
     <translation>предпринимать, совершать</translation>
     <translation>
       <i>(undertake for)</i> брать на себя ответственность за <i>(что-л.)</i></translation>
@@ -2239,9 +2239,9 @@
     </example>
   </word>
   <word id="undo">
-    <form1 id="undo" sound="undo.wav">ʌn'duː</form1>
-    <form2 id="undid" sound="undo_2.wav">ʌn'dɪd</form2>
-    <form3 id="undone" sound="undo_3.wav">ʌn'dʌn</form3>
+    <form1 id="undo" sound="undo.mp3">ʌn'duː</form1>
+    <form2 id="undid" sound="undid.mp3">ʌn'dɪd</form2>
+    <form3 id="undone" sound="undone.mp3">ʌn'dʌn</form3>
     <translation>открывать</translation>
     <translation>развязывать</translation>
     <translation>возвращать <i>(в прежнее положение)</i></translation>
@@ -2251,9 +2251,9 @@
     </example>
   </word>
   <word id="unwind">
-    <form1 id="unwind" sound="unwind.wav">ʌn'waɪnd</form1>
-    <form2 id="unwound" sound="unwind_2.wav">ʌn'waund</form2>
-    <form3 id="unwound" sound="unwind_2.wav">ʌn'waund</form3>
+    <form1 id="unwind" sound="unwind.mp3">ʌn'waɪnd</form1>
+    <form2 id="unwound" sound="unwound.mp3">ʌn'waund</form2>
+    <form3 id="unwound" sound="unwound.mp3">ʌn'waund</form3>
     <translation>разматывать</translation>
     <translation>раскручивать</translation>
     <example>
@@ -2262,9 +2262,9 @@
     </example>
   </word>
   <word id="uphold">
-    <form1 id="uphold" sound="uphold.wav">ʌp'həuld</form1>
-    <form2 id="upheld" sound="uphold_2.wav">ʌp'held</form2>
-    <form3 id="upheld" sound="uphold_2.wav">ʌp'held</form3>
+    <form1 id="uphold" sound="uphold.mp3">ʌp'həuld</form1>
+    <form2 id="upheld" sound="upheld.mp3">ʌp'held</form2>
+    <form3 id="upheld" sound="upheld.mp3">ʌp'held</form3>
     <translation>поддерживать, помогать</translation>
     <example>
       <text>to uphold smb.'s spirit</text>
@@ -2272,15 +2272,15 @@
     </example>
   </word>
   <word id="upset">
-    <form1 id="upset" sound="upset.wav">ʌp'set</form1>
-    <form2 id="upset" sound="upset.wav">ʌp'set</form2>
-    <form3 id="upset" sound="upset.wav">ʌp'set</form3>
+    <form1 id="upset" sound="upset.mp3">ʌp'set</form1>
+    <form2 id="upset" sound="upset.mp3">ʌp'set</form2>
+    <form3 id="upset" sound="upset.mp3">ʌp'set</form3>
     <translation>опрокидывать, переворачивать <i>(лодку, автомобиль и т. п.)</i></translation>
   </word>
   <word id="wake">
-    <form1 id="wake" sound="wake.wav">weɪk</form1>
-    <form2 id="woke" sound="wake_2.wav">wəuk</form2>
-    <form3 id="woken" sound="wake_3.wav">'wəuk(ə)n</form3>
+    <form1 id="wake" sound="wake.mp3">weɪk</form1>
+    <form2 id="woke" sound="woke.mp3">wəuk</form2>
+    <form3 id="woken" sound="woken.mp3">'wəuk(ə)n</form3>
     <translation>просыпаться, будить, бодрствовать, не спать <g>(= wake up)</g></translation>
     <example>
       <text>What time did you wake up this morning?</text>
@@ -2288,9 +2288,9 @@
     </example>
   </word>
   <word id="wear">
-    <form1 id="wear" sound="wear.wav">wɛə</form1>
-    <form2 id="wore" sound="wear_2.wav">wɔː</form2>
-    <form3 id="worn" sound="wear_3.wav">wɔːn</form3>
+    <form1 id="wear" sound="wear.mp3">wɛə</form1>
+    <form2 id="wore" sound="wore.mp3">wɔː</form2>
+    <form3 id="worn" sound="worn.mp3">wɔːn</form3>
     <translation>носить</translation>
     <example>
       <text>to wear a wig</text>
@@ -2302,9 +2302,9 @@
     </example>
   </word>
   <word id="weave">
-    <form1 id="weave" sound="weave.wav">wiːv</form1>
-    <form2 id="wove" sound="weave_2.wav">wəuv</form2>
-    <form3 id="woven" sound="weave_3.wav">'wəuv(ə)n</form3>
+    <form1 id="weave" sound="weave.mp3">wiːv</form1>
+    <form2 id="wove" sound="wove.mp3">wəuv</form2>
+    <form3 id="woven" sound="woven.mp3">'wəuv(ə)n</form3>
     <translation>ткать</translation>
     <translation>плести <gi>прям. и перен.</gi></translation>
     <example>
@@ -2313,17 +2313,17 @@
     </example>
   </word>
   <word id="wed">
-    <form1 id="wed" sound="wed.wav">wed</form1>
-    <form2 id="wed" sound="wed_2.wav">wed</form2>
-    <form3 id="wed" sound="wed_3.wav">wed</form3>
+    <form1 id="wed" sound="wed.mp3">wed</form1>
+    <form2 id="wed" sound="wed.mp3">wed</form2>
+    <form3 id="wed" sound="wed.mp3">wed</form3>
     <translation>жениться</translation>
     <translation>выходить замуж</translation>
     <translation>вступать в брак</translation>
   </word>
   <word id="weep">
-    <form1 id="weep" sound="weep.wav">wiːp</form1>
-    <form2 id="wept" sound="weep_2.wav">wept</form2>
-    <form3 id="wept" sound="weep_2.wav">wept</form3>
+    <form1 id="weep" sound="weep.mp3">wiːp</form1>
+    <form2 id="wept" sound="wept.mp3">wept</form2>
+    <form3 id="wept" sound="wept.mp3">wept</form3>
     <translation>плакать, рыдать</translation>
     <example>
       <text>An angel watching an urn wept over her, carved in stone.</text>
@@ -2331,9 +2331,9 @@
     </example>
   </word>
   <word id="wet">
-    <form1 id="wet" sound="wet.wav">wet</form1>
-    <form2 id="wet" sound="wet.wav">wet</form2>
-    <form3 id="wet" sound="wet.wav">wet</form3>
+    <form1 id="wet" sound="wet.mp3">wet</form1>
+    <form2 id="wet" sound="wet.mp3">wet</form2>
+    <form3 id="wet" sound="wet.mp3">wet</form3>
     <translation>мочить, смачивать, увлажнять</translation>
     <example>
       <text>wet with dew</text>
@@ -2341,9 +2341,9 @@
     </example>
   </word>
   <word id="win">
-    <form1 id="win" sound="win.wav">wɪn</form1>
-    <form2 id="won" sound="win_2.wav">wʌn</form2>
-    <form3 id="won" sound="win_2.wav">wʌn</form3>
+    <form1 id="win" sound="win.mp3">wɪn</form1>
+    <form2 id="won" sound="won.mp3">wʌn</form2>
+    <form3 id="won" sound="won.mp3">wʌn</form3>
     <translation>победить, выиграть</translation>
     <example>
       <text>to win a prize</text>
@@ -2351,9 +2351,9 @@
     </example>
   </word>
   <word id="wind">
-    <form1 id="wind" sound="wind.wav">waɪnd</form1>
-    <form2 id="wound" sound="wind_2.wav">waund</form2>
-    <form3 id="wound" sound="wind_2.wav">waund</form3>
+    <form1 id="wind" sound="wind.mp3">waɪnd</form1>
+    <form2 id="wound" sound="wound.mp3">waund</form2>
+    <form3 id="wound" sound="wound.mp3">waund</form3>
     <translation>виться, извиваться, изгибаться</translation>
     <example>
       <text>I had a terrible night, I did turn and wind so.</text>
@@ -2361,9 +2361,9 @@
     </example>
   </word>
   <word id="withdraw">
-    <form1 id="withdraw" sound="withdraw.wav">wɪð'drɔː</form1>
-    <form2 id="withdrew" sound="withdraw_2.wav">wɪð'druː</form2>
-    <form3 id="withdrawn" sound="withdraw_3.wav">wɪð'drɔːn</form3>
+    <form1 id="withdraw" sound="withdraw.mp3">wɪð'drɔː</form1>
+    <form2 id="withdrew" sound="withdrew.mp3">wɪð'druː</form2>
+    <form3 id="withdrawn" sound="withdrawn.mp3">wɪð'drɔːn</form3>
     <translation>отодвигать, отдёргивать</translation>
     <translation>отнимать</translation>
     <example>
@@ -2372,9 +2372,9 @@
     </example>
   </word>
   <word id="withhold">
-    <form1 id="withhold" sound="withhold.wav">wɪθ'həuld</form1>
-    <form2 id="withheld" sound="withhold_2.wav">wɪθ'held</form2>
-    <form3 id="withheld" sound="withhold_2.wav">wɪθ'held</form3>
+    <form1 id="withhold" sound="withhold.mp3">wɪθ'həuld</form1>
+    <form2 id="withheld" sound="withheld.mp3">wɪθ'held</form2>
+    <form3 id="withheld" sound="withheld.mp3">wɪθ'held</form3>
     <translation>воздерживаться <i>(от чего-л.)</i></translation>
     <translation>отказывать <i>(в чём-л.)</i></translation>
     <example>
@@ -2383,9 +2383,9 @@
     </example>
   </word>
   <word id="withstand">
-    <form1 id="withstand" sound="withstand.wav">wɪð'stænd</form1>
-    <form2 id="withstood" sound="withstand_2.wav">wɪð'stud</form2>
-    <form3 id="withstood" sound="withstand_2.wav">wɪð'stud</form3>
+    <form1 id="withstand" sound="withstand.mp3">wɪð'stænd</form1>
+    <form2 id="withstood" sound="withstood.mp3">wɪð'stud</form2>
+    <form3 id="withstood" sound="withstood.mp3">wɪð'stud</form3>
     <translation>устоять <i>(перед чем-л.)</i>, выдержать <i>(что-л.)</i></translation>
     <translation>противостоять, не поддаваться <i>(чему-л.)</i></translation>
     <example>
@@ -2394,9 +2394,9 @@
     </example>
   </word>
   <word id="wring">
-    <form1 id="wring" sound="wring.wav">rɪŋ</form1>
-    <form2 id="wrung" sound="wring_2.wav">rʌŋ</form2>
-    <form3 id="wrung" sound="wring_2.wav">rʌŋ</form3>
+    <form1 id="wring" sound="wring.mp3">rɪŋ</form1>
+    <form2 id="wrung" sound="wrung.mp3">rʌŋ</form2>
+    <form3 id="wrung" sound="wrung.mp3">rʌŋ</form3>
     <translation>крутить, скручивать, выламывать</translation>
     <example>
       <text>to wring one's hands</text>
@@ -2404,9 +2404,9 @@
     </example>
   </word>
   <word id="write">
-    <form1 id="write" sound="write.wav">raɪt</form1>
-    <form2 id="wrote" sound="write_2.wav">rəut</form2>
-    <form3 id="written" sound="write_3.wav">'rɪt(ə)n</form3>
+    <form1 id="write" sound="write.mp3">raɪt</form1>
+    <form2 id="wrote" sound="wrote.mp3">rəut</form2>
+    <form3 id="written" sound="written.mp3">'rɪt(ə)n</form3>
     <translation>писать, выписывать, записывать</translation>
     <example>
       <text>to write a legible hand</text>
