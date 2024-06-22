@@ -1,12 +1,13 @@
 TEMPLATE = app
 
-QT  += core widgets xml
+QT  += core widgets xml multimedia
 
 CONFIG += windows c++14
 
 SOURCES += \
-    StatText.cpp \
     TextEdit.cpp \
+    WordCardBase.cpp \
+    WordCardSmall.cpp \
     label.cpp \
     learnwindow.cpp \
     main.cpp \
@@ -17,8 +18,9 @@ SOURCES += \
 TARGET = ../../build/IrregularVerbs
 
 HEADERS += \
-    StatText.h \
     TextEdit.h \
+    WordCardBase.h \
+    WordCardSmall.h \
     label.h \
     learnwindow.h \
     startwnd.h \

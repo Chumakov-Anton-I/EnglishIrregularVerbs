@@ -14,20 +14,16 @@ CLearnWindow :: CLearnWindow(const QDomNodeList& dictionary, QWidget* parent/* =
 
     mainFrame = new QVBoxLayout();
     setLayout(mainFrame);
-    /*  */
-    WordLabel = new QLabel();
-    WordLabel->setAlignment(Qt::AlignCenter);
-    WordLabel->setFrameStyle(QFrame::Shape::WinPanel | QFrame::Shadow::Sunken);
-    WordLabel->setFont(QFont("Times New Roman", 16));
-    WordLabel->setStyleSheet("QLabel { background-color: #FFFFFF; }");
+    /* The pane of the current word */
+    WordLabel = new CWordCardSmall(); //new QLabel();
     mainFrame->addWidget(WordLabel);
 
     /* The pane of forms */
     formsHBLayout = new QHBoxLayout();
-        lblForm2 = new CStatText();
+        lblForm2 = new CWordCardSmall();
         lblForm2->setMinimumWidth(300);
         formsHBLayout->addWidget(lblForm2);
-        lblForm3 = new CStatText();
+        lblForm3 = new CWordCardSmall();
         lblForm3->setMinimumWidth(300);
         formsHBLayout->addWidget(lblForm3);
     mainFrame->addLayout(formsHBLayout);
@@ -62,6 +58,7 @@ void CLearnWindow :: prepareDictionary()
     std::shuffle(std::begin(order), std::end(order), rng);
 }
 
+/* [slot] Reads a word from the dictionary and sets its values */
 void CLearnWindow :: nextWord()
 {
     if (order.empty()) {
@@ -72,10 +69,17 @@ void CLearnWindow :: nextWord()
     order.pop_back();
     QDomNode node = dictionary.item(i);
     current_word = new CWord(node.toElement());
-    //
-    WordLabel->setText(QString("<br>%1<br>").arg(current_word->getWord()));
-    lblForm2->setText(QString("<br>%1<br>").arg(current_word->getForm2()));
-    lblForm3->setText(QString("<br>%1<br>").arg(current_word->getForm3()));
+    //WordLabel->setText(QString("<br>%1<br>").arg(current_word->getWord()));
+    //lblForm2->setText(QString("<br>%1<br>").arg(current_word->getForm2()));
+    //lblForm3->setText(QString("<br>%1<br>").arg(current_word->getForm3()));
+    QString path = QDir::currentPath() + "/sound/";
+    QString fname1 = path + current_word->form1_sound;
+    QString fname2 = path + current_word->form2_sound;
+    QString fname3 = path + current_word->form3_sound;
+    //qDebug() << "\nPath 1: " << fname1 << "\nPath 2: " << fname2 << "\nPath 3: " << fname3;
+    WordLabel->setValues(current_word->form1, current_word->form1_transcr, fname1);
+    lblForm2->setValues(current_word->form2, current_word->form2_transcr, fname2);
+    lblForm3->setValues(current_word->form3, current_word->form3_transcr, fname3);
     txtTransl->setText(current_word->getTranslation());
     delete current_word;
     current_word = nullptr;
