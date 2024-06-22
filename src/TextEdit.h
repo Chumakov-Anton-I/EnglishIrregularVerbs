@@ -7,7 +7,8 @@
 
 #include <QtWidgets>
 #if defined(Q_OS_WIN)
-    #include <WinUser.h>
+    //#include <WinUser.h>
+    #include <Windows.h>
 #elif defined(Q_OS_UNIX)
 // TODO
 #elif defined(Q_OS_OSX)

@@ -8,7 +8,8 @@
 #include <QtWidgets>
 #include <QtXml>
 #include "word.h"
-#include "StatText.h"
+//#include "StatText.h"
+#include "WordCardSmall.h"
 
 class CLearnWindow : public QDialog
 {
@@ -18,13 +19,14 @@ public:
     ~CLearnWindow();
 private:    // GUI
     QVBoxLayout* mainFrame;
-    QLabel* WordLabel;
+    //QLabel* WordLabel;
     QHBoxLayout* formsHBLayout;
     //QStackedWidget* stackForm2;
     //QStackedWidget* stackForm3;
     //QStackedWidget* stackTranslation;
-    CStatText* lblForm2;
-    CStatText* lblForm3;
+    CWordCardSmall* WordLabel;
+    CWordCardSmall* lblForm2;
+    CWordCardSmall* lblForm3;
     //QLabel* lblTransl;
     QTextEdit* txtTransl;
     QPushButton* btnNext;
