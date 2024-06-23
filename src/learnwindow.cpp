@@ -34,6 +34,7 @@ CLearnWindow :: CLearnWindow(const QDomNodeList& dictionary, QWidget* parent/* =
 
     /* Buttons */
     btnNext = new QPushButton("Next word");
+    btnNext->setDefault(true);
     mainFrame->addWidget(btnNext);
 
     /* Connect signals and slots */
@@ -81,6 +82,7 @@ void CLearnWindow :: nextWord()
     lblForm2->setValues(current_word->form2, current_word->form2_transcr, fname2);
     lblForm3->setValues(current_word->form3, current_word->form3_transcr, fname3);
     txtTransl->setText(current_word->getTranslation());
+    WordLabel->playSound(); // auto-play sound
     delete current_word;
     current_word = nullptr;
 }

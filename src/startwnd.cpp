@@ -57,7 +57,7 @@ CStartWindow :: CStartWindow(QWidget* parent/* = nullptr */)
         boxLearnSettingsLayout->addWidget(btnStartTest);
     mainFrame->addWidget(boxLearnSettings); */
 
-    /* Block "Statistics" */
+    /* Block "Statistics" * /
     boxStatistics = new QGroupBox("Statistics");
         boxStatisticsLayout = new QVBoxLayout();
         boxStatistics->setLayout(boxStatisticsLayout);
@@ -65,7 +65,7 @@ CStartWindow :: CStartWindow(QWidget* parent/* = nullptr */)
         boxStatisticsLayout->addWidget(dummyLbl);
         btnResetStatistics = new QPushButton("Reset statistics");
         boxStatisticsLayout->addWidget(btnResetStatistics);
-    mainFrame->addWidget(boxStatistics);
+    mainFrame->addWidget(boxStatistics);*/
 
     /* ab out */
     aboutFrame = new QHBoxLayout();
@@ -91,9 +91,11 @@ CStartWindow :: ~CStartWindow()
 {
 }
 
+/* Makes or loads settings */
 void CStartWindow :: readSettings()
 {
-    QString fname = "settings.ini";
+    const QString fname = "settings.ini";   // TODO
+    //app_settings.setDefaultFormat(QSettings::IniFormat);
     if (!QFile::exists(fname)) {
         app_settings = new QSettings(fname, QSettings::IniFormat);
         app_settings->beginGroup("system");
@@ -103,9 +105,11 @@ void CStartWindow :: readSettings()
             app_settings->setValue("count_done", "10");
             app_settings->setValue("words_to_learn", "20");
         app_settings->endGroup();
+        app_settings->sync();   // save settings
     }
     else
         app_settings = new QSettings(fname, QSettings::IniFormat);
+    // Use the last dictionary if it can do
     QString dirpath = app_settings->value("system/recent", "").toString();
     if (dirpath.isEmpty())
         dirpath = app_settings->value("system/dictionary_path").toString() + "/"
@@ -146,7 +150,7 @@ bool CStartWindow :: chooseDictionary()
     return false;
 }
 
-/* Loading a sictionary */
+/* Loading a dictionary */
 bool CStartWindow :: loadDictionary(const QString &fpath)
 {
     /* Open a file */
@@ -229,7 +233,7 @@ bool CStartWindow :: readDictionary(const QDomDocument& doc)
 void CStartWindow :: startLearning()
 {
     CLearnWindow *learn = new CLearnWindow(dictionary);
-    learn->setWindowTitle("Learn"); // TODO
+    learn->setWindowTitle(QString("Learn: {%1 %2}").arg(dict_name, dict_vers));
     hide();
     learn->exec();
     show();
@@ -239,7 +243,7 @@ void CStartWindow :: startLearning()
 /* Start a test */
 void CStartWindow :: startTest()
 {
-    CWidget *test = new CWidget(dictionary);
+    CWidget *test = new CWidget(dictionary, app_settings);
     test->setWindowTitle(QString("Test: {%1 %2}").arg(dict_name, dict_vers));
     hide();
     test->exec();
