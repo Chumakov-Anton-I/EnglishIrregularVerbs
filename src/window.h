@@ -10,6 +10,7 @@
 #include "word.h"
 #include "TextEdit.h"
 #include "label.h"
+#include "WordCardSmall.h"
 
 /*struct Report
 {
@@ -21,7 +22,7 @@ class CWidget : public QDialog //public QWidget
 {
     Q_OBJECT
 public:
-    CWidget(QDomNodeList& dictionary, QWidget *parent = nullptr);
+    CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *parent = nullptr);
     ~CWidget();
 
     void getReport();
@@ -41,10 +42,11 @@ private:    // GUI part
     QHBoxLayout *commHBLayout;
 
     /* Labels */
-    QLabel *WordLabel;      // Окошко с заданным словом
-    QLabel *Form2Label;
-    QLabel *Form3Label;
-    QLabel *TranslationLabel;
+    //QLabel *WordLabel;      // Окошко с заданным словом
+    CWordCardSmall *WordLabel;
+    //QLabel *Form2Label;
+    //QLabel *Form3Label;
+    //QLabel *TranslationLabel;
     CLabel *ResultLabel;
     QLabel *hintLabel;
 
@@ -68,7 +70,7 @@ private:    // dictionary part
     int score = 0;
     int score_succ = 0;
     QMap<QString, int> statistics;
-    //void closeEvent(QCloseEvent*);
+    QSettings* app_settings;
 };
 
 #endif // WINDOW_H

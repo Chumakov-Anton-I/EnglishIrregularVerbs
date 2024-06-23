@@ -8,6 +8,7 @@
 
 #include <QtWidgets>
 #include <QtMultimedia>
+//#include "Player.h"
 
 class CWordCardBase : public QFrame
 {
@@ -15,9 +16,12 @@ class CWordCardBase : public QFrame
 public:
     CWordCardBase(QWidget* parent = nullptr);
     ~CWordCardBase();
+private:
+    bool status;
 protected:
-    QAudioOutput* m_audioOutput;
+    QAudioOutput* m_audioOut;
     QMediaPlayer* m_sound;
+    bool setAudioFile(QString&);
 public slots:
     void playSound();
 };

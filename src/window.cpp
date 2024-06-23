@@ -6,8 +6,8 @@
 #include <random>
 #include <algorithm>
 
-CWidget :: CWidget(QDomNodeList& dictionary, QWidget *parent)
-    : QDialog(parent, Qt::Window), dictionary(dictionary)
+CWidget :: CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *parent)
+    : QDialog(parent, Qt::Window), dictionary(dictionary), app_settings(settings)
 {
     setMinimumSize(400, 290);
     setFont(QFont("Segoe UI", 14));
@@ -16,41 +16,33 @@ CWidget :: CWidget(QDomNodeList& dictionary, QWidget *parent)
     mainVbox = new QVBoxLayout();
     setLayout(mainVbox);
     /* The pane with the current word */
-    WordLabel = new QLabel();
-    WordLabel->setAlignment(Qt::AlignCenter);
+    WordLabel = new CWordCardSmall(); //QLabel();
     WordLabel->setFrameStyle(QFrame::Shape::WinPanel | QFrame::Shadow::Sunken);
-    WordLabel->setFont(QFont("Times New Roman", 16));
-    WordLabel->setStyleSheet("QLabel { background-color: #FFFFFF; }");
+    //WordLabel->setFont(QFont("Times New Roman", 16));
+    //WordLabel->setStyleSheet("QLabel { background-color: #FFFFFF; }");
     ResultLabel = new CLabel();
-    //ResultLabel->setAlignment(Qt::AlignCenter);
     mainVbox->addWidget(WordLabel);
     mainVbox->addWidget(ResultLabel);
 
     /* Панель форм */
     formsHBLayout = new QHBoxLayout();
         /* Панель с формой прошедшего времени */
-        //Form2Label = new QLabel("<b>Type Past form:</b>");
         Form2Edit = new CTextEdit();
         Form2Edit->setPlaceholderText("<type the Past form>");
         form2VBLayout = new QVBoxLayout();
-        //form2VBLayout->addWidget(Form2Label);
         form2VBLayout->addWidget(Form2Edit);
         formsHBLayout->addLayout(form2VBLayout);
         /* Панель с формой причастия прошедшего времени */
-        //Form3Label = new QLabel("<b>Type Participle II form:");
         Form3Edit = new CTextEdit();
         Form3Edit->setPlaceholderText("<type the Participle II form>");
         form3VBLayout = new QVBoxLayout();
-        //form3VBLayout->addWidget(Form3Label);
         form3VBLayout->addWidget(Form3Edit);
         formsHBLayout->addLayout(form3VBLayout);
     mainVbox->addLayout(formsHBLayout);
 
-    /* Панель перевода */
-    //TranslationLabel = new QLabel("<b>Type translation:</b>");
+    /* translation pane */
     TranslationEdit = new CTextEdit(LANG_LAYOUT_RUS);
     TranslationEdit->setPlaceholderText("<type the Translation>");
-    //mainVbox->addWidget(TranslationLabel);
     mainVbox->addWidget(TranslationEdit);
 
     /* Панель с кнопками */
@@ -115,8 +107,9 @@ bool CWidget :: readWord()
     QDomNode node = dictionary.item(i);
     currentWord = new CWord(node.toElement());
     // Заполнить поля
-    WordLabel->setText(QString("<br>%1<br>").arg(currentWord->getWord()));
-    //
+    QString sndfname = app_settings->value("system/sound_path").toString() + "/" + currentWord->form1_sound;
+    WordLabel->setValues(currentWord->form1, currentWord->form1_transcr, sndfname);
+    WordLabel->playSound(); // auto-play sound
     return true;
 }
 
