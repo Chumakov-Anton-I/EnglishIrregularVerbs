@@ -42,8 +42,7 @@ private:    // GUI part
     QHBoxLayout *commHBLayout;
 
     /* Labels */
-    //QLabel *WordLabel;      // Окошко с заданным словом
-    CWordCardSmall *WordLabel;
+    CWordCardSmall *WordLabel;  // the window with a current word
     //QLabel *Form2Label;
     //QLabel *Form3Label;
     //QLabel *TranslationLabel;

@@ -5,6 +5,7 @@ QT  += core widgets xml multimedia
 CONFIG += windows c++14
 
 SOURCES += \
+    ScrolledBox.cpp \
     TextEdit.cpp \
     WordCardBase.cpp \
     WordCardSmall.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
 TARGET = ../../build/IrregularVerbs
 
 HEADERS += \
+    ScrolledBox.h \
     TextEdit.h \
     WordCardBase.h \
     WordCardSmall.h \

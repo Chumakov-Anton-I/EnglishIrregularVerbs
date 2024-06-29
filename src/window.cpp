@@ -29,12 +29,14 @@ CWidget :: CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *paren
         /* Панель с формой прошедшего времени */
         Form2Edit = new CTextEdit();
         Form2Edit->setPlaceholderText("<type the Past form>");
+        Form2Edit->setToolTip("Type the past form");
         form2VBLayout = new QVBoxLayout();
         form2VBLayout->addWidget(Form2Edit);
         formsHBLayout->addLayout(form2VBLayout);
         /* Панель с формой причастия прошедшего времени */
         Form3Edit = new CTextEdit();
         Form3Edit->setPlaceholderText("<type the Participle II form>");
+        Form3Edit->setToolTip("Type the participle II form");
         form3VBLayout = new QVBoxLayout();
         form3VBLayout->addWidget(Form3Edit);
         formsHBLayout->addLayout(form3VBLayout);
@@ -43,6 +45,7 @@ CWidget :: CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *paren
     /* translation pane */
     TranslationEdit = new CTextEdit(LANG_LAYOUT_RUS);
     TranslationEdit->setPlaceholderText("<type the Translation>");
+    TranslationEdit->setToolTip("Type the word or the first letter of the word");
     mainVbox->addWidget(TranslationEdit);
 
     /* Панель с кнопками */

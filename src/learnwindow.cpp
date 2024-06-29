@@ -35,6 +35,7 @@ CLearnWindow :: CLearnWindow(const QDomNodeList& dictionary, QWidget* parent/* =
     /* Buttons */
     btnNext = new QPushButton("Next word");
     btnNext->setDefault(true);
+    btnNext->setToolTip("Go to next word");
     mainFrame->addWidget(btnNext);
 
     /* Connect signals and slots */
