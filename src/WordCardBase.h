@@ -21,6 +21,7 @@ private:
 protected:
     QAudioOutput* m_audioOut;
     QMediaPlayer* m_sound;
+    QPushButton* btnPlay;   // play sound
     bool setAudioFile(QString&);
 public slots:
     void playSound();

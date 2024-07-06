@@ -9,7 +9,7 @@
 CLearnWindow :: CLearnWindow(const QDomNodeList& dictionary, QWidget* parent/* = nullptr*/)
     : QDialog(parent, Qt::Window), dictionary(dictionary)
 {
-    setFont(QFont("Segoe UI", 14)); // TODO: make global font
+    //setFont(QFont("Segoe UI", 14)); // TODO: make global font
     setWindowIcon(QIcon(":/ico_obook"));
 
     mainFrame = new QVBoxLayout();

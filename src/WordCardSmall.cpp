@@ -17,6 +17,7 @@ CWordCardSmall :: CWordCardSmall(QWidget* parent)
 
     btnPlay = new QPushButton(QIcon(":/ico_sound"), "");
     btnPlay->setFixedSize(32, 32);  // TODO
+    btnPlay->setObjectName("ButtonPlaySound");
     m_subBox->addWidget(btnPlay);
     m_lblTrans = new QLabel();
     //m_lblTrans->setFrameStyle(QFrame::Shape::Panel | QFrame::Shadow::Raised);

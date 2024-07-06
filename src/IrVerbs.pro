@@ -29,12 +29,11 @@ HEADERS += \
     window.h \
     word.h
 
-win32:LIBS += -lUser32
-
 RESOURCES += \
     images.qrc
 
 win32:{
+    LIBS += -lUser32
     VERSION = 0.0.1
     QMAKE_TARGET_COMPANY = Chumakov Inc.
     QMAKE_TARGET_PRODUCT = Irregular Verbs Tester
@@ -46,3 +45,5 @@ win32:{
     QMAKE_TARGET_TRADEMARKS = Chumakov Software Inc.
     RC_ICONS = app.ico
 }
+
+DISTFILES +=

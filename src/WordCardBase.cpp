@@ -7,8 +7,8 @@
 CWordCardBase :: CWordCardBase(QWidget* parent/* = nullptr*/)
     :QFrame(parent)
 {
-    setFont(QFont("Times New Roman", 16));  // TODO: get settings from the ini
-    setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
+    //setFont(QFont("Times New Roman", 16));  // TODO: get settings from the ini
+    //setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
     m_audioOut = new QAudioOutput;
     m_sound = new QMediaPlayer();
     m_sound->setAudioOutput(m_audioOut);
