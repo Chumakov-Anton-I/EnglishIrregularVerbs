@@ -2,14 +2,18 @@
 #define WORD_H
 
 /* ****************************************************************************
- * word.h
- * It is a container, which contains the information about a word
+ * File:    word.h
+ * Author:  Chumakov Anton I.
+ * Purpose: class CWord
+ *          an object, which contains the information about a word
+ *          This class keeps the reference to the passed element, reads data
+ *          from it [and updates this data (TODO)]
+ * Date:    June 15, 2024
+ * TODO: remake the interface of this class
  * ****************************************************************************/
 
 #include <QtXml>
 #include <QString>
-
-//const QString XML_ID = "id";
 
 struct Result
 {
@@ -24,36 +28,38 @@ struct Result
 class CWord
 {
 public:
-    CWord(const QDomElement&);
-    ~CWord();
+    CWord(const QDomElement& element);
 
     QString getWord() { return QString("<big>%1</big><br>[%2]").arg(form1, form1_transcr); }
     QString getForm2() { return QString("%1<br>%2").arg(form2, form2_transcr); }
     QString getForm3() { return QString("%1<br>%2").arg(form3, form3_transcr); }
     QString getTranslation() { return translation.join("; "); }
-    Result check(const QString, const QString, const QString);
     QString getExample() { return example.join(";\n"); }
     QString getExampleTrans() { return example_transl.join(";\n"); }
-    QString id = "";
+    Result check(const QString, const QString, const QString);
+    QString id = "";    // why?
 public:
-    QString form1;
+    QString form1;  // infinitive
     QString form1_transcr;
     QString form1_sound;
 
-    QString form2;
+    QString form2;  // past
     QString form2_transcr;
     QString form2_sound;
 
-    QString form3;
+    QString form3;  // participle II
     QString form3_transcr;
     QString form3_sound;
 
-    QStringList translation;
-    QStringList example;
-    QStringList example_transl;
+    QStringList translation;    // translation
+    QStringList example;        // examples
+    QStringList example_transl; // examples with translation
 private:
+    QDomElement source;
     QString format(QString s, QString color = "", bool bold = false, bool italic = false);
     QString getFormattedText(const QDomElement&);
+    void updateStatistics();
+    // TODO: move these constants anywhere
     const QString colorRed      = "#8B0000";
     const QString colorGreen    = "#006400";
     const QString XML_ID        = "id";

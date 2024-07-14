@@ -5,36 +5,42 @@ QT  += core widgets xml multimedia
 CONFIG += windows c++14
 
 SOURCES += \
-    ScrolledBox.cpp \
-    TextEdit.cpp \
-    WordCardBase.cpp \
-    WordCardSmall.cpp \
-    label.cpp \
-    learnwindow.cpp \
+    WordPanes.cpp \
     main.cpp \
-    startwnd.cpp \
-    window.cpp \
+    MainWindow.cpp \
+    WndLearning.cpp \
     word.cpp
+#    ScrolledBox.cpp \
+#    TextEdit.cpp \
+#    WordCardBase.cpp \
+#    WordCardSmall.cpp \
+#    label.cpp \
+#    learnwindow.cpp \
+#    startwnd.cpp \
+#    window.cpp \
 
 TARGET = ../../build/IrregularVerbs
 
 HEADERS += \
-    ScrolledBox.h \
-    TextEdit.h \
-    WordCardBase.h \
-    WordCardSmall.h \
-    label.h \
-    learnwindow.h \
-    startwnd.h \
-    window.h \
-    word.h
+    MainWindow.h \
+    WordPanes.h \
+    word.h \
+    WndLearning.h
+#    ScrolledBox.h \
+#    TextEdit.h \
+#    WordCardBase.h \
+#    WordCardSmall.h \
+#    label.h \
+#    learnwindow.h \
+#    startwnd.h \
+#    window.h \
 
 RESOURCES += \
     images.qrc
 
 win32:{
     LIBS += -lUser32
-    VERSION = 0.0.1
+    VERSION = 0.2.0
     QMAKE_TARGET_COMPANY = Chumakov Inc.
     QMAKE_TARGET_PRODUCT = Irregular Verbs Tester
     QMAKE_TARGET_DESCRIPTION = Learn and check English irregular verbs
@@ -45,5 +51,3 @@ win32:{
     QMAKE_TARGET_TRADEMARKS = Chumakov Software Inc.
     RC_ICONS = app.ico
 }
-
-DISTFILES +=

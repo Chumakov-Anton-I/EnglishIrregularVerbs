@@ -1,13 +1,19 @@
 /* ****************************************************************************
- * word.cpp
+ * File:    word.cpp
+ * Author:  Chumakov Anton I.
+ * Date:    June 15, 2024
  * ****************************************************************************/
 
 #include "word.h"
 
-CWord :: CWord(const QDomElement& src)
+extern QSettings* appSettings;
+
+CWord :: CWord(const QDomElement& element)
+    : source(element)
 {
-    id = src.attribute(XML_ID);
-    QDomNodeList content = src.childNodes();
+    id = source.attribute(XML_ID);
+    QDir snd_path(appSettings->value("system/sound_path").toString());
+    QDomNodeList content = source.childNodes();
     for (int i = 0; i < content.length(); i++) {
         QDomNode itemNode = content.item(i);
         if (!itemNode.isElement())
@@ -17,17 +23,17 @@ CWord :: CWord(const QDomElement& src)
         // analyse the structure of 'word'
         if (tag_name == XML_FORM1) {  // get form1
             form1 = item.attribute(XML_ID);
-            form1_sound = item.attribute(XML_SOUND);
+            form1_sound = snd_path.absoluteFilePath(item.attribute(XML_SOUND));
             form1_transcr = item.text();
         }
-        else if (tag_name == XML_FORM2) { // get form2
+        else if (tag_name == XML_FORM2) { // get form2  // TODO: form2 might be an array
             form2 = item.attribute(XML_ID);
-            form2_sound = item.attribute(XML_SOUND);
+            form2_sound = snd_path.absoluteFilePath(item.attribute(XML_SOUND));
             form2_transcr = item.text();
         }
-        else if (tag_name == XML_FORM3) { // get form3
+        else if (tag_name == XML_FORM3) { // get form3  // TODO: form3 might be an array
             form3 = item.attribute(XML_ID);
-            form3_sound = item.attribute(XML_SOUND);
+            form3_sound = snd_path.absoluteFilePath(item.attribute(XML_SOUND));
             form3_transcr = item.text();
         }
         else if (tag_name == XML_TRANSLATION)   // get translation
@@ -44,13 +50,14 @@ CWord :: CWord(const QDomElement& src)
             lstEl = lstNode.toElement();
             example_transl.push_back(etext + " --> " + lstEl.text());
         }
+        else if (tag_name == "statistics") {
+            qDebug() << "[CWord: read statistics] <-- TODO!";
+        }
         else continue;  // skip over an unexpected tag
     }
 }
 
-CWord :: ~CWord() {}
-
-/* Check the word */
+/** Check the word */
 Result CWord :: check(const QString inp2, const QString inp3, const QString inpTrns)
 {
     Result result;
@@ -94,6 +101,8 @@ Result CWord :: check(const QString inp2, const QString inp3, const QString inpT
     return result;
 }
 
+// TODO: likely it's an useless function. Give formating to the style of GUI
+/** Applies an HTML-fotmat to string */
 QString CWord :: format(QString s, QString color, bool bold, bool italic)
 {
     if (!s.isEmpty()) {
@@ -107,7 +116,7 @@ QString CWord :: format(QString s, QString color, bool bold, bool italic)
     return s;
 }
 
-/* Read a formatted text form dictionary */
+/** Read a formatted text form element (recursive algorithm) */
 QString CWord :: getFormattedText(const QDomElement &element)
 {
     QString res("");
@@ -117,14 +126,14 @@ QString CWord :: getFormattedText(const QDomElement &element)
         if (item.isElement()) {
             QDomElement subelem = item.toElement();
             QString tag = subelem.tagName();
-            if (tag == "g")
-                res += QString("<font color=\"%1\">%2</font>").arg("#00DD00", getFormattedText(subelem));   // ALARM! Recursion!
+            if (tag == "g") // TODO: remove magic constants
+                res += QString("<font color=\"%1\">%2</font>").arg(colorGreen, getFormattedText(subelem));
             else if (tag == "gi")
-                res += QString("<i><font color=\"%1\">%2</font><i/>").arg("#00DD00", getFormattedText(subelem));    // ALARM! Recursion!
+                res += QString("<i><font color=\"%1\">%2</font><i/>").arg(colorGreen, getFormattedText(subelem));
             else
                 res += QString("<%1>%2</%1>").arg(tag, getFormattedText(subelem));
         }
-        else if (item.isComment()) {
+        else if (item.isComment()) {    // Why?
             QDomComment comm = item.toComment();
             res += QString("<!--%1-->").arg(comm.data());
         }
