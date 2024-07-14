@@ -9,6 +9,7 @@ SOURCES += \
     main.cpp \
     MainWindow.cpp \
     WndLearning.cpp \
+    WndTest.cpp \
     word.cpp
 #    ScrolledBox.cpp \
 #    TextEdit.cpp \
@@ -17,15 +18,15 @@ SOURCES += \
 #    label.cpp \
 #    learnwindow.cpp \
 #    startwnd.cpp \
-#    window.cpp \
 
 TARGET = ../../build/IrregularVerbs
 
 HEADERS += \
     MainWindow.h \
     WordPanes.h \
-    word.h \
-    WndLearning.h
+    WndLearning.h \
+    WndTest.h \
+    word.h
 #    ScrolledBox.h \
 #    TextEdit.h \
 #    WordCardBase.h \
@@ -33,7 +34,6 @@ HEADERS += \
 #    label.h \
 #    learnwindow.h \
 #    startwnd.h \
-#    window.h \
 
 RESOURCES += \
     images.qrc
