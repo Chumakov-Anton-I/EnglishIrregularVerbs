@@ -6,6 +6,7 @@
 
 #include "MainWindow.h"
 #include "WndLearning.h"
+#include "WndTest.h"
 
 extern QSettings* appSettings;  // Settings of the application (see main.cpp)
 
@@ -18,10 +19,25 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     /* Make the window form */
     m_topBox = new QVBoxLayout();
     setLayout(m_topBox);
+    // ComboBox is on the top
+    m_listOfDicts = new QComboBox();
+    m_topBox->addWidget(m_listOfDicts);
     m_hBox = new QHBoxLayout();
     m_topBox->addLayout(m_hBox);
-    m_listOfDicts = new QListWidget();
-    m_hBox->addWidget(m_listOfDicts);
+    m_aboutDictionary = new QFormLayout();
+    m_aboutDictionary->setRowWrapPolicy(QFormLayout::WrapLongRows);
+    m_aboutDictionary->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
+    m_aboutDictionary->setFormAlignment(Qt::AlignHCenter | Qt::AlignTop);
+    m_aboutDictionary->setLabelAlignment(Qt::AlignRight);
+        lblDictName = new QLabel();
+        m_aboutDictionary->addRow("Dictionary name:", lblDictName);
+        lblDictVers = new QLabel();
+        m_aboutDictionary->addRow("Dictionary version:", lblDictVers);
+        lblDictAuth = new QLabel();
+        m_aboutDictionary->addRow("Author:", lblDictAuth);
+        lblDictDate = new QLabel();
+        m_aboutDictionary->addRow("Date:", lblDictDate);
+    m_hBox->addLayout(m_aboutDictionary);
     m_cmdBox = new QVBoxLayout();
         // buttons
         btnAddDict = new QPushButton("Add dictionary...");
@@ -41,6 +57,7 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     // ...
 
     /* Connect signals & slots */
+    connect(m_listOfDicts, SIGNAL(currentIndexChanged(int)), SLOT(selectDictionary()));
     connect(btnAddDict, SIGNAL(clicked()), SLOT(addDictionary()));
     connect(btnRemoveDict, SIGNAL(clicked()), SLOT(removeDictionary()));
     connect(btnEditDict, SIGNAL(clicked()), SLOT(editDictionary()));
@@ -50,7 +67,7 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     indexDicts();   // Update list of dictionaries
 }
 
-/** Read application settings */
+/* * Read application settings */
 /*void CMainWindow :: readSettings()
 {
     return;
@@ -101,14 +118,24 @@ bool CMainWindow :: readDictionary()
     //if (!checkDict()) return false;   // TODO: add checking the structure of a dictionary
     QDomElement root = m_dictionaryDoc.documentElement();
     m_dictionary = root.childNodes();
+    dict_name = root.attribute("title");
+    dict_vers = root.attribute("version");
+    dict_auth = root.attribute("author");
+    dict_date = root.attribute("date");
+    lblDictName->setText(dict_name);
+    lblDictVers->setText(dict_vers);
+    lblDictAuth->setText(dict_auth);
+    lblDictDate->setText(dict_date);
     return true;
 }
 
-/** Set the selected item in the List as the current item */
-void CMainWindow :: selectItem()
+/* --------------- SLOTS ----------------- */
+/** [slot] On changing a dictionary */
+void CMainWindow :: selectDictionary()
 {
-    QListWidgetItem* current = m_listOfDicts->currentItem();
-    m_curDictFile = m_dictionaryPath.filePath(current->text());
+    QString fname = m_listOfDicts->currentText();
+    m_curDictFile = m_dictionaryPath.absoluteFilePath(fname);
+    loadDictionary(m_curDictFile);
 }
 
 /** [slot] Add a new dictionary */
@@ -121,22 +148,19 @@ void CMainWindow :: addDictionary()
 /** [slot] Remove the dictionary */
 void CMainWindow :: removeDictionary()
 {
-    selectItem();
     qDebug() << QString("Removing of the dictionary [%1]").arg(m_curDictFile);
 }
 
 /** [slot] Edit the dictionary */
 void CMainWindow :: editDictionary()
 {
-    selectItem();
     qDebug() << "Editing the dictionary";
 }
 
 /** [slot] Start learning */
 void CMainWindow :: startLearning()
 {
-    selectItem();
-    loadDictionary(m_curDictFile);
+    //loadDictionary(m_curDictFile);
     CWndLearning* learnWnd = new CWndLearning(m_dictionary);
     hide();
     learnWnd->exec();
@@ -147,6 +171,10 @@ void CMainWindow :: startLearning()
 /** [slot] Start test */
 void CMainWindow :: startTest()
 {
-    selectItem();
-    qDebug() << "Start test";
+    //loadDictionary(m_curDictFile);
+    CWndTest* testWnd = new CWndTest(m_dictionary);
+    hide();
+    testWnd->exec();
+    show();
+    delete testWnd;
 }

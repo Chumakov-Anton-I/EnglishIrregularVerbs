@@ -35,7 +35,7 @@ CWndLearning :: CWndLearning(QDomNodeList& dictionary, QWidget* parent/* = nullp
     nextWord();
 }
 
-/** [slot] Sets a next word */
+/** [slot] Set a next word */
 void CWndLearning :: nextWord()
 {
     if (m_order.isEmpty()) {

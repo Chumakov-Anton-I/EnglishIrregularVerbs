@@ -8,14 +8,14 @@ SOURCES += \
     WordPanes.cpp \
     main.cpp \
     MainWindow.cpp \
+    label.cpp \
+    TextEdit.cpp \
     WndLearning.cpp \
     WndTest.cpp \
     word.cpp
 #    ScrolledBox.cpp \
-#    TextEdit.cpp \
 #    WordCardBase.cpp \
 #    WordCardSmall.cpp \
-#    label.cpp \
 #    learnwindow.cpp \
 #    startwnd.cpp \
 
@@ -24,14 +24,14 @@ TARGET = ../../build/IrregularVerbs
 HEADERS += \
     MainWindow.h \
     WordPanes.h \
+    label.h \
+    TextEdit.h \
     WndLearning.h \
     WndTest.h \
     word.h
 #    ScrolledBox.h \
-#    TextEdit.h \
 #    WordCardBase.h \
 #    WordCardSmall.h \
-#    label.h \
 #    learnwindow.h \
 #    startwnd.h \
 

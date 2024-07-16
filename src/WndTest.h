@@ -2,7 +2,10 @@
 #define WINDOW_H
 
 /* ****************************************************************************
- * window.h
+ * File:    WndTest.h
+ * Author:  Chumakov Anton I.
+ * Purpose: class WndTest - a widget, that runs testing
+ * Date:    June 2024
  * ****************************************************************************/
 
 #include <QtWidgets>
@@ -10,7 +13,7 @@
 #include "word.h"
 #include "TextEdit.h"
 #include "label.h"
-#include "WordCardSmall.h"
+#include "WordPanes.h"
 
 /*struct Report
 {
@@ -18,12 +21,14 @@
     int score = 0;
 };*/
 
-class CWidget : public QDialog //public QWidget
+extern QSettings* appSettings;
+
+class CWndTest : public QDialog
 {
     Q_OBJECT
 public:
-    CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *parent = nullptr);
-    ~CWidget();
+    CWndTest(QDomNodeList& dictionary, QWidget *parent = nullptr);
+    ~CWndTest();
 
     void getReport();
 
@@ -35,14 +40,14 @@ public slots:
 
 private:    // GUI part
     /* Layouts */
-    QVBoxLayout *mainVbox;  // Компоновщик верхнего уровня
+    QVBoxLayout *mainVbox;  // top-level layout
     QVBoxLayout *form2VBLayout;
     QVBoxLayout *form3VBLayout;
     QHBoxLayout *formsHBLayout;
     QHBoxLayout *commHBLayout;
 
     /* Labels */
-    CWordCardSmall *WordLabel;  // the window with a current word
+    CWordPane *WordLabel;  // the window with a current word
     //QLabel *Form2Label;
     //QLabel *Form3Label;
     //QLabel *TranslationLabel;
@@ -69,7 +74,6 @@ private:    // dictionary part
     int score = 0;
     int score_succ = 0;
     QMap<QString, int> statistics;
-    QSettings* app_settings;
 };
 
 #endif // WINDOW_H

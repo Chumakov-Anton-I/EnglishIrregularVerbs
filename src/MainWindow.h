@@ -13,8 +13,6 @@
 #include <QSettings>
 #include <QtXml>
 
-//QSettings* appSettings;
-
 class CMainWindow : public QWidget
 {
     Q_OBJECT
@@ -22,16 +20,22 @@ public:
     CMainWindow(QWidget* parent = nullptr);
     //~CMainWindow();
 private:    // GUI
-    QVBoxLayout* m_topBox;    // top-level layout
-    QHBoxLayout* m_hBox;
-    QVBoxLayout* m_cmdBox;
-    QListWidget* m_listOfDicts;   // available dictionaries
+    QVBoxLayout* m_topBox;  // top-level layout
+    QHBoxLayout* m_hBox;    // hor. sub-box
+    QVBoxLayout* m_cmdBox;  // buttons column
+    QComboBox* m_listOfDicts;   // available dictionaries
+    QFormLayout* m_aboutDictionary;
     QPushButton* btnAddDict;
     QPushButton* btnRemoveDict;
     QPushButton* btnEditDict;
     QPushButton* btnSelectDict; // TODO: maybe delete this button
     QPushButton* btnStartLearn;
     QPushButton* btnStartTest;
+
+    QLabel* lblDictName;
+    QLabel* lblDictVers;
+    QLabel* lblDictDate;
+    QLabel* lblDictAuth;
 private:    // back-end
     //void readSettings();
     QDir m_dictionaryPath;  // the directory of dictionaries
@@ -42,13 +46,17 @@ private:    // back-end
     bool readDictionary();
     QDomDocument m_dictionaryDoc;  // allows read/write file
     QDomNodeList m_dictionary;
-    void selectItem();
-    //QSettings* appSettings;
+
+    QString dict_name;
+    QString dict_vers;
+    QString dict_date;
+    QString dict_auth;
 public slots:
+    void selectDictionary();
+
     void addDictionary();
     void removeDictionary();
     void editDictionary();
-    //void selectDictionary();
     void startLearning();
     void startTest();
 };

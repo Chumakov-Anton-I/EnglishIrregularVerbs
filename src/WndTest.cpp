@@ -2,12 +2,12 @@
  * window.cpp
  * ****************************************************************************/
 
-#include "window.h"
+#include "WndTest.h"
 #include <random>
 #include <algorithm>
 
-CWidget :: CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *parent)
-    : QDialog(parent, Qt::Window), dictionary(dictionary), app_settings(settings)
+CWndTest :: CWndTest(QDomNodeList& dictionary, QWidget *parent/* = nullptr*/)
+    : QDialog(parent, Qt::Window), dictionary(dictionary)
 {
     setMinimumSize(400, 290);
     setFont(QFont("Segoe UI", 14));
@@ -16,7 +16,7 @@ CWidget :: CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *paren
     mainVbox = new QVBoxLayout();
     setLayout(mainVbox);
     /* The pane with the current word */
-    WordLabel = new CWordCardSmall(); //QLabel();
+    WordLabel = new CWordPane(); //QLabel();
     WordLabel->setFrameStyle(QFrame::Shape::WinPanel | QFrame::Shadow::Sunken);
     //WordLabel->setFont(QFont("Times New Roman", 16));
     //WordLabel->setStyleSheet("QLabel { background-color: #FFFFFF; }");
@@ -79,14 +79,14 @@ CWidget :: CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *paren
     start();
 }
 
-CWidget :: ~CWidget()
+CWndTest :: ~CWndTest()
 {
     delete currentWord; // Надо ли это?
     currentWord = nullptr;
 }
 
 /* Подготовка словаря */
-void CWidget :: prepareDictionary()
+void CWndTest :: prepareDictionary()
 {
     count = dictionary.length();
     /* Make the random order of words */
@@ -99,7 +99,7 @@ void CWidget :: prepareDictionary()
 }
 
 /* Читать слово */
-bool CWidget :: readWord()
+bool CWndTest :: readWord()
 {
     if (order.empty())
         return false;
@@ -110,14 +110,14 @@ bool CWidget :: readWord()
     QDomNode node = dictionary.item(i);
     currentWord = new CWord(node.toElement());
     // Заполнить поля
-    QString sndfname = app_settings->value("system/sound_path").toString() + "/" + currentWord->form1_sound;
-    WordLabel->setValues(currentWord->form1, currentWord->form1_transcr, sndfname);
+    //QString sndfname = appSettings->value("system/sound_path").toString() + "/" + ;
+    WordLabel->setValues(currentWord->form1, currentWord->form1_transcr, currentWord->form1_sound);
     WordLabel->playSound(); // auto-play sound
     return true;
 }
 
-/* Начать работу */
-void CWidget :: start()
+/** Begin test */
+void CWndTest :: start()
 {
     /* Очистить все поля ввода; TODO: вынести в отдельную функцию? */
     Form2Edit->clear();
@@ -139,15 +139,15 @@ void CWidget :: start()
     Form2Edit->setFocus();
 }
 
-/* Проверить слово */
-void CWidget :: check()
+/** Check the word */
+void CWndTest :: check()
 {
     Result res = currentWord->check(Form2Edit->toPlainText(), Form3Edit->toPlainText(), TranslationEdit->toPlainText());
     Form2Edit->setText(res.form2);
     Form3Edit->setText(res.form3);
     TranslationEdit->setText(res.translation);
     if (res) {
-        ResultLabel->setStatus(true);  //"<b><font color=\"#006400\">Right!</font></b>"
+        ResultLabel->setStatus(true);
         score_succ++;   // inc successiful score
         /* Update statistics */
         QString id = currentWord->id;
@@ -173,8 +173,8 @@ void CWidget :: check()
     connect(btnCheck, SIGNAL(clicked()), SLOT(start()));
 }
 
-/* Завершить работу и вывести итог */
-void CWidget :: resume()
+/** End working and show a report */
+void CWndTest :: resume()
 {
     double percent = 100.0*score_succ/(double)count;
     QString msg = QString("Всего слов:\t%1\n").arg(count) +
@@ -185,13 +185,13 @@ void CWidget :: resume()
     this->close();
 }
 
-void CWidget :: getReport()
+void CWndTest :: getReport()
 {
     return; // TODO: удалить функцию?
 }
 
-/* Simulate button press */
-void CWidget :: on_enter()
+/** Simulate button press */
+void CWndTest :: on_enter()
 {
     if (!btnCheck->isEnabled())
         btnResume->click();
@@ -200,7 +200,7 @@ void CWidget :: on_enter()
 
 /* Intercepts a closing */
 // TODO
-/*void CWidget :: closeEvent(QCloseEvent* e)
+/*void CWndTest :: closeEvent(QCloseEvent* e)
 {
     qDebug() << e->type();
     resume();
