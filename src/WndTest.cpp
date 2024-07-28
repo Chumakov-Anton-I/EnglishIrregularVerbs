@@ -5,9 +5,10 @@
 #include "WndTest.h"
 #include <random>
 #include <algorithm>
+#include "settings_key.h"
 
-CWndTest :: CWndTest(QDomNodeList& dictionary, QWidget *parent/* = nullptr*/)
-    : QDialog(parent, Qt::Window), dictionary(dictionary)
+CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
+    : QDialog(parent, Qt::Window), m_document(dictionary)
 {
     setMinimumSize(400, 290);
     //setFont(QFont("Segoe UI", 14));   // TODO: use CSS to tune a style
@@ -17,9 +18,6 @@ CWndTest :: CWndTest(QDomNodeList& dictionary, QWidget *parent/* = nullptr*/)
     setLayout(mainVbox);
     /* The pane with the current word */
     WordLabel = new CWordPaneFull(this);
-    //WordLabel->setFrameStyle(QFrame::Shape::WinPanel | QFrame::Shadow::Sunken);   // TODO: tune it in CSS
-    //WordLabel->setFont(QFont("Times New Roman", 16));
-    //WordLabel->setStyleSheet("QLabel { background-color: #FFFFFF; }");
     ResultLabel = new CLabel(this);
     mainVbox->addWidget(WordLabel);
     mainVbox->addWidget(ResultLabel);
@@ -85,12 +83,13 @@ CWndTest :: ~CWndTest()
     currentWord = nullptr;
 }
 
-/* Подготовка словаря */
+/** Prepare the dictionary */
 void CWndTest :: prepareDictionary()
 {
+    QDomElement e = m_document.documentElement();
+    dictionary = e.childNodes();
     count = dictionary.length();
     /* Make the random order of words */
-    //order.clear();
     for (int i = 0; i < count; i++)
         order.push_back(i);
     auto rd = std::random_device {};
@@ -98,19 +97,17 @@ void CWndTest :: prepareDictionary()
     std::shuffle(std::begin(order), std::end(order), rng);
 }
 
-/* Читать слово */
+/** Read the word */
 bool CWndTest :: readWord()
 {
     if (order.empty())
         return false;
-    /* get random 'i' */
+    /* get random word */
     int i = order.back();
     order.pop_back();
-    /* get word */
-    QDomNode node = dictionary.item(i);
-    currentWord = new CWord(node.toElement());
-    // Заполнить поля
-    //QString sndfname = appSettings->value("system/sound_path").toString() + "/" + ;
+    currentWordNode = dictionary.item(i);
+    currentWord = new CWord(currentWordNode.toElement());
+    /* fill card */
     WordLabel->setValues(currentWord->form1, currentWord->form1_transcr, currentWord->form1_sound);
     WordLabel->playSound(); // auto-play sound
     return true;
@@ -119,16 +116,13 @@ bool CWndTest :: readWord()
 /** Begin test */
 void CWndTest :: start()
 {
-    /* Очистить все поля ввода; TODO: вынести в отдельную функцию? */
+    /* Clear all edit boxes; TODO: make special function? */
     Form2Edit->clear();
     Form3Edit->clear();
     TranslationEdit->clear();
     ResultLabel->reset();
 
     if (!readWord()) {  // go to resume
-        //btnCheck->setText("Resume");
-        //disconnect(btnCheck, SIGNAL(clicked()), this, SLOT(start()));
-        //connect(btnCheck, SIGNAL(clicked()), this, SLOT(resume()));
         btnCheck->hide(); //setEnabled(false);
         return;
     }
@@ -153,6 +147,7 @@ void CWndTest :: check()
         QString id = currentWord->id;
         int x = statistics.value(id, 0);
         statistics[id] = ++x;
+        updateStatistics(bool(res));    // update general statistics
     }
     else
         ResultLabel->setStatus(false);   //"<b><font color=\"#8B0000\">Wrong!</font></b>");
@@ -185,17 +180,42 @@ void CWndTest :: resume()
     this->close();
 }
 
-void CWndTest :: getReport()
-{
-    return; // TODO: удалить функцию?
-}
-
 /** Simulate button press */
 void CWndTest :: on_enter()
 {
     if (!btnCheck->isEnabled())
         btnResume->click();
     btnCheck->click();
+}
+
+/** @Check statistics of word */
+bool CWndTest :: readStatistics(const QDomNode& node)
+{
+    QDomElement element = node.toElement();
+    QDomNode statNode = element.namedItem("statistics");
+    if (statNode.isNull())
+        return true;
+    QDomElement statElement = statNode.toElement();
+    int c = appSettings->value(ini_system::count_to_done).toInt();
+    if (statElement.attribute("status").toInt() >= c)
+        return false;   // this word is already learnt
+    return true;
+}
+
+void CWndTest :: updateStatistics(bool state)
+{
+    if (!state) return;  // Do nothing if it isn't OK
+    QDomNode statNode = currentWordNode.namedItem("statistics");
+    if (statNode.isNull()) { // create statistics node
+        QDomElement statElem = m_document.createElement("statistics");
+        statElem.setAttribute("status", 1);
+        currentWordNode.appendChild(statElem);
+    }
+    else { // rewrite node
+        QDomElement statElem = statNode.toElement();
+        int x = statElem.attribute("status").toInt();
+        statElem.setAttribute("status", ++x);
+    }
 }
 
 /* Intercept a closing */

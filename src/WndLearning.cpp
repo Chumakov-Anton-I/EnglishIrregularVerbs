@@ -8,8 +8,8 @@
 #include <random>
 #include <algorithm>
 
-CWndLearning :: CWndLearning(QDomNodeList& dictionary, QWidget* parent/* = nullptr*/)
-    : QDialog(parent, Qt::Window), m_dictionary(dictionary)
+CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullptr*/)
+    : QDialog(parent, Qt::Window), m_document(dictionary)
 {
     /* Make gui */
     m_topBox = new QVBoxLayout();
@@ -35,6 +35,19 @@ CWndLearning :: CWndLearning(QDomNodeList& dictionary, QWidget* parent/* = nullp
     nextWord();
 }
 
+/** Make a random order of words */
+void CWndLearning :: prepareDictionary()
+{
+    QDomElement e = m_document.documentElement();
+    m_dictionary = e.childNodes();
+    int count = m_dictionary.length();
+    for (int i = 0; i < count; i++)
+        m_order.push_back(i);
+    auto rd = std::random_device {};
+    auto rng = std::default_random_engine { rd() };
+    std::shuffle(m_order.begin(), m_order.end(), rng);
+}
+
 /** [slot] Set a next word */
 void CWndLearning :: nextWord()
 {
@@ -51,18 +64,8 @@ void CWndLearning :: nextWord()
     m_form2Pane->setValues(current_word->form2, current_word->form2_transcr, current_word->form2_sound);
     m_form3Pane->setValues(current_word->form3, current_word->form3_transcr, current_word->form3_sound);
     m_translation->setText(current_word->getTranslation());
+    m_currWordPane->playSound();    //auto-play
 
     delete current_word;
     current_word = nullptr;
-}
-
-/** Make a random order of words */
-void CWndLearning :: prepareDictionary()
-{
-    int count = m_dictionary.length();
-    for (int i = 0; i < count; i++)
-        m_order.push_back(i);
-    auto rd = std::random_device {};
-    auto rng = std::default_random_engine { rd() };
-    std::shuffle(m_order.begin(), m_order.end(), rng);
 }

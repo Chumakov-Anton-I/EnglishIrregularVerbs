@@ -81,17 +81,10 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     indexDicts();   // Update list of dictionaries
 }
 
-/* * Read application settings */
-/*void CMainWindow :: readSettings()
-{
-    return;
-}*/
-
-/** Look the directory of dictionaries */
+/** @Look the directory of dictionaries */
 void CMainWindow :: indexDicts()
 {
     m_dictionaryPath.setFilter(QDir::Files | QDir::NoSymLinks);
-    //m_dictionaryPath.setSorting(QDir::Name); // Remove it!
     m_dictList = m_dictionaryPath.entryList();
     /* Update List --> TODO: make function */
     foreach (QString itemname, m_dictList) {    // add only xml-files
@@ -100,7 +93,7 @@ void CMainWindow :: indexDicts()
     }
 }
 
-/** Load a dictionary */
+/** @Load a dictionary */
 bool CMainWindow :: loadDictionary(const QString& fpath)
 {
     /* Try to open the file */
@@ -110,7 +103,7 @@ bool CMainWindow :: loadDictionary(const QString& fpath)
         return false;
     }
     /* Try to open the opened file */
-    auto res = m_dictionaryDoc.setContent(&dictfile);
+    auto res = m_dictionary.setContent(&dictfile);
     if (!res) {
         dictfile.close();
         qDebug() << "This dictionary has errors";// TODO
@@ -126,12 +119,12 @@ bool CMainWindow :: loadDictionary(const QString& fpath)
     return true;
 }
 
-/** Read the current dictionary */
+/** @Read the current dictionary */
 bool CMainWindow :: readDictionary()
 {
     //if (!checkDict()) return false;   // TODO: add checking the structure of a dictionary
-    QDomElement root = m_dictionaryDoc.documentElement();
-    m_dictionary = root.childNodes();
+    QDomElement root = m_dictionary.documentElement();
+    //m_dictionary = root.childNodes();   //TODO: get count of words
     dict_name = root.attribute("title");
     dict_vers = root.attribute("version");
     dict_auth = root.attribute("author");
@@ -174,7 +167,6 @@ void CMainWindow :: editDictionary()
 /** [slot] Start learning */
 void CMainWindow :: startLearning()
 {
-    //loadDictionary(m_curDictFile);
     CWndLearning* learnWnd = new CWndLearning(m_dictionary);
     hide();
     learnWnd->exec();
@@ -185,10 +177,17 @@ void CMainWindow :: startLearning()
 /** [slot] Start test */
 void CMainWindow :: startTest()
 {
-    //loadDictionary(m_curDictFile);
     CWndTest* testWnd = new CWndTest(m_dictionary);
     hide();
     testWnd->exec();
+    QFile wfile(m_curDictFile); // save statistics - TODO: make function
+    if (wfile.open(QIODevice::WriteOnly)) {
+        QTextStream out(&wfile);
+        m_dictionary.save(out, 2);
+        wfile.close();
+    }
+    else
+        qDebug() << "Can not save file";
     show();
     delete testWnd;
 }

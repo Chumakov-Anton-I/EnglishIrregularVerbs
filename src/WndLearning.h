@@ -18,7 +18,7 @@ class CWndLearning : public QDialog
 {
     Q_OBJECT
 public:
-    CWndLearning(QDomNodeList& dictionary, QWidget* parent = nullptr);
+    CWndLearning(QDomDocument& dictionary, QWidget* parent = nullptr);
     //~CWndLearning();
 private:    // GUI
     QVBoxLayout* m_topBox;
@@ -28,7 +28,8 @@ private:    // GUI
     CWordPane* m_form3Pane;
     QTextEdit* m_translation;
     QPushButton* btnNext;
-    QDomNodeList m_dictionary;  // active dictionary (reference)
+    QDomDocument m_document;  // active dictionary (reference)
+    QDomNodeList m_dictionary;
 public slots:
     void nextWord();
 private:    // back-end

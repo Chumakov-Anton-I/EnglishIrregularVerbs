@@ -58,7 +58,6 @@ private:
     QDomElement source;
     QString format(QString s, QString color = "", bool bold = false, bool italic = false);
     QString getFormattedText(const QDomElement&);
-    void updateStatistics();
     // TODO: move these constants anywhere
     const QString colorRed      = "#8B0000";
     const QString colorGreen    = "#006400";
@@ -70,6 +69,7 @@ private:
     const QString XML_FORM3     = "form3";
     const QString XML_TRANSLATION = "translation";
     const QString XML_EXAMPLE   = "example";
+    const QString XML_STATISTICS = "statistics";
 };
 
 #endif // WORD_H

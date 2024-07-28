@@ -15,22 +15,14 @@
 #include "label.h"
 #include "WordPanes.h"
 
-/*struct Report
-{
-    int wordsToLearn = 20;
-    int score = 0;
-};*/
-
 extern QSettings* appSettings;
 
 class CWndTest : public QDialog
 {
     Q_OBJECT
 public:
-    CWndTest(QDomNodeList& dictionary, QWidget *parent = nullptr);
+    CWndTest(QDomDocument& dictionary, QWidget *parent = nullptr);
     ~CWndTest();
-
-    void getReport();
 
 public slots:
     void start();
@@ -59,11 +51,14 @@ private:    // GUI part
     QPushButton *btnResume;
 
 private:    // dictionary part
-    bool readDictionary(QDomDocument);
     void prepareDictionary();
+    void updateStatistics(bool);
+    bool readStatistics(const QDomNode&);
     bool readWord();
     CWord* currentWord = nullptr;   // current word
+    QDomDocument m_document;
     QDomNodeList dictionary;    // dictionary
+    QDomNode currentWordNode;
     int count;         // volume of dictionary
     QVector<int> order;
     int score = 0;

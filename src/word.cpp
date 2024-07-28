@@ -58,7 +58,7 @@ CWord :: CWord(const QDomElement& element)
     }
 }
 
-/** Check the word */
+/** @Check the word */
 Result CWord :: check(const QString inp2, const QString inp3, const QString inpTrns)
 {
     Result result;
@@ -98,12 +98,13 @@ Result CWord :: check(const QString inp2, const QString inp3, const QString inpT
         result.translation = s + translation.join("; ");
         flag &= false;
     }
+    //updateStatistics(flag);
     result.state = flag;
     return result;
 }
 
 // TODO: likely it's an useless function. Give formating to the style of GUI
-/** Applies an HTML-fotmat to string */
+/** @Applies an HTML-fotmat to string */
 QString CWord :: format(QString s, QString color, bool bold, bool italic)
 {
     if (!s.isEmpty()) {
@@ -117,7 +118,7 @@ QString CWord :: format(QString s, QString color, bool bold, bool italic)
     return s;
 }
 
-/** Read a formatted text form element (recursive algorithm) */
+/** @Read a formatted text form element (recursive algorithm) */
 QString CWord :: getFormattedText(const QDomElement &element)
 {
     QString res("");

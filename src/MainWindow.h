@@ -37,15 +37,14 @@ private:    // GUI
     QLabel* lblDictDate;
     QLabel* lblDictAuth;
 private:    // back-end
-    //void readSettings();
     QDir m_dictionaryPath;  // the directory of dictionaries
     QString m_curDictFile;  // the path of the current dictionary file
     void indexDicts();
     QStringList m_dictList;
     bool loadDictionary(const QString& fpath);
     bool readDictionary();
-    QDomDocument m_dictionaryDoc;  // allows read/write file
-    QDomNodeList m_dictionary;
+    QDomDocument m_dictionary;  // allows read/write file
+    //QDomNodeList m_dictionary;
 
     QString dict_name;
     QString dict_vers;
