@@ -22,8 +22,8 @@ class CTextEdit : public QTextEdit
 {
     Q_OBJECT
 public:
-    CTextEdit(LPCWSTR lang = LANG_LAYOUT_ENG, QTextEdit *parent = nullptr);
-    ~CTextEdit();
+    CTextEdit(LPCWSTR lang = LANG_LAYOUT_ENG, QWidget *parent = nullptr);
+    //~CTextEdit();
 
 private:
     LPCWSTR lang_id;

@@ -47,16 +47,11 @@ private:    // GUI part
     QHBoxLayout *commHBLayout;
 
     /* Labels */
-    CWordPane *WordLabel;  // the window with a current word
-    //QLabel *Form2Label;
-    //QLabel *Form3Label;
-    //QLabel *TranslationLabel;
+    CWordPaneFull *WordLabel;  // the window with a current word
     CLabel *ResultLabel;
-    QLabel *hintLabel;
-
-    /* Form 2 */
-    CTextEdit *Form2Edit;
-    CTextEdit *Form3Edit;
+    QLabel *hintLabel;      // hint
+    CTextEdit *Form2Edit;   // Form 2
+    CTextEdit *Form3Edit;   // Form 3
     CTextEdit *TranslationEdit;
 
     /* Buttons */

@@ -22,7 +22,7 @@ public:
     //~CWndLearning();
 private:    // GUI
     QVBoxLayout* m_topBox;
-    CWordPane* m_currWordPane; // TODO: change class
+    CWordPaneFull* m_currWordPane;
     QHBoxLayout* m_formsBox;
     CWordPane* m_form2Pane;
     CWordPane* m_form3Pane;

@@ -7,6 +7,7 @@
 #include "MainWindow.h"
 #include "WndLearning.h"
 #include "WndTest.h"
+#include "settings_key.h"
 
 extern QSettings* appSettings;  // Settings of the application (see main.cpp)
 
@@ -15,54 +16,67 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
 {
     /* Read settings */
     // readSettings();
-    m_dictionaryPath = QDir(appSettings->value("system/dictionary_path").toString());
+    m_dictionaryPath = QDir(appSettings->value(ini_system::dictionary_path).toString());
     /* Make the window form */
     m_topBox = new QVBoxLayout();
     setLayout(m_topBox);
     // ComboBox is on the top
-    m_listOfDicts = new QComboBox();
+    m_listOfDicts = new QComboBox(this);
+    //m_listOfDicts->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     m_topBox->addWidget(m_listOfDicts);
     m_hBox = new QHBoxLayout();
     m_topBox->addLayout(m_hBox);
+    QGroupBox* g_abOut = new QGroupBox("Dictionary info", this);
+    m_hBox->addWidget(g_abOut);
     m_aboutDictionary = new QFormLayout();
     m_aboutDictionary->setRowWrapPolicy(QFormLayout::WrapLongRows);
     m_aboutDictionary->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
     m_aboutDictionary->setFormAlignment(Qt::AlignHCenter | Qt::AlignTop);
     m_aboutDictionary->setLabelAlignment(Qt::AlignRight);
-        lblDictName = new QLabel();
+        lblDictName = new QLabel(this);
+        lblDictName->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         m_aboutDictionary->addRow("Dictionary name:", lblDictName);
-        lblDictVers = new QLabel();
+        lblDictVers = new QLabel(this);
+        lblDictVers->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         m_aboutDictionary->addRow("Dictionary version:", lblDictVers);
-        lblDictAuth = new QLabel();
+        lblDictAuth = new QLabel(this);
+        lblDictAuth->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         m_aboutDictionary->addRow("Author:", lblDictAuth);
-        lblDictDate = new QLabel();
+        lblDictDate = new QLabel(this);
+        lblDictDate->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         m_aboutDictionary->addRow("Date:", lblDictDate);
-    m_hBox->addLayout(m_aboutDictionary);
+        QFrame* delim = new QFrame(this);
+        delim->setFrameStyle(QFrame::HLine | QFrame::Sunken);
+        m_aboutDictionary->addRow(delim);
+        // ... TODO: add statistics
+    g_abOut->setLayout(m_aboutDictionary);
     m_cmdBox = new QVBoxLayout();
         // buttons
-        btnAddDict = new QPushButton("Add dictionary...");
-        btnRemoveDict = new QPushButton("Remove dictionary");
-        btnEditDict = new QPushButton("Edit");
-        btnSelectDict = new QPushButton("Select dictionary");
-        btnStartLearn = new QPushButton("Start learning");
-        btnStartTest = new QPushButton("Start test");
+        btnAddDict = new QPushButton("Add dictionary...", this);
+        //btnAddDict->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        btnRemoveDict = new QPushButton("Remove dictionary", this);
+        btnEditDict = new QPushButton("Edit", this);
+        btnSelectDict = new QPushButton("Select dictionary", this);
+        btnStartLearn = new QPushButton("Start learning", this);
+        btnStartTest = new QPushButton("Start test", this);
         m_cmdBox->addWidget(btnAddDict);
         m_cmdBox->addWidget(btnRemoveDict);
         m_cmdBox->addWidget(btnEditDict);
         m_cmdBox->addWidget(btnSelectDict);
-        m_cmdBox->addSpacing(32);
+        //m_cmdBox->addSpacing(32);
+        m_cmdBox->addStretch();
         m_cmdBox->addWidget(btnStartLearn);
         m_cmdBox->addWidget(btnStartTest);
     m_hBox->addLayout(m_cmdBox);
     // ...
 
     /* Connect signals & slots */
-    connect(m_listOfDicts, SIGNAL(currentIndexChanged(int)), SLOT(selectDictionary()));
-    connect(btnAddDict, SIGNAL(clicked()), SLOT(addDictionary()));
-    connect(btnRemoveDict, SIGNAL(clicked()), SLOT(removeDictionary()));
-    connect(btnEditDict, SIGNAL(clicked()), SLOT(editDictionary()));
-    connect(btnStartLearn, SIGNAL(clicked()), SLOT(startLearning()));
-    connect(btnStartTest, SIGNAL(clicked()), SLOT(startTest()));
+    connect(m_listOfDicts, SIGNAL(currentIndexChanged(int)), this, SLOT(selectDictionary()));
+    connect(btnAddDict, SIGNAL(clicked()), this, SLOT(addDictionary()));
+    connect(btnRemoveDict, SIGNAL(clicked()), this, SLOT(removeDictionary()));
+    connect(btnEditDict, SIGNAL(clicked()), this, SLOT(editDictionary()));
+    connect(btnStartLearn, SIGNAL(clicked()), this, SLOT(startLearning()));
+    connect(btnStartTest, SIGNAL(clicked()), this, SLOT(startTest()));
 
     indexDicts();   // Update list of dictionaries
 }

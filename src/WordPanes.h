@@ -1,12 +1,12 @@
 #ifndef WORDPANES_H
 #define WORDPANES_H
 
-/* ****************************************************************************
+/* ********************************************************************
  * File:    WordPanes.h
  * Author:  Chumakov Anton I.
  * Purpose: classes CWordPaneBase, CWordPane, CWordPaneFull
  * Date:    July 8, 2024
- * ***************************************************************************/
+ * ***************************************************************** */
 
 #include <QtWidgets>
 #include <QtMultimedia>
@@ -24,7 +24,10 @@ private:
     QMediaPlayer* m_sound;
 protected:
     QVBoxLayout* mainVbox;
+    QHBoxLayout* m_subBox;
     QPushButton* btnPlaySnd;
+    QLabel* m_word;
+    QLabel* m_transcription;
     bool status;
     bool setAudioFile(const QString& sourse);
 };
@@ -36,10 +39,6 @@ class CWordPane : public CWordPaneBase
 public:
     CWordPane(QWidget* parent = nullptr);
     void setValues(QString&, QString&, QString&);
-private:
-    QLabel* m_word;
-    QLabel* m_transcription;
-    QHBoxLayout* m_subBox;
 };
 
 /** -- A full card ----------------------------------------------- */
@@ -51,10 +50,7 @@ public:
     void setValues(QString&, QString&, QString&);
     void setExample(const QString&);
 private:
-    QLabel* m_word;
     QLabel* m_example;  // Maybe 'QTextEdit'?
-    QLabel* m_transcrption;
-    QHBoxLayout* m_subbox;
 };
 
 #endif // WORDPANES_H

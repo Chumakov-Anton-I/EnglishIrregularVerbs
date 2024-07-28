@@ -14,22 +14,22 @@ CWndLearning :: CWndLearning(QDomNodeList& dictionary, QWidget* parent/* = nullp
     /* Make gui */
     m_topBox = new QVBoxLayout();
     setLayout(m_topBox);
-    m_currWordPane = new CWordPane();
+    m_currWordPane = new CWordPaneFull(this);
     m_topBox->addWidget(m_currWordPane);
     m_formsBox = new QHBoxLayout();
-        m_form2Pane = new CWordPane();
-        m_form3Pane = new CWordPane();
+        m_form2Pane = new CWordPane(this);
+        m_form3Pane = new CWordPane(this);
         m_formsBox->addWidget(m_form2Pane);
         m_formsBox->addWidget(m_form3Pane);
     m_topBox->addLayout(m_formsBox);
-    m_translation = new QTextEdit();
+    m_translation = new QTextEdit(this);
     m_translation->setReadOnly(true);
     m_topBox->addWidget(m_translation);
-    btnNext = new QPushButton("Next word");
+    btnNext = new QPushButton("Next word", this);
     m_topBox->addWidget(btnNext);
 
     /* Connect signal & slots */
-    connect(btnNext, SIGNAL(clicked()), SLOT(nextWord()));
+    connect(btnNext, SIGNAL(clicked()), this, SLOT(nextWord()));
 
     prepareDictionary();
     nextWord();

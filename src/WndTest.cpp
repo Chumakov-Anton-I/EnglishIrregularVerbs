@@ -10,31 +10,31 @@ CWndTest :: CWndTest(QDomNodeList& dictionary, QWidget *parent/* = nullptr*/)
     : QDialog(parent, Qt::Window), dictionary(dictionary)
 {
     setMinimumSize(400, 290);
-    setFont(QFont("Segoe UI", 14));
+    //setFont(QFont("Segoe UI", 14));   // TODO: use CSS to tune a style
     setWindowIcon(QIcon(":/ico_run"));
 
     mainVbox = new QVBoxLayout();
     setLayout(mainVbox);
     /* The pane with the current word */
-    WordLabel = new CWordPane(); //QLabel();
-    WordLabel->setFrameStyle(QFrame::Shape::WinPanel | QFrame::Shadow::Sunken);
+    WordLabel = new CWordPaneFull(this);
+    //WordLabel->setFrameStyle(QFrame::Shape::WinPanel | QFrame::Shadow::Sunken);   // TODO: tune it in CSS
     //WordLabel->setFont(QFont("Times New Roman", 16));
     //WordLabel->setStyleSheet("QLabel { background-color: #FFFFFF; }");
-    ResultLabel = new CLabel();
+    ResultLabel = new CLabel(this);
     mainVbox->addWidget(WordLabel);
     mainVbox->addWidget(ResultLabel);
 
     /* Панель форм */
     formsHBLayout = new QHBoxLayout();
         /* Панель с формой прошедшего времени */
-        Form2Edit = new CTextEdit();
+        Form2Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
         Form2Edit->setPlaceholderText("<type the Past form>");
         Form2Edit->setToolTip("Type the past form");
         form2VBLayout = new QVBoxLayout();
         form2VBLayout->addWidget(Form2Edit);
         formsHBLayout->addLayout(form2VBLayout);
         /* Панель с формой причастия прошедшего времени */
-        Form3Edit = new CTextEdit();
+        Form3Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
         Form3Edit->setPlaceholderText("<type the Participle II form>");
         Form3Edit->setToolTip("Type the participle II form");
         form3VBLayout = new QVBoxLayout();
@@ -43,18 +43,18 @@ CWndTest :: CWndTest(QDomNodeList& dictionary, QWidget *parent/* = nullptr*/)
     mainVbox->addLayout(formsHBLayout);
 
     /* translation pane */
-    TranslationEdit = new CTextEdit(LANG_LAYOUT_RUS);
+    TranslationEdit = new CTextEdit(LANG_LAYOUT_RUS, this);
     TranslationEdit->setPlaceholderText("<type the Translation>");
     TranslationEdit->setToolTip("Type the word or the first letter of the word");
     mainVbox->addWidget(TranslationEdit);
 
     /* Панель с кнопками */
-    hintLabel = new QLabel("<small><font color=\"#808080\">Press 'Tab' to switch edit,<br>press 'Enter' to check.</font></small>");
+    hintLabel = new QLabel("<small><font color=\"#808080\">Press 'Tab' to switch edit,<br>press 'Enter' to check.</font></small>", this);
     hintLabel->setAlignment(Qt::AlignLeft | Qt::AlignBottom);
-    btnCheck = new QPushButton("Check");
+    btnCheck = new QPushButton("Check", this);
     btnCheck->setDefault(true);
     btnCheck->setFocusPolicy(Qt::FocusPolicy::NoFocus);
-    btnResume = new QPushButton("Resume");
+    btnResume = new QPushButton("Resume", this);
     btnResume->setIcon(QIcon(":/ico_xoctagon"));
     btnResume->setFocusPolicy(Qt::FocusPolicy::NoFocus);
     commHBLayout = new QHBoxLayout();
@@ -198,7 +198,7 @@ void CWndTest :: on_enter()
     btnCheck->click();
 }
 
-/* Intercepts a closing */
+/* Intercept a closing */
 // TODO
 /*void CWndTest :: closeEvent(QCloseEvent* e)
 {

@@ -9,7 +9,3 @@ CScrolledBox :: CScrolledBox(QWidget* parent/* =nulltr*/)
 {
     //
 }
-
-CScrolledBox :: ~CScrolledBox()
-{
-}

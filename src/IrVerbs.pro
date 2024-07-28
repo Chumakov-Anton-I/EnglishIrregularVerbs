@@ -12,8 +12,8 @@ SOURCES += \
     TextEdit.cpp \
     WndLearning.cpp \
     WndTest.cpp \
-    word.cpp
-#    ScrolledBox.cpp \
+    word.cpp \
+    ScrolledBox.cpp
 #    WordCardBase.cpp \
 #    WordCardSmall.cpp \
 #    learnwindow.cpp \
@@ -28,8 +28,9 @@ HEADERS += \
     TextEdit.h \
     WndLearning.h \
     WndTest.h \
-    word.h
-#    ScrolledBox.h \
+    settings_key.h \
+    word.h \
+    ScrolledBox.h
 #    WordCardBase.h \
 #    WordCardSmall.h \
 #    learnwindow.h \

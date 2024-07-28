@@ -5,6 +5,7 @@
  * ****************************************************************************/
 
 #include "word.h"
+#include "settings_key.h"
 
 extern QSettings* appSettings;
 
@@ -12,7 +13,7 @@ CWord :: CWord(const QDomElement& element)
     : source(element)
 {
     id = source.attribute(XML_ID);
-    QDir snd_path(appSettings->value("system/sound_path").toString());
+    QDir snd_path(appSettings->value(ini_system::sound_path).toString());
     QDomNodeList content = source.childNodes();
     for (int i = 0; i < content.length(); i++) {
         QDomNode itemNode = content.item(i);
