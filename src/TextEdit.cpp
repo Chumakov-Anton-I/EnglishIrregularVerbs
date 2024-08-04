@@ -4,18 +4,14 @@
 
 #include "TextEdit.h"
 
-CTextEdit :: CTextEdit(LPCWSTR lang, QTextEdit *parent)
+CTextEdit :: CTextEdit(LPCWSTR lang, QWidget *parent)
     : QTextEdit(parent), lang_id(lang)
 {
     this->setFocusPolicy(Qt::FocusPolicy::StrongFocus);
     this->setTabChangesFocus(true);
 }
 
-CTextEdit :: ~CTextEdit()
-{
-}
-
-/* Intercepts focus event and switches keyboard language */
+/** Intercept focus event and switches keyboard language */
 void CTextEdit :: focusInEvent(QFocusEvent *e)
 {
 #if defined(Q_OS_WIN)
@@ -24,7 +20,7 @@ void CTextEdit :: focusInEvent(QFocusEvent *e)
     QTextEdit::focusInEvent(e);
 }
 
-/* Intercept 'Enter' press event */
+/** Intercept 'Enter' press event */
 void CTextEdit :: keyPressEvent(QKeyEvent *e)
 {
     if (e->key() == Qt::Key_Enter || e->key() == Qt::Key_Return)

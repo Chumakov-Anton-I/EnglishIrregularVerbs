@@ -2,7 +2,10 @@
 #define WINDOW_H
 
 /* ****************************************************************************
- * window.h
+ * File:    WndTest.h
+ * Author:  Chumakov Anton I.
+ * Purpose: class WndTest - a widget, that runs testing
+ * Date:    June 2024
  * ****************************************************************************/
 
 #include <QtWidgets>
@@ -10,22 +13,17 @@
 #include "word.h"
 #include "TextEdit.h"
 #include "label.h"
-#include "WordCardSmall.h"
+#include "WordPanes.h"
+//#include "FlippedPane.h"
 
-/*struct Report
-{
-    int wordsToLearn = 20;
-    int score = 0;
-};*/
+extern QSettings* appSettings;
 
-class CWidget : public QDialog //public QWidget
+class CWndTest : public QDialog
 {
     Q_OBJECT
 public:
-    CWidget(QDomNodeList& dictionary, QSettings* settings, QWidget *parent = nullptr);
-    ~CWidget();
-
-    void getReport();
+    CWndTest(QDomDocument& dictionary, QWidget *parent = nullptr);
+    ~CWndTest();
 
 public slots:
     void start();
@@ -34,24 +32,15 @@ public slots:
     void on_enter();
 
 private:    // GUI part
-    /* Layouts */
-    QVBoxLayout *mainVbox;  // Компоновщик верхнего уровня
-    QVBoxLayout *form2VBLayout;
-    QVBoxLayout *form3VBLayout;
-    QHBoxLayout *formsHBLayout;
-    QHBoxLayout *commHBLayout;
-
     /* Labels */
-    CWordCardSmall *WordLabel;  // the window with a current word
-    //QLabel *Form2Label;
-    //QLabel *Form3Label;
-    //QLabel *TranslationLabel;
+    CWordPaneFull *WordLabel;  // the window with a current word
     CLabel *ResultLabel;
-    QLabel *hintLabel;
-
-    /* Form 2 */
+    QStackedWidget *Form2Stack;
+    QStackedWidget *Form3Stack;
     CTextEdit *Form2Edit;
     CTextEdit *Form3Edit;
+    CWordPane *Form2Pane;
+    CWordPane *Form3Pane;
     CTextEdit *TranslationEdit;
 
     /* Buttons */
@@ -59,17 +48,19 @@ private:    // GUI part
     QPushButton *btnResume;
 
 private:    // dictionary part
-    bool readDictionary(QDomDocument);
     void prepareDictionary();
+    void updateStatistics(bool);
+    bool readStatistics(const QDomNode&);
     bool readWord();
-    CWord* currentWord = nullptr;   // current word
+    CWord currentWord;   // current word
+    QDomDocument m_document;
     QDomNodeList dictionary;    // dictionary
+    QDomNode currentWordNode;
     int count;         // volume of dictionary
     QVector<int> order;
     int score = 0;
     int score_succ = 0;
     QMap<QString, int> statistics;
-    QSettings* app_settings;
 };
 
 #endif // WINDOW_H

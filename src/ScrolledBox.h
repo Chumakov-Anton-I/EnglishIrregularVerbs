@@ -13,7 +13,7 @@ class CScrolledBox : public QFrame
     Q_OBJECT
 public:
     CScrolledBox(QWidget* parent = nullptr);
-    ~CScrolledBox();
+    //~CScrolledBox();
 private:
     QHBoxLayout* mainBox;
     QStackedLayout* m_stack;

@@ -7,14 +7,12 @@
 CLabel :: CLabel(QWidget *parent)
     : QWidget(parent)
 {
-    frame = new QHBoxLayout();
+    QHBoxLayout* frame = new QHBoxLayout();
     setLayout(frame);
     infoLabel = new QLabel();
     infoLabel->setAlignment(Qt::AlignCenter);
     frame->addWidget(infoLabel);
 }
-
-CLabel :: ~CLabel() {}
 
 void CLabel :: setStatus(bool status)
 {
