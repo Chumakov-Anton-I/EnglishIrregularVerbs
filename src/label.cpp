@@ -14,8 +14,6 @@ CLabel :: CLabel(QWidget *parent)
     frame->addWidget(infoLabel);
 }
 
-CLabel :: ~CLabel() {}
-
 void CLabel :: setStatus(bool status)
 {
     if (status)

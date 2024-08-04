@@ -14,7 +14,7 @@ class CLabel : public QWidget
     Q_OBJECT
 public:
     CLabel(QWidget *parent = nullptr);
-    ~CLabel();
+    //~CLabel();
 private:
     QHBoxLayout* frame;
     QLabel* infoLabel;

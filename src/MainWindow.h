@@ -18,13 +18,12 @@ class CMainWindow : public QWidget
     Q_OBJECT
 public:
     CMainWindow(QWidget* parent = nullptr);
-    //~CMainWindow();
 private:    // GUI
-    QVBoxLayout* m_topBox;  // top-level layout
-    QHBoxLayout* m_hBox;    // hor. sub-box
-    QVBoxLayout* m_cmdBox;  // buttons column
+    //QVBoxLayout* m_topBox;  // top-level layout
+    //QHBoxLayout* m_hBox;    // hor. sub-box
+    //QVBoxLayout* m_cmdBox;  // buttons column
+    //QFormLayout* m_aboutDictionary;
     QComboBox* m_listOfDicts;   // available dictionaries
-    QFormLayout* m_aboutDictionary;
     QPushButton* btnAddDict;
     QPushButton* btnRemoveDict;
     QPushButton* btnEditDict;
@@ -36,6 +35,7 @@ private:    // GUI
     QLabel* lblDictVers;
     QLabel* lblDictDate;
     QLabel* lblDictAuth;
+    QLabel* lblDictSize;
 private:    // back-end
     QDir m_dictionaryPath;  // the directory of dictionaries
     QString m_curDictFile;  // the path of the current dictionary file
@@ -50,6 +50,7 @@ private:    // back-end
     QString dict_vers;
     QString dict_date;
     QString dict_auth;
+    int dict_size;
 public slots:
     void selectDictionary();
 

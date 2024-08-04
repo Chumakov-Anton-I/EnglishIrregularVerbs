@@ -22,16 +22,16 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     mainVbox->addWidget(WordLabel);
     mainVbox->addWidget(ResultLabel);
 
-    /* Панель форм */
+    /* Pane of verb forms */
     formsHBLayout = new QHBoxLayout();
-        /* Панель с формой прошедшего времени */
+        /* the pane of the Past Simple (Form 2) */
         Form2Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
         Form2Edit->setPlaceholderText("<type the Past form>");
         Form2Edit->setToolTip("Type the past form");
         form2VBLayout = new QVBoxLayout();
         form2VBLayout->addWidget(Form2Edit);
         formsHBLayout->addLayout(form2VBLayout);
-        /* Панель с формой причастия прошедшего времени */
+        /* the pane of the Participle II (Form 3) */
         Form3Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
         Form3Edit->setPlaceholderText("<type the Participle II form>");
         Form3Edit->setToolTip("Type the participle II form");
@@ -46,7 +46,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     TranslationEdit->setToolTip("Type the word or the first letter of the word");
     mainVbox->addWidget(TranslationEdit);
 
-    /* Панель с кнопками */
+    /* Buttons pane */
     hintLabel = new QLabel("<small><font color=\"#808080\">Press 'Tab' to switch edit,<br>press 'Enter' to check.</font></small>", this);
     hintLabel->setAlignment(Qt::AlignLeft | Qt::AlignBottom);
     btnCheck = new QPushButton("Check", this);

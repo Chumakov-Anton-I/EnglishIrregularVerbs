@@ -18,39 +18,47 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     // readSettings();
     m_dictionaryPath = QDir(appSettings->value(ini_system::dictionary_path).toString());
     /* Make the window form */
-    m_topBox = new QVBoxLayout();
-    setLayout(m_topBox);
+    QVBoxLayout* topBox = new QVBoxLayout();
+    setLayout(topBox);
     // ComboBox is on the top
     m_listOfDicts = new QComboBox(this);
     //m_listOfDicts->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    m_topBox->addWidget(m_listOfDicts);
-    m_hBox = new QHBoxLayout();
-    m_topBox->addLayout(m_hBox);
+    topBox->addWidget(m_listOfDicts);
+    QHBoxLayout* hBox = new QHBoxLayout();
+    topBox->addLayout(hBox);
     QGroupBox* g_abOut = new QGroupBox("Dictionary info", this);
-    m_hBox->addWidget(g_abOut);
-    m_aboutDictionary = new QFormLayout();
-    m_aboutDictionary->setRowWrapPolicy(QFormLayout::WrapLongRows);
-    m_aboutDictionary->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
-    m_aboutDictionary->setFormAlignment(Qt::AlignHCenter | Qt::AlignTop);
-    m_aboutDictionary->setLabelAlignment(Qt::AlignRight);
+    hBox->addWidget(g_abOut);
+    QFormLayout* aboutDictionary = new QFormLayout();
+    aboutDictionary->setRowWrapPolicy(QFormLayout::WrapLongRows);
+    aboutDictionary->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
+    aboutDictionary->setFormAlignment(Qt::AlignHCenter | Qt::AlignTop);
+    aboutDictionary->setLabelAlignment(Qt::AlignRight);
+        // dict name
         lblDictName = new QLabel(this);
         lblDictName->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-        m_aboutDictionary->addRow("Dictionary name:", lblDictName);
+        aboutDictionary->addRow("Dictionary name:", lblDictName);
+        // dict version
         lblDictVers = new QLabel(this);
         lblDictVers->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-        m_aboutDictionary->addRow("Dictionary version:", lblDictVers);
+        aboutDictionary->addRow("Dictionary version:", lblDictVers);
+        // dict author
         lblDictAuth = new QLabel(this);
         lblDictAuth->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-        m_aboutDictionary->addRow("Author:", lblDictAuth);
+        aboutDictionary->addRow("Author:", lblDictAuth);
+        // dict date
         lblDictDate = new QLabel(this);
         lblDictDate->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-        m_aboutDictionary->addRow("Date:", lblDictDate);
+        aboutDictionary->addRow("Date:", lblDictDate);
+        // dict size
+        lblDictSize = new QLabel(this);
+        lblDictSize->setFrameStyle(QFrame::Panel | QFrame::Sunken);
+        aboutDictionary->addRow("Count:", lblDictSize);
         QFrame* delim = new QFrame(this);
         delim->setFrameStyle(QFrame::HLine | QFrame::Sunken);
-        m_aboutDictionary->addRow(delim);
+        aboutDictionary->addRow(delim);
         // ... TODO: add statistics
-    g_abOut->setLayout(m_aboutDictionary);
-    m_cmdBox = new QVBoxLayout();
+    g_abOut->setLayout(aboutDictionary);
+    QVBoxLayout* cmdBox = new QVBoxLayout();
         // buttons
         btnAddDict = new QPushButton("Add dictionary...", this);
         //btnAddDict->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -59,15 +67,15 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
         btnSelectDict = new QPushButton("Select dictionary", this);
         btnStartLearn = new QPushButton("Start learning", this);
         btnStartTest = new QPushButton("Start test", this);
-        m_cmdBox->addWidget(btnAddDict);
-        m_cmdBox->addWidget(btnRemoveDict);
-        m_cmdBox->addWidget(btnEditDict);
-        m_cmdBox->addWidget(btnSelectDict);
+        cmdBox->addWidget(btnAddDict);
+        cmdBox->addWidget(btnRemoveDict);
+        cmdBox->addWidget(btnEditDict);
+        cmdBox->addWidget(btnSelectDict);
         //m_cmdBox->addSpacing(32);
-        m_cmdBox->addStretch();
-        m_cmdBox->addWidget(btnStartLearn);
-        m_cmdBox->addWidget(btnStartTest);
-    m_hBox->addLayout(m_cmdBox);
+        cmdBox->addStretch();
+        cmdBox->addWidget(btnStartLearn);
+        cmdBox->addWidget(btnStartTest);
+    hBox->addLayout(cmdBox);
     // ...
 
     /* Connect signals & slots */

@@ -38,7 +38,7 @@ public:
     QString getExampleTrans() { return example_transl.join(";\n"); }
     Result check(const QString, const QString, const QString);
     QString id = "";    // why?
-public:
+public: // TODO: hide this members
     QString form1;  // infinitive
     QString form1_transcr;
     QString form1_sound;
