@@ -5,35 +5,29 @@ QT  += core widgets xml multimedia
 CONFIG += windows c++14
 
 SOURCES += \
-    WordPanes.cpp \
     main.cpp \
     MainWindow.cpp \
+    WordPanes.cpp \
     label.cpp \
     TextEdit.cpp \
     WndLearning.cpp \
     WndTest.cpp \
     word.cpp \
     ScrolledBox.cpp
-#    WordCardBase.cpp \
-#    WordCardSmall.cpp \
-#    learnwindow.cpp \
 #    startwnd.cpp \
 
 TARGET = ../../build/IrregularVerbs
 
 HEADERS += \
+    settings_key.h \
     MainWindow.h \
     WordPanes.h \
     label.h \
     TextEdit.h \
     WndLearning.h \
     WndTest.h \
-    settings_key.h \
     word.h \
     ScrolledBox.h
-#    WordCardBase.h \
-#    WordCardSmall.h \
-#    learnwindow.h \
 #    startwnd.h \
 
 RESOURCES += \

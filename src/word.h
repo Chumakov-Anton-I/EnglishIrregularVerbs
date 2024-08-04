@@ -28,7 +28,7 @@ struct Result
 class CWord
 {
 public:
-    CWord(const QDomElement& element);
+    CWord();
 
     QString getWord() { return QString("<big>%1</big><br>[%2]").arg(form1, form1_transcr); }
     QString getForm2() { return QString("%1<br>%2").arg(form2, form2_transcr); }
@@ -36,8 +36,10 @@ public:
     QString getTranslation() { return translation.join("; "); }
     QString getExample() { return example.join(";\n"); }
     QString getExampleTrans() { return example_transl.join(";\n"); }
-    Result check(const QString, const QString, const QString);
+    Result check(const QString&, const QString&, const QString&);
     QString id = "";    // why?
+    bool setWord(const QDomElement&);
+    void reset();
 public: // TODO: hide this members
     QString form1;  // infinitive
     QString form1_transcr;
@@ -55,7 +57,8 @@ public: // TODO: hide this members
     QStringList example;        // examples
     QStringList example_transl; // examples with translation
 private:
-    QDomElement source;
+    QDir m_sound_path;
+    int m_countToDone;
     QString format(QString s, QString color = "", bool bold = false, bool italic = false);
     QString getFormattedText(const QDomElement&);
     // TODO: move these constants anywhere

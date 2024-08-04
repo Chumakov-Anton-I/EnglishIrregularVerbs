@@ -14,7 +14,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     //setFont(QFont("Segoe UI", 14));   // TODO: use CSS to tune a style
     setWindowIcon(QIcon(":/ico_run"));
 
-    mainVbox = new QVBoxLayout();
+    QVBoxLayout* mainVbox = new QVBoxLayout(this);  // top-level layout
     setLayout(mainVbox);
     /* The pane with the current word */
     WordLabel = new CWordPaneFull(this);
@@ -23,21 +23,25 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     mainVbox->addWidget(ResultLabel);
 
     /* Pane of verb forms */
-    formsHBLayout = new QHBoxLayout();
+    QHBoxLayout* formsHBLayout = new QHBoxLayout();
         /* the pane of the Past Simple (Form 2) */
-        Form2Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
-        Form2Edit->setPlaceholderText("<type the Past form>");
-        Form2Edit->setToolTip("Type the past form");
-        form2VBLayout = new QVBoxLayout();
-        form2VBLayout->addWidget(Form2Edit);
-        formsHBLayout->addLayout(form2VBLayout);
+        Form2Stack = new QStackedWidget(this);
+            Form2Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
+            Form2Edit->setPlaceholderText("<type the Past form>");
+            Form2Edit->setToolTip("Type the past form");
+            Form2Pane = new CWordPane(this);
+            Form2Stack->addWidget(Form2Edit);
+            Form2Stack->addWidget(Form2Pane);
+        formsHBLayout->addWidget(Form2Stack);
         /* the pane of the Participle II (Form 3) */
-        Form3Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
-        Form3Edit->setPlaceholderText("<type the Participle II form>");
-        Form3Edit->setToolTip("Type the participle II form");
-        form3VBLayout = new QVBoxLayout();
-        form3VBLayout->addWidget(Form3Edit);
-        formsHBLayout->addLayout(form3VBLayout);
+        Form3Stack = new QStackedWidget(this);
+            Form3Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
+            Form3Edit->setPlaceholderText("<type the Participle II form>");
+            Form3Edit->setToolTip("Type the participle II form");
+            Form3Pane = new CWordPane(this);
+            Form3Stack->addWidget(Form3Edit);
+            Form3Stack->addWidget(Form3Pane);
+        formsHBLayout->addWidget(Form3Stack);
     mainVbox->addLayout(formsHBLayout);
 
     /* translation pane */
@@ -47,7 +51,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     mainVbox->addWidget(TranslationEdit);
 
     /* Buttons pane */
-    hintLabel = new QLabel("<small><font color=\"#808080\">Press 'Tab' to switch edit,<br>press 'Enter' to check.</font></small>", this);
+    QLabel* hintLabel = new QLabel("<small><font color=\"#808080\">Press 'Tab' to switch edit,<br>press 'Enter' to check.</font></small>", this);
     hintLabel->setAlignment(Qt::AlignLeft | Qt::AlignBottom);
     btnCheck = new QPushButton("Check", this);
     btnCheck->setDefault(true);
@@ -55,7 +59,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     btnResume = new QPushButton("Resume", this);
     btnResume->setIcon(QIcon(":/ico_xoctagon"));
     btnResume->setFocusPolicy(Qt::FocusPolicy::NoFocus);
-    commHBLayout = new QHBoxLayout();
+    QHBoxLayout* commHBLayout = new QHBoxLayout();
     commHBLayout->addWidget(hintLabel);
     commHBLayout->addSpacing(25);
     commHBLayout->addWidget(btnResume);
@@ -79,8 +83,8 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
 
 CWndTest :: ~CWndTest()
 {
-    delete currentWord; // Надо ли это?
-    currentWord = nullptr;
+    //delete currentWord; // Надо ли это?
+    //currentWord = nullptr;
 }
 
 /** Prepare the dictionary */
@@ -100,15 +104,20 @@ void CWndTest :: prepareDictionary()
 /** Read the word */
 bool CWndTest :: readWord()
 {
-    if (order.empty())
-        return false;
-    /* get random word */
-    int i = order.back();
-    order.pop_back();
-    currentWordNode = dictionary.item(i);
-    currentWord = new CWord(currentWordNode.toElement());
-    /* fill card */
-    WordLabel->setValues(currentWord->form1, currentWord->form1_transcr, currentWord->form1_sound);
+    while (true) {
+        if (order.empty())
+            return false;   // the dictionary is empty
+        /* get random word */
+        int i = order.back();
+        order.pop_back();
+        currentWordNode = dictionary.item(i);
+        if (currentWord.setWord(currentWordNode.toElement()))
+            break;  // the word was read
+    }
+    /* fill cards */
+    WordLabel->setValues(currentWord.form1, currentWord.form1_transcr, currentWord.form1_sound);
+    Form2Pane->setValues(currentWord.form2, currentWord.form2_transcr, currentWord.form2_sound);
+    Form3Pane->setValues(currentWord.form3, currentWord.form3_transcr, currentWord.form3_sound);
     WordLabel->playSound(); // auto-play sound
     return true;
 }
@@ -116,7 +125,9 @@ bool CWndTest :: readWord()
 /** Begin test */
 void CWndTest :: start()
 {
-    /* Clear all edit boxes; TODO: make special function? */
+    // Clear all edit boxes
+    Form2Stack->setCurrentIndex(0);
+    Form3Stack->setCurrentIndex(0);
     Form2Edit->clear();
     Form3Edit->clear();
     TranslationEdit->clear();
@@ -136,7 +147,10 @@ void CWndTest :: start()
 /** Check the word */
 void CWndTest :: check()
 {
-    Result res = currentWord->check(Form2Edit->toPlainText(), Form3Edit->toPlainText(), TranslationEdit->toPlainText());
+    // flip stacked widgets
+    Form2Stack->setCurrentIndex(1);
+    Form3Stack->setCurrentIndex(1);
+    Result res = currentWord.check(Form2Edit->toPlainText(), Form3Edit->toPlainText(), TranslationEdit->toPlainText());
     Form2Edit->setText(res.form2);
     Form3Edit->setText(res.form3);
     TranslationEdit->setText(res.translation);
@@ -144,17 +158,15 @@ void CWndTest :: check()
         ResultLabel->setStatus(true);
         score_succ++;   // inc successiful score
         /* Update statistics */
-        QString id = currentWord->id;
+        QString id = currentWord.id;
         int x = statistics.value(id, 0);
         statistics[id] = ++x;
         updateStatistics(bool(res));    // update general statistics
     }
     else
-        ResultLabel->setStatus(false);   //"<b><font color=\"#8B0000\">Wrong!</font></b>");
+        ResultLabel->setStatus(false);
     score++;    // inc general score
-    // free memory
-    delete currentWord;
-    currentWord = nullptr;
+    //currentWord.reset();  // reset the value of the word object (TODO)
     if (order.empty()) {
         btnCheck->setDefault(false);
         btnCheck->setEnabled(false);
@@ -180,7 +192,7 @@ void CWndTest :: resume()
     this->close();
 }
 
-/** Simulate button press */
+/** @Simulate button press */
 void CWndTest :: on_enter()
 {
     if (!btnCheck->isEnabled())
@@ -196,8 +208,7 @@ bool CWndTest :: readStatistics(const QDomNode& node)
     if (statNode.isNull())
         return true;
     QDomElement statElement = statNode.toElement();
-    int c = appSettings->value(ini_system::count_to_done).toInt();
-    if (statElement.attribute("status").toInt() >= c)
+    if (statElement.attribute("status").toInt() >= appSettings->value(ini_system::count_to_done).toInt())
         return false;   // this word is already learnt
     return true;
 }
@@ -217,12 +228,3 @@ void CWndTest :: updateStatistics(bool state)
         statElem.setAttribute("status", ++x);
     }
 }
-
-/* Intercept a closing */
-// TODO
-/*void CWndTest :: closeEvent(QCloseEvent* e)
-{
-    qDebug() << e->type();
-    resume();
-    this->close();
-}*/

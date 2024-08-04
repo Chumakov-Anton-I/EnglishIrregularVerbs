@@ -23,14 +23,11 @@ class CTextEdit : public QTextEdit
     Q_OBJECT
 public:
     CTextEdit(LPCWSTR lang = LANG_LAYOUT_ENG, QWidget *parent = nullptr);
-    //~CTextEdit();
-
 private:
     LPCWSTR lang_id;
-
 signals:
     void enter();
-private slots:
+public slots:
     void focusInEvent(QFocusEvent*);
     void keyPressEvent(QKeyEvent*);
 };

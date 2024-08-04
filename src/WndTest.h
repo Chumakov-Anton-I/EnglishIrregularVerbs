@@ -14,6 +14,7 @@
 #include "TextEdit.h"
 #include "label.h"
 #include "WordPanes.h"
+//#include "FlippedPane.h"
 
 extern QSettings* appSettings;
 
@@ -31,19 +32,15 @@ public slots:
     void on_enter();
 
 private:    // GUI part
-    /* Layouts */
-    QVBoxLayout *mainVbox;  // top-level layout
-    QVBoxLayout *form2VBLayout;
-    QVBoxLayout *form3VBLayout;
-    QHBoxLayout *formsHBLayout;
-    QHBoxLayout *commHBLayout;
-
     /* Labels */
     CWordPaneFull *WordLabel;  // the window with a current word
     CLabel *ResultLabel;
-    QLabel *hintLabel;      // hint
-    CTextEdit *Form2Edit;   // Form 2
-    CTextEdit *Form3Edit;   // Form 3
+    QStackedWidget *Form2Stack;
+    QStackedWidget *Form3Stack;
+    CTextEdit *Form2Edit;
+    CTextEdit *Form3Edit;
+    CWordPane *Form2Pane;
+    CWordPane *Form3Pane;
     CTextEdit *TranslationEdit;
 
     /* Buttons */
@@ -55,7 +52,7 @@ private:    // dictionary part
     void updateStatistics(bool);
     bool readStatistics(const QDomNode&);
     bool readWord();
-    CWord* currentWord = nullptr;   // current word
+    CWord currentWord;   // current word
     QDomDocument m_document;
     QDomNodeList dictionary;    // dictionary
     QDomNode currentWordNode;

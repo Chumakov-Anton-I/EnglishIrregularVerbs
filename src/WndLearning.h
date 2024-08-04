@@ -19,11 +19,8 @@ class CWndLearning : public QDialog
     Q_OBJECT
 public:
     CWndLearning(QDomDocument& dictionary, QWidget* parent = nullptr);
-    //~CWndLearning();
 private:    // GUI
-    QVBoxLayout* m_topBox;
     CWordPaneFull* m_currWordPane;
-    QHBoxLayout* m_formsBox;
     CWordPane* m_form2Pane;
     CWordPane* m_form3Pane;
     QTextEdit* m_translation;
@@ -35,7 +32,7 @@ public slots:
 private:    // back-end
     void prepareDictionary();
     QVector<int> m_order;
-    CWord* current_word;   // current word
+    CWord current_word;   // current word
 };
 
 #endif // WNDLEARNING_H

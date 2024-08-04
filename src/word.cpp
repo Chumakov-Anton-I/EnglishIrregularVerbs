@@ -9,12 +9,20 @@
 
 extern QSettings* appSettings;
 
-CWord :: CWord(const QDomElement& element)
-    : source(element)
+CWord :: CWord()
 {
-    id = source.attribute(XML_ID);
-    QDir snd_path(appSettings->value(ini_system::sound_path).toString());
-    QDomNodeList content = source.childNodes();
+    m_sound_path = QDir(appSettings->value(ini_system::sound_path).toString());
+    m_countToDone = appSettings->value(ini_system::count_to_done).toInt();
+}
+
+/** @Read the word from an XML-element */
+bool CWord :: setWord(const QDomElement& element)
+{
+    id = element.attribute(XML_ID);
+    translation.clear();
+    example.clear();
+    example_transl.clear();
+    QDomNodeList content = element.childNodes();
     for (int i = 0; i < content.length(); i++) {
         QDomNode itemNode = content.item(i);
         if (!itemNode.isElement())
@@ -24,42 +32,50 @@ CWord :: CWord(const QDomElement& element)
         // analyse the structure of 'word'
         if (tag_name == XML_FORM1) {  // get form1
             form1 = item.attribute(XML_ID);
-            form1_sound = snd_path.absoluteFilePath(item.attribute(XML_SOUND));
+            form1_sound = m_sound_path.absoluteFilePath(item.attribute(XML_SOUND));
             form1_transcr = item.text();
         }
         else if (tag_name == XML_FORM2) { // get form2  // TODO: form2 might be an array
             form2 = item.attribute(XML_ID);
-            form2_sound = snd_path.absoluteFilePath(item.attribute(XML_SOUND));
+            form2_sound = m_sound_path.absoluteFilePath(item.attribute(XML_SOUND));
             form2_transcr = item.text();
         }
         else if (tag_name == XML_FORM3) { // get form3  // TODO: form3 might be an array
             form3 = item.attribute(XML_ID);
-            form3_sound = snd_path.absoluteFilePath(item.attribute(XML_SOUND));
+            form3_sound = m_sound_path.absoluteFilePath(item.attribute(XML_SOUND));
             form3_transcr = item.text();
         }
         else if (tag_name == XML_TRANSLATION)   // get translation
             translation.push_back(getFormattedText(item));
         else if (tag_name == XML_EXAMPLE) {     // get example
-            QDomNodeList lst = item.elementsByTagName(XML_TEXT);
-            QDomNode lstNode = lst.item(0);
+            //QDomNodeList lst = item.elementsByTagName(XML_TEXT);
+            QDomNode lstNode = item.firstChildElement(XML_TEXT);
             QDomElement lstEl = lstNode.toElement();
             QString etext = lstEl.text();
             example.push_back(etext);
 
-            lst = item.elementsByTagName(XML_TRANSLATION);
-            lstNode = lst.item(0);
+            lstNode = item.firstChildElement(XML_TRANSLATION);
             lstEl = lstNode.toElement();
             example_transl.push_back(etext + " --> " + lstEl.text());
         }
-        else if (tag_name == "statistics") {
-            qDebug() << "[CWord: read statistics] <-- TODO!";
+        else if (tag_name == XML_STATISTICS) {  // get statistics; TODO: move to the begin of this function
+            if (item.attribute("status").toInt() >= m_countToDone)  // TODO: fix magic constant
+                return false;   // the word is learned
         }
-        else continue;  // skip over an unexpected tag
+        else continue;  // skip over an unknown tag
     }
+    return true;
+}
+
+void CWord :: reset()
+{
+    translation.clear();
+    example.clear();
+    example_transl.clear();
 }
 
 /** @Check the word */
-Result CWord :: check(const QString inp2, const QString inp3, const QString inpTrns)
+Result CWord :: check(const QString& inp2, const QString& inp3, const QString& inpTrns)
 {
     Result result;
     bool flag = true;
@@ -98,7 +114,6 @@ Result CWord :: check(const QString inp2, const QString inp3, const QString inpT
         result.translation = s + translation.join("; ");
         flag &= false;
     }
-    //updateStatistics(flag);
     result.state = flag;
     return result;
 }

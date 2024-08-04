@@ -12,21 +12,21 @@ CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullp
     : QDialog(parent, Qt::Window), m_document(dictionary)
 {
     /* Make gui */
-    m_topBox = new QVBoxLayout();
-    setLayout(m_topBox);
+    QVBoxLayout* topBox = new QVBoxLayout();
+    setLayout(topBox);
     m_currWordPane = new CWordPaneFull(this);
-    m_topBox->addWidget(m_currWordPane);
-    m_formsBox = new QHBoxLayout();
+    topBox->addWidget(m_currWordPane);
+    QHBoxLayout* formsBox = new QHBoxLayout();
         m_form2Pane = new CWordPane(this);
         m_form3Pane = new CWordPane(this);
-        m_formsBox->addWidget(m_form2Pane);
-        m_formsBox->addWidget(m_form3Pane);
-    m_topBox->addLayout(m_formsBox);
+        formsBox->addWidget(m_form2Pane);
+        formsBox->addWidget(m_form3Pane);
+    topBox->addLayout(formsBox);
     m_translation = new QTextEdit(this);
     m_translation->setReadOnly(true);
-    m_topBox->addWidget(m_translation);
+    topBox->addWidget(m_translation);
     btnNext = new QPushButton("Next word", this);
-    m_topBox->addWidget(btnNext);
+    topBox->addWidget(btnNext);
 
     /* Connect signal & slots */
     connect(btnNext, SIGNAL(clicked()), this, SLOT(nextWord()));
@@ -51,21 +51,23 @@ void CWndLearning :: prepareDictionary()
 /** [slot] Set a next word */
 void CWndLearning :: nextWord()
 {
-    if (m_order.isEmpty()) {
-        btnNext->setDisabled(true);
-        return;
+    while (true) {
+        if (m_order.isEmpty()) {
+            btnNext->setDisabled(true);
+            return;
+        }
+        int i = m_order.back();
+        m_order.pop_back();
+        QDomNode node = m_dictionary.item(i);
+        if (current_word.setWord(node.toElement()))
+            break;
     }
-    int i = m_order.back();
-    m_order.pop_back();
-    QDomNode node = m_dictionary.item(i);
-    current_word = new CWord(node.toElement());
     /* Init panes with word */ // TODO: исправить это чудовищное безобразие
-    m_currWordPane->setValues(current_word->form1, current_word->form1_transcr, current_word->form1_sound);
-    m_form2Pane->setValues(current_word->form2, current_word->form2_transcr, current_word->form2_sound);
-    m_form3Pane->setValues(current_word->form3, current_word->form3_transcr, current_word->form3_sound);
-    m_translation->setText(current_word->getTranslation());
+    m_currWordPane->setValues(current_word.form1, current_word.form1_transcr, current_word.form1_sound);
+    m_form2Pane->setValues(current_word.form2, current_word.form2_transcr, current_word.form2_sound);
+    m_form3Pane->setValues(current_word.form3, current_word.form3_transcr, current_word.form3_sound);
+    m_translation->setText(current_word.getTranslation());
     m_currWordPane->playSound();    //auto-play
 
-    delete current_word;
-    current_word = nullptr;
+    //current_word.reset();
 }

@@ -19,10 +19,6 @@ class CMainWindow : public QWidget
 public:
     CMainWindow(QWidget* parent = nullptr);
 private:    // GUI
-    //QVBoxLayout* m_topBox;  // top-level layout
-    //QHBoxLayout* m_hBox;    // hor. sub-box
-    //QVBoxLayout* m_cmdBox;  // buttons column
-    //QFormLayout* m_aboutDictionary;
     QComboBox* m_listOfDicts;   // available dictionaries
     QPushButton* btnAddDict;
     QPushButton* btnRemoveDict;
@@ -44,7 +40,6 @@ private:    // back-end
     bool loadDictionary(const QString& fpath);
     bool readDictionary();
     QDomDocument m_dictionary;  // allows read/write file
-    //QDomNodeList m_dictionary;
 
     QString dict_name;
     QString dict_vers;

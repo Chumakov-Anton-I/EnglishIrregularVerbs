@@ -15,16 +15,15 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     : QWidget(parent)
 {
     /* Read settings */
-    // readSettings();
     m_dictionaryPath = QDir(appSettings->value(ini_system::dictionary_path).toString());
     /* Make the window form */
-    QVBoxLayout* topBox = new QVBoxLayout();
+    QVBoxLayout* topBox = new QVBoxLayout();    // top-level layout
     setLayout(topBox);
     // ComboBox is on the top
     m_listOfDicts = new QComboBox(this);
     //m_listOfDicts->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     topBox->addWidget(m_listOfDicts);
-    QHBoxLayout* hBox = new QHBoxLayout();
+    QHBoxLayout* hBox = new QHBoxLayout();  // hor. sub-box
     topBox->addLayout(hBox);
     QGroupBox* g_abOut = new QGroupBox("Dictionary info", this);
     hBox->addWidget(g_abOut);
@@ -58,7 +57,7 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
         aboutDictionary->addRow(delim);
         // ... TODO: add statistics
     g_abOut->setLayout(aboutDictionary);
-    QVBoxLayout* cmdBox = new QVBoxLayout();
+    QVBoxLayout* cmdBox = new QVBoxLayout();    // buttons column
         // buttons
         btnAddDict = new QPushButton("Add dictionary...", this);
         //btnAddDict->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
