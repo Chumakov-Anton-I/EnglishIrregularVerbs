@@ -14,11 +14,11 @@ CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullp
     /* Make gui */
     QVBoxLayout* topBox = new QVBoxLayout();
     setLayout(topBox);
-    m_currWordPane = new CWordPaneFull(this);
+    m_currWordPane = new CWordPane(true, this);
     topBox->addWidget(m_currWordPane);
     QHBoxLayout* formsBox = new QHBoxLayout();
-        m_form2Pane = new CWordPane(this);
-        m_form3Pane = new CWordPane(this);
+        m_form2Pane = new CWordPane(false, this);
+        m_form3Pane = new CWordPane(false, this);
         formsBox->addWidget(m_form2Pane);
         formsBox->addWidget(m_form3Pane);
     topBox->addLayout(formsBox);

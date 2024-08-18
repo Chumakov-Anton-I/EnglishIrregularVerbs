@@ -6,15 +6,32 @@
 
 #include "WordPanes.h"
 
-CWordPaneBase :: CWordPaneBase(QWidget* parent)
-    : QFrame(parent)
+CWordPane :: CWordPane(bool showExample, QWidget* parent)
+    : QFrame(parent), m_showExample(showExample)
 {
-    mainVbox = new QVBoxLayout();
+    QVBoxLayout* mainVbox = new QVBoxLayout();
     setLayout(mainVbox);
+    m_word = new QLabel(this);
+    m_word->setObjectName("Word");
+    mainVbox->addWidget(m_word);
+    m_example = new QLabel(this);
+    m_example->setObjectName("Example");
+    if (showExample)
+        mainVbox->addWidget(m_example);
+    else
+        mainVbox->addSpacing(16);
+    QHBoxLayout* subBox = new QHBoxLayout();
+    mainVbox->addLayout(subBox);
     btnPlaySnd = new QPushButton(QIcon(":/ico_sound"), "", this);
     btnPlaySnd->setObjectName("ButtonPlaySound");
-    btnPlaySnd->setFocusPolicy(Qt::FocusPolicy::NoFocus);   // no focus by Tab
+    btnPlaySnd->setFocusPolicy(Qt::FocusPolicy::NoFocus);   // no focus by 'Tab'
+    btnPlaySnd->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+    subBox->addWidget(btnPlaySnd);
     m_audioOut = new QAudioOutput(this);
+    m_transcription = new QLabel(this);
+    m_transcription->setObjectName("Transcription");
+    subBox->addWidget(m_transcription);
+
     m_sound = new QMediaPlayer(this);
     m_sound->setAudioOutput(m_audioOut);
 
@@ -22,7 +39,7 @@ CWordPaneBase :: CWordPaneBase(QWidget* parent)
 }
 
 /** Set audio file */
-bool CWordPaneBase :: setAudioFile(const QString& source)
+bool CWordPane :: setAudioFile(const QString& source)
 {
     if (!QFile::exists(source)) {
         status = false;
@@ -35,27 +52,13 @@ bool CWordPaneBase :: setAudioFile(const QString& source)
 }
 
 /** [slot] play sound */
-void CWordPaneBase :: playSound()
+void CWordPane :: playSound()
 {
-    //qDebug() << "Error:" << m_sound->errorString();
     if (status)
         m_sound->play();
 }
 
-/* ------------------------------------------------------------------------- */
-CWordPane :: CWordPane(QWidget* parent)
-    : CWordPaneBase(parent)
-{
-    m_word = new QLabel(this);
-    mainVbox->addWidget(m_word);
-    mainVbox->addSpacing(16);
-    m_subBox = new QHBoxLayout();
-    mainVbox->addLayout(m_subBox);
-    m_subBox->addWidget(btnPlaySnd);
-    m_transcription = new QLabel(this);
-    m_subBox->addWidget(m_transcription);
-}
-
+/** Set values of panes */
 void CWordPane :: setValues(QString& word, QString& trans, QString& sndfile)
 {
     btnPlaySnd->setDisabled(false);
@@ -65,27 +68,8 @@ void CWordPane :: setValues(QString& word, QString& trans, QString& sndfile)
     m_transcription->setText(QString("[%1]").arg(trans));
 }
 
-/* ------------------------------------------------------------------------- */
-CWordPaneFull :: CWordPaneFull(QWidget* parent)
-    : CWordPaneBase(parent)
+/** Set examples */
+void CWordPane :: setExample(const QString& example)
 {
-    m_word = new QLabel(this);
-    mainVbox->addWidget(m_word);
-    // add separator
-    m_example = new QLabel(this);
-    mainVbox->addWidget(m_example);
-    m_subBox = new QHBoxLayout();
-    mainVbox->addLayout(m_subBox);
-    m_subBox->addWidget(btnPlaySnd);
-    m_transcription = new QLabel(this);
-    m_subBox->addWidget(m_transcription);
-}
-
-void CWordPaneFull :: setValues(QString& word, QString& trans, QString& sndfile)
-{
-    btnPlaySnd->setDisabled(false);
-    if (!setAudioFile(sndfile))
-        btnPlaySnd->setDisabled(true);
-    m_word->setText(word);
-    m_transcription->setText(trans);
+    m_example->setText(example);
 }

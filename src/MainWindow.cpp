@@ -26,6 +26,7 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     QHBoxLayout* hBox = new QHBoxLayout();  // hor. sub-box
     topBox->addLayout(hBox);
     QGroupBox* g_abOut = new QGroupBox("Dictionary info", this);
+    g_abOut->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
     hBox->addWidget(g_abOut);
     QFormLayout* aboutDictionary = new QFormLayout();
     aboutDictionary->setRowWrapPolicy(QFormLayout::WrapLongRows);
@@ -60,16 +61,16 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     QVBoxLayout* cmdBox = new QVBoxLayout();    // buttons column
         // buttons
         btnAddDict = new QPushButton("Add dictionary...", this);
-        //btnAddDict->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        btnAddDict->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
         btnRemoveDict = new QPushButton("Remove dictionary", this);
         btnEditDict = new QPushButton("Edit", this);
-        btnSelectDict = new QPushButton("Select dictionary", this);
+        //btnSelectDict = new QPushButton("Select dictionary", this);
         btnStartLearn = new QPushButton("Start learning", this);
         btnStartTest = new QPushButton("Start test", this);
         cmdBox->addWidget(btnAddDict);
         cmdBox->addWidget(btnRemoveDict);
         cmdBox->addWidget(btnEditDict);
-        cmdBox->addWidget(btnSelectDict);
+        //cmdBox->addWidget(btnSelectDict);
         //m_cmdBox->addSpacing(32);
         cmdBox->addStretch();
         cmdBox->addWidget(btnStartLearn);

@@ -6,6 +6,7 @@
 #include <random>
 #include <algorithm>
 #include "settings_key.h"
+#include "ReportWnd.h"
 
 CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     : QDialog(parent, Qt::Window), m_document(dictionary)
@@ -17,7 +18,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     QVBoxLayout* mainVbox = new QVBoxLayout(this);  // top-level layout
     setLayout(mainVbox);
     /* The pane with the current word */
-    WordLabel = new CWordPaneFull(this);
+    WordLabel = new CWordPane(true, this);
     ResultLabel = new CLabel(this);
     mainVbox->addWidget(WordLabel);
     mainVbox->addWidget(ResultLabel);
@@ -29,7 +30,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
             Form2Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
             Form2Edit->setPlaceholderText("<type the Past form>");
             Form2Edit->setToolTip("Type the past form");
-            Form2Pane = new CWordPane(this);
+            Form2Pane = new CWordPane(false, this);
             Form2Stack->addWidget(Form2Edit);
             Form2Stack->addWidget(Form2Pane);
         formsHBLayout->addWidget(Form2Stack);
@@ -38,7 +39,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
             Form3Edit = new CTextEdit(LANG_LAYOUT_ENG, this);
             Form3Edit->setPlaceholderText("<type the Participle II form>");
             Form3Edit->setToolTip("Type the participle II form");
-            Form3Pane = new CWordPane(this);
+            Form3Pane = new CWordPane(false, this);
             Form3Stack->addWidget(Form3Edit);
             Form3Stack->addWidget(Form3Pane);
         formsHBLayout->addWidget(Form3Stack);
@@ -183,12 +184,10 @@ void CWndTest :: check()
 /** End working and show a report */
 void CWndTest :: resume()
 {
-    double percent = 100.0*score_succ/(double)count;
-    QString msg = QString("Всего слов:\t%1\n").arg(count) +
-                  QString("Изучено\t\t%1\n").arg(score) +
-                  QString("Верно:\t\t%1 (%2%)").arg(score_succ).arg(percent, 0, 'f', 1);
-    QMessageBox msgbox = QMessageBox(QMessageBox::Icon::Information, "Statistics", msg, QMessageBox::StandardButton::Ok);
-    msgbox.exec();
+    CReportWnd* reportBox = new CReportWnd(this);
+    reportBox->setData(count, score, score_succ);
+    reportBox->exec();
+    delete reportBox;
     this->close();
 }
 

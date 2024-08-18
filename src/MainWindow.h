@@ -23,7 +23,7 @@ private:    // GUI
     QPushButton* btnAddDict;
     QPushButton* btnRemoveDict;
     QPushButton* btnEditDict;
-    QPushButton* btnSelectDict; // TODO: maybe delete this button
+    //QPushButton* btnSelectDict; // TODO: maybe delete this button
     QPushButton* btnStartLearn;
     QPushButton* btnStartTest;
 

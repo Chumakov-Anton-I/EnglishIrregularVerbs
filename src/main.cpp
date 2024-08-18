@@ -32,12 +32,12 @@ int main(int argc, char *argv[])
     else    // read existed settings
         appSettings = new QSettings(fname, QSettings::IniFormat);
 
-    CMainWindow window;
-
-    /*QFile stylef("styles/style.css");
+    QFile stylef("styles/style.css");
     stylef.open(QFile::ReadOnly);
-    qApp->setStyleSheet(QLatin1String(stylef.readAll()));*/
+    qApp->setStyleSheet(QLatin1String(stylef.readAll()));
+    qApp->setFont(QFont("Segoe UI", 12));
 
+    CMainWindow window;
     window.show();
 
     return app.exec();

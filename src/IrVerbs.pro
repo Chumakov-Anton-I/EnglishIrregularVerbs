@@ -5,6 +5,7 @@ QT  += core widgets xml multimedia
 CONFIG += windows c++14
 
 SOURCES += \
+    ReportWnd.cpp \
     main.cpp \
     MainWindow.cpp \
     WordPanes.cpp \
@@ -14,11 +15,11 @@ SOURCES += \
     WndTest.cpp \
     word.cpp \
     ScrolledBox.cpp
-#    startwnd.cpp \
 
 TARGET = ../../build/IrregularVerbs
 
 HEADERS += \
+    ReportWnd.h \
     settings_key.h \
     MainWindow.h \
     WordPanes.h \
@@ -28,7 +29,6 @@ HEADERS += \
     WndTest.h \
     word.h \
     ScrolledBox.h
-#    startwnd.h \
 
 RESOURCES += \
     images.qrc
@@ -46,3 +46,6 @@ win32:{
     QMAKE_TARGET_TRADEMARKS = Chumakov Software Inc.
     RC_ICONS = app.ico
 }
+
+DISTFILES += \
+    ../build/styles/style.css

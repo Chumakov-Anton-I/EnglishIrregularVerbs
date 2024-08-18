@@ -11,46 +11,26 @@
 #include <QtWidgets>
 #include <QtMultimedia>
 
-/** -- A base class ------------------------------------ */
-class CWordPaneBase : public QFrame
+/** -- A Word Card class ------------------------------------ */
+class CWordPane : public QFrame
 {
     Q_OBJECT
 public:
-    CWordPaneBase(QWidget* parent = nullptr);
+    CWordPane(bool showExample = false, QWidget* parent = nullptr);
 public slots:
     void playSound();
+    void setValues(QString&, QString&, QString&);
+    void setExample(const QString& example);
 private:
+    bool m_showExample;
     QAudioOutput* m_audioOut;
     QMediaPlayer* m_sound;
-protected:
-    QVBoxLayout* mainVbox;
-    QHBoxLayout* m_subBox;
     QPushButton* btnPlaySnd;
     QLabel* m_word;
     QLabel* m_transcription;
+    QLabel* m_example;  // Maybe 'QTextEdit'?
     bool status;
     bool setAudioFile(const QString& sourse);
-};
-
-/** -- A simple card --------------------------------------------- */
-class CWordPane : public CWordPaneBase
-{
-    Q_OBJECT
-public:
-    CWordPane(QWidget* parent = nullptr);
-    void setValues(QString&, QString&, QString&);
-};
-
-/** -- A full card ----------------------------------------------- */
-class CWordPaneFull : public CWordPaneBase
-{
-    Q_OBJECT
-public:
-    CWordPaneFull(QWidget* parent = nullptr);
-    void setValues(QString&, QString&, QString&);
-    void setExample(const QString&);
-private:
-    QLabel* m_example;  // Maybe 'QTextEdit'?
 };
 
 #endif // WORDPANES_H

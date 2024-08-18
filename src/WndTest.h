@@ -33,7 +33,7 @@ public slots:
 
 private:    // GUI part
     /* Labels */
-    CWordPaneFull *WordLabel;  // the window with a current word
+    CWordPane *WordLabel;  // the window with a current word
     CLabel *ResultLabel;
     QStackedWidget *Form2Stack;
     QStackedWidget *Form3Stack;

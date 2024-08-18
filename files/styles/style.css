@@ -1,0 +1,41 @@
+/* The appearance of windows */
+.CMainWindow, .CWndLearning, .CWndTest, .CReportWnd {
+    font-family: "Segoe UI";
+    font-size: 16pt;
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+        stop:0 #FCFCFC,
+        stop:0.3 #F0F0F0,
+        stop:0.7 #F0F0F0,
+        stop:1 #FCFCFC);
+}
+
+/* Button 'Play sound' */
+QPushButton#ButtonPlaySound {
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 32px;
+    height: 32px;
+}
+
+/* Word panes */
+CWordPane {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+QLabel#Word {
+    /*font-family: "Times New Roman";*/
+    font-size: 24px;
+    font-weight: 600;
+}
+
+QLabel#Transcription {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+QTextEdit {
+    /*font-family: "Times New Roman";*/
+    font-size: 20px;
+    /*font-style: normal;*/
+}

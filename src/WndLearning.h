@@ -20,7 +20,7 @@ class CWndLearning : public QDialog
 public:
     CWndLearning(QDomDocument& dictionary, QWidget* parent = nullptr);
 private:    // GUI
-    CWordPaneFull* m_currWordPane;
+    CWordPane* m_currWordPane;
     CWordPane* m_form2Pane;
     CWordPane* m_form3Pane;
     QTextEdit* m_translation;
