@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
         appSettings->setValue(dictionary, "");// while unused - TODO
         appSettings->setValue(count_to_done, "10");
         appSettings->setValue(to_learn, "20");
-        //appSettings->endGroup();
         appSettings->sync();  // save settings now
     }
     else    // read existed settings

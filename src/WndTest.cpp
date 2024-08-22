@@ -12,7 +12,6 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     : QDialog(parent, Qt::Window), m_document(dictionary)
 {
     setMinimumSize(400, 290);
-    //setFont(QFont("Segoe UI", 14));   // TODO: use CSS to tune a style
     setWindowIcon(QIcon(":/ico_run"));
 
     QVBoxLayout* mainVbox = new QVBoxLayout(this);  // top-level layout
@@ -53,6 +52,7 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
 
     /* Buttons pane */
     QLabel* hintLabel = new QLabel("<small><font color=\"#808080\">Press 'Tab' to switch edit,<br>press 'Enter' to check.</font></small>", this);
+    // ^^^ TODO: use CSS
     hintLabel->setAlignment(Qt::AlignLeft | Qt::AlignBottom);
     btnCheck = new QPushButton("Check", this);
     btnCheck->setDefault(true);
@@ -92,8 +92,10 @@ CWndTest :: ~CWndTest()
 void CWndTest :: prepareDictionary()
 {
     QDomElement e = m_document.documentElement();
+    QString d_name = e.attribute("title");
     dictionary = e.childNodes();
     count = dictionary.length();
+    setWindowTitle(QString("Test {%1, %2 words}").arg(d_name).arg(count));
     /* Make the random order of words */
     for (int i = 0; i < count; i++)
         order.push_back(i);
@@ -117,6 +119,7 @@ bool CWndTest :: readWord()
     }
     /* fill cards */
     WordLabel->setValues(currentWord.form1, currentWord.form1_transcr, currentWord.form1_sound);
+    WordLabel->setExample(currentWord.getExample());
     Form2Pane->setValues(currentWord.form2, currentWord.form2_transcr, currentWord.form2_sound);
     Form3Pane->setValues(currentWord.form3, currentWord.form3_transcr, currentWord.form3_sound);
     WordLabel->playSound(); // auto-play sound
@@ -151,6 +154,7 @@ void CWndTest :: check()
     // flip stacked widgets
     Form2Stack->setCurrentIndex(1);
     Form3Stack->setCurrentIndex(1);
+    WordLabel->setExample(currentWord.getExampleTrans());
     Result res = currentWord.check(Form2Edit->toPlainText(), Form3Edit->toPlainText(), TranslationEdit->toPlainText());
     Form2Edit->setText(res.form2);
     Form3Edit->setText(res.form3);

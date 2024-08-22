@@ -16,10 +16,16 @@ CWordPane :: CWordPane(bool showExample, QWidget* parent)
     mainVbox->addWidget(m_word);
     m_example = new QLabel(this);
     m_example->setObjectName("Example");
-    if (showExample)
+    if (showExample) {
+        QFrame* separator = new QFrame(this);
+        separator->setFrameStyle(QFrame::HLine | QFrame::Plain);
+        mainVbox->addWidget(separator);
         mainVbox->addWidget(m_example);
-    else
+    }
+    else {
         mainVbox->addSpacing(16);
+        mainVbox->addStretch(1);
+    }
     QHBoxLayout* subBox = new QHBoxLayout();
     mainVbox->addLayout(subBox);
     btnPlaySnd = new QPushButton(QIcon(":/ico_sound"), "", this);

@@ -4,7 +4,7 @@
 /* ********************************************************************
  * File:    WordPanes.h
  * Author:  Chumakov Anton I.
- * Purpose: classes CWordPaneBase, CWordPane, CWordPaneFull
+ * Purpose: classes CWordPane
  * Date:    July 8, 2024
  * ***************************************************************** */
 

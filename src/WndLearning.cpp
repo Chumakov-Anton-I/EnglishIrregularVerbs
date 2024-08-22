@@ -11,7 +11,6 @@
 CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullptr*/)
     : QDialog(parent, Qt::Window), m_document(dictionary)
 {
-    /* Make gui */
     QVBoxLayout* topBox = new QVBoxLayout();
     setLayout(topBox);
     m_currWordPane = new CWordPane(true, this);
@@ -35,12 +34,14 @@ CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullp
     nextWord();
 }
 
-/** Make a random order of words */
+/** Reads the dictionary and makes a random order of words */
 void CWndLearning :: prepareDictionary()
 {
     QDomElement e = m_document.documentElement();
+    QString d_name = e.attribute("title");
     m_dictionary = e.childNodes();
     int count = m_dictionary.length();
+    setWindowTitle(QString("Learning {%1, %2 words}").arg(d_name).arg(count));  // TODO
     for (int i = 0; i < count; i++)
         m_order.push_back(i);
     auto rd = std::random_device {};
@@ -48,7 +49,7 @@ void CWndLearning :: prepareDictionary()
     std::shuffle(m_order.begin(), m_order.end(), rng);
 }
 
-/** [slot] Set a next word */
+/** [slot] Sets a next word */
 void CWndLearning :: nextWord()
 {
     while (true) {
@@ -64,6 +65,7 @@ void CWndLearning :: nextWord()
     }
     /* Init panes with word */ // TODO: исправить это чудовищное безобразие
     m_currWordPane->setValues(current_word.form1, current_word.form1_transcr, current_word.form1_sound);
+    m_currWordPane->setExample(current_word.getExampleTrans());
     m_form2Pane->setValues(current_word.form2, current_word.form2_transcr, current_word.form2_sound);
     m_form3Pane->setValues(current_word.form3, current_word.form3_transcr, current_word.form3_sound);
     m_translation->setText(current_word.getTranslation());
