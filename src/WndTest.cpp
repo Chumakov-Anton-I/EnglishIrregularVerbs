@@ -11,7 +11,7 @@
 CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     : QDialog(parent, Qt::Window), m_document(dictionary)
 {
-    setMinimumSize(400, 290);
+    setMinimumSize(600, 320);
     setWindowIcon(QIcon(":/ico_run"));
 
     QVBoxLayout* mainVbox = new QVBoxLayout(this);  // top-level layout

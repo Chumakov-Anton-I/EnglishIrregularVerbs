@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     QFile stylef("styles/style.css");
     stylef.open(QFile::ReadOnly);
     qApp->setStyleSheet(QLatin1String(stylef.readAll()));
-    qApp->setFont(QFont("Segoe UI", 12));
+    qApp->setFont(QFont("Segoe UI", 14));
 
     CMainWindow window;
     window.show();

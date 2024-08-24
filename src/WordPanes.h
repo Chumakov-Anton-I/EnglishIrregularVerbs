@@ -28,7 +28,7 @@ private:
     QPushButton* btnPlaySnd;
     QLabel* m_word;
     QLabel* m_transcription;
-    QLabel* m_example;  // Maybe 'QTextEdit'?
+    QTextEdit* m_example;
     bool status;
     bool setAudioFile(const QString& sourse);
 };

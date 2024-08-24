@@ -14,16 +14,21 @@ CWordPane :: CWordPane(bool showExample, QWidget* parent)
     m_word = new QLabel(this);
     m_word->setObjectName("Word");
     mainVbox->addWidget(m_word);
-    m_example = new QLabel(this);
+    m_example = new QTextEdit(this);
     m_example->setObjectName("Example");
     if (showExample) {
         QFrame* separator = new QFrame(this);
         separator->setFrameStyle(QFrame::HLine | QFrame::Plain);
         mainVbox->addWidget(separator);
+        m_example->setReadOnly(true);
+        //m_example->
         mainVbox->addWidget(m_example);
+        mainVbox->addSpacing(8);
+        mainVbox->addStretch(1);
     }
     else {
-        mainVbox->addSpacing(16);
+        m_example->hide();
+        mainVbox->addSpacing(20);
         mainVbox->addStretch(1);
     }
     QHBoxLayout* subBox = new QHBoxLayout();

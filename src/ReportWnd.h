@@ -23,8 +23,6 @@ private:
     QLineEdit* lblTotal;  // Size of the dictionary
     QLineEdit* lblScore;  // Count of learned words
     QLineEdit* lblRight;  // Number of right answers
-/*private slots:
-    void onOK();*/
 };
 
 #endif // REPORTWND_H

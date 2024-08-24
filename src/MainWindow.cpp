@@ -175,7 +175,11 @@ void CMainWindow :: editDictionary()
 /** [slot] Start learning */
 void CMainWindow :: startLearning()
 {
+    QElapsedTimer time;
+    time.start();
     CWndLearning* learnWnd = new CWndLearning(m_dictionary);
+    qDebug() << "============================== TIME: [" << time.elapsed() << "]";
+
     hide();
     learnWnd->exec();
     show();
@@ -185,7 +189,11 @@ void CMainWindow :: startLearning()
 /** [slot] Start test */
 void CMainWindow :: startTest()
 {
+    QElapsedTimer time;
+    time.start();
     CWndTest* testWnd = new CWndTest(m_dictionary);
+    qDebug() << "============================== TIME: [" << time.elapsed() << "] ======================";
+
     hide();
     testWnd->exec();
     QFile wfile(m_curDictFile); // save statistics - TODO: make function

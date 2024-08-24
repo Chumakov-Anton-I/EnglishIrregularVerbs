@@ -15,10 +15,10 @@ CWord :: CWord()
     m_countToDone = appSettings->value(ini_system::count_to_done).toInt();
 }
 
-/** @Read the word from an XML-element */
+/** @Reads the word from an XML-element */
 bool CWord :: setWord(const QDomElement& element)
 {
-    id = element.attribute(XML_ID);
+    id = element.attribute(XML_DICT::TAG_ID);
     translation.clear();
     example.clear();
     example_transl.clear();
@@ -30,36 +30,36 @@ bool CWord :: setWord(const QDomElement& element)
         QDomElement item = itemNode.toElement();
         QString tag_name = item.tagName();
         // analyse the structure of 'word'
-        if (tag_name == XML_FORM1) {  // get form1
-            form1 = item.attribute(XML_ID);
-            form1_sound = m_sound_path.absoluteFilePath(item.attribute(XML_SOUND));
+        if (tag_name == XML_DICT::TAG_FORM1) {  // get form1
+            form1 = item.attribute(XML_DICT::TAG_ID);
+            form1_sound = m_sound_path.absoluteFilePath(item.attribute(XML_DICT::TAG_SOUND));
             form1_transcr = item.text();
         }
-        else if (tag_name == XML_FORM2) { // get form2  // TODO: form2 might be an array
-            form2 = item.attribute(XML_ID);
-            form2_sound = m_sound_path.absoluteFilePath(item.attribute(XML_SOUND));
+        else if (tag_name == XML_DICT::TAG_FORM2) { // get form2  // TODO: form2 might be an array
+            form2 = item.attribute(XML_DICT::TAG_ID);
+            form2_sound = m_sound_path.absoluteFilePath(item.attribute(XML_DICT::TAG_SOUND));
             form2_transcr = item.text();
         }
-        else if (tag_name == XML_FORM3) { // get form3  // TODO: form3 might be an array
-            form3 = item.attribute(XML_ID);
-            form3_sound = m_sound_path.absoluteFilePath(item.attribute(XML_SOUND));
+        else if (tag_name == XML_DICT::TAG_FORM3) { // get form3  // TODO: form3 might be an array
+            form3 = item.attribute(XML_DICT::TAG_ID);
+            form3_sound = m_sound_path.absoluteFilePath(item.attribute(XML_DICT::TAG_SOUND));
             form3_transcr = item.text();
         }
-        else if (tag_name == XML_TRANSLATION)   // get translation
+        else if (tag_name == XML_DICT::TAG_TRANSLATION)   // get translation
             translation.push_back(getFormattedText(item));
-        else if (tag_name == XML_EXAMPLE) {     // get example
-            //QDomNodeList lst = item.elementsByTagName(XML_TEXT);
-            QDomNode lstNode = item.firstChildElement(XML_TEXT);
+        else if (tag_name == XML_DICT::TAG_EXAMPLE) {     // get example
+            //QDomNodeList lst = item.elementsByTagName(TAG_TEXT);
+            QDomNode lstNode = item.firstChildElement(XML_DICT::TAG_TEXT);
             QDomElement lstEl = lstNode.toElement();
             QString etext = lstEl.text();
             example.push_back(etext);
 
-            lstNode = item.firstChildElement(XML_TRANSLATION);
+            lstNode = item.firstChildElement(XML_DICT::TAG_TRANSLATION);
             lstEl = lstNode.toElement();
             example_transl.push_back(etext + " --> " + lstEl.text());
         }
-        else if (tag_name == XML_STATISTICS) {  // get statistics; TODO: move to the begin of this function
-            if (item.attribute("status").toInt() >= m_countToDone)  // TODO: fix magic constant
+        else if (tag_name == XML_DICT::TAG_STATISTICS) {  // get statistics; TODO: move to the begin of this function
+            if (item.attribute(XML_DICT::TAG_STATUS).toInt() >= m_countToDone)
                 return false;   // the word is learned
         }
         else continue;  // skip over an unknown tag
@@ -74,7 +74,7 @@ void CWord :: reset()
     example_transl.clear();
 }
 
-/** @Check the word */
+/** @Checks the word */
 Result CWord :: check(const QString& inp2, const QString& inp3, const QString& inpTrns)
 {
     Result result;
@@ -133,7 +133,7 @@ QString CWord :: format(QString s, QString color, bool bold, bool italic)
     return s;
 }
 
-/** @Read a formatted text form element (recursive algorithm) */
+/** @Reads a formatted text form element (recursive algorithm) */
 QString CWord :: getFormattedText(const QDomElement &element)
 {
     QString res("");

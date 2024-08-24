@@ -36,11 +36,5 @@ void CReportWnd :: setData(int total, int score, int right)
     double percent = 100.0*right/total;
     lblTotal->setText(QString::number(total));
     lblScore->setText(QString::number(score));
-    lblRight->setText(QString("%1 (%2)").arg(right).arg(percent, 0, 'f', 1));
+    lblRight->setText(QString("%1 (%2%)").arg(right).arg(percent, 0, 'f', 1));
 }
-
-/*void CReportWnd :: onOK()
-{
-    this->close();
-    accept();
-}*/
