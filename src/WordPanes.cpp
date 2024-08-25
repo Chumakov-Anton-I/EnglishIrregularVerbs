@@ -13,6 +13,7 @@ CWordPane :: CWordPane(bool showExample, QWidget* parent)
     setLayout(mainVbox);
     m_word = new QLabel(this);
     m_word->setObjectName("Word");
+    m_word->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
     mainVbox->addWidget(m_word);
     m_example = new QTextEdit(this);
     m_example->setObjectName("Example");
@@ -21,10 +22,12 @@ CWordPane :: CWordPane(bool showExample, QWidget* parent)
         separator->setFrameStyle(QFrame::HLine | QFrame::Plain);
         mainVbox->addWidget(separator);
         m_example->setReadOnly(true);
-        //m_example->
+        m_example->setWordWrapMode(QTextOption::WordWrap);
+        m_example->viewport()->setAutoFillBackground(false);
+        m_example->setMinimumHeight(64);
         mainVbox->addWidget(m_example);
         mainVbox->addSpacing(8);
-        mainVbox->addStretch(1);
+        //mainVbox->addStretch(1);
     }
     else {
         m_example->hide();

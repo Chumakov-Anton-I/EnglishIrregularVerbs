@@ -21,7 +21,6 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     setLayout(topBox);
     // ComboBox is on the top
     m_listOfDicts = new QComboBox(this);
-    //m_listOfDicts->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     topBox->addWidget(m_listOfDicts);
     QHBoxLayout* hBox = new QHBoxLayout();  // hor. sub-box
     topBox->addLayout(hBox);
@@ -33,24 +32,19 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     aboutDictionary->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
     aboutDictionary->setFormAlignment(Qt::AlignHCenter | Qt::AlignTop);
     aboutDictionary->setLabelAlignment(Qt::AlignRight);
-        // dict name
-        lblDictName = new QLabel(this);
+        lblDictName = new QLabel(this); // dict name
         lblDictName->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         aboutDictionary->addRow("Dictionary name:", lblDictName);
-        // dict version
-        lblDictVers = new QLabel(this);
+        lblDictVers = new QLabel(this); // dict version
         lblDictVers->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         aboutDictionary->addRow("Dictionary version:", lblDictVers);
-        // dict author
-        lblDictAuth = new QLabel(this);
+        lblDictAuth = new QLabel(this); // dict author
         lblDictAuth->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         aboutDictionary->addRow("Author:", lblDictAuth);
-        // dict date
-        lblDictDate = new QLabel(this);
+        lblDictDate = new QLabel(this); // dict date
         lblDictDate->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         aboutDictionary->addRow("Date:", lblDictDate);
-        // dict size
-        lblDictSize = new QLabel(this);
+        lblDictSize = new QLabel(this); // dict size
         lblDictSize->setFrameStyle(QFrame::Panel | QFrame::Sunken);
         aboutDictionary->addRow("Count:", lblDictSize);
         QFrame* delim = new QFrame(this);
@@ -61,7 +55,6 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     QVBoxLayout* cmdBox = new QVBoxLayout();    // buttons column
         // buttons
         btnAddDict = new QPushButton("Add dictionary...", this);
-        btnAddDict->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
         btnRemoveDict = new QPushButton("Remove dictionary", this);
         btnEditDict = new QPushButton("Edit", this);
         //btnSelectDict = new QPushButton("Select dictionary", this);
@@ -132,7 +125,7 @@ bool CMainWindow :: readDictionary()
 {
     //if (!checkDict()) return false;   // TODO: add checking the structure of a dictionary
     QDomElement root = m_dictionary.documentElement();
-    //m_dictionary = root.childNodes();   //TODO: get count of words
+    QDomNodeList words = root.elementsByTagName(XML_DICT::TAG_WORD);
     dict_name = root.attribute("title");
     dict_vers = root.attribute("version");
     dict_auth = root.attribute("author");
@@ -141,6 +134,7 @@ bool CMainWindow :: readDictionary()
     lblDictVers->setText(dict_vers);
     lblDictAuth->setText(dict_auth);
     lblDictDate->setText(dict_date);
+    lblDictSize->setText(QString::number(words.length()));
     return true;
 }
 
@@ -175,11 +169,7 @@ void CMainWindow :: editDictionary()
 /** [slot] Start learning */
 void CMainWindow :: startLearning()
 {
-    QElapsedTimer time;
-    time.start();
     CWndLearning* learnWnd = new CWndLearning(m_dictionary);
-    qDebug() << "============================== TIME: [" << time.elapsed() << "]";
-
     hide();
     learnWnd->exec();
     show();
@@ -189,21 +179,17 @@ void CMainWindow :: startLearning()
 /** [slot] Start test */
 void CMainWindow :: startTest()
 {
-    QElapsedTimer time;
-    time.start();
     CWndTest* testWnd = new CWndTest(m_dictionary);
-    qDebug() << "============================== TIME: [" << time.elapsed() << "] ======================";
-
     hide();
     testWnd->exec();
-    QFile wfile(m_curDictFile); // save statistics - TODO: make function
+    QFile wfile(m_curDictFile); // save statistics
     if (wfile.open(QIODevice::WriteOnly)) {
         QTextStream out(&wfile);
         m_dictionary.save(out, 2);
         wfile.close();
     }
     else
-        qDebug() << "Can not save file";
+        qDebug() << "Can not save file";    // TODO
     show();
     delete testWnd;
 }

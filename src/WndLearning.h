@@ -25,14 +25,18 @@ private:    // GUI
     CWordPane* m_form3Pane;
     QTextEdit* m_translation;
     QPushButton* btnNext;
+    QPushButton* btnPrev;
     QDomDocument m_document;  // active dictionary (reference)
     QDomNodeList m_dictionary;
 public slots:
     void nextWord();
+    void prevWord();
 private:    // back-end
     void prepareDictionary();
+    void readWord();
     QVector<int> m_order;
     CWord current_word;   // current word
+    QVector<int>::ConstIterator m_current;
 };
 
 #endif // WNDLEARNING_H

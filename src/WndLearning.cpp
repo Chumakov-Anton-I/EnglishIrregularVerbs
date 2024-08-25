@@ -23,16 +23,24 @@ CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullp
         formsBox->addWidget(m_form3Pane);
     topBox->addLayout(formsBox);
     m_translation = new QTextEdit(this);
+    m_translation->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::MinimumExpanding);
     m_translation->setReadOnly(true);
     topBox->addWidget(m_translation);
-    btnNext = new QPushButton("Next word", this);
-    topBox->addWidget(btnNext);
+    QHBoxLayout* btnsBox = new QHBoxLayout();
+        btnPrev = new QPushButton("Previous", this);
+        btnPrev->setDisabled(true);
+        btnsBox->addWidget(btnPrev);
+        btnNext = new QPushButton("Next word", this);
+        btnNext->setMinimumHeight(36);  // move to CSS
+        btnsBox->addWidget(btnNext);
+    topBox->addLayout(btnsBox);
 
     /* Connect signal & slots */
     connect(btnNext, SIGNAL(clicked()), this, SLOT(nextWord()));
+    connect(btnPrev, SIGNAL(clicked()), this, SLOT(prevWord()));
 
     prepareDictionary();
-    nextWord();
+    readWord();
 }
 
 /** Reads the dictionary and makes a random order of words */
@@ -48,29 +56,40 @@ void CWndLearning :: prepareDictionary()
     auto rd = std::random_device {};
     auto rng = std::default_random_engine { rd() };
     std::shuffle(m_order.begin(), m_order.end(), rng);
+    m_current = m_order.cbegin();
+}
+
+/** [slot] Sets a previous word */
+void CWndLearning :: prevWord()
+{
+    m_current--;
+    if (m_current == m_order.constBegin())
+        btnPrev->setDisabled(true);
+    btnNext->setDisabled(false);
+    readWord();
 }
 
 /** [slot] Sets a next word */
 void CWndLearning :: nextWord()
 {
-    while (true) {
-        if (m_order.isEmpty()) {
-            btnNext->setDisabled(true);
-            return;
-        }
-        int i = m_order.back();
-        m_order.pop_back();
-        QDomNode node = m_dictionary.item(i);
-        if (current_word.setWord(node.toElement()))
-            break;
-    }
-    /* Init panes with word */ // TODO: исправить это чудовищное безобразие
+    // TODO: out of range
+    m_current++;
+    if (m_current == m_order.constEnd())
+        btnNext->setDisabled(true);
+    btnPrev->setDisabled(false);
+    readWord();
+}
+
+/**  */
+void CWndLearning :: readWord()
+{
+    QDomNode node = m_dictionary.item(*m_current);
+    current_word.setWord(node.toElement());
+    // Init panes with word TODO: исправить это чудовищное безобразие
     m_currWordPane->setValues(current_word.form1, current_word.form1_transcr, current_word.form1_sound);
     m_currWordPane->setExample(current_word.getExampleTrans());
     m_form2Pane->setValues(current_word.form2, current_word.form2_transcr, current_word.form2_sound);
     m_form3Pane->setValues(current_word.form3, current_word.form3_transcr, current_word.form3_sound);
     m_translation->setText(current_word.getTranslation());
     m_currWordPane->playSound();    //auto-play
-
-    //current_word.reset();
 }

@@ -48,23 +48,24 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     TranslationEdit = new CTextEdit(LANG_LAYOUT_RUS, this);
     TranslationEdit->setPlaceholderText("<type the Translation>");
     TranslationEdit->setToolTip("Type the word or the first letter of the word");
+    TranslationEdit->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
     mainVbox->addWidget(TranslationEdit);
 
     /* Buttons pane */
-    QLabel* hintLabel = new QLabel("<small><font color=\"#808080\">Press 'Tab' to switch edit,<br>press 'Enter' to check.</font></small>", this);
-    // ^^^ TODO: use CSS
-    hintLabel->setAlignment(Qt::AlignLeft | Qt::AlignBottom);
-    btnCheck = new QPushButton("Check", this);
-    btnCheck->setDefault(true);
-    btnCheck->setFocusPolicy(Qt::FocusPolicy::NoFocus);
-    btnResume = new QPushButton("Resume", this);
-    btnResume->setIcon(QIcon(":/ico_xoctagon"));
-    btnResume->setFocusPolicy(Qt::FocusPolicy::NoFocus);
     QHBoxLayout* commHBLayout = new QHBoxLayout();
-    commHBLayout->addWidget(hintLabel);
-    commHBLayout->addSpacing(25);
-    commHBLayout->addWidget(btnResume);
-    commHBLayout->addWidget(btnCheck);
+        QLabel* hintLabel = new QLabel("Press 'Tab' to switch edit,<br>press 'Enter' to check.", this);
+        hintLabel->setObjectName("TestHintLabel");
+        hintLabel->setAlignment(Qt::AlignLeft | Qt::AlignBottom);
+        btnCheck = new QPushButton("Check", this);
+        btnCheck->setDefault(true);
+        btnCheck->setFocusPolicy(Qt::FocusPolicy::NoFocus);
+        btnResume = new QPushButton("Resume", this);
+        btnResume->setIcon(QIcon(":/ico_xoctagon"));
+        btnResume->setFocusPolicy(Qt::FocusPolicy::NoFocus);
+        commHBLayout->addWidget(hintLabel);
+        commHBLayout->addSpacing(25);
+        commHBLayout->addWidget(btnResume);
+        commHBLayout->addWidget(btnCheck);
     mainVbox->addLayout(commHBLayout);
 
     // set tab order

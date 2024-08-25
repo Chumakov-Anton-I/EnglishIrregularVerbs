@@ -21,6 +21,7 @@ namespace ini_system {
 // XML-tags of a dictionary
 namespace XML_DICT {
     const char TAG_DICTIONARY[] = "dictionary";
+    const char TAG_WORD[]       = "word";
     const char TAG_ID[]         = "id";
     const char TAG_SOUND[]      = "sound";
     const char TAG_TEXT[]       = "text";
