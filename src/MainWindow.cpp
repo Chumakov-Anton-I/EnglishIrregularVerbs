@@ -14,6 +14,7 @@ extern QSettings* appSettings;  // Settings of the application (see main.cpp)
 CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
     : QWidget(parent)
 {
+    //setWindowIcon();  // TODO
     /* Read settings */
     m_dictionaryPath = QDir(appSettings->value(ini_system::dictionary_path).toString());
     /* Make the window form */
@@ -63,8 +64,6 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
         cmdBox->addWidget(btnAddDict);
         cmdBox->addWidget(btnRemoveDict);
         cmdBox->addWidget(btnEditDict);
-        //cmdBox->addWidget(btnSelectDict);
-        //m_cmdBox->addSpacing(32);
         cmdBox->addStretch();
         cmdBox->addWidget(btnStartLearn);
         cmdBox->addWidget(btnStartTest);
@@ -87,6 +86,7 @@ void CMainWindow :: indexDicts()
 {
     m_dictionaryPath.setFilter(QDir::Files | QDir::NoSymLinks);
     m_dictList = m_dictionaryPath.entryList();
+    m_listOfDicts->clear();
     /* Update List --> TODO: make function */
     foreach (QString itemname, m_dictList) {    // add only xml-files
         if (itemname.endsWith("xml", Qt::CaseInsensitive))  //TODO: fix magic constant
@@ -100,23 +100,22 @@ bool CMainWindow :: loadDictionary(const QString& fpath)
     /* Try to open the file */
     QFile dictfile(fpath);
     if (!dictfile.open(QIODevice::OpenModeFlag::ReadWrite)) {
-        qDebug() << "Can not open file" << fpath;// TODO
+        qDebug() << "{loadDictionary}: Can not open file" << fpath;   // TODO
         return false;
     }
-    /* Try to open the opened file */
+    /* Try to parse the opened file */
     auto res = m_dictionary.setContent(&dictfile);
     if (!res) {
         dictfile.close();
-        qDebug() << "This dictionary has errors";// TODO
+        qDebug() << "{loadDictionary}: This dictionary has errors";   // TODO
         return false;
     }
     dictfile.close();
     /* Read the dictionary */
     if (!readDictionary()) {
-        qDebug() << "Can not read dictionary";
+        qDebug() << "{loadDictionary}: Can not read dictionary";  // TODO
         return false;
     }
-
     return true;
 }
 
@@ -138,7 +137,7 @@ bool CMainWindow :: readDictionary()
     return true;
 }
 
-/* --------------- SLOTS ----------------- */
+/* ----------------------- SLOTS --------------------------- */
 /** [slot] On changing a dictionary */
 void CMainWindow :: selectDictionary()
 {
@@ -148,16 +147,33 @@ void CMainWindow :: selectDictionary()
 }
 
 /** [slot] Add a new dictionary */
-void CMainWindow :: addDictionary()
+void CMainWindow :: addDictionary() // TODO: remake this very ugly function
 {
-    qDebug() << "Adding of new dictionary";
-    return;
+    QString addedFileName = QFileDialog::getOpenFileName(this, "Choose file", "", "Dictionaries (*.xml)");
+    if (addedFileName.isEmpty())
+        return;
+    QString dictpath(appSettings->value(ini_system::dictionary_path).toString());
+    QFileInfo addedFileInfo(addedFileName);
+    QString newFileName = dictpath + "/" + addedFileInfo.fileName();
+    while (!QFile::copy(addedFileName, newFileName)) {
+        newFileName = QFileDialog::getSaveFileName(this, "Save dictionary as", dictpath, "Dictionaries (*.xml)");
+        if (newFileName.isEmpty())
+            return;
+    }
+    QFileInfo newFileInfo(newFileName);
+    m_listOfDicts->addItem(newFileInfo.fileName());
 }
 
 /** [slot] Remove the dictionary */
 void CMainWindow :: removeDictionary()
 {
-    qDebug() << QString("Removing of the dictionary [%1]").arg(m_curDictFile);
+    int ret = QMessageBox::warning(this, "Delete dictionary",
+                                   "Do you want to delete the cirrent dictonary?",
+                                   QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
+    if (ret == QMessageBox::Yes) {
+        QFile::remove(m_curDictFile);
+        m_listOfDicts->removeItem(m_listOfDicts->currentIndex());
+    }
 }
 
 /** [slot] Edit the dictionary */

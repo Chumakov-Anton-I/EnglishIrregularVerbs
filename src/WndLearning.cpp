@@ -12,6 +12,7 @@ CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullp
     : QDialog(parent, Qt::Window), m_document(dictionary)
 {
     setMinimumSize(600, 320);
+    //setWindowIcon();
     QVBoxLayout* topBox = new QVBoxLayout();
     setLayout(topBox);
     m_currWordPane = new CWordPane(true, this);

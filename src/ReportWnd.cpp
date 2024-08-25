@@ -8,6 +8,7 @@ CReportWnd :: CReportWnd(QWidget* parent)
     : QDialog(parent)
 {
     setWindowTitle("Statistics");
+    //setWindowIcon();  // TODO
     QVBoxLayout* vbox = new QVBoxLayout(this);
     setLayout(vbox);
     QFormLayout* form = new QFormLayout(this);
