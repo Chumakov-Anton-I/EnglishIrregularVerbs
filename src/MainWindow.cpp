@@ -54,27 +54,33 @@ CMainWindow :: CMainWindow(QWidget* parent/* =nullptr*/)
         // ... TODO: add statistics
     g_abOut->setLayout(aboutDictionary);
     QVBoxLayout* cmdBox = new QVBoxLayout();    // buttons column
+        // menus
+        QMenu* menuDictionaries = new QMenu(this);
+        menuDictionaries->addAction("Add dictionary", this, SLOT(addDictionary()));
+        menuDictionaries->addAction("Edit dictionary", this, SLOT(editDictionary()));
+        menuDictionaries->addAction("Remove dictionary", this, SLOT(removeDictionary()));
+        QMenu* menuAbout = new QMenu(this);
+        menuAbout->addAction("About", this, SLOT(slotAbout()));
+        menuAbout->addAction("About Qt", this, SLOT(slotAboutQt()));
         // buttons
-        btnAddDict = new QPushButton("Add dictionary...", this);
-        btnRemoveDict = new QPushButton("Remove dictionary", this);
-        btnEditDict = new QPushButton("Edit", this);
-        //btnSelectDict = new QPushButton("Select dictionary", this);
+        QPushButton* btnDictionaries = new QPushButton("Dictionaries", this);
+        btnDictionaries->setMenu(menuDictionaries);
+        QPushButton* btnAbout = new QPushButton("About", this);
+        btnAbout->setMenu(menuAbout);
+        //btnSettings = new QPushButton("Settings", this);
         btnStartLearn = new QPushButton("Start learning", this);
         btnStartTest = new QPushButton("Start test", this);
-        cmdBox->addWidget(btnAddDict);
-        cmdBox->addWidget(btnRemoveDict);
-        cmdBox->addWidget(btnEditDict);
+        cmdBox->addWidget(btnDictionaries);
+        cmdBox->addWidget(btnAbout);
+        //cmdBox->addWidget(btnSettings);
         cmdBox->addStretch();
         cmdBox->addWidget(btnStartLearn);
         cmdBox->addWidget(btnStartTest);
     hBox->addLayout(cmdBox);
-    // ...
+    // ... TODO: statistics
 
     /* Connect signals & slots */
     connect(m_listOfDicts, SIGNAL(currentIndexChanged(int)), this, SLOT(selectDictionary()));
-    connect(btnAddDict, SIGNAL(clicked()), this, SLOT(addDictionary()));
-    connect(btnRemoveDict, SIGNAL(clicked()), this, SLOT(removeDictionary()));
-    connect(btnEditDict, SIGNAL(clicked()), this, SLOT(editDictionary()));
     connect(btnStartLearn, SIGNAL(clicked()), this, SLOT(startLearning()));
     connect(btnStartTest, SIGNAL(clicked()), this, SLOT(startTest()));
 
@@ -208,4 +214,19 @@ void CMainWindow :: startTest()
         qDebug() << "Can not save file";    // TODO
     show();
     delete testWnd;
+}
+
+/** [slot] About program */
+void CMainWindow :: slotAbout()
+{
+    QString msg = QString("A simply program for learning English irregular verbs.<br>")
+                  + "<a href=\"https://github.com/Chumakov-Anton-I\">github.io</a><br><br>"
+                  + "(C) Chumakov Anton I. for LBI School, 2024";
+    QMessageBox::about(this, "About", msg);
+}
+
+/** [slot] About Qt */
+void CMainWindow :: slotAboutQt()
+{
+    QMessageBox::aboutQt(this, "Used version Qt");
 }

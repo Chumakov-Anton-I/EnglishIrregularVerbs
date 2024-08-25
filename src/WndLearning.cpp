@@ -29,10 +29,11 @@ CWndLearning :: CWndLearning(QDomDocument& dictionary, QWidget* parent/* = nullp
     topBox->addWidget(m_translation);
     QHBoxLayout* btnsBox = new QHBoxLayout();
         btnPrev = new QPushButton("Previous", this);
+        btnPrev->setMinimumHeight(36);  // move to CSS
         btnPrev->setDisabled(true);
         btnsBox->addWidget(btnPrev);
         btnNext = new QPushButton("Next word", this);
-        btnNext->setMinimumHeight(36);  // move to CSS
+        btnNext->setMinimumHeight(36);
         btnsBox->addWidget(btnNext);
     topBox->addLayout(btnsBox);
 
@@ -81,12 +82,12 @@ void CWndLearning :: nextWord()
     readWord();
 }
 
-/**  */
+/** Reads a word and sets values */
 void CWndLearning :: readWord()
 {
     QDomNode node = m_dictionary.item(*m_current);
     current_word.setWord(node.toElement());
-    // Init panes with word TODO: исправить это чудовищное безобразие
+    // Init panes with word TODO: fix it VERY ugly code
     m_currWordPane->setValues(current_word.form1, current_word.form1_transcr, current_word.form1_sound);
     m_currWordPane->setExample(current_word.getExampleTrans());
     m_form2Pane->setValues(current_word.form2, current_word.form2_transcr, current_word.form2_sound);

@@ -20,10 +20,7 @@ public:
     CMainWindow(QWidget* parent = nullptr);
 private:    // GUI
     QComboBox* m_listOfDicts;   // available dictionaries
-    QPushButton* btnAddDict;
-    QPushButton* btnRemoveDict;
-    QPushButton* btnEditDict;
-    //QPushButton* btnSelectDict; // TODO: maybe delete this button
+    //QPushButton* btnSettings;
     QPushButton* btnStartLearn;
     QPushButton* btnStartTest;
 
@@ -54,6 +51,9 @@ public slots:
     void editDictionary();
     void startLearning();
     void startTest();
+private slots:
+    void slotAbout();
+    void slotAboutQt();
 };
 
 #endif // MAINWINDOW_H
