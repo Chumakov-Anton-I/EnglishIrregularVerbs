@@ -74,9 +74,8 @@ void CWndLearning :: prevWord()
 /** [slot] Sets a next word */
 void CWndLearning :: nextWord()
 {
-    // TODO: out of range
     m_current++;
-    if (m_current == m_order.constEnd())
+    if (m_current == m_order.constEnd() - 1)    // END is after the last element
         btnNext->setDisabled(true);
     btnPrev->setDisabled(false);
     readWord();

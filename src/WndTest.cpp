@@ -18,9 +18,9 @@ CWndTest :: CWndTest(QDomDocument& dictionary, QWidget *parent/* = nullptr*/)
     setLayout(mainVbox);
     /* The pane with the current word */
     WordLabel = new CWordPane(true, this);
-    ResultLabel = new CLabel(this);
+    //ResultLabel = new CLabel(this);
     mainVbox->addWidget(WordLabel);
-    mainVbox->addWidget(ResultLabel);
+    //mainVbox->addWidget(ResultLabel);
 
     /* Pane of verb forms */
     QHBoxLayout* formsHBLayout = new QHBoxLayout();
@@ -136,7 +136,7 @@ void CWndTest :: start()
     Form2Edit->clear();
     Form3Edit->clear();
     TranslationEdit->clear();
-    ResultLabel->reset();
+    //ResultLabel->reset();
 
     if (!readWord()) {  // go to resume
         btnCheck->hide(); //setEnabled(false);
@@ -161,16 +161,16 @@ void CWndTest :: check()
     Form3Edit->setText(res.form3);
     TranslationEdit->setText(res.translation);
     if (res) {
-        ResultLabel->setStatus(true);
+        //ResultLabel->setStatus(true);
         score_succ++;   // inc successiful score
         /* Update statistics */
-        QString id = currentWord.id;
-        int x = statistics.value(id, 0);
-        statistics[id] = ++x;
+        //QString id = currentWord.id;
+        //int x = statistics.value(id, 0);
+        //statistics[id] = ++x;
         updateStatistics(bool(res));    // update general statistics
     }
-    else
-        ResultLabel->setStatus(false);
+    /*else
+        ResultLabel->setStatus(false);*/
     score++;    // inc general score
     //currentWord.reset();  // reset the value of the word object (TODO)
     if (order.empty()) {

@@ -34,7 +34,7 @@ public slots:
 private:    // GUI part
     /* Labels */
     CWordPane *WordLabel;  // the window with a current word
-    CLabel *ResultLabel;
+    //CLabel *ResultLabel;
     QStackedWidget *Form2Stack;
     QStackedWidget *Form3Stack;
     CTextEdit *Form2Edit;
@@ -60,7 +60,7 @@ private:    // dictionary part
     QVector<int> order;
     int score = 0;
     int score_succ = 0;
-    QMap<QString, int> statistics;
+    //QMap<QString, int> statistics;
 };
 
 #endif // WINDOW_H

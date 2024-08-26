@@ -220,7 +220,7 @@ void CMainWindow :: startTest()
 void CMainWindow :: slotAbout()
 {
     QString msg = QString("A simply program for learning English irregular verbs.<br>")
-                  + "<a href=\"https://github.com/Chumakov-Anton-I\">github.io</a><br><br>"
+                  + "See <a href=\"https://github.com/Chumakov-Anton-I\">github.io</a>.<br><br>"
                   + "(C) Chumakov Anton I. for LBI School, 2024";
     QMessageBox::about(this, "About", msg);
 }
